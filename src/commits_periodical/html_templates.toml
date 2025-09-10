@@ -1,0 +1,170 @@
+index = '''
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FreeBSD git weekly</title>
+    <link href="freebsd-git-weekly.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>FreeBSD weekly git</h1>
+    <p>
+      This is a weekly report about commits to the
+      <a href="https://cgit.freebsd.org/src/">FreeBSD source tree</a>.
+    </p>
+    %s
+  </body>
+</html>
+'''
+
+html_begin = '''
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FreeBSD git weekly: %s</title>
+    <link href="freebsd-git-weekly.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1><a href="index.html">FreeBSD weekly git</a>: %s</h1>
+'''
+
+INTRO_SECTION = '''
+<section>
+<h2>Introduction</h2>
+  <p>
+    This is a display of mostly-automatically-classified git commits from
+    %s to %s.
+  </p>
+  <p>
+    In the future, these reports might include summaries or additional
+    information, but for now our focus is figuring out what type of
+    classification would be most useful.
+  </p>
+</section>
+'''
+
+INTRO_DEBUG_MESSAGE = '''
+<div class="debug">
+  <p>
+    DEBUG: This version of the report is primarily for checking the
+    classifiers, and therefore contains extra information (in this colour).
+  </p>
+  <p>
+    DEBUG: In addition, debug pages for the latest week are often produced
+    by a daily or hourly cronjob, and thus might not have any human review.
+    Don't worry if you see commits in the wrong section; I'll check and fix
+    them.
+  </p>
+</div>
+'''
+
+TECHNICAL_NOTES_SECTION = '''
+<section id="technical-notes">
+<h2>Technical notes</h2>
+<p>
+  Dates:
+</p>
+<ul>
+  <li>
+    The dates are "approximate" because git has no record of exactly when
+    each commit was added.  The "author date" and "commit date" are text
+    fields controlled by each committer, not the actual dates.  Git accurately
+    records the <em>order</em> of commits, but not their dates.
+  </li>
+</ul>
+<p>
+  Automatic grouping:
+</p>
+<ul>
+  <li>
+    "Commit & revert pair" groups were automatically grouped when a commit's
+    (full) message contained
+    <blockquote>
+    <code>This reverts commit \\b([0-9a-fA-F]{40})\\b</code>
+    </blockquote>
+    and the hash was found in this week's
+    commits.
+  </li><li>
+    "Commit group #" groups were automatically grouped when 3 or more
+    consecutive commits by the same author had the same category and summary
+    prefix.
+  </li>
+</ul>
+<p>
+  Automatic categories:
+</p>
+<ul>
+  <li>
+    Commits were (mostly) automatically classified based on regex
+    pattern-matching on the commit's modified files, summary, or the whole
+    commit message.  The goal is to have the system automatically classify 95%
+    of the commits, with 95% accuracy; then we'll manually check the results
+    and fix the incorrectly-classified and unclassified commits.
+  </li>
+</ul>
+<p>
+  Source code:
+</p>
+<ul>
+  <li>
+    <a href="https://github.com/Tarsnap/freebsd-git-weekly">https://github.com/Tarsnap/freebsd-git-weekly</a>
+    <p>
+      This repository is currently (2025-09-09) undergoing massive refactoring;
+      it should much cleaner in a few days (say, 2025-09-12).
+    </p>
+  </li>
+</ul>
+</section>
+'''
+
+HTML_SECTION = '''      <h2>%s
+<button onClick="showDetails('%s', true)">Expand section</button>
+<button onClick="showDetails('%s', false)">Collapse section</button>
+</h2>
+'''
+
+HTML_COMMIT_TAGLINE = '''
+<a
+  href="https://cgit.freebsd.org/src/commit/?id=%s"
+  target="_blank">%s</a> %s %s
+'''
+
+HTML_DETAILS_OUTER = '''      <details>
+<summary>%s</summary>
+%s
+</details>
+'''
+
+HTML_DETAILS_INNER = '''
+<div class="details">%s</div>
+<div class="hash">%s</div>
+'''
+
+HTML_END = '''
+  <script>
+function showDetails(sectionId, state) {
+    const section = document.getElementById(sectionId);
+    if (!section)
+        return;
+    const details = section.querySelectorAll('details');
+    console.log(details);
+    details.forEach(detail => detail.open = state);
+}
+  </script>
+  </body>
+</html>
+'''
+
+RELEASE_DEBUG = '''
+<hr>
+<p>
+  Generated with commits-periodical %s at %s.
+</p>
+<p>
+  This work is supported by <a href="https://tarsnap.com">Tarsnap Backup Inc.</a>
+</p>
+<p>
+  Alternate version: <a href="%s">%s</a>
+</p>
+'''

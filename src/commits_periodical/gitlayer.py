@@ -1,0 +1,93 @@
+import dataclasses
+import os.path
+import pickle
+
+import git
+
+
+@dataclasses.dataclass
+class CachedCommit:
+    author: str
+    summary: str
+    message: str
+    authored_date: int
+    modified_files: list[str]
+
+    @classmethod
+    def from_gitcommit(cls, commit: git.Commit):
+        return cls(
+            author=str(commit.author),
+            summary=str(commit.summary),
+            message=str(commit.message),
+            authored_date=int(commit.authored_date),
+            modified_files=[str(p) for p in commit.stats.files],
+        )
+
+
+class CachedRepo:
+    def __init__(self, git_dirname: str, cache_filename: str) -> None:
+        self.git_dirname = git_dirname
+        self.cache_filename = cache_filename
+        self.repo = None
+        self.gitcommits = None
+
+    def _setup_gitcommits(self):
+        if os.path.exists(self.cache_filename):
+            with open(self.cache_filename, "rb") as fp:
+                self.gitcommits = pickle.load(fp)
+            self.trust_cache = True
+        else:
+            # We can't trust a cache that doesn't exist
+            self.trust_cache = False
+            self.gitcommits = {}
+
+        if not self.trust_cache:
+            self._load_actual_repo()
+
+    def _load_actual_repo(self):
+        # Load the git repo and ensure that it's clean
+        self.repo = git.Repo(self.git_dirname)
+        if self.repo.is_dirty():
+            raise SystemError("Repo is dirty; resolve")
+
+    def save(self):
+        with open(self.cache_filename, "wb") as fp:
+            pickle.dump(self.gitcommits, fp)
+
+    def get_head_hash(self):
+        if self.repo is None:
+            self._load_actual_repo()
+        return self.repo.head.commit.hexsha
+
+    def get_githashes(self):
+        return self.gitcommits.keys()
+
+    def ensure_cached(self, start_after: str, end_including: str):
+        if self.gitcommits is None:
+            self._setup_gitcommits()
+        if start_after in self.gitcommits and end_including in self.gitcommits:
+            return
+
+        if self.repo is None:
+            self._load_actual_repo()
+
+        githashes = self.repo.git.rev_list(
+            f"{start_after}..{end_including}", reverse=True, first_parent=True
+        )
+
+        modified = False
+        for githash in githashes.splitlines():
+            if githash not in self.gitcommits:
+                commit = CachedCommit.from_gitcommit(self.repo.commit(githash))
+                self.gitcommits[githash] = commit
+                modified = True
+
+        if modified:
+            self.save()
+
+    def get_commit(self, githash: str) -> CachedCommit:
+        if self.gitcommits is None:
+            self._setup_gitcommits()
+        if githash in self.gitcommits:
+            return self.gitcommits[githash]
+        return None

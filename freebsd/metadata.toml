@@ -1,0 +1,15 @@
+# The git repository's "commit dates" are not always accurate, so we cannot
+# rely on dates for the bounds of each "week".
+#
+# I'm not wild about "start_after" and "end_including" -- I think it would
+# be more natural to have "start_including" and "end_before" -- but that's
+# what `git rev-list A..B` does.  As long as the names reflect what the
+# system does, it's fine.
+
+[2025-09-01]
+start_after = "004ce88ad1efd42a1d7d5692849b4aa6906178fc"
+end_including = "14b61b2e931741281d0bfef426e9809f16006504"
+
+[2025-09-08]
+start_after = "14b61b2e931741281d0bfef426e9809f16006504"
+end_including = "90593b1bdb80a41b499b47437b4f545c24666b2d"

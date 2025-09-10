@@ -1,0 +1,40 @@
+[project]
+name = "freebsd-git-weekly"
+description = "A weekly summary of FreeBSD git commits"
+version = "0.13"
+authors = [
+  { name="Graham Percival", email="gperciva@tarsnap.com" },
+]
+license="BSD-2-Clause"
+requires-python = ">=3.11"
+dependencies = [
+  "GitPython",
+  "tomlkit",
+]
+
+[project.scripts]
+freebsd-git-weekly = "commits_periodical.commits_periodical:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+commits_periodical = [
+  "*.toml"
+]
+
+[tool.ruff]
+line-length = 80
+[tool.ruff.lint]
+select = ["E", "F"]
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"

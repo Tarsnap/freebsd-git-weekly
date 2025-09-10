@@ -1,0 +1,50 @@
+* {
+	font-family: sans-serif;
+}
+
+pre, code {
+	font-family: monospace;
+}
+
+body {
+	margin: 2em;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0.125em 0.5em;
+}
+
+tr.top-line td {
+	border-top: 0.1em solid grey;
+}
+
+details {
+	margin-left: 1em;
+	margin-top: 0.5em;
+
+	padding: 0.5em;
+	background-color: #f7f7f7;
+}
+
+details summary {
+	/*font-size: 110%;*/
+	color: #111177;
+	font-weight: bold;
+}
+
+details div {
+	margin: 0.5em 1em 0.25em 1em;
+}
+
+pre {
+	margin: 0.5em 0em;
+}
+
+.debug {
+	background-color: #ffeeaa;
+}

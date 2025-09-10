@@ -1,0 +1,8 @@
+# Python build directories
+/build/
+/src/commits_periodical/__pycache__/
+/src/freebsd_git_weekly.egg-info/
+# cached data
+/freebsd/*.gitcache
+# output directory
+/out/

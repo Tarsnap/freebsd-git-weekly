@@ -1,0 +1,83 @@
+# The order in this file defines the order in the HTML.
+
+emph = [
+    'Emphasized commits',
+    '''For extra visibility, these are copies of commits found in other
+    sections.  Most (if not all) come from the commit message containing
+    "<code>Relnotes:</code>".''',
+]
+
+userland = [
+    "Userland programs",
+    "Commits about commands found in man section 1 (other than networking).",
+]
+
+doc = [
+    'Documentation',
+    'Man pages, release notes, etc.',
+]
+
+hardware = [
+    'Hardware support',
+    'Hardware drivers and architecture-specific code.',
+]
+
+network = [
+    'Networking',
+    'Network-related commands, library, and kernel.',
+]
+
+admin = [
+    'System administration',
+    'Stuff in man section 8 (other than networking).',
+]
+
+libs = [
+    'Libraries',
+    '',
+]
+
+filesystems = [
+    'Filesystems',
+    '',
+]
+
+kernel = [
+    'Kernel',
+    'Kernel stuff (other than networking, filesystems, and drivers).',
+]
+
+build = [
+    'Build system',
+    '',
+]
+
+internal = [
+    'Internal organizational stuff',
+    '',
+]
+
+tests = [
+    'Testing',
+    '',
+]
+
+style = [
+    'Style, typos, and comments',
+    "These could go in other categories, but it's more clear if they're here instead.",
+]
+
+contrib = [
+    'Contrib code',
+    '',
+]
+
+reverts = [
+    'Reverted commits',
+    '',
+]
+
+unknown = [
+    'Unclassified commits',
+    'Not classified automatically, and waiting for manual attention.',
+]
