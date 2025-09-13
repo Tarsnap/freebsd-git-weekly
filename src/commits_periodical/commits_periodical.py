@@ -98,7 +98,7 @@ def main():
         case "generate":
             commits_periodical.generate.generate_index(metadata_file)
             commits_periodical.generate.generate_period(
-                repo, doc, project, datestr, args.debug
+                repo, doc, project, metadata, args.debug
             )
         case _:
             print(f"Command not recognized: {args.command}")

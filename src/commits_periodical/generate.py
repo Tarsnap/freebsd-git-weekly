@@ -288,7 +288,7 @@ def make_section(
     return section
 
 
-def generate_period(repo, doc, project, datestr, debug):
+def generate_period(repo, doc, project, metadata, debug):
     """Generate HTML for the latest week."""
     templates = commits_periodical.html_templates.HtmlTemplates()
 
@@ -304,11 +304,9 @@ def generate_period(repo, doc, project, datestr, debug):
 
     # Add preamble
     sections = []
-    enddatestr = (
-        datetime.datetime.strptime(datestr, "%Y-%m-%d")
-        + datetime.timedelta(days=6)
-    ).strftime("%Y-%m-%d")
-    intro = templates.INTRO_SECTION % (datestr, enddatestr)
+    date_start = metadata["date_start"]
+    date_end = metadata["date_end"]
+    intro = templates.INTRO_SECTION % (date_start, date_end)
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
     sections.append(intro)
@@ -327,18 +325,19 @@ def generate_period(repo, doc, project, datestr, debug):
     # Add technical notes
     sections.append(templates.TECHNICAL_NOTES_SECTION)
 
-    out = templates.html_begin % (datestr, datestr)
+    date_period = f"{date_start} to {date_end}"
+    out = templates.html_begin % (date_period, date_period)
     for section in sections:
         out += section
 
     if debug:
-        url = f"{datestr}.html"
-        text = datestr
+        url = f"{date_start}.html"
+        text = date_start
         alternate_version = f'Alternate version: <a href="{url}">{text}</a>'
         alternate_version += " (release)"
     else:
-        url = f"{datestr}-debug.html"
-        text = f"{datestr} (debug)"
+        url = f"{date_start}-debug.html"
+        text = f"{date_start} (debug)"
         alternate_version = f'Alternate version: <a href="{url}">{text}</a>'
         alternate_version += " (contains info about the classification)"
     version = commits_periodical.__version__
@@ -363,15 +362,17 @@ def generate_index(metadata_file):
     weeks += "<tr><th>Report</th>"
     weeks += "<th>Report with extra info about classification</th></tr>"
     for i, start_date in enumerate(start_dates):
+        metadata = metadata_file.get_metadata(start_date)
+        date_start = metadata["date_start"]
         weeks += "<tr>"
         weeks += "<td>"
         if i < len(start_dates) - 1:
-            weeks += f'<a href="{start_date}.html">{start_date}</a>'
+            weeks += f'<a href="{start_date}.html">{date_start}</a>'
         else:
-            weeks += f"{start_date}: in progress"
+            weeks += f"{date_start}: in progress"
         weeks += "</td>"
         weeks += "<td>"
-        weeks += f'<a href="{start_date}-debug.html">{start_date}-debug</a>'
+        weeks += f'<a href="{start_date}-debug.html">{date_start}-debug</a>'
         weeks += "</td>"
         weeks += "</tr>"
     weeks += "</table>"
