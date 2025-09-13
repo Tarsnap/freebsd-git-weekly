@@ -119,7 +119,7 @@ class WeekEntry:
         return False
 
     def is_revert(self):
-        if "rc" in self.ref[1]:
+        if "ac" in self.ref[1] and self.ref[1]["ac"] == "reverts":
             return True
         return False
 

@@ -204,7 +204,7 @@ def make_table_classification(project, cats, total_commits):
         num_misclassified, total_commits, "Misclassified commits"
     )
     section += table_row(
-        total_commits - num_misclassified - num_manual,
+        total_commits - num_misclassified - num_manual - num_unknown,
         total_commits,
         "Classified commits, no corrections",
     )
