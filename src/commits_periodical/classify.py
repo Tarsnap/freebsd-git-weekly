@@ -14,6 +14,10 @@ def find_emphasized(repo, doc):
         if entry.is_emphasized():
             continue
         gitcommit = repo.get_commit(githash)
+        if "UPDATING" in gitcommit.modified_files:
+            entry.set_emphasized()
+            num_changed += 1
+            continue
         if gitcommit.summary.startswith("RELNOTES"):
             entry.set_emphasized()
             num_changed += 1
