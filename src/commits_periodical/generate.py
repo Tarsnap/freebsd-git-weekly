@@ -334,12 +334,16 @@ def generate_period(repo, doc, project, datestr, debug):
     if debug:
         url = f"{datestr}.html"
         text = datestr
+        alternate_version = f'Alternate version: <a href="{url}">{text}</a>'
+        alternate_version += " (release)"
     else:
         url = f"{datestr}-debug.html"
         text = f"{datestr} (debug)"
+        alternate_version = f'Alternate version: <a href="{url}">{text}</a>'
+        alternate_version += " (contains info about the classification)"
     version = commits_periodical.__version__
     now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
-    out += templates.RELEASE_DEBUG % (version, now, url, text)
+    out += templates.RELEASE_DEBUG % (version, now, alternate_version)
 
     out += templates.HTML_END
 
@@ -348,24 +352,31 @@ def generate_period(repo, doc, project, datestr, debug):
 
 
 def generate_index(metadata_file):
+    filename_out = "out/index.html"
+    print(f"Generating index in {filename_out}")
+
     templates = commits_periodical.html_templates.HtmlTemplates()
 
     start_dates = sorted(metadata_file.get_start_dates())
 
-    weeks = "<ul>"
+    weeks = "<table>"
+    weeks += "<tr><th>Report</th>"
+    weeks += "<th>Report with extra info about classification</th></tr>"
     for i, start_date in enumerate(start_dates):
-        weeks += "<li>"
+        weeks += "<tr>"
+        weeks += "<td>"
         if i < len(start_dates) - 1:
             weeks += f'<a href="{start_date}.html">{start_date}</a>'
         else:
-            weeks += "no 'release' version yet"
-        weeks += " (additional info in the "
-        weeks += f' <a href="{start_date}-debug.html">debug version</a>)'
-        weeks += "</li>"
-    weeks += "</ul>"
+            weeks += f"{start_date}: in progress"
+        weeks += "</td>"
+        weeks += "<td>"
+        weeks += f'<a href="{start_date}-debug.html">{start_date}-debug</a>'
+        weeks += "</td>"
+        weeks += "</tr>"
+    weeks += "</table>"
 
     out = templates.index % (weeks)
 
-    filename_out = "out/index.html"
     with open(filename_out, "w", encoding="utf8") as fp:
         fp.write(out)
