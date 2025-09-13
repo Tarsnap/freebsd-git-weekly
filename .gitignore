@@ -6,3 +6,5 @@
 /freebsd/*.gitcache
 # output directory
 /out/
+# Development tools
+/devel-tools/
