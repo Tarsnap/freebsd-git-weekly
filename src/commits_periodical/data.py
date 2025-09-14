@@ -222,3 +222,4 @@ class Week:
     def clear_automatic_annotations(self):
         for githash in self.get_hashes():
             self.entries[githash].clear_automatic_annotation()
+        self.groups.clear()
