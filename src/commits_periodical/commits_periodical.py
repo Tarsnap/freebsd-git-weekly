@@ -89,7 +89,10 @@ def main():
         case "sanity":
             commits_periodical.sanity_check.check(project)
         case "update":
-            commits_periodical.update.update_ref(repo, metadata_file, metadata)
+            if commits_periodical.data.in_progress(metadata):
+                commits_periodical.update.update_ref(
+                    repo, metadata_file, metadata
+                )
             commits_periodical.update.update_period(repo, metadata, doc)
         case "update-commits":
             commits_periodical.update.update_period(repo, metadata, doc)

@@ -4,6 +4,12 @@ import os.path
 import tomlkit
 
 
+def in_progress(metadata: dict):
+    if "in_progress" in metadata:
+        return metadata["in_progress"]
+    return False
+
+
 class MetadataFile:
     def __init__(self, project_dirname):
         self.project_dirname = project_dirname
