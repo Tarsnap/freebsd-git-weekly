@@ -1,5 +1,7 @@
-# The git repository's "commit dates" are not always accurate, so we cannot
-# rely on dates for the bounds of each time period.
+# The git repository's "commit dates" are not always accurate, so we
+# cannot rely on dates for the bounds of each span.  The "date_start" and
+# "date_end" are purely for display; the actual spans are defined by
+# "start_after" and "end_including".
 #
 # I'm not wild about "start_after" and "end_including" -- I think it would
 # be more natural to have "start_including" and "end_before" -- but that's
@@ -17,3 +19,4 @@ date_start = "2025-09-08"
 date_end = "2025-09-14"
 start_after = "14b61b2e931741281d0bfef426e9809f16006504"
 end_including = "90593b1bdb80a41b499b47437b4f545c24666b2d"
+in_progress = true
