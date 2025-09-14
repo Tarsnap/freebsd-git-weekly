@@ -41,25 +41,25 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
         prevcommit = repo.get_commit(prevhash)
         if prevcommit:
             prefix = commits_periodical.utils.get_summary_prefix(prevcommit)
-        else:
-            nowcommit = repo.get_commit(githash)
-            summary = nowcommit.summary[len('Revert "') :]
-            prefix = summary.split(":")[0]
-        if prevhash in repo.get_githashes():
             name = f"revert-pair-{prefix}"
             hashes = [prevhash, githash]
+            for githash in hashes:
+                entry = doc.entries[githash]
+                if not entry.is_revert():
+                    entry.set_auto_cat("reverts", classifier_name, pattern)
+                    num_changed += 1
+                if entry.is_emphasized():
+                    entry.remove_emphasized()
+                if prevcommit:
+                    if not doc.entries[githash].has_group():
+                        doc.set_group(hashes, name)
         else:
-            name = f"revert-single-{prefix}"
-            hashes = [githash]
-        for githash in hashes:
             entry = doc.entries[githash]
             if not entry.is_revert():
                 entry.set_auto_cat("reverts", classifier_name, pattern)
                 num_changed += 1
             if entry.is_emphasized():
                 entry.remove_emphasized()
-        if not doc.entries[githash].has_group():
-            doc.set_group(hashes, name)
     return num_changed
 
 
