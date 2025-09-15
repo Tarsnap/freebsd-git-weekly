@@ -99,7 +99,9 @@ def main():
         case "annotate":
             commits_periodical.classify.classify_period(repo, doc, project)
         case "generate":
-            commits_periodical.generate.generate_index(metadata_file)
+            commits_periodical.generate.generate_index(
+                project_dirname, metadata_file
+            )
             commits_periodical.generate.generate_period(
                 repo, doc, project, metadata, args.debug
             )

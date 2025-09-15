@@ -1,6 +1,7 @@
 import collections
 import datetime
 import html
+import os.path
 import re
 
 import commits_periodical
@@ -292,7 +293,7 @@ def generate_period(repo, doc, project, metadata, debug):
     """Generate HTML for the latest week."""
     templates = commits_periodical.html_templates.HtmlTemplates()
 
-    filename_out = doc.filename.replace("freebsd/", "out/").replace(
+    filename_out = doc.filename.replace("projects/", "out/").replace(
         ".toml", ".html"
     )
     if debug:
@@ -350,8 +351,10 @@ def generate_period(repo, doc, project, metadata, debug):
         fp.write(out)
 
 
-def generate_index(metadata_file):
-    filename_out = "out/index.html"
+def generate_index(project_dirname, metadata_file):
+    filename_out = os.path.join(
+        project_dirname.replace("projects", "out"), "index.html"
+    )
     print(f"Generating index in {filename_out}")
 
     templates = commits_periodical.html_templates.HtmlTemplates()
