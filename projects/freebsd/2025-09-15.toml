@@ -1,0 +1,152 @@
+[d1eaa52d10f9b85e5f6358e1a280899b9d55dd07]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[2918cf3582915bd8853784f53c88e2c34055df1f]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[5e0a4859f28ad4869f7a73faf42debc355a370bf]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[e239f49146e0b8a400db5eb014f4a3f706380780]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+ae = 1
+
+[7780766b403dd00b04cc597b44b6358010986616]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[ef2f36be8fce8cf7a62ce7d33ab1c4a181fac3e2]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[4894f5ba394306a75dbed9ed4377ab0eae75aede]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c2d03a920ec75c431f0c6af0ad9cb6ae43e48dda]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[79a0959affecd2b055b9048002c0635018576103]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[864458ce5025ab83c3d8cbaa514185b8cbc53acf]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[0a67f601fe4f2e8af72cb0f99785cba4c91f7d7c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[c00aca9a714ee3cdb867d4014898ec4e345465a5]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "^pf:"
+
+[5e89648ee68e44d01d00d41d53b6934c604f8c50]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[2c42aecee69696aba85f1ad4c45033dd2db86b02]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[a66df2b575c8add6331fc0a0a0f536e90ccfafb7]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[8e84e9443bb6655f7e6c73546ac28549f768f4f3]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[d0ea3de0fe71fe67537f84df59da69770784fa9a]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[dafd960a3d65cdaccb1f8b9395fad14092ec9eb2]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "^lib.*:"
+
+[680f9acc3657efcea07d8ac0954645b6eaf8dac8]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netgraph/"
+
+[8fee6b9ecc84d3602a461f1cd33df91e50849cdf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[226375a1f6e3a71ca250c717e8d6d2c2e4b0b2e7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[7fbd362c091b2b384d14c3ed5af9234bb2eff9c2]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+ae = 1
+
+[18fd3f8ec5c50da21515757af24421a078a4a468]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netgraph/"
+
+[081f0e38e3324dd3ca63a2d5036a15f52e6cf858]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[f1b656f14464c2e3ec4ab2eeade3b00dce4bd459]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d566b6a70bcbc329e8c690464043401fa8bdd49f]
+
+[cd02a8a9f8be2085d5242606a79668dc3720e7b0]
+
+[246d7e9fc23928be22db38220f5439f5cdee5264]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "^jail:"
+
+[e8b5025c3880b04c1c2139fe73b65fbd6deb41d4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[18fd1443d205aed6be22966125a4820f77571948]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[a75c3c2c633dfa29b628f692fc7274cab1920640]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[6d83ae143b1f598b5f8868508f6e8a7d3440f568]

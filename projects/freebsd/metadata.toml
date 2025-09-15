@@ -18,5 +18,11 @@ end_including = "14b61b2e931741281d0bfef426e9809f16006504"
 date_start = "2025-09-08"
 date_end = "2025-09-14"
 start_after = "14b61b2e931741281d0bfef426e9809f16006504"
-end_including = "90593b1bdb80a41b499b47437b4f545c24666b2d"
+end_including = "e779891327b1d9b9ab10ba482e59f498790505a7"
+
+[2025-09-15]
+date_start = "2025-09-15"
+date_end = "2025-09-21"
+start_after = "e779891327b1d9b9ab10ba482e59f498790505a7"
+end_including = "6d83ae143b1f598b5f8868508f6e8a7d3440f568"
 in_progress = true

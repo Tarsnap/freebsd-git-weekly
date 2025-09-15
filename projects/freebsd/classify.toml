@@ -71,6 +71,8 @@ doc = [
 ]
 
 hardware = [
+    "share/misc/pci_vendors",
+    "share/misc/usb_vendors",
     "sys/amd64/",
     "sys/arm/",
     "sys/arm64/",
@@ -97,6 +99,7 @@ network = [
     'sys/nfsclient/',
     'sys/nfsserver/',
     'usr.bin/netstat/',
+    'usr.bin/sockstat/',
     'usr.sbin/ctld/',
 ]
 
@@ -125,8 +128,9 @@ build = [
 ]
 
 internal = [
-    'ObsoleteFiles.inc',
     '.git-blame-ignore-revs',
+    'ObsoleteFiles.inc',
+    'share/misc/bsd-family-tree',
 ]
 
 tests = [
@@ -183,6 +187,8 @@ network = [
 
 admin = [
     '^jail:',
+    '^jaildesc:',
+    '^nanobsd:',
     '^pci_user:',
     '^tty:',
 ]
@@ -199,10 +205,13 @@ filesystems = [
 ]
 
 kernel = [
+    '^vmm:',
 ]
 
 build = [
     '^bsd\..*\.mk:',
+    '^packages:',
+    '^src\..*\.mk:',
 ]
 
 internal = [

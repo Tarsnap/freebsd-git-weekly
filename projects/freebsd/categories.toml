@@ -4,7 +4,7 @@ emph = [
     'Emphasized commits',
     '''For extra visibility, these are copies of commits found in other
     sections.  Most (if not all) come from the commit message containing
-    "<code>Relnotes:</code>".''',
+    "<code>Relnotes:</code>", or commits modifying <code>UPDATING</code>.''',
 ]
 
 userland = [
