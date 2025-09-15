@@ -310,6 +310,11 @@ def generate_period(repo, doc, project, metadata, debug):
     intro = templates.INTRO_SECTION % (date_start, date_end)
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
+
+    if commits_periodical.data.in_progress(metadata):
+        text = '<p class="debug">This report is still in progress.</p>'
+        intro = intro.replace("</section>", f"{text}</section>")
+
     sections.append(intro)
     section = make_preamble(project, cats, debug)
     sections.append(section)
@@ -364,12 +369,12 @@ def generate_index(project_dirname, metadata_file):
     weeks = "<table>"
     weeks += "<tr><th>Report</th>"
     weeks += "<th>Report with extra info about classification</th></tr>"
-    for i, start_date in enumerate(start_dates):
+    for start_date in start_dates:
         metadata = metadata_file.get_metadata(start_date)
         date_start = metadata["date_start"]
         weeks += "<tr>"
         weeks += "<td>"
-        if i < len(start_dates) - 1:
+        if not commits_periodical.data.in_progress(metadata):
             weeks += f'<a href="{start_date}.html">{date_start}</a>'
         else:
             weeks += f"{date_start}: in progress"
