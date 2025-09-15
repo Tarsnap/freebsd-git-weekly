@@ -3,7 +3,7 @@
 /src/commits_periodical/__pycache__/
 /src/freebsd_git_weekly.egg-info/
 # cached data
-/freebsd/*.gitcache
+/projects/freebsd/*.gitcache
 # output directory
 /out/
 # Development tools
