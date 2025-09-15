@@ -50,16 +50,18 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
                     num_changed += 1
                 if entry.is_emphasized():
                     entry.remove_emphasized()
-                if prevcommit:
-                    if not doc.entries[githash].has_group():
-                        doc.set_group(hashes, name)
         else:
             entry = doc.entries[githash]
+            hashes = None
             if not entry.is_revert():
                 entry.set_auto_cat("reverts", classifier_name, pattern)
                 num_changed += 1
             if entry.is_emphasized():
                 entry.remove_emphasized()
+        for githash in hashes:
+            if not doc.entries[githash].has_group():
+                doc.set_group(hashes, name)
+
     return num_changed
 
 
