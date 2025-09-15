@@ -9,6 +9,12 @@ index = '''
   <body>
     <h1>FreeBSD git weekly</h1>
     <p>
+      Our goal is to make it easier for developers and users to keep
+      track of changes in FreeBSD that are relevant to them, without
+      needing to subscribe to the dev-commits-src-main mailing list and
+      look at every single commit which lands in their mailbox.
+    </p>
+    <p>
       This is a weekly report about commits to the
       <a href="https://cgit.freebsd.org/src/">FreeBSD source tree</a>.
     </p>
