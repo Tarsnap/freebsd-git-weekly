@@ -103,7 +103,7 @@ def main():
                 project_dirname, metadata_file
             )
             commits_periodical.generate.generate_period(
-                repo, doc, project, metadata, args.debug
+                repo, doc, project, metadata, args.debug, project_dirname
             )
         case _:
             print(f"Command not recognized: {args.command}")

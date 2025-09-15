@@ -13,6 +13,10 @@ index = '''
       <a href="https://cgit.freebsd.org/src/">FreeBSD source tree</a>.
     </p>
     %s
+    <p>
+      Here are some alternate reports.
+    </p>
+    %s
   </body>
 </html>
 '''

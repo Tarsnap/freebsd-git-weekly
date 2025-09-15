@@ -31,6 +31,14 @@ class CachedRepo:
         self.repo = None
         self.gitcommits = None
 
+    def add_cache(self, filename):
+        if self.gitcommits is None:
+            self.gitcommits = {}
+        with open(filename, "rb") as fp:
+            cache_gitcommits = pickle.load(fp)
+            self.gitcommits.update(cache_gitcommits)
+        self.trust_cache = True
+
     def _setup_gitcommits(self):
         if os.path.exists(self.cache_filename):
             with open(self.cache_filename, "rb") as fp:

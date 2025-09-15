@@ -218,7 +218,7 @@ def make_table_classification(project, cats, total_commits):
     return section
 
 
-def make_preamble(project, cats, debug):
+def make_preamble(project, cats, debug, only_show):
     """Generate the 'preamble' section."""
     section = "<section>"
     section += "<p>Table of contents and commits per category:</p>"
@@ -230,7 +230,15 @@ def make_preamble(project, cats, debug):
             continue
         total_commits += len(entries)
 
+    # Special case: override the above if we only have "emph".
+    if len(cats.keys()) == 1 and "emph" in cats:
+        total_commits = len(cats["emph"])
+
     for cat, catinfo in project.categories.items():
+        if only_show:
+            if cat not in only_show:
+                continue
+
         section_name, intro_text = catinfo
         if not section_name:
             continue
@@ -289,7 +297,7 @@ def make_section(
     return section
 
 
-def generate_period(repo, doc, project, metadata, debug):
+def generate_period(repo, doc, project, metadata, debug, project_dirname):
     """Generate HTML for the latest week."""
     templates = commits_periodical.html_templates.HtmlTemplates()
 
@@ -301,7 +309,26 @@ def generate_period(repo, doc, project, metadata, debug):
     print(f"Generating HTML for {doc.filename} in {filename_out}")
 
     # Split into categories
-    cats = split_into_categories(doc)
+    if "include_spans" in metadata:
+        only_show = metadata["only_show"]
+
+        # Load all the data...
+        cats = collections.defaultdict(list)
+        for span in metadata["include_spans"]:
+            thisfilename = os.path.join(project_dirname, f"{span}.toml")
+            thisdoc = commits_periodical.data.Week(thisfilename)
+            thesecats = split_into_categories(thisdoc)
+            for key, value in thesecats.items():
+                # ... but only keep the relevant categories
+                if key in only_show:
+                    cats[key].extend(value)
+            cache_filename = thisfilename.replace(".toml", ".gitcache")
+            repo.add_cache(cache_filename)
+    else:
+        only_show = None
+
+        # Handle normally
+        cats = split_into_categories(doc)
 
     # Add preamble
     sections = []
@@ -316,11 +343,14 @@ def generate_period(repo, doc, project, metadata, debug):
         intro = intro.replace("</section>", f"{text}</section>")
 
     sections.append(intro)
-    section = make_preamble(project, cats, debug)
+    section = make_preamble(project, cats, debug, only_show)
     sections.append(section)
 
     # Handle each category
     for cat, catinfo in project.categories.items():
+        if only_show:
+            if cat not in only_show:
+                continue
         section_title, intro_text = catinfo
         section = make_section(
             templates, repo, doc, cats, cat, section_title, intro_text, debug
@@ -356,6 +386,32 @@ def generate_period(repo, doc, project, metadata, debug):
         fp.write(out)
 
 
+def index_table(metadata_file, start_dates):
+    out = "<table>"
+    out += "<tr><th>Report</th>"
+    out += "<th>Report with extra info about classification</th></tr>"
+    for start_date in start_dates:
+        metadata = metadata_file.get_metadata(start_date)
+        date_start = metadata["date_start"]
+        if "display_name" in metadata:
+            display_name = metadata["display_name"]
+        else:
+            display_name = date_start
+        out += "<tr>"
+        out += "<td>"
+        if not commits_periodical.data.in_progress(metadata):
+            out += f'<a href="{start_date}.html">{display_name}</a>'
+        else:
+            out += f"{display_name}: in progress"
+        out += "</td>"
+        out += "<td>"
+        out += f'<a href="{start_date}-debug.html">{display_name} (debug)</a>'
+        out += "</td>"
+        out += "</tr>"
+    out += "</table>"
+    return out
+
+
 def generate_index(project_dirname, metadata_file):
     filename_out = os.path.join(
         project_dirname.replace("projects", "out"), "index.html"
@@ -365,27 +421,19 @@ def generate_index(project_dirname, metadata_file):
     templates = commits_periodical.html_templates.HtmlTemplates()
 
     start_dates = sorted(metadata_file.get_start_dates())
-
-    weeks = "<table>"
-    weeks += "<tr><th>Report</th>"
-    weeks += "<th>Report with extra info about classification</th></tr>"
+    regular = []
+    alternate = []
     for start_date in start_dates:
         metadata = metadata_file.get_metadata(start_date)
-        date_start = metadata["date_start"]
-        weeks += "<tr>"
-        weeks += "<td>"
-        if not commits_periodical.data.in_progress(metadata):
-            weeks += f'<a href="{start_date}.html">{date_start}</a>'
+        if "alternate_index" in metadata:
+            alternate.append(start_date)
         else:
-            weeks += f"{date_start}: in progress"
-        weeks += "</td>"
-        weeks += "<td>"
-        weeks += f'<a href="{start_date}-debug.html">{date_start}-debug</a>'
-        weeks += "</td>"
-        weeks += "</tr>"
-    weeks += "</table>"
+            regular.append(start_date)
 
-    out = templates.index % (weeks)
+    reports = index_table(metadata_file, regular)
+    alternates = index_table(metadata_file, alternate)
+
+    out = templates.index % (reports, alternates)
 
     with open(filename_out, "w", encoding="utf8") as fp:
         fp.write(out)
