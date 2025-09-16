@@ -28,6 +28,12 @@ def parse_args():
         default="",
         help="Beginning of the time period to examine",
     )
+    parser.add_argument(
+        "--reproducible",
+        action="store_true",
+        default=False,
+        help="Don't include the current time in the footer",
+    )
 
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("sanity", help="Sanity check")
@@ -103,7 +109,13 @@ def main():
                 project_dirname, metadata_file
             )
             commits_periodical.generate.generate_period(
-                repo, doc, project, metadata, args.debug, project_dirname
+                repo,
+                doc,
+                project,
+                metadata,
+                args.debug,
+                project_dirname,
+                args.reproducible,
             )
         case _:
             print(f"Command not recognized: {args.command}")

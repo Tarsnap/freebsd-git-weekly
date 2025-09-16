@@ -297,7 +297,9 @@ def make_section(
     return section
 
 
-def generate_period(repo, doc, project, metadata, debug, project_dirname):
+def generate_period(
+    repo, doc, project, metadata, debug, project_dirname, reproducible
+):
     """Generate HTML for the latest week."""
     if commits_periodical.data.in_progress(metadata) and not debug:
         print("Refusing to generate 'release' HTML for in_progress")
@@ -382,6 +384,8 @@ def generate_period(repo, doc, project, metadata, debug, project_dirname):
         alternate_version += " (contains info about the classification)"
     version = commits_periodical.__version__
     now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
+    if reproducible:
+        now = "(time removed for reproducibility)"
     out += templates.RELEASE_DEBUG % (version, now, alternate_version)
 
     out += templates.HTML_END
