@@ -106,11 +106,11 @@ class WeekEntry:
             return True
         return False
 
-    def remove_emphasized(self):
-        del self.ref[1]["ae"]
+    def remove_highlighted(self):
+        del self.ref[1]["ah"]
 
-    def set_emphasized(self):
-        self.ref[1]["ae"] = 1
+    def set_highlighted(self):
+        self.ref[1]["ah"] = 1
 
     def set_auto_cat(self, cat, section, pattern):
         self.ref[1]["ac"] = cat
@@ -129,15 +129,15 @@ class WeekEntry:
             return True
         return False
 
-    def is_emphasized(self):
-        """Is this entry emphasized?"""
+    def is_highlighted(self):
+        """Is this entry highlighted?"""
         # If there's a manual judgement, that takes priority
         if "me" in self.ref[1]:
             if self.ref[1]["me"] == 1:
                 return True
             return False
 
-        if "ae" in self.ref[1] and self.ref[1]["ae"] == 1:
+        if "ah" in self.ref[1] and self.ref[1]["ah"] == 1:
             return True
         return False
 
@@ -146,7 +146,7 @@ class WeekEntry:
             "ac",
             "ac_pattern",
             "ac_section",
-            "ae",
+            "ah",
             "g",
         ]:
             if key in self.ref[1]:

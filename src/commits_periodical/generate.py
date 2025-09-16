@@ -41,10 +41,10 @@ def get_commit_long(templates, githash, gitcommit, nostrip=False):
     return url, text
 
 
-def commit_text(templates, repo, week, item, is_emph, debug):
+def commit_text(templates, repo, week, item, is_high, debug):
     """Get a commit message, formatted as HTML."""
     name, entry = item
-    if entry.has_group() and not is_emph:
+    if entry.has_group() and not is_high:
         return commit_group_text(templates, repo, week, item)
     githash = name
 
@@ -131,11 +131,11 @@ def split_into_categories(doc):
         else:
             cats[entry.cat].append(item)
 
-    # Make extra copies of "emphasized" commits
+    # Make extra copies of "highlighted" commits
     for item in doc.get_entries():
         _, entry = item
-        if entry.is_emphasized():
-            cats["emph"].append(item)
+        if entry.is_highlighted():
+            cats["highlight"].append(item)
     return cats
 
 
@@ -147,8 +147,8 @@ def make_table_classification(project, cats, total_commits):
 
     # Count mis-classified and un-classified
     for cat, entries in cats.items():
-        # Don't count emphasized commits (they're copies)
-        if cat == "emph":
+        # Don't count highlighted commits (they're copies)
+        if cat == "highlighted":
             continue
 
         for _, entry in entries:
@@ -225,14 +225,14 @@ def make_preamble(project, cats, debug, only_show):
     section += "<table>"
     total_commits = 0
     for cat, entries in cats.items():
-        # Don't count emphasized commits (they're copies)
-        if cat == "emph":
+        # Don't count highlighted commits (they're copies)
+        if cat == "highlighted":
             continue
         total_commits += len(entries)
 
-    # Special case: override the above if we only have "emph".
-    if len(cats.keys()) == 1 and "emph" in cats:
-        total_commits = len(cats["emph"])
+    # Special case: override the above if we only have "highlighted".
+    if len(cats.keys()) == 1 and "highlighted" in cats:
+        total_commits = len(cats["highlight"])
 
     for cat, catinfo in project.categories.items():
         if only_show:
@@ -246,15 +246,15 @@ def make_preamble(project, cats, debug, only_show):
         relevant = cats[cat]
         num = len(relevant)
         perc = f"{100 * num / total_commits:.1f}%"
-        # Hack to show a difference between "emphasized" and the rest
+        # Hack to show a difference between "highlighted" and the rest
         if cat == "userland":
             section += f'<tr class="top-line"><td>{num}</td><td>{perc}</td>'
-        elif cat == "emph":
+        elif cat == "highlighted":
             section += f'<tr class="top-line"><td>({num})</td><td></td>'
         else:
             section += f"<tr><td>{num}</td><td>{perc}</td>"
         link = f'<a href="#{cat}">{section_name}</a>'
-        if cat == "emph":
+        if cat == "highlighted":
             link += " (these are copies, not in stats)"
 
         section += f"<td>{link}</td></tr>"
@@ -283,14 +283,14 @@ def make_section(
         return None
     if section_title is None:
         return None
-    is_emph = cat == "emph"
+    is_high = cat == "highlighted"
     section = f"<section id='{cat}'>"
     section += templates.HTML_SECTION % (section_title, cat, cat)
     if intro_text:
         section += f"<p>{intro_text}</p>"
     relevant = cats[cat]
     for item in relevant:
-        section += commit_text(templates, repo, week, item, is_emph, debug)
+        section += commit_text(templates, repo, week, item, is_high, debug)
     if len(relevant) == 0:
         section += "<p>-- no commits in this category this week --</p>"
     section += "</section>"

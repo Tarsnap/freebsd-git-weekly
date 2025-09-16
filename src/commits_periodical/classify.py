@@ -6,28 +6,28 @@ import commits_periodical.utils
 GROUP_AT_LEAST = 3
 
 
-def find_emphasized(repo, doc):
+def find_highlighted(repo, doc):
     num_changed = 0
     for githash, entry in doc.get_entries():
         if entry.is_revert():
             continue
-        if entry.is_emphasized():
+        if entry.is_highlighted():
             continue
         gitcommit = repo.get_commit(githash)
         if "UPDATING" in gitcommit.modified_files:
-            entry.set_emphasized()
+            entry.set_highlighted()
             num_changed += 1
             continue
         if gitcommit.summary.startswith("RELNOTES"):
-            entry.set_emphasized()
+            entry.set_highlighted()
             num_changed += 1
             continue
         if re.search("^Relnotes:", gitcommit.message, re.MULTILINE):
-            entry.set_emphasized()
+            entry.set_highlighted()
             num_changed += 1
             continue
     if num_changed > 0:
-        print(f"Copied {num_changed} commits into 'emphasized'")
+        print(f"Copied {num_changed} commits into 'highlighted'")
 
 
 def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
@@ -48,16 +48,16 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
                 if not entry.is_revert():
                     entry.set_auto_cat("reverts", classifier_name, pattern)
                     num_changed += 1
-                if entry.is_emphasized():
-                    entry.remove_emphasized()
+                if entry.is_highlighted():
+                    entry.remove_highlighted()
         else:
             entry = doc.entries[githash]
             hashes = None
             if not entry.is_revert():
                 entry.set_auto_cat("reverts", classifier_name, pattern)
                 num_changed += 1
-            if entry.is_emphasized():
-                entry.remove_emphasized()
+            if entry.is_highlighted():
+                entry.remove_highlighted()
         for githash in hashes:
             if not doc.entries[githash].has_group():
                 doc.set_group(hashes, name)
@@ -210,7 +210,7 @@ def classify_period(repo, doc, project):
     # group
     group_commits(repo, doc)
 
-    # emphasized
-    find_emphasized(repo, doc)
+    # highlighted
+    find_highlighted(repo, doc)
 
     doc.save()
