@@ -1,7 +1,9 @@
 def update_ref(repo, metadata_file, metadata):
     # Get the HEAD from git, and the latest in the metadata
     latest_hash = repo.get_head_hash()
-    # metadata = metadata_file.get_metadata(datestr)
+
+    if "end_including" not in metadata:
+        return
 
     # If it's different, replace the final hash
     if metadata["end_including"] != latest_hash:
