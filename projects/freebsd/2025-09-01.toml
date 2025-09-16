@@ -290,7 +290,7 @@ g = "tcpdump-00"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
-ae = 1
+ah = 1
 
 [64cfafee8dfe938b16f12bd8c7f5584d4321ef95]
 ac = "doc"
@@ -533,7 +533,7 @@ ac_pattern = ".*Makefile"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
-ae = 1
+ah = 1
 
 [d5dd6ad6baa6753a1f2040c41702e71a91de8ce4]
 ac = "doc"
@@ -554,7 +554,7 @@ ac_pattern = "sys/dev/"
 ac = "admin"
 ac_section = "05-summary-prefix"
 ac_pattern = "^jail:"
-ae = 1
+ah = 1
 
 [d4bfebf917bcecf23892bb5069ee91bec75bef71]
 ac = "kernel"
@@ -576,7 +576,7 @@ ac_pattern = "^tcp:"
 
 [8b4e4c2737305df8807abc6cd054a32586085c93]
 mc = "internal"
-ae = 1
+ah = 1
 
 [8ec7a830f10bc0f3b421dfaf6967a1bc996d34fd]
 ac = "kernel"

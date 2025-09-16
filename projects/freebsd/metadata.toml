@@ -27,11 +27,11 @@ start_after = "e779891327b1d9b9ab10ba482e59f498790505a7"
 end_including = "6d83ae143b1f598b5f8868508f6e8a7d3440f568"
 in_progress = true
 
-[2025-q4-and-sep-emph]
-display_name = "2025 Q4+sep, only \"emphasized\" commits"
+[2025-09-highlighted]
+display_name = "2025-09, only \"highlighted\" commits"
 date_start = "2025-09-01"
-date_end = "2025-12-31"
+date_end = "2025-09-30"
 include_spans = [2025-09-01, 2025-09-08, 2025-09-15]
-only_show = ["emph"]
+only_show = ["highlight"]
 in_progress = true
 alternate_index = true

@@ -422,7 +422,7 @@ ac_pattern = "^src\\..*\\.mk:"
 ac = "build"
 ac_section = "05-summary-prefix"
 ac_pattern = "^packages:"
-ae = 1
+ah = 1
 
 [c3d5387a7bd814a6c341902c29a3f8aaa956fadb]
 ac = "network"
@@ -690,7 +690,7 @@ ac_pattern = "[sS]tyle"
 ac = "doc"
 ac_section = "05-summary-prefix"
 ac_pattern = "^UPDATING"
-ae = 1
+ah = 1
 
 [66d8ffe3046ded1eb3f78599c6af8eb965482ef5]
 ac = "kernel"

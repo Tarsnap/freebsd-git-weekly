@@ -1,7 +1,7 @@
 # The order in this file defines the order in the HTML.
 
-emph = [
-    'Emphasized commits',
+highlight = [
+    'Highlighted commits',
     '''For extra visibility, these are copies of commits found in other
     sections.  Most (if not all) come from the commit message containing
     "<code>Relnotes:</code>", or commits modifying <code>UPDATING</code>.''',
