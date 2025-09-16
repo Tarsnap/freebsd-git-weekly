@@ -299,6 +299,10 @@ def make_section(
 
 def generate_period(repo, doc, project, metadata, debug, project_dirname):
     """Generate HTML for the latest week."""
+    if commits_periodical.data.in_progress(metadata) and not debug:
+        print("Refusing to generate 'release' HTML for in_progress")
+        exit(0)
+
     templates = commits_periodical.html_templates.HtmlTemplates()
 
     filename_out = doc.filename.replace("projects/", "out/").replace(
