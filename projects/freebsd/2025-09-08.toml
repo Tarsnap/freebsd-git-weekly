@@ -515,10 +515,10 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [d20c82507278e003f391c3fb04f4e49afd1537ab]
-g = "revert-pair-libc-00"
 ac = "reverts"
 ac_section = "00-reverts"
 ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc-00"
 
 [3c38dce87ecd2c87744e4b7ff1904ee841f88a47]
 ac = "kernel"

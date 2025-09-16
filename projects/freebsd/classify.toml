@@ -176,13 +176,15 @@ doc = [
 
 hardware = [
     '^GEOM:',
+    '^udbc:',
 ]
 
 network = [
-    '^pf:',
-    '^vtnet:',
     '^epair:',
+    '^ip6:',
+    '^pf:',
     '^tcp:',
+    '^vtnet:',
 ]
 
 admin = [

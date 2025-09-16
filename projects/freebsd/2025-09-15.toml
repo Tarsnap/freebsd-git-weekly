@@ -126,8 +126,14 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [d566b6a70bcbc329e8c690464043401fa8bdd49f]
+ac = "hardware"
+ac_section = "05-summary-prefix"
+ac_pattern = "^udbc:"
 
 [cd02a8a9f8be2085d5242606a79668dc3720e7b0]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "^ip6:"
 
 [246d7e9fc23928be22db38220f5439f5cdee5264]
 ac = "admin"
@@ -150,3 +156,56 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [6d83ae143b1f598b5f8868508f6e8a7d3440f568]
+mc = "build"
+
+[27699e31fa50e2bee6fdd0b5a0bfb92b4d35d7b7]
+mc = "admin"
+
+[e1bc42cb1551ca2a18ef60c38247fb5dc2509ea2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[90234b9dd8cb293f3eb9ce3765b17ebc05f9201a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[969be39fb3caf4272f128dbf3267ceba5966a6ce]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[d61c75f634cf52fdef9590601d881f85275eee9a]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+g = "libc++-00"
+
+[dee76cf2f3dace6290ccab07c2db17355994e70f]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+g = "libc++-00"
+
+[086ce467adec42d58414fdb4d54c2b6819cf0c07]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+g = "libc++-00"
+
+[34a006eaa39ceb6b0a96fa386c9b9b8a44681979]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+g = "libc++-00"
+
+[b050bfa88d4ee2acedb590777603e5c3656cdaca]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[8c9a919abaa3f6f16a17586ca72bab939788bf69]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
