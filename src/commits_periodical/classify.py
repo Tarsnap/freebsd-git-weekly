@@ -58,9 +58,10 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
                 num_changed += 1
             if entry.is_highlighted():
                 entry.remove_highlighted()
-        for githash in hashes:
-            if not doc.entries[githash].has_group():
-                doc.set_group(hashes, name)
+        if hashes:
+            for githash in hashes:
+                if not doc.entries[githash].has_group():
+                    doc.set_group(hashes, name)
 
     return num_changed
 
