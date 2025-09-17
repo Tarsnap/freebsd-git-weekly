@@ -11,6 +11,10 @@ def in_progress(report: dict):
 
 
 class Report:
+    """This is metadata about a single report.  With the exception of
+    set_end_including(), it is read-only.
+    """
+
     def __init__(self, table: tomlkit.items.Table):
         self.table = table
 
@@ -20,8 +24,10 @@ class Report:
     def __getitem__(self, key):
         return self.table[key]
 
-    def __setitem__(self, key, value):
-        self.table[key] = value
+    def set_end_including(self, githash):
+        """Change the 'end_including' key to the given git hash."""
+        assert "end_including" in self.table
+        self.table["end_including"] = githash
 
 
 class Reports:
