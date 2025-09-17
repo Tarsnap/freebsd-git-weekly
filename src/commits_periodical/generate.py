@@ -438,10 +438,10 @@ def generate_index(project_dirname, metadata_file):
         else:
             regular.append(start_date)
 
-    reports = index_table(metadata_file, regular)
+    regular_reports = index_table(metadata_file, regular)
     alternates = index_table(metadata_file, alternate)
 
-    out = templates.index % (reports, alternates)
+    out = templates.index % (regular_reports, alternates)
 
     with open(filename_out, "w", encoding="utf8") as fp:
         fp.write(out)
