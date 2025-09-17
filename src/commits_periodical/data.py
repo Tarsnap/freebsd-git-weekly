@@ -13,7 +13,7 @@ def in_progress(report: dict):
 class Reports:
     def __init__(self, project_dirname):
         self.project_dirname = project_dirname
-        self.filename = os.path.join(project_dirname, "report.toml")
+        self.filename = os.path.join(project_dirname, "reports.toml")
         with open(self.filename, encoding="utf8") as fp:
             self.doc = tomlkit.load(fp)
 
