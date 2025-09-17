@@ -10,6 +10,20 @@ def in_progress(report: dict):
     return False
 
 
+class Report:
+    def __init__(self, table: tomlkit.items.Table):
+        self.table = table
+
+    def __contains__(self, key):
+        return key in self.table
+
+    def __getitem__(self, key):
+        return self.table[key]
+
+    def __setitem__(self, key, value):
+        self.table[key] = value
+
+
 class Reports:
     def __init__(self, project_dirname):
         self.project_dirname = project_dirname
@@ -29,7 +43,7 @@ class Reports:
         return self.latest_datestr
 
     def get_report(self, datestr):
-        return self.doc[datestr]
+        return Report(self.doc[datestr])
 
     def get_start_dates(self):
         return self.doc.keys()
