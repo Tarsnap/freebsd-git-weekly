@@ -4,12 +4,6 @@ import os.path
 import tomlkit
 
 
-def in_progress(report: dict):
-    if "in_progress" in report:
-        return report["in_progress"]
-    return False
-
-
 class Report:
     """This is metadata about a single report.  With the exception of
     set_end_including(), it is read-only.
@@ -28,6 +22,12 @@ class Report:
         """Change the 'end_including' key to the given git hash."""
         assert "end_including" in self.table
         self.table["end_including"] = githash
+
+    def in_progress(self):
+        """Is this report 'in progress'?"""
+        if "in_progress" in self.table:
+            return self.table["in_progress"]
+        return False
 
 
 class Reports:

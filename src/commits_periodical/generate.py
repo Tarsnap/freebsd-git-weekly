@@ -301,7 +301,7 @@ def generate_period(
     repo, doc, project, report, debug, project_dirname, reproducible
 ):
     """Generate HTML for the latest week."""
-    if commits_periodical.data.in_progress(report) and not debug:
+    if report.in_progress() and not debug:
         print("Refusing to generate 'release' HTML for in_progress")
         exit(0)
 
@@ -344,7 +344,7 @@ def generate_period(
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
 
-    if commits_periodical.data.in_progress(report):
+    if report.in_progress():
         text = '<p class="debug">This report is still in progress.</p>'
         intro = intro.replace("</section>", f"{text}</section>")
 
@@ -407,7 +407,7 @@ def index_table(reports, start_dates):
             display_name = date_start
         out += "<tr>"
         out += "<td>"
-        if not commits_periodical.data.in_progress(report):
+        if not report.in_progress():
             out += f'<a href="{start_date}.html">{display_name}</a>'
         else:
             out += f"{display_name}: in progress"
