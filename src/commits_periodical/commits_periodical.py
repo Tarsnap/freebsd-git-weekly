@@ -71,18 +71,18 @@ def main():
 
     config = get_config()
     project_dirname = os.path.expanduser(config["project_dir"])
-    metadata_file = commits_periodical.data.MetadataFile(project_dirname)
+    reports = commits_periodical.data.Reports(project_dirname)
 
     # Get the relevant time period
     if not args.start_date:
         # Default setting: use the most recent time period
-        datestr = metadata_file.get_latest_datestr()
-        entries_filename = metadata_file.get_latest_filename()
+        datestr = reports.get_latest_datestr()
+        entries_filename = reports.get_latest_filename()
     else:
         datestr = args.start_date
         entries_filename = os.path.join(project_dirname, f"{datestr}.toml")
 
-    metadata = metadata_file.get_metadata(datestr)
+    report = reports.get_report(datestr)
     cache_filename = entries_filename.replace(".toml", ".gitcache")
     repo = commits_periodical.gitlayer.CachedRepo(
         config["git_dir"], cache_filename
@@ -95,24 +95,20 @@ def main():
         case "sanity":
             commits_periodical.sanity_check.check(project)
         case "update":
-            if commits_periodical.data.in_progress(metadata):
-                commits_periodical.update.update_ref(
-                    repo, metadata_file, metadata
-                )
-            commits_periodical.update.update_period(repo, metadata, doc)
+            if commits_periodical.data.in_progress(report):
+                commits_periodical.update.update_ref(repo, reports, report)
+            commits_periodical.update.update_period(repo, report, doc)
         case "update-commits":
-            commits_periodical.update.update_period(repo, metadata, doc)
+            commits_periodical.update.update_period(repo, report, doc)
         case "annotate":
             commits_periodical.classify.classify_period(repo, doc, project)
         case "generate":
-            commits_periodical.generate.generate_index(
-                project_dirname, metadata_file
-            )
+            commits_periodical.generate.generate_index(project_dirname, reports)
             commits_periodical.generate.generate_period(
                 repo,
                 doc,
                 project,
-                metadata,
+                report,
                 args.debug,
                 project_dirname,
                 args.reproducible,

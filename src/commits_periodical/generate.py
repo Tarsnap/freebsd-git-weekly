@@ -298,10 +298,10 @@ def make_section(
 
 
 def generate_period(
-    repo, doc, project, metadata, debug, project_dirname, reproducible
+    repo, doc, project, report, debug, project_dirname, reproducible
 ):
     """Generate HTML for the latest week."""
-    if commits_periodical.data.in_progress(metadata) and not debug:
+    if commits_periodical.data.in_progress(report) and not debug:
         print("Refusing to generate 'release' HTML for in_progress")
         exit(0)
 
@@ -315,12 +315,12 @@ def generate_period(
     print(f"Generating HTML for {doc.filename} in {filename_out}")
 
     # Split into categories
-    if "include_spans" in metadata:
-        only_show = metadata["only_show"]
+    if "include_spans" in report:
+        only_show = report["only_show"]
 
         # Load all the data...
         cats = collections.defaultdict(list)
-        for span in metadata["include_spans"]:
+        for span in report["include_spans"]:
             thisfilename = os.path.join(project_dirname, f"{span}.toml")
             thisdoc = commits_periodical.data.Week(thisfilename)
             thesecats = split_into_categories(thisdoc)
@@ -338,13 +338,13 @@ def generate_period(
 
     # Add preamble
     sections = []
-    date_start = metadata["date_start"]
-    date_end = metadata["date_end"]
+    date_start = report["date_start"]
+    date_end = report["date_end"]
     intro = templates.INTRO_SECTION % (date_start, date_end)
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
 
-    if commits_periodical.data.in_progress(metadata):
+    if commits_periodical.data.in_progress(report):
         text = '<p class="debug">This report is still in progress.</p>'
         intro = intro.replace("</section>", f"{text}</section>")
 
@@ -394,20 +394,20 @@ def generate_period(
         fp.write(out)
 
 
-def index_table(metadata_file, start_dates):
+def index_table(reports, start_dates):
     out = "<table>"
     out += "<tr><th>Report</th>"
     out += "<th>Report with extra info about classification</th></tr>"
     for start_date in start_dates:
-        metadata = metadata_file.get_metadata(start_date)
-        date_start = metadata["date_start"]
-        if "display_name" in metadata:
-            display_name = metadata["display_name"]
+        report = reports.get_report(start_date)
+        date_start = report["date_start"]
+        if "display_name" in report:
+            display_name = report["display_name"]
         else:
             display_name = date_start
         out += "<tr>"
         out += "<td>"
-        if not commits_periodical.data.in_progress(metadata):
+        if not commits_periodical.data.in_progress(report):
             out += f'<a href="{start_date}.html">{display_name}</a>'
         else:
             out += f"{display_name}: in progress"
@@ -420,7 +420,7 @@ def index_table(metadata_file, start_dates):
     return out
 
 
-def generate_index(project_dirname, metadata_file):
+def generate_index(project_dirname, reports):
     filename_out = os.path.join(
         project_dirname.replace("projects", "out"), "index.html"
     )
@@ -428,18 +428,18 @@ def generate_index(project_dirname, metadata_file):
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 
-    start_dates = sorted(metadata_file.get_start_dates())
+    start_dates = sorted(reports.get_start_dates())
     regular = []
     alternate = []
     for start_date in start_dates:
-        metadata = metadata_file.get_metadata(start_date)
-        if "alternate_index" in metadata:
+        report = reports.get_report(start_date)
+        if "alternate_index" in report:
             alternate.append(start_date)
         else:
             regular.append(start_date)
 
-    regular_reports = index_table(metadata_file, regular)
-    alternates = index_table(metadata_file, alternate)
+    regular_reports = index_table(reports, regular)
+    alternates = index_table(reports, alternate)
 
     out = templates.index % (regular_reports, alternates)
 

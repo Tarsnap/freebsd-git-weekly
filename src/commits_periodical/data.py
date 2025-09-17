@@ -4,16 +4,16 @@ import os.path
 import tomlkit
 
 
-def in_progress(metadata: dict):
-    if "in_progress" in metadata:
-        return metadata["in_progress"]
+def in_progress(report: dict):
+    if "in_progress" in report:
+        return report["in_progress"]
     return False
 
 
-class MetadataFile:
+class Reports:
     def __init__(self, project_dirname):
         self.project_dirname = project_dirname
-        self.filename = os.path.join(project_dirname, "metadata.toml")
+        self.filename = os.path.join(project_dirname, "report.toml")
         with open(self.filename, encoding="utf8") as fp:
             self.doc = tomlkit.load(fp)
 
@@ -28,7 +28,7 @@ class MetadataFile:
     def get_latest_datestr(self):
         return self.latest_datestr
 
-    def get_metadata(self, datestr):
+    def get_report(self, datestr):
         return self.doc[datestr]
 
     def get_start_dates(self):
