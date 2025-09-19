@@ -25,7 +25,7 @@ date_start = "2025-09-15"
 date_end = "2025-09-21"
 start_after = "e779891327b1d9b9ab10ba482e59f498790505a7"
 end_including = "5918b4866a9689b50180da42aad6d742466b0d1b"
-in_progress = true
+ongoing = true
 
 [2025-09-highlighted]
 derived = true
@@ -34,5 +34,4 @@ date_start = "2025-09-01"
 date_end = "2025-09-30"
 include_spans = [2025-09-01, 2025-09-08, 2025-09-15]
 only_show = ["highlight"]
-in_progress = true
-alternate_index = true
+ongoing = true
