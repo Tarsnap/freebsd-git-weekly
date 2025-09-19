@@ -203,6 +203,7 @@ def group_commits(repo, doc):
 
 
 def classify_period(repo, doc, project):
+    print(f"Classifying {doc.filename}")
     doc.clear_automatic_annotations()
 
     for name, classifier in project.classifiers.items():

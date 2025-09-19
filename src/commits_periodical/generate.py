@@ -424,15 +424,15 @@ def generate_index(project_dirname, reports):
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 
-    start_dates = sorted(reports.get_start_dates())
+    report_names = sorted(reports.get_names())
     regular = []
     alternate = []
-    for start_date in start_dates:
-        report = reports.get_report(start_date)
+    for report_name in report_names:
+        report = reports.get_report(report_name)
         if report.is_derived():
-            alternate.append(start_date)
+            alternate.append(report_name)
         else:
-            regular.append(start_date)
+            regular.append(report_name)
 
     regular_reports = index_table(reports, regular)
     alternates = index_table(reports, alternate)

@@ -47,21 +47,25 @@ class Reports:
         with open(self.filename, encoding="utf8") as fp:
             self.doc = tomlkit.load(fp)
 
-        self.latest_datestr = max(self.doc.keys())
+        self.reports = {k: Report(v) for k, v in self.doc.items()}
+        main_report_names = [
+            k for k, v in self.reports.items() if not v.is_derived()
+        ]
+        self.latest_name = max(main_report_names)
 
     def get_latest_filename(self):
         latest_filename = os.path.join(
-            self.project_dirname, f"{self.latest_datestr}.toml"
+            self.project_dirname, f"{self.latest_name}.toml"
         )
         return latest_filename
 
-    def get_latest_datestr(self):
-        return self.latest_datestr
+    def get_latest_name(self):
+        return self.latest_name
 
     def get_report(self, datestr):
         return Report(self.doc[datestr])
 
-    def get_start_dates(self):
+    def get_names(self):
         return self.doc.keys()
 
     def save(self):

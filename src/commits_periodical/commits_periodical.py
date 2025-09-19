@@ -23,10 +23,10 @@ def parse_args():
         help="Print debugging info to console and in HTML",
     )
     parser.add_argument(
-        "--start-date",
+        "--report",
         type=str,
         default="",
-        help="Beginning of the time period to examine",
+        help="Name of the report to act on",
     )
     parser.add_argument(
         "--reproducible",
@@ -74,15 +74,15 @@ def main():
     reports = commits_periodical.data.Reports(project_dirname)
 
     # Get the relevant time period
-    if not args.start_date:
+    if not args.report:
         # Default setting: use the most recent time period
-        datestr = reports.get_latest_datestr()
+        report_name = reports.get_latest_name()
         entries_filename = reports.get_latest_filename()
     else:
-        datestr = args.start_date
-        entries_filename = os.path.join(project_dirname, f"{datestr}.toml")
+        report_name = args.report
+        entries_filename = os.path.join(project_dirname, f"{report_name}.toml")
 
-    report = reports.get_report(datestr)
+    report = reports.get_report(report_name)
     cache_filename = entries_filename.replace(".toml", ".gitcache")
     repo = commits_periodical.gitlayer.CachedRepo(
         config["git_dir"], cache_filename
