@@ -148,7 +148,7 @@ def make_table_classification(project, cats, total_commits):
     # Count mis-classified and un-classified
     for cat, entries in cats.items():
         # Don't count highlighted commits (they're copies)
-        if cat == "highlighted":
+        if cat == "highlight":
             continue
 
         for _, entry in entries:
@@ -226,12 +226,12 @@ def make_preamble(project, cats, debug, only_show):
     total_commits = 0
     for cat, entries in cats.items():
         # Don't count highlighted commits (they're copies)
-        if cat == "highlighted":
+        if cat == "highlight":
             continue
         total_commits += len(entries)
 
-    # Special case: override the above if we only have "highlighted".
-    if len(cats.keys()) == 1 and "highlighted" in cats:
+    # Special case: override the above if we only have "highlight".
+    if len(cats.keys()) == 1 and "highlight" in cats:
         total_commits = len(cats["highlight"])
 
     for cat, catinfo in project.categories.items():
@@ -246,15 +246,15 @@ def make_preamble(project, cats, debug, only_show):
         relevant = cats[cat]
         num = len(relevant)
         perc = f"{100 * num / total_commits:.1f}%"
-        # Hack to show a difference between "highlighted" and the rest
+        # Hack to show a difference between "highlight" and the rest
         if cat == "userland":
             section += f'<tr class="top-line"><td>{num}</td><td>{perc}</td>'
-        elif cat == "highlighted":
+        elif cat == "highlight":
             section += f'<tr class="top-line"><td>({num})</td><td></td>'
         else:
             section += f"<tr><td>{num}</td><td>{perc}</td>"
         link = f'<a href="#{cat}">{section_name}</a>'
-        if cat == "highlighted":
+        if cat == "highlight":
             link += " (these are copies, not in stats)"
 
         section += f"<td>{link}</td></tr>"
@@ -283,7 +283,7 @@ def make_section(
         return None
     if section_title is None:
         return None
-    is_high = cat == "highlighted"
+    is_high = cat == "highlight"
     section = f"<section id='{cat}'>"
     section += templates.HTML_SECTION % (section_title, cat, cat)
     if intro_text:
