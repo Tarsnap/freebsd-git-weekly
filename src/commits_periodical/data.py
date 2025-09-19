@@ -29,6 +29,14 @@ class Report:
             return self.table["in_progress"]
         return False
 
+    def is_derived(self):
+        """Is this report 'derived', i.e. generated from data in the other
+        reports?
+        """
+        if "derived" in self.table:
+            return self.table["derived"]
+        return False
+
 
 class Reports:
     def __init__(self, project_dirname):

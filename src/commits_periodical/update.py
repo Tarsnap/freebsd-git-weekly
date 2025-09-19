@@ -1,9 +1,9 @@
 def update_ref(repo, reports, report):
+    if report.is_derived():
+        return
+
     # Get the HEAD from git, and the latest in the report
     latest_hash = repo.get_head_hash()
-
-    if "end_including" not in report:
-        return
 
     # If it's different, replace the final hash
     if report["end_including"] != latest_hash:
@@ -27,6 +27,9 @@ def get_new_hashes(repo, report, doc):
 
 def update_period(repo, report, doc):
     """Update the latest week."""
+    if report.is_derived():
+        return
+
     print(f"Updating {doc.filename}")
 
     new_hashes = get_new_hashes(repo, report, doc)
