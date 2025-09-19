@@ -400,11 +400,7 @@ def index_table(reports, start_dates):
     out += "<th>Report with extra info about classification</th></tr>"
     for start_date in start_dates:
         report = reports.get_report(start_date)
-        date_start = report["date_start"]
-        if "display_name" in report:
-            display_name = report["display_name"]
-        else:
-            display_name = date_start
+        display_name = report.get_display_name()
         out += "<tr>"
         out += "<td>"
         if not report.is_ongoing():

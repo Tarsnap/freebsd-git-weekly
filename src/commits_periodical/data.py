@@ -18,6 +18,12 @@ class Report:
     def __getitem__(self, key):
         return self.table[key]
 
+    def get_display_name(self):
+        if "display_name" in self.table:
+            return self.table["display_name"]
+        else:
+            return self.table["date_start"]
+
     def set_end_including(self, githash):
         """Change the 'end_including' key to the given git hash."""
         assert "end_including" in self.table
