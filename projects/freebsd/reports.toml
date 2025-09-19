@@ -28,6 +28,7 @@ end_including = "5918b4866a9689b50180da42aad6d742466b0d1b"
 in_progress = true
 
 [2025-09-highlighted]
+derived = true
 display_name = "2025-09, only \"highlighted\" commits"
 date_start = "2025-09-01"
 date_end = "2025-09-30"
