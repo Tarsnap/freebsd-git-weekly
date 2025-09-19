@@ -7,6 +7,7 @@ import git
 
 @dataclasses.dataclass
 class CachedCommit:
+    githash: str
     author: str
     summary: str
     message: str
@@ -16,6 +17,7 @@ class CachedCommit:
     @classmethod
     def from_gitcommit(cls, commit: git.Commit):
         return cls(
+            githash=str(commit.hexsha),
             author=str(commit.author),
             summary=str(commit.summary),
             message=str(commit.message),
