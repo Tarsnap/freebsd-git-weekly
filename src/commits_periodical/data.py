@@ -23,19 +23,15 @@ class Report:
         assert "end_including" in self.table
         self.table["end_including"] = githash
 
-    def in_progress(self):
+    def is_ongoing(self):
         """Is this report 'in progress'?"""
-        if "in_progress" in self.table:
-            return self.table["in_progress"]
-        return False
+        return self.table.get("ongoing", False)
 
     def is_derived(self):
         """Is this report 'derived', i.e. generated from data in the other
         reports?
         """
-        if "derived" in self.table:
-            return self.table["derived"]
-        return False
+        return self.table.get("derived", False)
 
 
 class Reports:

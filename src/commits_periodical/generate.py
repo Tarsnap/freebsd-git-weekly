@@ -301,8 +301,8 @@ def generate_period(
     repo, doc, project, report, debug, project_dirname, reproducible
 ):
     """Generate HTML for the latest week."""
-    if report.in_progress() and not debug:
-        print("Refusing to generate 'release' HTML for in_progress")
+    if report.is_ongoing() and not debug:
+        print("Refusing to generate 'release' HTML for ongoing")
         exit(0)
 
     templates = commits_periodical.html_templates.HtmlTemplates()
@@ -344,7 +344,7 @@ def generate_period(
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
 
-    if report.in_progress():
+    if report.is_ongoing():
         text = '<p class="debug">This report is still in progress.</p>'
         intro = intro.replace("</section>", f"{text}</section>")
 
@@ -407,7 +407,7 @@ def index_table(reports, start_dates):
             display_name = date_start
         out += "<tr>"
         out += "<td>"
-        if not report.in_progress():
+        if not report.is_ongoing():
             out += f'<a href="{start_date}.html">{display_name}</a>'
         else:
             out += f"{display_name}: in progress"
@@ -433,7 +433,7 @@ def generate_index(project_dirname, reports):
     alternate = []
     for start_date in start_dates:
         report = reports.get_report(start_date)
-        if "alternate_index" in report:
+        if report.is_derived():
             alternate.append(start_date)
         else:
             regular.append(start_date)

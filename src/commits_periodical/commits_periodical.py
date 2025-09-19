@@ -95,7 +95,7 @@ def main():
         case "sanity":
             commits_periodical.sanity_check.check(project)
         case "update":
-            if report.in_progress():
+            if report.is_ongoing():
                 commits_periodical.update.update_ref(repo, reports, report)
             commits_periodical.update.update_period(repo, report, doc)
         case "update-commits":
