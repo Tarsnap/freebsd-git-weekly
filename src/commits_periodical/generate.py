@@ -41,6 +41,26 @@ def get_commit_long(templates, githash, gitcommit, nostrip=False):
     return url, text
 
 
+def commit_debug_info(entry):
+    text = ""
+    if "ac" in entry.ref[1]:
+        section = entry.ref[1]["ac_section"]
+        pattern = entry.ref[1]["ac_pattern"]
+        text += '<p class="debug">'
+        text += "debug: classified in "
+        # Don't end this sentence with a period; that's too easy to confuse
+        # with a regex.
+        text += f"<code>{section}</code> by '<code>{pattern}</code>'</p>"
+
+    if entry.is_cat_disputed():
+        ac = entry.automatic_cat
+        mc = entry.manual_cat
+        text += '<p class="debug">'
+        text += f'debug: Commit manually moved from "{ac}" to "{mc}".</p>'
+
+    return text
+
+
 def commit_text(templates, repo, week, item, is_high, debug):
     """Get a commit message, formatted as HTML."""
     name, entry = item
@@ -55,28 +75,13 @@ def commit_text(templates, repo, week, item, is_high, debug):
     inner = templates.HTML_DETAILS_INNER % (text, url)
     out = templates.HTML_DETAILS_OUTER % (html.escape(short), inner)
 
-    if debug and "ac" in entry.ref[1]:
-        section = entry.ref[1]["ac_section"]
-        pattern = entry.ref[1]["ac_pattern"]
-        text = '<p class="debug">'
-        text += "debug: classified in "
-        # Don't end this sentence with a period; that's too easy to confuse
-        # with a regex.
-        text += f"<code>{section}</code> by '<code>{pattern}</code>'</p>"
-        out = out.replace("</details>", f"{text}</details>")
+    if debug:
+        text = commit_debug_info(entry)
+        out = out.replace("</details>", f"{text}\n</details>")
 
-    if entry.is_cat_disputed():
-        if debug:
+        # add overall colour to the commit display
+        if entry.is_cat_disputed():
             out = out.replace("<details>", '<details class="debug">')
-            ac = entry.automatic_cat
-            mc = entry.manual_cat
-            text = '<p class="debug">'
-            text += f'debug: Commit manually moved from "{ac}" to "{mc}".</p>'
-            out = out.replace("</details>", f"{text}</details>")
-    # if debug:
-    #    reason = entry.cat_reason()
-    #    text = f'<p class="debug">debug: Commit classified by {reason}.</p>'
-    #    out = out.replace("</details>", f"{text}</details>")
 
     return out
 
