@@ -65,7 +65,7 @@ def commit_text(templates, repo, week, item, is_high, debug):
     """Get a commit message, formatted as HTML."""
     name, entry = item
     if entry.has_group() and not is_high:
-        return commit_group_text(templates, repo, week, item)
+        return commit_group_text(templates, repo, week, item, debug)
     githash = name
 
     gitcommit = repo.get_commit(githash)
@@ -86,7 +86,7 @@ def commit_text(templates, repo, week, item, is_high, debug):
     return out
 
 
-def commit_group_text(templates, repo, week, item):
+def commit_group_text(templates, repo, week, item, debug):
     """Generate HTML for a commit group."""
     name, entry = item
     owns = week.groups[entry.groupname()]
@@ -114,6 +114,9 @@ def commit_group_text(templates, repo, week, item):
         if i > 0:
             inner += "<hr>"
         inner += templates.HTML_DETAILS_INNER % (text, url)
+
+        if debug:
+            inner += commit_debug_info(entry)
     out = templates.HTML_DETAILS_OUTER % (summary, inner)
 
     # record that we've handled these already
