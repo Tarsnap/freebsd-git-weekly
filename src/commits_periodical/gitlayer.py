@@ -95,9 +95,37 @@ class CachedRepo:
         if modified:
             self.save()
 
-    def get_commit(self, githash: str) -> CachedCommit:
+    def get_commit(
+        self, githash: str, allow_partial: bool = False
+    ) -> CachedCommit:
+        """Return the commit indicated by githash, or None.  If allow_partial
+        is True, short forms (i.e. abc123 rather than the full 40-char string)
+        can be used.
+        """
         if self.gitcommits is None:
             self._setup_gitcommits()
-        if githash in self.gitcommits:
-            return self.gitcommits[githash]
-        return None
+
+        length = len(githash)
+
+        if length > 40:
+            raise ValueError(f"{githash} is more than 40 chars")
+        if length < 40 and not allow_partial:
+            raise ValueError(f"{githash} is less than 40 chars")
+
+        # Handle full hashes
+        if length == 40:
+            if githash in self.gitcommits:
+                return self.gitcommits[githash]
+            return None
+
+        # Handle partial hashes
+        assert allow_partial is True
+        matches = [
+            v for k, v in self.gitcommits.items() if k.startswith(githash)
+        ]
+        if not matches:
+            return None
+        elif len(matches) == 1:
+            return matches[0]
+
+        assert NotImplementedError("Too many githash matches")
