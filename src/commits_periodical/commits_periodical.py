@@ -23,6 +23,7 @@ def parse_args():
         help="Print debugging info to console and in HTML",
     )
     parser.add_argument(
+        "-r",
         "--report",
         type=str,
         default="",
