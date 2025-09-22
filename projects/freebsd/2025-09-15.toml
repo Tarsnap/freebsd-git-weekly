@@ -289,6 +289,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [5eb917426e0aab1e82c7b0e7239724d18bae206a]
+ac = "build"
+ac_section = "05-summary-prefix"
+ac_pattern = "^release:"
 
 [87a78d9618ab5430b12dd5c54ec61fcaeb8f0655]
 ac = "build"
@@ -347,6 +350,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [d18058b7b850c78f2ca1be746ab411c0bed5acc9]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*BSDmakefile"
 
 [dea1dd66905462e3b65688928dc4016eeae4ce80]
 ac = "tests"
@@ -509,6 +515,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [ff7252cdafbd9dab104a5e7b33b8bb84117a8789]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/regression/"
 
 [de4832289625f3c1cea4200d8eb7b4c753b90648]
 ac = "tests"
@@ -619,6 +628,7 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sbin/"
 
 [6b5adf33873a309523dc4e585ff08d70bb6c6f2f]
+mc = "build"
 
 [ea1652bc01c4093eb4a8c6971c69a410883df189]
 ac = "kernel"
@@ -682,6 +692,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "tests/"
 
 [380e4a8233c8e17877b0bcdfb8003b3e9638071b]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-src.dot"
 
 [6b841d70960a3a0ec4e43392683053878c403f9c]
 ac = "hardware"
@@ -694,6 +707,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
 
 [83804499b72405475027e670690d4cdbada46090]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "^cpucontrol:"
 
 [8f7a4d7949d83c13a7451cba7626950d182dfc5d]
 ac = "internal"
@@ -711,6 +727,9 @@ ac_section = "05-summary-prefix"
 ac_pattern = "^nanobsd:"
 
 [d5984d5f29a7c717b88ccd17a85a747792403cdf]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "^OpenSSL:"
 
 [2c06b824436df6177545cc0f1603e5c3bfbf3365]
 ac = "build"

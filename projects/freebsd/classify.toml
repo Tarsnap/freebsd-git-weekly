@@ -51,6 +51,7 @@ doc = [
 ]
 
 build = [
+    '.*BSDmakefile',
     '.*Makefile',
     'release/.*',
 ]
@@ -131,11 +132,13 @@ internal = [
     '.git-blame-ignore-revs',
     'ObsoleteFiles.inc',
     'share/misc/bsd-family-tree',
+    'share/misc/committers-src.dot',
 ]
 
 tests = [
-    'tools/test/',
     'tests/',
+    'tools/regression/',
+    'tools/test/',
 ]
 
 contrib = [
@@ -188,6 +191,7 @@ network = [
 ]
 
 admin = [
+    '^cpucontrol:',
     '^jail:',
     '^jaildesc:',
     '^nanobsd:',
@@ -213,6 +217,7 @@ kernel = [
 build = [
     '^bsd\..*\.mk:',
     '^packages:',
+    '^release:',
     '^src\..*\.mk:',
 ]
 
@@ -220,4 +225,5 @@ internal = [
 ]
 
 contrib = [
+    '^OpenSSL:',
 ]
