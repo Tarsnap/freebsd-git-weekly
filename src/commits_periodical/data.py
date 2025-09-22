@@ -166,8 +166,8 @@ class WeekEntry:
     def is_highlighted(self):
         """Is this entry highlighted?"""
         # If there's a manual judgement, that takes priority
-        if "me" in self.ref[1]:
-            if self.ref[1]["me"] == 1:
+        if "mh" in self.ref[1]:
+            if self.ref[1]["mh"] == 1:
                 return True
             return False
 
