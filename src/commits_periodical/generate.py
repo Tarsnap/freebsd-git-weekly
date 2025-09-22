@@ -152,6 +152,8 @@ def make_table_classification(project, cats, total_commits):
     num_manual = 0  # this is for totally manual, i.e. not disputed
     reason_totals = collections.defaultdict(int)
     disputed_totals = collections.defaultdict(int)
+    num_group_consecutive = 0
+    num_group_reverts = 0
 
     # Count mis-classified and un-classified
     for cat, entries in cats.items():
@@ -171,6 +173,11 @@ def make_table_classification(project, cats, total_commits):
 
             if entry.has_group():
                 num_in_groups += 1
+                if entry.groupname().startswith("revert-pair"):
+                    num_group_reverts += 1
+                else:
+                    num_group_consecutive += 1
+
     # for s in sorted(reason_totals.keys()):
     #    print("%s\t%i\t%i" % (s, reason_totals[s], disputed_totals[s]))
 
@@ -220,6 +227,10 @@ def make_table_classification(project, cats, total_commits):
     section += "</table>"
     section += "<p>debug: groups</p>"
     section += "<table>"
+    section += table_row(num_group_reverts, total_commits, "num in revert")
+    section += table_row(
+        num_group_consecutive, total_commits, "num in consecutive"
+    )
     section += table_row(num_in_groups, total_commits, "Commits in groups")
     section += "</table>"
     section += "</div>"
