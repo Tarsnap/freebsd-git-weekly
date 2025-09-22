@@ -66,6 +66,50 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
     return num_changed
 
 
+def find_fixes(repo, doc):
+    num_changed = 0
+    for githash in doc.get_hashes():
+        gitcommit = repo.get_commit(githash)
+
+        found = re.findall(
+            r"^Fixes:\s*([a-fA-F0-9]+)", gitcommit.message, re.MULTILINE
+        )
+        if not found:
+            continue
+
+        entry = doc.get_entry(githash)
+
+        prevhashes = []
+        for prevhash in found:
+            prevcommit = repo.get_commit(prevhash, allow_partial=True)
+            if prevcommit:
+                prevhashes.append(prevcommit.githash)
+                num_changed += 1
+        if not prevhashes:
+            continue
+
+        groupname = None
+        for prevhash in prevhashes:
+            preventry = doc.get_entry(prevhash)
+            if preventry.has_group() and groupname is None:
+                groupname = preventry.groupname()
+            # Override the category (if necessary).  This has no effect
+            # on the grouping; that's handled by the set_group().
+            if entry.cat != preventry.cat:
+                entry.set_fixes_cat(
+                    preventry.cat, f"Need to be grouped with {prevhash}"
+                )
+
+        name = prevcommit.summary
+        hashes = prevhashes + [githash]
+        for githash in hashes:
+            if not doc.entries[githash].has_group():
+                doc.set_group(hashes, name, groupname)
+
+    if num_changed > 0:
+        print(f"Grouped {num_changed} commits as 'fixes' pairs")
+
+
 def apply_classifier(repo, doc, classifier_name, classifier, meta):
     num_changed = 0
 
@@ -211,6 +255,7 @@ def classify_period(repo, doc, project):
 
     # group
     group_commits(repo, doc)
+    find_fixes(repo, doc)
 
     # highlighted
     find_highlighted(repo, doc)
