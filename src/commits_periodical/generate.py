@@ -119,6 +119,16 @@ def commit_group_text(templates, repo, week, item, debug):
             inner += commit_debug_info(entry)
     out = templates.HTML_DETAILS_OUTER % (summary, inner)
 
+    if debug and "fc" in entry.ref[1]:
+        fc = entry.ref[1]["fc"]
+        reason = entry.ref[1]["fc_reason"]
+        text = '<p class="debug">'
+        text += "debug: moved to "
+        # Don't end this sentence with a period; that's too easy to confuse
+        # with a regex.
+        text += f"<code>{fc}</code> because '<code>{reason}</code>'</p>"
+        out = out.replace("</details>", f"{text}</details>")
+
     # record that we've handled these already
     commit_group_text.seen.extend(owns)
     return out
@@ -154,6 +164,7 @@ def make_table_classification(project, cats, total_commits):
     disputed_totals = collections.defaultdict(int)
     num_group_consecutive = 0
     num_group_reverts = 0
+    num_group_fixes = 0
 
     # Count mis-classified and un-classified
     for cat, entries in cats.items():
@@ -175,6 +186,8 @@ def make_table_classification(project, cats, total_commits):
                 num_in_groups += 1
                 if entry.groupname().startswith("revert-pair"):
                     num_group_reverts += 1
+                elif "fc" in entry.ref[1]:
+                    num_group_fixes += 1
                 else:
                     num_group_consecutive += 1
 
@@ -228,6 +241,7 @@ def make_table_classification(project, cats, total_commits):
     section += "<p>debug: groups</p>"
     section += "<table>"
     section += table_row(num_group_reverts, total_commits, "num in revert")
+    section += table_row(num_group_fixes, total_commits, "num in fixes")
     section += table_row(
         num_group_consecutive, total_commits, "num in consecutive"
     )

@@ -98,6 +98,8 @@ class WeekEntry:
         """Category of this entry."""
         if "mc" in self.ref[1]:
             return self.ref[1]["mc"]
+        if "fc" in self.ref[1]:
+            return self.ref[1]["fc"]
         if "ac" in self.ref[1]:
             return self.ref[1]["ac"]
         return "unknown"
@@ -109,6 +111,8 @@ class WeekEntry:
     @property
     def automatic_cat(self):
         """Category of this entry."""
+        if "fc" in self.ref[1]:
+            return self.ref[1]["fc"]
         if "ac" in self.ref[1]:
             return self.ref[1]["ac"]
         return "unknown"
@@ -151,6 +155,10 @@ class WeekEntry:
         self.ref[1]["ac_section"] = section
         self.ref[1]["ac_pattern"] = pattern
 
+    def set_fixes_cat(self, cat, reason):
+        self.ref[1]["fc"] = cat
+        self.ref[1]["fc_reason"] = reason
+
     def is_style(self):
         if "ms" in self.ref[1] and self.ref[1]["ms"] == 1:
             return True
@@ -181,6 +189,8 @@ class WeekEntry:
             "ac_pattern",
             "ac_section",
             "ah",
+            "fc",
+            "fc_reason",
             "g",
         ]:
             if key in self.ref[1]:
