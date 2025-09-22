@@ -569,7 +569,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [aef807876c305587c60f73e2cd914115d22a53fd]
-mc = "hardware"
+ac = "hardware"
+ac_section = "05-summary-prefix"
+ac_pattern = "^moused\\(8\\):"
 
 [641f525a87c9a32635ce51a102ebb5c0aa9ff921]
 ac = "hardware"

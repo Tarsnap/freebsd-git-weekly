@@ -24,7 +24,13 @@ end_including = "e779891327b1d9b9ab10ba482e59f498790505a7"
 date_start = "2025-09-15"
 date_end = "2025-09-21"
 start_after = "e779891327b1d9b9ab10ba482e59f498790505a7"
-end_including = "5918b4866a9689b50180da42aad6d742466b0d1b"
+end_including = "52c4b76d1dd385fbe33b78172e39a10749b83d13"
+
+[2025-09-22]
+date_start = "2025-09-22"
+date_end = "2025-09-28"
+start_after = "52c4b76d1dd385fbe33b78172e39a10749b83d13"
+end_including = "3e13aae0d1f1a28352d52e41d6ef8f02efd9150e"
 ongoing = true
 
 [2025-09-highlighted]
@@ -32,6 +38,6 @@ derived = true
 display_name = "2025-09, only \"highlighted\" commits"
 date_start = "2025-09-01"
 date_end = "2025-09-30"
-include_spans = [2025-09-01, 2025-09-08, 2025-09-15]
+include_spans = [2025-09-01, 2025-09-08, 2025-09-15, 2025-09-22]
 only_show = ["highlight"]
 ongoing = true

@@ -179,6 +179,7 @@ doc = [
 
 hardware = [
     '^GEOM:',
+    '^moused\(8\):',
     '^udbc:',
 ]
 
@@ -186,6 +187,7 @@ network = [
     '^epair:',
     '^ip6:',
     '^pf:',
+    '^sys/netinet6:',
     '^tcp:',
     '^vtnet:',
 ]

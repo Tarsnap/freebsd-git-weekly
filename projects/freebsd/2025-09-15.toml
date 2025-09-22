@@ -4,6 +4,7 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "tests/"
 
 [2918cf3582915bd8853784f53c88e2c34055df1f]
+mc = "style"
 ac = "filesystems"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/fs/"
@@ -14,6 +15,7 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [e239f49146e0b8a400db5eb014f4a3f706380780]
+mh = 0
 ac = "style"
 ac_section = "01-style"
 ac_pattern = "[tT]ypo"
@@ -255,6 +257,7 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "bin/"
 
 [9b8224b950fb74c8674d257a5a4795baa759c35b]
+mc = "tests"
 ac = "internal"
 ac_section = "03-filenames_plain1"
 ac_pattern = "ObsoleteFiles.inc"
@@ -355,6 +358,7 @@ ac_pattern = ".*\\.[1-9]"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*BSDmakefile"
+g = "crypto/openssl: apply polish to new vendor import process-00"
 
 [dea1dd66905462e3b65688928dc4016eeae4ce80]
 ac = "tests"
@@ -746,6 +750,7 @@ ac_pattern = "^OpenSSL:"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
+g = "pkgbootstrap: Build pkg if PORTSDIR exists-00"
 
 [e0c83ab3b362c9bd45c5d21683012cecab28d802]
 ac = "hardware"
@@ -802,3 +807,264 @@ g = "pw-01"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = "release/.*"
+
+[561dc357c2f5892af3aa481a1020860b7ff473e0]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[7e79bc8ce70693a892c443c42af5ec16a95ba466]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[4d6d5f5a21abc4abd715c63c0d99c82aaa3955c0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[627b778d9e6b603a44a010d22d823ca7c392b363]
+mc = "contrib"
+
+[088e21000507510a2c3b1ec22684fe9665f6c8a7]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[72828486ca9412f118d7e2316e584cd1cab8c90f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[055229eda697445880edd0050d0230a3f1bc85b3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5e0e2565288f3d1f1b4223d8bb53c7d70e0aa92c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[5e690f1e12ce8699f16019854dfffd1857a801d8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[0706d3464f4ef375fc31ecc7fa0733a13eca9d19]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[68b3d0cbe03467abac0523bbeea0cfc34efd9b05]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[89bc43a1ea9b23cac9cb94f0b684d5655c9a90e4]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[94a0f9f63e164e4f3791bc7d105d6f267b4d47bc]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-kern/vfs_vnops.c-00"
+
+[40a42785dbba93cc5196178fc49d340c1a89cabe]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-fcntl(F_SETFL)-00"
+
+[87a7b35f04b60956e9aa192680ae80773ec38f14]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[060f7edadcff77cf804b60ecb25f8517c8dca62f]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[b3468202994f6856c5c49f3365e05f4f8017d680]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+
+[e87b75a8bfc8fb7fda8225e55255d9ad99cdefb2]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "pkgbootstrap: Build pkg if PORTSDIR exists-00"
+
+[932e404f12c172e3d4ec47dedee02da400ef8f92]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[72924ce99c7f177db486bd2764a76bcf25892a17]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[5017fdb728811fd3e15d7151524378f49a49aee1]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[8f268240ee60b55f29910c89f546dbecf412c94c]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-fcntl(F_SETFL)-00"
+
+[1f2a65222b8808dfa0466d6cad165116431dd6a9]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-kern/vfs_vnops.c-00"
+
+[e043af9ca59608309cac2fd222c17f989ba0d35e]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[cce278510a820785d883e2c9b19a95c176427880]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[785edcc2af5ae32c24f5caf5b9552f62bdae33ee]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d9ae618c0816d24bc8127e479db5787c97a23140]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a58f307880700fff7646416101c301e4d1784bfb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[db69f613ee45c2614a38d40f3e82733e6247e13a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[11205b0854113eae68f725287b8501951d67be0f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[08adaf71e2e5a44ea27df0e2b09fbe8279a2523e]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "release.sh: Bootstrap pkg from the ports tree-00"
+
+[f0b1e0470af5c89c1deac5e6788fe7a8d0063a6f]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "release.sh: Bootstrap pkg from the ports tree-00"
+
+[7ea59a07046a0bf25d4fccb456715dffaae52021]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[174d5d9397c492aff67f7ad49e130039697dc1dd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[31ec8b6407fdd5a87d70265762457c67ce618283]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "^sys/netinet6:"
+ah = 1
+
+[b31abc95eb730d566891e134ba14af852645f772]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1c0465a3d32e59cd260067e87469abd013571470]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[0ee6f5efdfc6550077f15204335a68aab9c34d67]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[4c3a868d13c053ef173268cdfe1365978a282178]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5c55b2f3ba6f48575496bde2d4d86272d10a8197]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[6ef1bf8f34605c1ffce1e5643e95213a9943c7df]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[b1442e6b8d34971d3311e08dc72cafc6649c27db]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[1335bf5ce1c9f0bf15c1fbed502f49e5a4950e32]
+ac = "hardware"
+ac_section = "05-summary-prefix"
+ac_pattern = "^moused\\(8\\):"
+
+[66e7f048f0c8e9e726738fadd9dc819bfda3cbfe]
+ac = "hardware"
+ac_section = "05-summary-prefix"
+ac_pattern = "^moused\\(8\\):"
+
+[2b8bfdcad1f46076eaf40938634538fbcb13cb1c]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[595acb29a35f36a4fc08b89d3a476f16c1d108b4]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[0c1684dd456e3df306b359b04e61f9f2048d9ff2]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[52245588707851f3175551bf3934e206ca2b6ad7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5e49712ca8fef53262f2f6769c119f27e0e175ee]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[52c4b76d1dd385fbe33b78172e39a10749b83d13]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*BSDmakefile"
+g = "crypto/openssl: apply polish to new vendor import process-00"
