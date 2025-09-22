@@ -82,11 +82,15 @@ ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
 ac = "network"
 ac_section = "05-summary-prefix"
 ac_pattern = "^vtnet:"
+g = "vtnet: improve checksum offloading-00"
 
 [614e9b33bf5594d9d09b5d296afa4f3aa6971823]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+fc = "network"
+fc_reason = "Need to be grouped with 3008f30d2c2cabdd7e17f7fb922139da8681ffbd"
+g = "vtnet: improve checksum offloading-00"
 
 [952ce991ec6c699ef59528731a9af75152767ef0]
 ac = "hardware"
@@ -331,6 +335,7 @@ ac_pattern = "^nanobsd:"
 ac = "admin"
 ac_section = "05-summary-prefix"
 ac_pattern = "^nanobsd:"
+g = "nanobsd: Expose do_image_prep on command line-00"
 
 [685e60e860d61f6e1bcf981f5c30647e0c025702]
 ac = "admin"
@@ -417,6 +422,7 @@ g = "revert-pair-libc-00"
 ac = "build"
 ac_section = "05-summary-prefix"
 ac_pattern = "^src\\..*\\.mk:"
+g = "src.sys.mk: Support src.conf in SRCTOP-00"
 
 [a8a18eeb5e1711ad27c3ee20eb342b73d3badffa]
 ac = "build"
@@ -652,6 +658,7 @@ ac_pattern = "sys/"
 ac = "style"
 ac_section = "01-style"
 ac_pattern = "[wW]hitespace"
+g = "getgrouplist(3): Remove superfluous headers, bogus comment and whitespace-00"
 
 [b0e7b55a0e90d737cf469b78e9785b492b3c0d0f]
 ac = "build"
@@ -690,6 +697,9 @@ ac_pattern = "[sS]tyle"
 ac = "doc"
 ac_section = "05-summary-prefix"
 ac_pattern = "^UPDATING"
+fc = "build"
+fc_reason = "Need to be grouped with dd8c666d8b78f6b9ddb691f0505837fa885ff3b4"
+g = "src.sys.mk: Support src.conf in SRCTOP-00"
 ah = 1
 
 [66d8ffe3046ded1eb3f78599c6af8eb965482ef5]
@@ -734,11 +744,13 @@ ac_pattern = "sbin/"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = "release/.*"
+g = "release.sh: Pass PKGCONF through to make release-00"
 
 [d0362607b23043717baadfa33a308b0b4ae77d7c]
 ac = "admin"
 ac_section = "05-summary-prefix"
 ac_pattern = "^nanobsd:"
+g = "nanobsd: Expose do_image_prep on command line-00"
 
 [3eed21505fa15ea8ba837307fc766774fe510e5c]
 ac = "internal"
@@ -759,6 +771,7 @@ ac_pattern = "sys/"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = "release/.*"
+g = "release.sh: Pass PKGCONF through to make release-00"
 
 [cbba9f7eeead2f5c64e178d668dd314df70d7d56]
 ac = "doc"
@@ -789,6 +802,9 @@ ac_pattern = "sys/"
 ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = "lib/"
+fc = "style"
+fc_reason = "Need to be grouped with d3f8ed6066fdea329ed695925fc726e84d50abc3"
+g = "getgrouplist(3): Remove superfluous headers, bogus comment and whitespace-00"
 
 [e75dda31c1eead9ad40580bd8fec17f2bbf55a21]
 ac = "admin"
@@ -819,6 +835,7 @@ ac_pattern = ".*\\.[1-9]"
 ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = "lib/"
+g = "libc: prevent incorrect %a/%La rounding at full precision-00"
 
 [bd7032e0b0580bc64455dc7c102e87dff6b06c8d]
 ac = "kernel"
@@ -839,11 +856,17 @@ ac_pattern = "tools/test/"
 ac = "tests"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tests/"
+fc = "libs"
+fc_reason = "Need to be grouped with 9dd78db9c30a220ac3e8e65d89548ff99c14dd90"
+g = "libc: prevent incorrect %a/%La rounding at full precision-00"
 
 [455426da078cbbea8160bf4232b3fd1ae56e2ff5]
 ac = "tests"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tests/"
+fc = "libs"
+fc_reason = "Need to be grouped with 9dd78db9c30a220ac3e8e65d89548ff99c14dd90"
+g = "libc: prevent incorrect %a/%La rounding at full precision-00"
 
 [4b301f7e7ab43bb61561786c2ab33f3a3c4a725d]
 ac = "hardware"

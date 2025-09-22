@@ -100,6 +100,7 @@ ac_pattern = "sbin/"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
+g = "sh: Add config tag to /.profile-00"
 
 [405cfeef615f5493b49b6ab4619fa29dfe37fd7d]
 ac = "hardware"
@@ -128,6 +129,7 @@ g = "LinuxKPI-00"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
+g = "sh: Add config tag to /.profile-00"
 
 [8ebb3de0c9dfb1a15bf24dcb0ca65cc91e7ad0e8]
 ac = "contrib"
@@ -336,6 +338,7 @@ ac_pattern = "sys/net/"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "umb: Fix setting the input routine-00"
 
 [e323aaaf397188e3d8e9cb2376af7a083896b441]
 ac = "doc"
@@ -351,6 +354,9 @@ ac_pattern = "lib/"
 ac = "doc"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
+fc = "hardware"
+fc_reason = "Need to be grouped with e921d2842ee8ca9e3dae8952e1cf2645cee785aa"
+g = "umb: Fix setting the input routine-00"
 
 [b5c46895fdddcdb7dd1994598925d6989ea7c8f2]
 ac = "kernel"
@@ -407,6 +413,7 @@ ac_pattern = ".*\\.[1-9]"
 ac = "network"
 ac_section = "05-summary-prefix"
 ac_pattern = "^vtnet:"
+g = "vtnet: improve checksum offloading-00"
 
 [e21c3dae676776518b2abf69ef960084c13a21c1]
 ac = "network"
@@ -576,6 +583,7 @@ ac_pattern = "^tcp:"
 
 [8b4e4c2737305df8807abc6cd054a32586085c93]
 mc = "internal"
+g = "Update main to 16-00"
 ah = 1
 
 [8ec7a830f10bc0f3b421dfaf6967a1bc996d34fd]
@@ -587,6 +595,9 @@ ac_pattern = "sys/"
 ac = "admin"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sbin/"
+fc = "internal"
+fc_reason = "Need to be grouped with 8b4e4c2737305df8807abc6cd054a32586085c93"
+g = "Update main to 16-00"
 
 [edd8c4c655925543e2d881811c544473da463147]
 ac = "build"
@@ -853,6 +864,9 @@ ac_pattern = "sys/dev/"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+fc = "network"
+fc_reason = "Need to be grouped with 1c23d8f9f39870951c1d0dfbb112fc4e53237737"
+g = "vtnet: improve checksum offloading-00"
 
 [0737e2a961cd712fff5b548bb6b823e48a8b527d]
 ac = "style"

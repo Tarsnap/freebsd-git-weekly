@@ -94,6 +94,7 @@ ac_pattern = "^lib.*:"
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netgraph/"
+g = "ng_hci: Cast NG_HCI_BDADDR_ANY to const bdaddr_t *-00"
 
 [8fee6b9ecc84d3602a461f1cd33df91e50849cdf]
 ac = "hardware"
@@ -115,6 +116,7 @@ ah = 1
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netgraph/"
+g = "ng_hci: Cast NG_HCI_BDADDR_ANY to const bdaddr_t *-00"
 
 [081f0e38e3324dd3ca63a2d5036a15f52e6cf858]
 ac = "contrib"
@@ -588,11 +590,15 @@ ac_pattern = "sys/arm64/"
 ac = "doc"
 ac_section = "05-summary-prefix"
 ac_pattern = "^.*\\.[1-9]:"
+g = "vnet.9: Rename vnet.9/vimage.9 to VNET.9/VIMAGE.9-00"
 
 [08d41d8803d9dd49b709518e8f2ce292b59e9828]
 ac = "internal"
 ac_section = "03-filenames_plain1"
 ac_pattern = "ObsoleteFiles.inc"
+fc = "doc"
+fc_reason = "Need to be grouped with 3049b2f5115b3b4aed202274e866f360fa2560d1"
+g = "vnet.9: Rename vnet.9/vimage.9 to VNET.9/VIMAGE.9-00"
 
 [2d85bc89294baa04daf509e81ec3880bff79cc10]
 ac = "kernel"
@@ -629,6 +635,7 @@ ac_pattern = "sbin/"
 
 [6b5adf33873a309523dc4e585ff08d70bb6c6f2f]
 mc = "build"
+g = "Include a pkg package in the pkgbase repo-00"
 
 [ea1652bc01c4093eb4a8c6971c69a410883df189]
 ac = "kernel"
@@ -639,6 +646,7 @@ ac_pattern = "sys/"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
+g = "Include a pkg package in the pkgbase repo-00"
 
 [b9afd7f6a5b1cf1a6cbcef7a55aede7e71a0babc]
 ac = "build"
@@ -715,6 +723,9 @@ ac_pattern = "^cpucontrol:"
 ac = "internal"
 ac_section = "03-filenames_plain1"
 ac_pattern = "ObsoleteFiles.inc"
+fc = "doc"
+fc_reason = "Need to be grouped with 08d41d8803d9dd49b709518e8f2ce292b59e9828"
+g = "vnet.9: Rename vnet.9/vimage.9 to VNET.9/VIMAGE.9-00"
 
 [a37825313f624121c6f07bc03f9cf655c300885b]
 ac = "style"
