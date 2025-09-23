@@ -39,6 +39,10 @@ class Report:
         """
         return self.table.get("derived", False)
 
+    def get_only_show(self):
+        """Should we only display certain categories?"""
+        return self.table.get("only_show", False)
+
 
 class Reports:
     def __init__(self, project_dirname):

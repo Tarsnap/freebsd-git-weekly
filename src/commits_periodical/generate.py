@@ -139,21 +139,23 @@ commit_group_text.seen = []
 commit_group_text.num_generic = 0
 
 
-def split_into_categories(doc):
+def split_into_categories(doc, only_show):
     """Get a dict containing per-category entries."""
     cats = collections.defaultdict(list)
     for item in doc.get_entries():
         _, entry = item
-        if entry.is_style():
-            cats["style"].append(item)
-        else:
+        if not only_show or (only_show and entry.cat in only_show):
             cats[entry.cat].append(item)
 
     # Make extra copies of "highlighted" commits
-    for item in doc.get_entries():
-        _, entry = item
-        if entry.is_highlighted():
-            cats["highlight"].append(item)
+    if not only_show or "highlight" in only_show:
+        for item in doc.get_entries():
+            _, entry = item
+            if entry.is_highlighted():
+                cats["highlight"].append(item)
+
+    #for cat, section in cats.items():
+    #    print(f"{len(section)}\t{cat}")
     return cats
 
 
@@ -354,27 +356,17 @@ def generate_period(
         filename_out = filename_out.replace(".html", "-debug.html")
     print(f"Generating HTML for {doc.filename} in {filename_out}")
 
-    # Split into categories
+    # Load extra data (if applicable)
     if "include_spans" in report:
-        only_show = report["only_show"]
-
-        # Load all the data...
-        cats = collections.defaultdict(list)
         for span in report["include_spans"]:
-            thisfilename = os.path.join(project_dirname, f"{span}.toml")
-            thisdoc = commits_periodical.data.Week(thisfilename)
-            thesecats = split_into_categories(thisdoc)
-            for key, value in thesecats.items():
-                # ... but only keep the relevant categories
-                if key in only_show:
-                    cats[key].extend(value)
-            cache_filename = thisfilename.replace(".toml", ".gitcache")
+            span_filename = os.path.join(project_dirname, f"{span}.toml")
+            cache_filename = span_filename.replace(".toml", ".gitcache")
+            doc.load(span_filename)
             repo.add_cache(cache_filename)
-    else:
-        only_show = None
 
-        # Handle normally
-        cats = split_into_categories(doc)
+    # Split into categories
+    only_show = report.get_only_show()
+    cats = split_into_categories(doc, only_show)
 
     # Add preamble
     sections = []
