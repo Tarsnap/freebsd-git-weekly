@@ -202,16 +202,24 @@ class Week:
 
     def __init__(self, filename):
         self.filename = filename
-        self._load()
 
-    def _load(self):
-        try:
-            with open(self.filename, encoding="utf8") as fp:
-                self.doc = tomlkit.load(fp)
-        except FileNotFoundError:
-            # Start a new file
-            self.doc = tomlkit.document()
+        self.doc = tomlkit.document()
+        if self.filename:
+            self.load(filename)
+        else:
+            self._update_data()
 
+    def load(self, filename):
+        with open(filename, encoding="utf8") as fp:
+            doc = tomlkit.load(fp)
+
+        for key, value in doc.items():
+            if key in self.doc:
+                raise ValueError(f"{key} in multiple documents!")
+            self.doc[key] = value
+        self._update_data()
+
+    def _update_data(self):
         self.entries = {item[0]: WeekEntry(item) for item in self.doc.items()}
         self.groups = collections.defaultdict(list)
         for entry in self.entries.values():
