@@ -331,7 +331,14 @@ def make_section(
 
 
 def generate_period(
-    repo, doc, project, report, debug, project_dirname, reproducible
+    repo,
+    doc,
+    project,
+    report,
+    debug,
+    project_dirname,
+    reproducible,
+    report_name,
 ):
     """Generate HTML for the latest week."""
     if report.is_ongoing() and not debug:
@@ -340,8 +347,8 @@ def generate_period(
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 
-    filename_out = doc.filename.replace("projects/", "out/").replace(
-        ".toml", ".html"
+    filename_out = os.path.join(
+        project_dirname.replace("projects/", "out/"), f"{report_name}.html"
     )
     if debug:
         filename_out = filename_out.replace(".html", "-debug.html")

@@ -114,6 +114,7 @@ def main():
                 args.debug,
                 project_dirname,
                 args.reproducible,
+                report_name,
             )
         case _:
             print(f"Command not recognized: {args.command}")
