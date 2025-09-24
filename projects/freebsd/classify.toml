@@ -67,8 +67,8 @@ userland = [
 
 doc = [
     'RELNOTES',
-    'usr.bin/mandoc/',
     'usr.bin/man/',
+    'usr.bin/mandoc/',
 ]
 
 hardware = [
@@ -143,6 +143,7 @@ tests = [
 
 contrib = [
     'contrib/',
+    'crypto/openssl/',
 ]
 
 [04-filenames_plain2]
