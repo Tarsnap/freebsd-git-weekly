@@ -14,6 +14,18 @@ def _invert_dict(orig: dict):
     return inverted
 
 
+def sanity_check(orig_classifiers):
+    # Sanity check for alphabetical order
+    for name, section in orig_classifiers.items():
+        for key, value in section.items():
+            if not isinstance(value, list):
+                continue
+
+            # Check order
+            if value != sorted(value):
+                raise ValueError(f"Not in alphabetical order: {value}")
+
+
 class ProjectData:
     def __init__(self, project_dirname: str):
         self.dirname = os.path.expanduser(project_dirname)
@@ -26,6 +38,8 @@ class ProjectData:
         self.orig_classifiers = commits_periodical.utils.read_toml(
             os.path.join(self.dirname, "classify.toml")
         )
+
+        sanity_check(self.orig_classifiers)
 
         self.classifiers = {}
         for section in sorted(self.orig_classifiers.keys()):
