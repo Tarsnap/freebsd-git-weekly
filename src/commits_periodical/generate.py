@@ -336,47 +336,47 @@ def generate_period(
     repo,
     doc,
     project,
-    report,
+    index_entry,
     debug,
     project_dirname,
     reproducible,
-    report_name,
+    index_entry_name,
 ):
     """Generate HTML for the latest week."""
-    if report.is_ongoing() and not debug:
+    if index_entry.is_ongoing() and not debug:
         print("Refusing to generate 'release' HTML for ongoing")
         exit(0)
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 
     filename_out = os.path.join(
-        project_dirname.replace("projects/", "out/"), f"{report_name}.html"
+        project_dirname.replace("projects/", "out/"), f"{index_entry_name}.html"
     )
     if debug:
         filename_out = filename_out.replace(".html", "-debug.html")
     print(f"Generating HTML for {doc.filename} in {filename_out}")
 
     # Load extra data (if applicable)
-    if "include_spans" in report:
-        for span in report["include_spans"]:
+    if "include_spans" in index_entry:
+        for span in index_entry["include_spans"]:
             span_filename = os.path.join(project_dirname, f"{span}.toml")
             cache_filename = span_filename.replace(".toml", ".gitcache")
             doc.load(span_filename)
             repo.add_cache(cache_filename)
 
     # Split into categories
-    only_show = report.get_only_show()
+    only_show = index_entry.get_only_show()
     cats = split_into_categories(doc, only_show)
 
     # Add preamble
     sections = []
-    date_start = report["date_start"]
-    date_end = report["date_end"]
+    date_start = index_entry["date_start"]
+    date_end = index_entry["date_end"]
     intro = templates.INTRO_SECTION % (date_start, date_end)
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
 
-    if report.is_ongoing():
+    if index_entry.is_ongoing():
         text = '<p class="debug">This report is still in progress.</p>'
         intro = intro.replace("</section>", f"{text}</section>")
 
@@ -431,11 +431,11 @@ def index_table(index, start_dates):
     out += "<tr><th>Report</th>"
     out += "<th>Report with extra info about classification</th></tr>"
     for start_date in start_dates:
-        report = index.get_report(start_date)
-        display_name = report.get_display_name()
+        index_entry = index.get_index_entry(start_date)
+        display_name = index_entry.get_display_name()
         out += "<tr>"
         out += "<td>"
-        if not report.is_ongoing():
+        if not index_entry.is_ongoing():
             out += f'<a href="{start_date}.html">{display_name}</a>'
         else:
             out += f"{display_name}: in progress"
@@ -456,15 +456,15 @@ def generate_index(project_dirname, index):
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 
-    report_names = sorted(index.get_names())
+    index_entry_names = sorted(index.get_names())
     regular = []
     alternate = []
-    for report_name in report_names:
-        report = index.get_report(report_name)
-        if report.is_derived():
-            alternate.append(report_name)
+    for index_entry_name in index_entry_names:
+        index_entry = index.get_index_entry(index_entry_name)
+        if index_entry.is_derived():
+            alternate.append(index_entry_name)
         else:
-            regular.append(report_name)
+            regular.append(index_entry_name)
 
     regular_reports = index_table(index, regular)
     alternates = index_table(index, alternate)

@@ -5,8 +5,8 @@ import toml
 import tomlkit
 
 
-class Report:
-    """This is metadata about a single report."""
+class IndexEntry:
+    """This is metadata about a single index_entry."""
 
     def __init__(self, table: tomlkit.items.Table | dict, read_only=True):
         self.table = table
@@ -31,7 +31,7 @@ class Report:
         self.table["end_including"] = githash
 
     def is_ongoing(self):
-        """Is this report 'in progress'?"""
+        """Is this index_entry 'in progress'?"""
         return self.table.get("ongoing", False)
 
     def is_derived(self):
@@ -59,13 +59,13 @@ class Index:
             else:
                 self.doc = tomlkit.load(fp)
 
-        self.reports = {
-            k: Report(v, self.read_only) for k, v in self.doc.items()
+        self.index_entries = {
+            k: IndexEntry(v, self.read_only) for k, v in self.doc.items()
         }
-        main_report_names = [
-            k for k, v in self.reports.items() if not v.is_derived()
+        main_index_entry_names = [
+            k for k, v in self.index_entries.items() if not v.is_derived()
         ]
-        self.latest_name = max(main_report_names)
+        self.latest_name = max(main_index_entry_names)
 
     def get_latest_filename(self):
         latest_filename = os.path.join(
@@ -76,8 +76,8 @@ class Index:
     def get_latest_name(self):
         return self.latest_name
 
-    def get_report(self, datestr):
-        return self.reports[datestr]
+    def get_index_entry(self, datestr):
+        return self.index_entries[datestr]
 
     def get_names(self):
         return self.doc.keys()

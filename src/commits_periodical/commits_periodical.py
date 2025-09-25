@@ -80,18 +80,20 @@ def main():
     # Get the relevant time period
     if not args.report:
         # Default setting: use the most recent time period
-        report_name = index.get_latest_name()
+        index_entry_name = index.get_latest_name()
         entries_filename = index.get_latest_filename()
     else:
-        report_name = args.report
-        entries_filename = os.path.join(project_dirname, f"{report_name}.toml")
+        index_entry_name = args.report
+        entries_filename = os.path.join(
+            project_dirname, f"{index_entry_name}.toml"
+        )
 
-    report = index.get_report(report_name)
+    index_entry = index.get_index_entry(index_entry_name)
     cache_filename = entries_filename.replace(".toml", ".gitcache")
     repo = commits_periodical.gitlayer.CachedRepo(
         config["git_dir"], cache_filename
     )
-    if report.is_derived():
+    if index_entry.is_derived():
         doc = commits_periodical.data.Week(None)
     else:
         if args.command == "update" or args.command == "annotate":
@@ -107,13 +109,13 @@ def main():
         case "sanity":
             commits_periodical.sanity_check.check(project)
         case "update":
-            if report.is_ongoing():
-                commits_periodical.update.update_ref(repo, index, report)
-            commits_periodical.update.update_period(repo, report, doc)
+            if index_entry.is_ongoing():
+                commits_periodical.update.update_ref(repo, index, index_entry)
+            commits_periodical.update.update_period(repo, index_entry, doc)
         case "update-commits":
-            commits_periodical.update.update_period(repo, report, doc)
+            commits_periodical.update.update_period(repo, index_entry, doc)
         case "annotate":
-            if not report.is_derived():
+            if not index_entry.is_derived():
                 commits_periodical.classify.classify_period(repo, doc, project)
         case "generate":
             commits_periodical.generate.generate_index(project_dirname, index)
@@ -121,11 +123,11 @@ def main():
                 repo,
                 doc,
                 project,
-                report,
+                index_entry,
                 args.debug,
                 project_dirname,
                 args.reproducible,
-                report_name,
+                index_entry_name,
             )
         case _:
             print(f"Command not recognized: {args.command}")

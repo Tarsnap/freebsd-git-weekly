@@ -1,22 +1,22 @@
-def update_ref(repo, index, report):
-    if report.is_derived():
+def update_ref(repo, index, index_entry):
+    if index_entry.is_derived():
         return
 
-    # Get the HEAD from git, and the latest in the report
+    # Get the HEAD from git, and the latest in the index_entry
     latest_hash = repo.get_head_hash()
 
     # If it's different, replace the final hash
-    if report["end_including"] != latest_hash:
-        report.set_end_including(latest_hash)
+    if index_entry["end_including"] != latest_hash:
+        index_entry.set_end_including(latest_hash)
         index.save()
 
 
-def get_new_hashes(repo, report, doc):
-    """Get any new hashes in the range specified in report that are not
+def get_new_hashes(repo, index_entry, doc):
+    """Get any new hashes in the range specified in index_entry that are not
     already in the summary file.
     """
-    start_after = report["start_after"]
-    end_including = report["end_including"]
+    start_after = index_entry["start_after"]
+    end_including = index_entry["end_including"]
     repo.ensure_cached(start_after, end_including)
     githashes = repo.get_githashes()
     existing_hashes = doc.get_hashes()
@@ -25,14 +25,14 @@ def get_new_hashes(repo, report, doc):
     return new_hashes
 
 
-def update_period(repo, report, doc):
+def update_period(repo, index_entry, doc):
     """Update the latest week."""
-    if report.is_derived():
+    if index_entry.is_derived():
         return
 
     print(f"Updating {doc.filename}")
 
-    new_hashes = get_new_hashes(repo, report, doc)
+    new_hashes = get_new_hashes(repo, index_entry, doc)
 
     if not new_hashes:
         print("No new commits within range")
