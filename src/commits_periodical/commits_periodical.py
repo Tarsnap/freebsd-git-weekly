@@ -73,22 +73,20 @@ def main():
     config = get_config()
     project_dirname = os.path.expanduser(config["project_dir"])
     if args.command == "update":
-        reports = commits_periodical.data.Reports(
-            project_dirname, read_only=False
-        )
+        index = commits_periodical.data.Index(project_dirname, read_only=False)
     else:
-        reports = commits_periodical.data.Reports(project_dirname)
+        index = commits_periodical.data.Index(project_dirname)
 
     # Get the relevant time period
     if not args.report:
         # Default setting: use the most recent time period
-        report_name = reports.get_latest_name()
-        entries_filename = reports.get_latest_filename()
+        report_name = index.get_latest_name()
+        entries_filename = index.get_latest_filename()
     else:
         report_name = args.report
         entries_filename = os.path.join(project_dirname, f"{report_name}.toml")
 
-    report = reports.get_report(report_name)
+    report = index.get_report(report_name)
     cache_filename = entries_filename.replace(".toml", ".gitcache")
     repo = commits_periodical.gitlayer.CachedRepo(
         config["git_dir"], cache_filename
@@ -110,7 +108,7 @@ def main():
             commits_periodical.sanity_check.check(project)
         case "update":
             if report.is_ongoing():
-                commits_periodical.update.update_ref(repo, reports, report)
+                commits_periodical.update.update_ref(repo, index, report)
             commits_periodical.update.update_period(repo, report, doc)
         case "update-commits":
             commits_periodical.update.update_period(repo, report, doc)
@@ -118,7 +116,7 @@ def main():
             if not report.is_derived():
                 commits_periodical.classify.classify_period(repo, doc, project)
         case "generate":
-            commits_periodical.generate.generate_index(project_dirname, reports)
+            commits_periodical.generate.generate_index(project_dirname, index)
             commits_periodical.generate.generate_period(
                 repo,
                 doc,

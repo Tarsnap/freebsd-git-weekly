@@ -426,12 +426,12 @@ def generate_period(
         fp.write(out)
 
 
-def index_table(reports, start_dates):
+def index_table(index, start_dates):
     out = "<table>"
     out += "<tr><th>Report</th>"
     out += "<th>Report with extra info about classification</th></tr>"
     for start_date in start_dates:
-        report = reports.get_report(start_date)
+        report = index.get_report(start_date)
         display_name = report.get_display_name()
         out += "<tr>"
         out += "<td>"
@@ -448,7 +448,7 @@ def index_table(reports, start_dates):
     return out
 
 
-def generate_index(project_dirname, reports):
+def generate_index(project_dirname, index):
     filename_out = os.path.join(
         project_dirname.replace("projects", "out"), "index.html"
     )
@@ -456,18 +456,18 @@ def generate_index(project_dirname, reports):
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 
-    report_names = sorted(reports.get_names())
+    report_names = sorted(index.get_names())
     regular = []
     alternate = []
     for report_name in report_names:
-        report = reports.get_report(report_name)
+        report = index.get_report(report_name)
         if report.is_derived():
             alternate.append(report_name)
         else:
             regular.append(report_name)
 
-    regular_reports = index_table(reports, regular)
-    alternates = index_table(reports, alternate)
+    regular_reports = index_table(index, regular)
+    alternates = index_table(index, alternate)
 
     out = templates.index % (regular_reports, alternates)
 

@@ -45,14 +45,14 @@ class Report:
         return self.table.get("only_show", False)
 
 
-class Reports:
+class Index:
     """This is metadata about all available reports."""
 
     def __init__(self, project_dirname, read_only=True):
         self.project_dirname = project_dirname
         self.read_only = read_only
 
-        self.filename = os.path.join(project_dirname, "reports.toml")
+        self.filename = os.path.join(project_dirname, "index.toml")
         with open(self.filename, encoding="utf8") as fp:
             if self.read_only:
                 self.doc = toml.load(fp)

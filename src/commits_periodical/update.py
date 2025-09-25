@@ -1,4 +1,4 @@
-def update_ref(repo, reports, report):
+def update_ref(repo, index, report):
     if report.is_derived():
         return
 
@@ -8,7 +8,7 @@ def update_ref(repo, reports, report):
     # If it's different, replace the final hash
     if report["end_including"] != latest_hash:
         report.set_end_including(latest_hash)
-        reports.save()
+        index.save()
 
 
 def get_new_hashes(repo, report, doc):
