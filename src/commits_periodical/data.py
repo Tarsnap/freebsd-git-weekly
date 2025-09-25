@@ -94,13 +94,6 @@ class ReportEntry:
         self.ref = ref
 
     @property
-    def name(self):
-        """Name of this entry.  If it's a single commit, the name is the
-        githash; if it's a group, the name is a unique string.
-        """
-        return self.ref[0]
-
-    @property
     def githash(self):
         return self.ref[0]
 
@@ -130,14 +123,6 @@ class ReportEntry:
 
     def has_auto_cat(self):
         return "ac" in self.ref[1]
-
-    def set_keyword_cat(self, newcat):
-        """Set the category of this commit."""
-        self.ref[1]["kc"] = newcat
-
-    def set_revert_cat(self, newcat):
-        """Set the category of this commit."""
-        self.ref[1]["rc"] = newcat
 
     def set_group(self, group):
         self.ref[1]["g"] = group
@@ -169,13 +154,6 @@ class ReportEntry:
     def set_fixes_cat(self, cat, reason):
         self.ref[1]["fc"] = cat
         self.ref[1]["fc_reason"] = reason
-
-    def is_style(self):
-        if "ms" in self.ref[1] and self.ref[1]["ms"] == 1:
-            return True
-        if "as" in self.ref[1] and self.ref[1]["as"] == 1:
-            return True
-        return False
 
     def is_revert(self):
         if "ac" in self.ref[1] and self.ref[1]["ac"] == "reverts":
