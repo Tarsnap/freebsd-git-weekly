@@ -96,7 +96,12 @@ def main():
     if report.is_derived():
         doc = commits_periodical.data.Week(None)
     else:
-        doc = commits_periodical.data.Week(entries_filename)
+        if args.command == "update" or args.command == "annotate":
+            doc = commits_periodical.data.Week(
+                entries_filename, read_only=False
+            )
+        else:
+            doc = commits_periodical.data.Week(entries_filename)
     project = commits_periodical.project_data.ProjectData(project_dirname)
 
     # Run the relevant command

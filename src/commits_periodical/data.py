@@ -215,10 +215,14 @@ class WeekEntry:
 class Week:
     """A document which details all commits within a range."""
 
-    def __init__(self, filename):
+    def __init__(self, filename, read_only=True):
         self.filename = filename
+        self.read_only = read_only
 
-        self.doc = tomlkit.document()
+        if self.read_only:
+            self.doc = {}
+        else:
+            self.doc = tomlkit.document()
         if self.filename:
             self.load(filename)
         else:
@@ -226,7 +230,10 @@ class Week:
 
     def load(self, filename):
         with open(filename, encoding="utf8") as fp:
-            doc = tomlkit.load(fp)
+            if self.read_only:
+                doc = toml.load(fp)
+            else:
+                doc = tomlkit.load(fp)
 
         for key, value in doc.items():
             if key in self.doc:
@@ -243,6 +250,7 @@ class Week:
 
     def save(self):
         """Save the document to disk."""
+        assert self.read_only is False
         out = tomlkit.dumps(self.doc)
         with open(self.filename, "w", encoding="utf8") as fp:
             fp.write(out)
