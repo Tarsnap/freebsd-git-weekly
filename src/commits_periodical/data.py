@@ -6,7 +6,7 @@ import tomlkit
 
 
 class IndexEntry:
-    """This is metadata about a single index_entry."""
+    """This is metadata about a single report."""
 
     def __init__(self, table: tomlkit.items.Table | dict, read_only=True):
         self.table = table
@@ -17,6 +17,10 @@ class IndexEntry:
 
     def __getitem__(self, key):
         return self.table[key]
+
+    def get(self, key, default=None):
+        """Just like dict.get()"""
+        return self.table.get(key, default)
 
     def get_display_name(self):
         if "display_name" in self.table:
@@ -30,19 +34,11 @@ class IndexEntry:
         assert "end_including" in self.table
         self.table["end_including"] = githash
 
-    def is_ongoing(self):
-        """Is this index_entry 'in progress'?"""
-        return self.table.get("ongoing", False)
-
     def is_derived(self):
         """Is this report 'derived', i.e. generated from data in the other
         reports?
         """
         return self.table.get("derived", False)
-
-    def get_only_show(self):
-        """Should we only display certain categories?"""
-        return self.table.get("only_show", False)
 
 
 class Index:

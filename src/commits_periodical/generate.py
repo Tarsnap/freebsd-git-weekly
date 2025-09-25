@@ -343,7 +343,7 @@ def generate_period(
     index_entry_name,
 ):
     """Generate HTML for the latest report."""
-    if index_entry.is_ongoing() and not debug:
+    if index_entry.get("ongoing") and not debug:
         print("Refusing to generate 'release' HTML for ongoing")
         exit(0)
 
@@ -365,7 +365,7 @@ def generate_period(
             repo.add_cache(cache_filename)
 
     # Split into categories
-    only_show = index_entry.get_only_show()
+    only_show = index_entry.get("only_show", False)
     cats = split_into_categories(doc, only_show)
 
     # Add preamble
@@ -376,7 +376,7 @@ def generate_period(
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE
 
-    if index_entry.is_ongoing():
+    if index_entry.get("ongoing"):
         text = '<p class="debug">This report is still in progress.</p>'
         intro = intro.replace("</section>", f"{text}</section>")
 
@@ -435,7 +435,7 @@ def index_table(index, start_dates):
         display_name = index_entry.get_display_name()
         out += "<tr>"
         out += "<td>"
-        if not index_entry.is_ongoing():
+        if not index_entry.get("ongoing"):
             out += f'<a href="{start_date}.html">{display_name}</a>'
         else:
             out += f"{display_name}: in progress"
