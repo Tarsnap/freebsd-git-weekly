@@ -26,7 +26,7 @@ def get_new_hashes(repo, index_entry, doc):
 
 
 def update_period(repo, index_entry, doc):
-    """Update the latest week."""
+    """Update the latest report."""
     if index_entry.is_derived():
         return
 

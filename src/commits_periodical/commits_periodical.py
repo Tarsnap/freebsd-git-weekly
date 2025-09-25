@@ -94,14 +94,14 @@ def main():
         config["git_dir"], cache_filename
     )
     if index_entry.is_derived():
-        doc = commits_periodical.data.Week(None)
+        doc = commits_periodical.data.Report(None)
     else:
         if args.command == "update" or args.command == "annotate":
-            doc = commits_periodical.data.Week(
+            doc = commits_periodical.data.Report(
                 entries_filename, read_only=False
             )
         else:
-            doc = commits_periodical.data.Week(entries_filename)
+            doc = commits_periodical.data.Report(entries_filename)
     project = commits_periodical.project_data.ProjectData(project_dirname)
 
     # Run the relevant command

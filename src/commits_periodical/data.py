@@ -90,7 +90,7 @@ class Index:
 
 
 class ReportEntry:
-    """An entry in the week's summaries; may be a single commit or a group of
+    """An entry in the report's summaries; may be a single commit or a group of
     commits.
     """
 
@@ -212,7 +212,7 @@ class ReportEntry:
                 del self.ref[1][key]
 
 
-class Week:
+class Report:
     """A document which details all commits within a range."""
 
     def __init__(self, filename, read_only=True):

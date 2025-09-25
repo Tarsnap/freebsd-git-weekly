@@ -61,11 +61,11 @@ def commit_debug_info(entry):
     return text
 
 
-def commit_text(templates, repo, week, item, is_high, debug):
+def commit_text(templates, repo, report, item, is_high, debug):
     """Get a commit message, formatted as HTML."""
     name, entry = item
     if entry.has_group() and not is_high:
-        return commit_group_text(templates, repo, week, item, debug)
+        return commit_group_text(templates, repo, report, item, debug)
     githash = name
 
     gitcommit = repo.get_commit(githash)
@@ -86,10 +86,10 @@ def commit_text(templates, repo, week, item, is_high, debug):
     return out
 
 
-def commit_group_text(templates, repo, week, item, debug):
+def commit_group_text(templates, repo, report, item, debug):
     """Generate HTML for a commit group."""
     name, entry = item
-    owns = week.groups[entry.groupname()]
+    owns = report.groups[entry.groupname()]
 
     if owns[0] in commit_group_text.seen:
         return ""
@@ -311,7 +311,7 @@ def make_preamble(project, cats, debug, only_show):
 
 
 def make_section(
-    templates, repo, week, cats, cat, section_title, intro_text, debug
+    templates, repo, report, cats, cat, section_title, intro_text, debug
 ):
     """Generate HTML for a normal section."""
     if cat == "quit":
@@ -325,7 +325,7 @@ def make_section(
         section += f"<p>{intro_text}</p>"
     relevant = cats[cat]
     for item in relevant:
-        section += commit_text(templates, repo, week, item, is_high, debug)
+        section += commit_text(templates, repo, report, item, is_high, debug)
     if len(relevant) == 0:
         section += "<p>-- no commits in this category this week --</p>"
     section += "</section>"
@@ -342,7 +342,7 @@ def generate_period(
     reproducible,
     index_entry_name,
 ):
-    """Generate HTML for the latest week."""
+    """Generate HTML for the latest report."""
     if index_entry.is_ongoing() and not debug:
         print("Refusing to generate 'release' HTML for ongoing")
         exit(0)
