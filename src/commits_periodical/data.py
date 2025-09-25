@@ -1,16 +1,16 @@
 import collections
 import os.path
 
+import toml
 import tomlkit
 
 
 class Report:
-    """This is metadata about a single report.  With the exception of
-    set_end_including(), it is read-only.
-    """
+    """This is metadata about a single report."""
 
-    def __init__(self, table: tomlkit.items.Table):
+    def __init__(self, table: tomlkit.items.Table | dict, read_only=True):
         self.table = table
+        self.read_only = read_only
 
     def __contains__(self, key):
         return key in self.table
@@ -26,6 +26,7 @@ class Report:
 
     def set_end_including(self, githash):
         """Change the 'end_including' key to the given git hash."""
+        assert self.read_only is False
         assert "end_including" in self.table
         self.table["end_including"] = githash
 
@@ -45,13 +46,22 @@ class Report:
 
 
 class Reports:
-    def __init__(self, project_dirname):
+    """This is metadata about all available reports."""
+
+    def __init__(self, project_dirname, read_only=True):
         self.project_dirname = project_dirname
+        self.read_only = read_only
+
         self.filename = os.path.join(project_dirname, "reports.toml")
         with open(self.filename, encoding="utf8") as fp:
-            self.doc = tomlkit.load(fp)
+            if self.read_only:
+                self.doc = toml.load(fp)
+            else:
+                self.doc = tomlkit.load(fp)
 
-        self.reports = {k: Report(v) for k, v in self.doc.items()}
+        self.reports = {
+            k: Report(v, self.read_only) for k, v in self.doc.items()
+        }
         main_report_names = [
             k for k, v in self.reports.items() if not v.is_derived()
         ]
@@ -67,12 +77,13 @@ class Reports:
         return self.latest_name
 
     def get_report(self, datestr):
-        return Report(self.doc[datestr])
+        return self.reports[datestr]
 
     def get_names(self):
         return self.doc.keys()
 
     def save(self):
+        assert self.read_only is False
         out = tomlkit.dumps(self.doc)
         with open(self.filename, "w", encoding="utf8") as fp:
             fp.write(out)

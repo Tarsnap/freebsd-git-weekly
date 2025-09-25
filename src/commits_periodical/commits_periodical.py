@@ -72,7 +72,12 @@ def main():
 
     config = get_config()
     project_dirname = os.path.expanduser(config["project_dir"])
-    reports = commits_periodical.data.Reports(project_dirname)
+    if args.command == "update":
+        reports = commits_periodical.data.Reports(
+            project_dirname, read_only=False
+        )
+    else:
+        reports = commits_periodical.data.Reports(project_dirname)
 
     # Get the relevant time period
     if not args.report:
