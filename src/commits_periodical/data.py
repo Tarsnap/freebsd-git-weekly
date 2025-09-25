@@ -89,7 +89,7 @@ class Index:
             fp.write(out)
 
 
-class WeekEntry:
+class ReportEntry:
     """An entry in the week's summaries; may be a single commit or a group of
     commits.
     """
@@ -242,7 +242,7 @@ class Week:
         self._update_data()
 
     def _update_data(self):
-        self.entries = {item[0]: WeekEntry(item) for item in self.doc.items()}
+        self.entries = {item[0]: ReportEntry(item) for item in self.doc.items()}
         self.groups = collections.defaultdict(list)
         for entry in self.entries.values():
             if entry.has_group():
@@ -298,7 +298,7 @@ class Week:
         """Add a commit."""
         commit = tomlkit.table()
         self.doc[githash] = commit
-        self.entries[githash] = WeekEntry((githash, commit))
+        self.entries[githash] = ReportEntry((githash, commit))
 
     def clear_automatic_annotations(self):
         for githash in self.get_hashes():
