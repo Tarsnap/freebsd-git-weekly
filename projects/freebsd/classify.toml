@@ -16,7 +16,7 @@
 
 # If we attempt to classify via filenames and the initial attempt fails,
 # omit any names in this list and try again.
-filenames_try_omit = [
+_filenames_try_omit = [
     'UPDATING',
     'tests/.*'
 ]
@@ -24,7 +24,7 @@ filenames_try_omit = [
 
 [00-reverts]
 
-acts_on = "message"
+_acts_on = "message"
 
 reverts = [
     'This reverts commit \b([0-9a-fA-F]{40})\b',
@@ -33,7 +33,7 @@ reverts = [
 
 [01-style]
 
-acts_on = "summary"
+_acts_on = "summary"
 
 style = [
     '[sS]tyle',
@@ -44,7 +44,7 @@ style = [
 
 [02-filenames_wildcards]
 
-acts_on = "filenames"
+_acts_on = "filenames"
 
 doc = [
     '.*\.[1-9]',
@@ -59,7 +59,7 @@ build = [
 
 [03-filenames_plain1]
 
-acts_on = "filenames"
+_acts_on = "filenames"
 
 userland = [
     'bin/',
@@ -148,7 +148,7 @@ contrib = [
 
 [04-filenames_plain2]
 
-acts_on = "filenames"
+_acts_on = "filenames"
 
 userland = [
     'usr.bin/',
@@ -167,7 +167,7 @@ kernel = [
 
 [05-summary-prefix]
 
-acts_on = "summary"
+_acts_on = "summary"
 
 userland = [
 ]
