@@ -130,6 +130,15 @@ class ReportEntry:
     def has_fixed_cat(self):
         return "fc" in self.ref[1]
 
+    def get_auto_reasons(self):
+        return self.ref[1]["ac_section"], self.ref[1]["ac_pattern"]
+
+    def get_fixed_cat(self):
+        return self.ref[1]["fc"]
+
+    def get_fixed_reason(self):
+        return self.ref[1]["fc_reason"]
+
     def set_group(self, group):
         self.ref[1]["g"] = group
 

@@ -45,8 +45,7 @@ def get_commit_long(templates, githash, gitcommit, nostrip=False):
 def commit_debug_info(entry):
     text = ""
     if entry.has_auto_cat():
-        section = entry.ref[1]["ac_section"]
-        pattern = entry.ref[1]["ac_pattern"]
+        section, pattern = entry.get_auto_reasons()
         text += '<p class="debug">'
         text += "debug: classified in "
         # Don't end this sentence with a period; that's too easy to confuse
@@ -121,8 +120,8 @@ def commit_group_text(templates, repo, report, item, debug):
     out = templates.HTML_DETAILS_OUTER % (summary, inner)
 
     if debug and entry.has_fixed_cat():
-        fc = entry.ref[1]["fc"]
-        reason = entry.ref[1]["fc_reason"]
+        fc = entry.get_fixed_cat()
+        reason = entry.get_fixed_reason()
         text = '<p class="debug">'
         text += "debug: moved to "
         # Don't end this sentence with a period; that's too easy to confuse
@@ -175,7 +174,7 @@ def make_table_classification(cats, total_commits):
 
         for _, entry in entries:
             if entry.has_auto_cat():
-                ac_section = entry.ref[1]["ac_section"]
+                ac_section, _ = entry.get_auto_reasons()
                 reason_totals[ac_section] += 1
 
                 if entry.is_cat_disputed():
