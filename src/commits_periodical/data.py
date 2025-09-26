@@ -121,8 +121,14 @@ class ReportEntry:
             return self.ref[1]["ac"]
         return "unknown"
 
+    def has_manual_cat(self):
+        return "mc" in self.ref[1]
+
     def has_auto_cat(self):
         return "ac" in self.ref[1]
+
+    def has_fixed_cat(self):
+        return "fc" in self.ref[1]
 
     def set_group(self, group):
         self.ref[1]["g"] = group

@@ -44,7 +44,7 @@ def get_commit_long(templates, githash, gitcommit, nostrip=False):
 
 def commit_debug_info(entry):
     text = ""
-    if "ac" in entry.ref[1]:
+    if entry.has_auto_cat():
         section = entry.ref[1]["ac_section"]
         pattern = entry.ref[1]["ac_pattern"]
         text += '<p class="debug">'
@@ -120,7 +120,7 @@ def commit_group_text(templates, repo, report, item, debug):
             inner += commit_debug_info(entry)
     out = templates.HTML_DETAILS_OUTER % (summary, inner)
 
-    if debug and "fc" in entry.ref[1]:
+    if debug and entry.has_fixed_cat():
         fc = entry.ref[1]["fc"]
         reason = entry.ref[1]["fc_reason"]
         text = '<p class="debug">'
@@ -174,20 +174,20 @@ def make_table_classification(cats, total_commits):
             continue
 
         for _, entry in entries:
-            if "ac_section" in entry.ref[1]:
+            if entry.has_auto_cat():
                 ac_section = entry.ref[1]["ac_section"]
                 reason_totals[ac_section] += 1
 
                 if entry.is_cat_disputed():
                     disputed_totals[ac_section] += 1
-            elif "mc" in entry.ref[1]:
+            elif entry.has_manual_cat():
                 num_manual += 1
 
             if entry.has_group():
                 num_in_groups += 1
                 if entry.groupname().startswith("revert-pair"):
                     num_group_reverts += 1
-                elif "fc" in entry.ref[1]:
+                elif entry.has_fixed_cat():
                     num_group_fixes += 1
                 else:
                     num_group_consecutive += 1
