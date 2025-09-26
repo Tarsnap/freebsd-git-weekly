@@ -3,13 +3,24 @@ import os.path
 import commits_periodical.utils
 
 
+class Classifier:
+    def __init__(self, orig):
+        self.metadata = {k: v for k, v in orig.items() if k.startswith("_")}
+        to_invert = {k: v for k, v in orig.items() if not k.startswith("_")}
+        self.rules = _invert_dict(to_invert)
+
+    def get_metadata(self, key):
+        return self.metadata[key]
+
+    def items(self):
+        return self.rules.items()
+
+
 def _invert_dict(orig: dict):
     inverted = {}
     for key, value in orig.items():
         # Don't invert underscore keys
-        if key.startswith("_"):
-            inverted[key] = value
-            continue
+        assert not key.startswith("_")
 
         for item in value:
             # Quick sanity check
@@ -68,4 +79,4 @@ class ProjectData:
             # Invert the contents of each section, other than those beginning
             # with an underscore.
             classifier = self.orig_classifiers[section]
-            self.classifiers[section] = _invert_dict(classifier)
+            self.classifiers[section] = Classifier(classifier)

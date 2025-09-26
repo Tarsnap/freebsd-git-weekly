@@ -113,7 +113,7 @@ def find_fixes(repo, doc):
 def apply_classifier(repo, doc, classifier_name, classifier, meta):
     num_changed = 0
 
-    examine_part = classifier["_acts_on"]
+    examine_part = classifier.get_metadata("_acts_on")
 
     for githash in doc.get_hashes():
         entry = doc.get_entry(githash)
