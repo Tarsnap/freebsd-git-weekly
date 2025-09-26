@@ -109,7 +109,7 @@ def main():
         case "sanity":
             commits_periodical.sanity_check.check(project)
         case "update":
-            if index_entry.is_ongoing():
+            if index_entry.get("ongoing"):
                 commits_periodical.update.update_ref(repo, index, index_entry)
             commits_periodical.update.update_period(repo, index_entry, doc)
         case "update-commits":
