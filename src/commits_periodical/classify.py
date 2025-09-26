@@ -113,7 +113,7 @@ def find_fixes(repo, doc):
 def apply_classifier(repo, doc, classifier_name, classifier, meta):
     num_changed = 0
 
-    examine_part = classifier["acts_on"]
+    examine_part = classifier["_acts_on"]
 
     for githash in doc.get_hashes():
         entry = doc.get_entry(githash)
@@ -155,7 +155,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
                 for f in examine
                 if not any(
                     re.search(omit_pattern, f)
-                    for omit_pattern in meta["filenames_try_omit"]
+                    for omit_pattern in meta["_filenames_try_omit"]
                 )
             ]
             if len(new_examine) == 0:
