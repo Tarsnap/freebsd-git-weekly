@@ -91,99 +91,97 @@ class ReportEntry:
     """
 
     def __init__(self, ref):
-        self.ref = ref
-
-    @property
-    def githash(self):
-        return self.ref[0]
+        self.githash = ref[0]
+        # Short for "annotation"
+        self.ann = ref[1]
 
     @property
     def cat(self):
         """Category of this entry."""
-        if "mc" in self.ref[1]:
-            return self.ref[1]["mc"]
-        if "fc" in self.ref[1]:
-            return self.ref[1]["fc"]
-        if "ac" in self.ref[1]:
-            return self.ref[1]["ac"]
+        if "mc" in self.ann:
+            return self.ann["mc"]
+        if "fc" in self.ann:
+            return self.ann["fc"]
+        if "ac" in self.ann:
+            return self.ann["ac"]
         return "unknown"
 
     @property
     def manual_cat(self):
-        return self.ref[1]["mc"]
+        return self.ann["mc"]
 
     @property
     def automatic_cat(self):
         """Category of this entry."""
-        if "fc" in self.ref[1]:
-            return self.ref[1]["fc"]
-        if "ac" in self.ref[1]:
-            return self.ref[1]["ac"]
+        if "fc" in self.ann:
+            return self.ann["fc"]
+        if "ac" in self.ann:
+            return self.ann["ac"]
         return "unknown"
 
     def has_manual_cat(self):
-        return "mc" in self.ref[1]
+        return "mc" in self.ann
 
     def has_auto_cat(self):
-        return "ac" in self.ref[1]
+        return "ac" in self.ann
 
     def has_fixed_cat(self):
-        return "fc" in self.ref[1]
+        return "fc" in self.ann
 
     def get_auto_reasons(self):
-        return self.ref[1]["ac_section"], self.ref[1]["ac_pattern"]
+        return self.ann["ac_section"], self.ann["ac_pattern"]
 
     def get_fixed_cat(self):
-        return self.ref[1]["fc"]
+        return self.ann["fc"]
 
     def get_fixed_reason(self):
-        return self.ref[1]["fc_reason"]
+        return self.ann["fc_reason"]
 
     def set_group(self, group):
-        self.ref[1]["g"] = group
+        self.ann["g"] = group
 
     def has_group(self):
-        return "g" in self.ref[1]
+        return "g" in self.ann
 
     def groupname(self):
-        return self.ref[1]["g"]
+        return self.ann["g"]
 
     def is_cat_disputed(self):
-        if "mc" not in self.ref[1]:
+        if "mc" not in self.ann:
             return False
         if self.automatic_cat != self.manual_cat:
             return True
         return False
 
     def remove_highlighted(self):
-        del self.ref[1]["ah"]
+        del self.ann["ah"]
 
     def set_highlighted(self):
-        self.ref[1]["ah"] = 1
+        self.ann["ah"] = 1
 
     def set_auto_cat(self, cat, section, pattern):
-        self.ref[1]["ac"] = cat
-        self.ref[1]["ac_section"] = section
-        self.ref[1]["ac_pattern"] = pattern
+        self.ann["ac"] = cat
+        self.ann["ac_section"] = section
+        self.ann["ac_pattern"] = pattern
 
     def set_fixes_cat(self, cat, reason):
-        self.ref[1]["fc"] = cat
-        self.ref[1]["fc_reason"] = reason
+        self.ann["fc"] = cat
+        self.ann["fc_reason"] = reason
 
     def is_revert(self):
-        if "ac" in self.ref[1] and self.ref[1]["ac"] == "reverts":
+        if "ac" in self.ann and self.ann["ac"] == "reverts":
             return True
         return False
 
     def is_highlighted(self):
         """Is this entry highlighted?"""
         # If there's a manual judgement, that takes priority
-        if "mh" in self.ref[1]:
-            if self.ref[1]["mh"] == 1:
+        if "mh" in self.ann:
+            if self.ann["mh"] == 1:
                 return True
             return False
 
-        if "ah" in self.ref[1] and self.ref[1]["ah"] == 1:
+        if "ah" in self.ann and self.ann["ah"] == 1:
             return True
         return False
 
@@ -197,8 +195,8 @@ class ReportEntry:
             "fc_reason",
             "g",
         ]:
-            if key in self.ref[1]:
-                del self.ref[1][key]
+            if key in self.ann:
+                del self.ann[key]
 
 
 class Report:
