@@ -14,7 +14,20 @@ def _invert_dict(orig: dict):
     return inverted
 
 
-def sanity_check(orig_classifiers):
+def sanity_check(categories, orig_classifiers):
+    cats = categories.keys()
+
+    # Sanity check for non-categories
+    for name, section in orig_classifiers.items():
+        for key in section:
+            # Skip underscores
+            if key.startswith("_"):
+                continue
+
+            # Check that all classifier-categories are in categories
+            if key not in cats:
+                raise ValueError(f"Not a category: {key}")
+
     # Sanity check for alphabetical order
     for name, section in orig_classifiers.items():
         for key, value in section.items():
@@ -39,7 +52,7 @@ class ProjectData:
             os.path.join(self.dirname, "classify.toml")
         )
 
-        sanity_check(self.orig_classifiers)
+        sanity_check(self.categories, self.orig_classifiers)
 
         self.classifiers = {}
         for section in sorted(self.orig_classifiers.keys()):
