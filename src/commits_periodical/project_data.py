@@ -34,7 +34,7 @@ def sanity_check(categories, orig_classifiers):
     cats = categories.keys()
 
     # Sanity check for non-categories
-    for name, section in orig_classifiers.items():
+    for section in orig_classifiers.values():
         for key in section:
             # Skip underscores
             if key.startswith("_"):
@@ -45,7 +45,7 @@ def sanity_check(categories, orig_classifiers):
                 raise ValueError(f"Not a category: {key}")
 
     # Sanity check for alphabetical order
-    for name, section in orig_classifiers.items():
+    for section in orig_classifiers.values():
         for key, value in section.items():
             if not isinstance(value, list):
                 continue

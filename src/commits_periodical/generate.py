@@ -3,6 +3,7 @@ import datetime
 import html
 import os.path
 import re
+import sys
 
 import commits_periodical
 import commits_periodical.data
@@ -154,12 +155,10 @@ def split_into_categories(doc, only_show):
             if entry.is_highlighted():
                 cats["highlight"].append(item)
 
-    #for cat, section in cats.items():
-    #    print(f"{len(section)}\t{cat}")
     return cats
 
 
-def make_table_classification(project, cats, total_commits):
+def make_table_classification(cats, total_commits):
     num_in_groups = 0
     num_manual = 0  # this is for totally manual, i.e. not disputed
     reason_totals = collections.defaultdict(int)
@@ -274,7 +273,7 @@ def make_preamble(project, cats, debug, only_show):
             if cat not in only_show:
                 continue
 
-        section_name, intro_text = catinfo
+        section_name, _ = catinfo
         if not section_name:
             continue
 
@@ -304,7 +303,7 @@ def make_preamble(project, cats, debug, only_show):
     section += "</table>\n"
 
     if debug:
-        section += make_table_classification(project, cats, total_commits)
+        section += make_table_classification(cats, total_commits)
 
     section += "</section>"
     return section
@@ -345,7 +344,7 @@ def generate_period(
     """Generate HTML for the latest report."""
     if index_entry.get("ongoing") and not debug:
         print("Refusing to generate 'release' HTML for ongoing")
-        exit(0)
+        sys.exit(0)
 
     templates = commits_periodical.html_templates.HtmlTemplates()
 

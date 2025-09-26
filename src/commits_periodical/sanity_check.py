@@ -7,7 +7,7 @@ def sanity_check_files_categories(texts):
     for prev, after in zip(st[:-1], st[1:]):
         if after.startswith(prev):
             msg = f"Conflicting filename patterns found:\n  {prev}\n  {after}"
-            raise Exception(msg)
+            raise KeyError(msg)
 
 
 def check_section(order, section, section_name):
@@ -22,7 +22,7 @@ def check_section(order, section, section_name):
     sorted_section_keys = sorted(section_keys, key=order.get)
 
     if section_keys != sorted_section_keys:
-        print(f"Incorrect order in {section}:")
+        print(f"Incorrect order in {section_name}:")
         print(f"{section_keys}\n{sorted_section_keys}")
         return False
 

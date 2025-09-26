@@ -96,7 +96,7 @@ def main():
     if index_entry.is_derived():
         doc = commits_periodical.data.Report(None)
     else:
-        if args.command == "update" or args.command == "annotate":
+        if args.command in ["update", "annotate"]:
             doc = commits_periodical.data.Report(
                 entries_filename, read_only=False
             )

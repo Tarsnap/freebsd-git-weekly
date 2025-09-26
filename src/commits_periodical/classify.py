@@ -33,6 +33,7 @@ def find_highlighted(repo, doc):
 def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
     num_changed = 0
     for pattern, cat in classifier.items():
+        assert cat == "reverts"
         match = re.search(pattern, examine)
         if not match:
             continue
@@ -43,8 +44,8 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
             prefix = commits_periodical.utils.get_summary_prefix(prevcommit)
             name = f"revert-pair-{prefix}"
             hashes = [prevhash, githash]
-            for githash in hashes:
-                entry = doc.entries[githash]
+            for thishash in hashes:
+                entry = doc.entries[thishash]
                 if not entry.is_revert():
                     entry.set_auto_cat("reverts", classifier_name, pattern)
                     num_changed += 1
@@ -53,14 +54,15 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
         else:
             entry = doc.entries[githash]
             hashes = None
+            name = None
             if not entry.is_revert():
                 entry.set_auto_cat("reverts", classifier_name, pattern)
                 num_changed += 1
             if entry.is_highlighted():
                 entry.remove_highlighted()
         if hashes:
-            for githash in hashes:
-                if not doc.entries[githash].has_group():
+            for thishash in hashes:
+                if not doc.entries[thishash].has_group():
                     doc.set_group(hashes, name)
 
     return num_changed
@@ -142,7 +144,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
         # Handle filenames differently
         if examine_part == "filenames":
             for pattern, cat in classifier.items():
-                if not all([re.search(pattern, f) for f in examine]):
+                if not all(re.search(pattern, f) for f in examine):
                     continue
                 entry.set_auto_cat(cat, classifier_name, pattern)
                 num_changed += 1
@@ -165,7 +167,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
             examine = new_examine
 
             for pattern, cat in classifier.items():
-                if not all([re.search(pattern, f) for f in examine]):
+                if not all(re.search(pattern, f) for f in examine):
                     continue
                 entry.set_auto_cat(cat, classifier_name, pattern)
                 num_changed += 1

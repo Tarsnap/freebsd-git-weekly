@@ -32,6 +32,7 @@ class CachedRepo:
         self.cache_filename = cache_filename
         self.repo = None
         self.gitcommits = None
+        self.trust_cache = False
 
     def add_cache(self, filename):
         if self.gitcommits is None:
@@ -125,7 +126,6 @@ class CachedRepo:
         ]
         if not matches:
             return None
-        elif len(matches) == 1:
-            return matches[0]
-
-        assert NotImplementedError("Too many githash matches")
+        if len(matches) > 1:
+            assert NotImplementedError("Too many githash matches")
+        return matches[0]

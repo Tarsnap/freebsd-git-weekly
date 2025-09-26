@@ -72,8 +72,8 @@ class Index:
     def get_latest_name(self):
         return self.latest_name
 
-    def get_index_entry(self, datestr):
-        return self.index_entries[datestr]
+    def get_index_entry(self, report_name):
+        return self.index_entries[report_name]
 
     def get_names(self):
         return self.doc.keys()
