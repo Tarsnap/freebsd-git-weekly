@@ -2,8 +2,27 @@ import collections
 import re
 
 import commits_periodical.utils
+import commits_periodical.project_data
 
 GROUP_AT_LEAST = 3
+
+DEFAULT_RE_FUNC = "search"
+
+
+def re_func(pattern, string, flags, selector):
+    # Find out whether we want 'match' or 'search'
+    if isinstance(selector, str):
+        use_func = selector
+    else:
+        assert isinstance(selector, commits_periodical.project_data.Classifier)
+        use_func = selector.get_metadata("_re_func", DEFAULT_RE_FUNC)
+
+    # Apply the desired function
+    if use_func == "match":
+        return re.match(pattern, string, flags)
+    if use_func == "search":
+        return re.search(pattern, string, flags)
+    raise ValueError(f"re_func() does not support {use_func}")
 
 
 def find_highlighted(repo, doc):
@@ -22,7 +41,8 @@ def find_highlighted(repo, doc):
             entry.set_highlighted()
             num_changed += 1
             continue
-        if re.search("^Relnotes:", gitcommit.message, re.MULTILINE):
+        # 'search' because it's part of a multiline string
+        if re_func("^Relnotes:", gitcommit.message, re.MULTILINE, "search"):
             entry.set_highlighted()
             num_changed += 1
             continue
@@ -34,7 +54,7 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
     num_changed = 0
     for pattern, cat in classifier.items():
         assert cat == "reverts"
-        match = re.search(pattern, examine)
+        match = re_func(pattern, examine, 0, classifier)
         if not match:
             continue
 
@@ -144,7 +164,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
         # Handle filenames differently
         if examine_part == "filenames":
             for pattern, cat in classifier.items():
-                if not all(re.search(pattern, f) for f in examine):
+                if not all(re_func(pattern, f, 0, classifier) for f in examine):
                     continue
                 entry.set_auto_cat(cat, classifier_name, pattern)
                 num_changed += 1
@@ -156,7 +176,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
                 f
                 for f in examine
                 if not any(
-                    re.search(omit_pattern, f)
+                    re_func(omit_pattern, f, 0, classifier)
                     for omit_pattern in meta["_filenames_try_omit"]
                 )
             ]
@@ -167,7 +187,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
             examine = new_examine
 
             for pattern, cat in classifier.items():
-                if not all(re.search(pattern, f) for f in examine):
+                if not all(re_func(pattern, f, 0, classifier) for f in examine):
                     continue
                 entry.set_auto_cat(cat, classifier_name, pattern)
                 num_changed += 1
@@ -176,7 +196,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
 
         # Handle texts (summary or message)
         for pattern, cat in classifier.items():
-            match = re.search(pattern, examine)
+            match = re_func(pattern, examine, 0, classifier)
             if not match:
                 continue
 

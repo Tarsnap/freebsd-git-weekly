@@ -9,8 +9,8 @@ class Classifier:
         to_invert = {k: v for k, v in orig.items() if not k.startswith("_")}
         self.rules = _invert_dict(to_invert)
 
-    def get_metadata(self, key):
-        return self.metadata[key]
+    def get_metadata(self, key, default=None):
+        return self.metadata.get(key, default)
 
     def items(self):
         return self.rules.items()
