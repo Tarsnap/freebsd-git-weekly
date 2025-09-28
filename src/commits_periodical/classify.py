@@ -250,6 +250,7 @@ def group_commits(repo, doc):
 
 def classify_period(repo, doc, project):
     print(f"Classifying {doc.filename}")
+    doc.backup_auto()
     doc.clear_automatic_annotations()
 
     for name, classifier in project.classifiers.items():
@@ -262,4 +263,5 @@ def classify_period(repo, doc, project):
     # highlighted
     find_highlighted(repo, doc)
 
+    doc.clear_backup_auto()
     doc.save()

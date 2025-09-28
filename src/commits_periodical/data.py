@@ -128,6 +128,9 @@ class ReportEntry:
     def has_fixed_cat(self):
         return "fc" in self.ann
 
+    def get_auto_cat(self):
+        return self.ann["ac"]
+
     def get_auto_reasons(self):
         return self.ann["ac_section"], self.ann["ac_pattern"]
 
@@ -197,6 +200,17 @@ class ReportEntry:
         ]:
             if key in self.ann:
                 del self.ann[key]
+
+    def backup_auto(self):
+        if "ac" in self.ann:
+            self.ann["_ac"] = self.ann["ac"]
+
+    def get_backup_auto(self):
+        return self.ann.get("_ac", False)
+
+    def clear_backup_auto(self):
+        if "_ac" in self.ann:
+            del self.ann["_ac"]
 
 
 class Report:
@@ -291,3 +305,11 @@ class Report:
         for githash in self.get_hashes():
             self.entries[githash].clear_automatic_annotation()
         self.groups.clear()
+
+    def backup_auto(self):
+        for githash in self.get_hashes():
+            self.entries[githash].backup_auto()
+
+    def clear_backup_auto(self):
+        for githash in self.get_hashes():
+            self.entries[githash].clear_backup_auto()
