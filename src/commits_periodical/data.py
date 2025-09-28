@@ -163,6 +163,14 @@ class ReportEntry:
         self.ann["ah"] = 1
 
     def set_auto_cat(self, cat, section, pattern):
+        # Sanity check: we shouldn't be re-setting the cat
+        if "ac" in self.ann and self.ann["ac"] != cat:
+            raise ValueError(
+                f"Trying to set already-set entry.  Old, new:\n"
+                f"{self.ann['ac_section']}\t{self.ann['ac']}\t{self.ann['ac_pattern']}\n"
+                f"{section}\t{cat}\t{pattern}"
+            )
+        # Set cat
         self.ann["ac"] = cat
         self.ann["ac_section"] = section
         self.ann["ac_pattern"] = pattern
