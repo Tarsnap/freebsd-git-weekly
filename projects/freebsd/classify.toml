@@ -91,6 +91,7 @@ userland = [
 
 doc = [
     'RELNOTES',
+    'tools/kerneldoc/',
     'usr.bin/man/',
     'usr.bin/mandoc/',
 ]
@@ -212,6 +213,7 @@ hardware = [
     '^GEOM:',
     '^moused\(8\):',
     '^udbc:',
+    '^virtual_oss:',
 ]
 
 network = [
@@ -239,6 +241,7 @@ libs = [
 filesystems = [
     '^fusefs:',
     '^pseudofs:',
+    '^vfs:',
     '^zfs:',
     '^zfsd:',
 ]
