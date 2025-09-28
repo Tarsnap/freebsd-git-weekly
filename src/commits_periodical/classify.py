@@ -187,6 +187,35 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
         print(f"Classified {num_changed} commits due to {classifier_name}")
 
 
+def check_auto_changes(repo, doc):
+    for githash in doc.get_hashes():
+        entry = doc.get_entry(githash)
+        prev = entry.get_backup_auto()
+        if not prev:
+            continue
+        if not entry.has_auto_cat():
+            gitcommit = repo.get_commit(githash)
+            print("\n------- lost automatic cat ", end="")
+            print(f"'{prev}'!")
+            print(gitcommit.githash)
+            print(gitcommit.message)
+            # We've given the warning, so clear the previous cat
+            entry.clear_backup_auto()
+            continue
+        auto_cat = entry.get_auto_cat()
+        if prev != auto_cat:
+            gitcommit = repo.get_commit(githash)
+            print("\n------- automatic changed from ", end="")
+            print(f"'{prev}' to '{auto_cat}'")
+            print(gitcommit.githash)
+            print(gitcommit.message)
+            section, pattern = entry.get_auto_reasons()
+            print(section)
+            print(pattern)
+            # We've given the warning, so clear the previous cat
+            entry.clear_backup_auto()
+
+
 def group_commits(repo, doc):
     """Find and group consecutive commits with the same author, category, and
     commit summary prefix.
@@ -248,13 +277,15 @@ def group_commits(repo, doc):
             doc.set_group(githashes, prefix)
 
 
-def classify_period(repo, doc, project):
+def classify_period(repo, doc, project, debug):
     print(f"Classifying {doc.filename}")
     doc.backup_auto()
     doc.clear_automatic_annotations()
 
     for name, classifier in project.classifiers.items():
         apply_classifier(repo, doc, name, classifier, project.meta)
+    if debug:
+        check_auto_changes(repo, doc)
 
     # group
     group_commits(repo, doc)

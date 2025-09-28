@@ -116,7 +116,12 @@ def main():
             commits_periodical.update.update_period(repo, index_entry, doc)
         case "annotate":
             if not index_entry.is_derived():
-                commits_periodical.classify.classify_period(repo, doc, project)
+                commits_periodical.classify.classify_period(
+                    repo,
+                    doc,
+                    project,
+                    args.debug,
+                )
         case "generate":
             commits_periodical.generate.generate_index(project_dirname, index)
             commits_periodical.generate.generate_period(
