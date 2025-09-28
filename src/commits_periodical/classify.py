@@ -6,7 +6,7 @@ import commits_periodical.project_data
 
 GROUP_AT_LEAST = 3
 
-DEFAULT_RE_FUNC = "search"
+DEFAULT_RE_FUNC = "match"
 
 
 def re_func(pattern, string, flags, selector):
