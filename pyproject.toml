@@ -1,7 +1,7 @@
 [project]
 name = "freebsd-git-weekly"
 description = "A weekly summary of FreeBSD git commits"
-version = "0.14.8"
+version = "0.15"
 authors = [
   { name="Graham Percival", email="gperciva@tarsnap.com" },
 ]
