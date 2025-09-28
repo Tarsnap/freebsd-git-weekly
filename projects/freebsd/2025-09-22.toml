@@ -5,7 +5,7 @@ ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
 
 [f72908c94df9a256422790d4e2a60c9c33a35f2d]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [0ec13430c583830cc4d29640787e2d154b140e31]
@@ -147,13 +147,13 @@ g = "blackhole.4: Describe better-00"
 
 [874eaa3821dd678ca27706af3f023844e3094b2e]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.sbin/.*/tests/.*"
 
 [f221f410920df17a2044cd47a23a6f2a1268b44a]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.sbin/.*/tests/.*"
 
 [d5a5975f8430b15d3b40e4c54214701106b23b83]
 ac = "admin"
@@ -412,8 +412,8 @@ ac_pattern = "sbin/"
 
 [8a4386142d05d34a0f8fdce9b4dc2bf5fcfacf8b]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "sbin/.*/tests/.*"
 
 [b7ff11b380bf6ffaa5181596766e2f21a1eec962]
 ac = "doc"

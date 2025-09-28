@@ -250,7 +250,7 @@ ac_pattern = "sys/"
 
 [7676df2faeb6dcbf20456574dcd2a7f4ab8fff8a]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [faf7e99375910fadb1b409a756be5477b561a517]
@@ -390,7 +390,7 @@ ac_pattern = "sbin/"
 [0b68e3ce6e0e437fa480b25a0ef706ee08562257]
 ac = "contrib"
 ac_section = "03-filenames_plain1"
-ac_pattern = "contrib/"
+ac_pattern = "sys/contrib"
 
 [3877025f52ee205fe99ad4ff68229933d57e4bcb]
 ac = "contrib"
@@ -636,7 +636,7 @@ g = "cxgbe tom-00"
 
 [8b41ba845c7e10b5f241a1f944fe9a8e19ad75a9]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [22238759c57d942865cf9d1a355a0d04819eb621]
@@ -800,7 +800,7 @@ ac_pattern = "sys/"
 
 [91ea7e2ce2b5b2ff4702c3092cfe944862d58172]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 fc = "style"
 fc_reason = "Need to be grouped with d3f8ed6066fdea329ed695925fc726e84d50abc3"
@@ -833,7 +833,7 @@ ac_pattern = ".*\\.[1-9]"
 
 [9dd78db9c30a220ac3e8e65d89548ff99c14dd90]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 g = "libc: prevent incorrect %a/%La rounding at full precision-00"
 

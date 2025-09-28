@@ -18,7 +18,7 @@
 # omit any names in this list and try again.
 _filenames_try_omit = [
     'UPDATING',
-    'tests/.*'
+    'tests/.*',
 ]
 
 
@@ -54,6 +54,22 @@ build = [
     '.*BSDmakefile',
     '.*Makefile',
     'release/.*',
+]
+
+
+[02b-filenames_wildcards2]
+# We need this to not catch '.*Makefile', but it's not worth renumbering all
+# the subsequent section names since that will cause a huge git diff.
+
+_acts_on = "filenames"
+
+tests = [
+    'bin/.*/test/.*', # special case for ed
+    'bin/.*/tests/.*',
+    'sbin/.*/tests/.*',
+    'usr.bin/.*/test/.*', # special case for ctags
+    'usr.bin/.*/tests/.*',
+    'usr.sbin/.*/tests/.*',
 ]
 
 
@@ -112,7 +128,6 @@ admin = [
 ]
 
 libs = [
-    'lib/',
     'secure/lib/',
 ]
 
@@ -136,6 +151,7 @@ internal = [
 ]
 
 tests = [
+    'lib/libc/tests/',
     'tests/',
     'tools/regression/',
     'tools/test/',
@@ -144,6 +160,7 @@ tests = [
 contrib = [
     'contrib/',
     'crypto/openssl/',
+    'sys/contrib',
 ]
 
 [04-filenames_plain2]
@@ -152,6 +169,11 @@ _acts_on = "filenames"
 
 userland = [
     'usr.bin/',
+]
+
+# Must be 2nd pass due to 'lib/libc/tests'
+libs = [
+    'lib/',
 ]
 
 # Must be 2nd pass due to 'usr.sbin/ctld/'

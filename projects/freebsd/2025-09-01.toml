@@ -252,8 +252,8 @@ ac_pattern = ".*\\.[1-9]"
 [245f2abf94889d3fd69360c4f49532074ff25fbf]
 mc = "style"
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "bin/.*/tests/.*"
 
 [512d3c3a2c6391cee61ff41e3fe6304973346857]
 ac = "tests"
@@ -347,7 +347,7 @@ ac_pattern = ".*\\.[1-9]"
 
 [ccc6cf3b67edb9d50f6edb74c9b0e2c23f8b24d3]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [80ab8a4beeb812adfbf1cb823ab7476d4a17659a]
@@ -459,7 +459,7 @@ ac_pattern = "sys/arm64/"
 [e2761a8567f3bd93e4c363c2a1360eb89dd5f85b]
 ac = "contrib"
 ac_section = "03-filenames_plain1"
-ac_pattern = "contrib/"
+ac_pattern = "sys/contrib"
 
 [b3605a7bb6f8c58d939e642671ce70b0ce39b95e]
 ac = "kernel"

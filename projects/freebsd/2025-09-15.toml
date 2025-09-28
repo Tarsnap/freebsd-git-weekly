@@ -123,7 +123,7 @@ g = "ng_hci: Cast NG_HCI_BDADDR_ANY to const bdaddr_t *-00"
 [081f0e38e3324dd3ca63a2d5036a15f52e6cf858]
 ac = "contrib"
 ac_section = "03-filenames_plain1"
-ac_pattern = "contrib/"
+ac_pattern = "sys/contrib"
 
 [f1b656f14464c2e3ec4ab2eeade3b00dce4bd459]
 ac = "kernel"
@@ -367,17 +367,17 @@ ac_pattern = "tests/"
 
 [580d2d429598e6eb3549f9ea7490d10e19904f7c]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [e4cc7f9930573daeb7f1056d008e424aa4c3fd33]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [11cbb7d122ac0219c214ad52c4d6f7cbb9d60ac1]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [c5e920e49c0cf068da3962688cc60ab514ea1252]
@@ -482,12 +482,12 @@ ac_pattern = "sys/"
 
 [0b018cfd81d8fdd64af3fe94c6989a82c0d3afa9]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [9dc1ac8691966480ff8bd9c37dd405b981b41dd5]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [9294eb44eecb71f573f29ff84ce1bd3aa93c077c]
@@ -532,7 +532,7 @@ ac_pattern = "tools/test/"
 
 [3d14cc82d7a8c11cd164a6ba668d20b939c576fe]
 ac = "libs"
-ac_section = "03-filenames_plain1"
+ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [9dfc5e03da50d12f02c2b481139acf9f089d504f]
