@@ -6,7 +6,7 @@ ac_pattern = "contrib/"
 [016d3ec239b39895cf19aa62552fc316d7d98045]
 ac = "tests"
 ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_pattern = "lib/libc/tests/"
 
 [78807c196c9481cdd88b5ce611b488903f52fbd0]
 ac = "admin"
@@ -15,13 +15,13 @@ ac_pattern = "libexec/"
 
 [50cab1202d39e67cd38b395e3e08e140e7617d95]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [1d12658755930e20904d498398379cad0e4ae396]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [b944c8ff17971b1c8f61d5612eac146f5d589e87]
 ac = "tests"
@@ -93,8 +93,8 @@ ac_pattern = "sbin/"
 
 [39d668f1e09ebfc678b3c69c19a0ad0391361c56]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [aa730a66bc74696df85b21ec2719c75d8eab8c9f]
 ac = "build"
@@ -153,9 +153,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [16459743927068abbee34ce3f266b38c71968232]
-ac = "admin"
+ac = "network"
 ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_pattern = "usr.sbin/ctld/"
 
 [3296fda0c309c873ae37a0a4e25ded3ae04b421c]
 ac = "hardware"
@@ -301,8 +301,8 @@ ac_pattern = ".*\\.[1-9]"
 
 [0e7f8abb45263c780a4b448fb52af6b6a3cbc9fd]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [dc74f3003c2d1deea654f24b76a1dd932d428ca0]
 ac = "hardware"

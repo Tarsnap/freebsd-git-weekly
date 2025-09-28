@@ -34,9 +34,7 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [3e13aae0d1f1a28352d52e41d6ef8f02efd9150e]
-ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+mc = "tests"
 
 [88b8b7f0c4e9948667a2279e78e975a784049cba]
 ac = "contrib"
@@ -157,16 +155,16 @@ ac_pattern = "usr.sbin/.*/tests/.*"
 
 [d5a5975f8430b15d3b40e4c54214701106b23b83]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [155290b23f0b503b9db675d6a45f85b189ee1926]
 mc = "contrib"
 
 [7ece602e00e85195fc426a2401c49921cd39735e]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [5efd371bba1508ed94faed2afbd11936f5fe4dac]
 ac = "build"
@@ -281,8 +279,8 @@ ac_pattern = "^release:"
 
 [4422265c67b8a4e19da08fdf5504a7b5e278f815]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [dc0cf0648c8d28ab4914c798a4cff8256ae94ee5]
 ac = "network"
@@ -382,8 +380,8 @@ ac_pattern = "sys/"
 
 [b00e65ff70a4613b3bf2fd2781d174fa437fbfbe]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [b0091036f7240ab244e86a087b18459185a260de]
 ac = "doc"

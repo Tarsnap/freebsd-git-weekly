@@ -97,8 +97,8 @@ ac_pattern = "sys/dev/"
 
 [4729d5e2e2e3013fe1aaf92d5d932a3414f22ab3]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [e76e631bb0e9d338f48f6208e7f8df9d76980abd]
 ac = "hardware"
@@ -137,8 +137,8 @@ ac_pattern = "sys/"
 
 [54cc3da443da7e4a8a483d1fe46071382ff06ed0]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [d440953942372ca275d0743a6e220631bde440ee]
 ac = "kernel"
@@ -160,8 +160,8 @@ g = "vm_domainset-00"
 
 [f304c5bb8be65df83b86f8a50e1c7982b266262d]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [08356a733eb7a7bef1afe20ded2d983b55310de7]
 ac = "hardware"
@@ -183,13 +183,13 @@ g = "qlnxe-00"
 
 [26d56dec1e0e3bab571a00fcb9c39d3269fbcf97]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [2024887abc7d1b931e00fbb0697658e98adf048d]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [c1eff1d745a1193c199f735733e376161c69b12c]
 ac = "kernel"
@@ -316,13 +316,13 @@ ac_pattern = "release/.*"
 
 [0adec3d7ec96105c402ff2286e402ad63c845066]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [f113980fe24fbbb95b75321cb916ed9d48771840]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [0833a3fe5b33f0ef4cdbd4e9b3af0fcd223d366a]
 ac = "admin"
@@ -337,8 +337,8 @@ g = "nanobsd: Expose do_image_prep on command line-00"
 
 [685e60e860d61f6e1bcf981f5c30647e0c025702]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [275f7d72ff6a71bbe46b4282a88f0ea9a24be22a]
 ac = "hardware"
@@ -392,8 +392,8 @@ ac_pattern = "sys/contrib"
 
 [3877025f52ee205fe99ad4ff68229933d57e4bcb]
 ac = "contrib"
-ac_section = "03-filenames_plain1"
-ac_pattern = "contrib/"
+ac_section = "05-summary-prefix"
+ac_pattern = "^dtrace:"
 
 [b653a281f5a977ba73b3d405874f8af8e8b6b50d]
 ac = "hardware"
@@ -475,13 +475,13 @@ ac_pattern = "sys/"
 
 [fc68f8aac623b5494484adfa41ac600415609870]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [08b8843137b8be3f71608400907cb38bcda14965]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [2e72bd422956f831ec7e54255bd12fb721887f4a]
 ac = "hardware"
@@ -735,8 +735,8 @@ ac_pattern = "sys/dev/"
 
 [c806defe8fee62c4738f46e555d69b085e8d1259]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [d4282cfa97d695f3e5590ad330a5a0bb2cca3110]
 ac = "build"
@@ -789,7 +789,7 @@ ac_pattern = "sys/"
 [e0eaabb80d1724acf88f04acbc2ca13d42270863]
 ac = "tests"
 ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_pattern = "lib/libc/tests/"
 
 [dd32d6b29d49838c99d38ba30846ade210b2e6f7]
 ac = "kernel"
@@ -853,7 +853,7 @@ ac_pattern = "tools/test/"
 [4c91a542d30156ba693222c5bb85856aef004c9d]
 ac = "tests"
 ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_pattern = "lib/libc/tests/"
 fc = "libs"
 fc_reason = "Need to be grouped with 9dd78db9c30a220ac3e8e65d89548ff99c14dd90"
 g = "libc: prevent incorrect %a/%La rounding at full precision-00"
@@ -861,7 +861,7 @@ g = "libc: prevent incorrect %a/%La rounding at full precision-00"
 [455426da078cbbea8160bf4232b3fd1ae56e2ff5]
 ac = "tests"
 ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_pattern = "lib/libc/tests/"
 fc = "libs"
 fc_reason = "Need to be grouped with 9dd78db9c30a220ac3e8e65d89548ff99c14dd90"
 g = "libc: prevent incorrect %a/%La rounding at full precision-00"

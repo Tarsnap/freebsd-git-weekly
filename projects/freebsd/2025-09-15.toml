@@ -218,8 +218,8 @@ ac_pattern = "[tT]ypo"
 
 [effcd0ded0ef1c92bef29c1e9bbf517c97bb45b8]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [588a5fad3e8b98955b60707e3e92b8b43566e3f7]
 ac = "network"
@@ -253,8 +253,8 @@ ac_pattern = "sys/dev/"
 
 [1a7a067da456f8962ef87bfdf75c94cd12988615]
 ac = "userland"
-ac_section = "03-filenames_plain1"
-ac_pattern = "bin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
 
 [9b8224b950fb74c8674d257a5a4795baa759c35b]
 mc = "tests"
@@ -279,6 +279,7 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [4be491e1b9b3b650494208eb61511f4a45c7db3f]
+mc = "kernel"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
@@ -309,9 +310,7 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = "release/.*"
 
 [779812d66989a9c3aaed09e4573400fc137f92b0]
-ac = "userland"
-ac_section = "03-filenames_plain1"
-ac_pattern = "bin/"
+mc = "admin"
 ah = 1
 
 [bab6b01bcfead662b8b10dc52a18beeb42794505]
@@ -371,9 +370,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "lib/"
 
 [e4cc7f9930573daeb7f1056d008e424aa4c3fd33]
-ac = "libs"
-ac_section = "04-filenames_plain2"
-ac_pattern = "lib/"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "^dtrace:"
 
 [11cbb7d122ac0219c214ad52c4d6f7cbb9d60ac1]
 ac = "libs"
@@ -635,8 +634,8 @@ ac_pattern = "release/.*"
 
 [cddb9806b50b49722140d7b30c09643376feeaed]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [6b5adf33873a309523dc4e585ff08d70bb6c6f2f]
 mc = "build"
@@ -765,20 +764,20 @@ ac_pattern = "sys/"
 
 [4784ca87441093328cec4e9b133608e172343f64]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 g = "pw-00"
 
 [daa63c9417a28ad08881ff03df828fd8180dad12]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 g = "pw-00"
 
 [bc69d5dffa21cdf228e481b5502fd0f053d65e6d]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 g = "pw-00"
 
 [42dc71a544a4d78d0068f70b6d4089a8c9e07cb1]
@@ -788,20 +787,20 @@ ac_pattern = "[sS]tyle"
 
 [41b2a80353e0dd04939cc260d5763854a264c158]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 g = "pw-01"
 
 [a03d150a3d44c49344ebd0862defd1a5ad1f524e]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 g = "pw-01"
 
 [182ed3c0755f1bf161d8be02016b5f6cf9b57556]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 g = "pw-01"
 
 [5918b4866a9689b50180da42aad6d742466b0d1b]
@@ -811,8 +810,8 @@ ac_pattern = "release/.*"
 
 [561dc357c2f5892af3aa481a1020860b7ff473e0]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [7e79bc8ce70693a892c443c42af5ec16a95ba466]
 ac = "build"
@@ -885,8 +884,8 @@ g = "revert-pair-fcntl(F_SETFL)-00"
 
 [87a7b35f04b60956e9aa192680ae80773ec38f14]
 ac = "admin"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sbin/"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
 
 [060f7edadcff77cf804b60ecb25f8517c8dca62f]
 ac = "build"
