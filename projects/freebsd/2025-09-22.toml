@@ -441,9 +441,10 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sbin/"
 
 [de8af57c6f4155caa540a68387fdb02514d7e815]
-ac = "network"
-ac_section = "05-summary-prefix"
-ac_pattern = "^pf:"
+mc = "network"
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
 
 [cc97633b4b7a3b670d6223b1cd79a0d807dcebbd]
 ac = "doc"

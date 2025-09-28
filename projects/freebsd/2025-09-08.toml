@@ -79,17 +79,15 @@ ac_section = "00-reverts"
 ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
 
 [3008f30d2c2cabdd7e17f7fb922139da8681ffbd]
-ac = "network"
-ac_section = "05-summary-prefix"
-ac_pattern = "^vtnet:"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
 g = "vtnet: improve checksum offloading-00"
 
 [614e9b33bf5594d9d09b5d296afa4f3aa6971823]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
-fc = "network"
-fc_reason = "Need to be grouped with 3008f30d2c2cabdd7e17f7fb922139da8681ffbd"
 g = "vtnet: improve checksum offloading-00"
 
 [952ce991ec6c699ef59528731a9af75152767ef0]
@@ -426,8 +424,8 @@ g = "src.sys.mk: Support src.conf in SRCTOP-00"
 
 [a8a18eeb5e1711ad27c3ee20eb342b73d3badffa]
 ac = "build"
-ac_section = "05-summary-prefix"
-ac_pattern = "^packages:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
 ah = 1
 
 [c3d5387a7bd814a6c341902c29a3f8aaa956fadb]

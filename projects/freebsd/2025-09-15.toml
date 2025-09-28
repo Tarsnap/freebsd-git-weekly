@@ -131,9 +131,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [d566b6a70bcbc329e8c690464043401fa8bdd49f]
-ac = "hardware"
-ac_section = "05-summary-prefix"
-ac_pattern = "^udbc:"
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
 
 [cd02a8a9f8be2085d5242606a79668dc3720e7b0]
 ac = "network"
@@ -279,9 +279,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [4be491e1b9b3b650494208eb61511f4a45c7db3f]
-ac = "admin"
-ac_section = "05-summary-prefix"
-ac_pattern = "^jail:"
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
 
 [0418e6690e91aa6c38dd9af9da43c4c5a9dc1cd2]
 ac = "network"
@@ -295,8 +295,8 @@ ac_pattern = "sys/"
 
 [5eb917426e0aab1e82c7b0e7239724d18bae206a]
 ac = "build"
-ac_section = "05-summary-prefix"
-ac_pattern = "^release:"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
 
 [87a78d9618ab5430b12dd5c54ec61fcaeb8f0655]
 ac = "build"
@@ -591,9 +591,10 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
 
 [3049b2f5115b3b4aed202274e866f360fa2560d1]
-ac = "doc"
-ac_section = "05-summary-prefix"
-ac_pattern = "^.*\\.[1-9]:"
+mc = "doc"
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
 g = "vnet.9: Rename vnet.9/vimage.9 to VNET.9/VIMAGE.9-00"
 
 [08d41d8803d9dd49b709518e8f2ce292b59e9828]
@@ -994,6 +995,7 @@ ac_pattern = "^sys/netinet6:"
 ah = 1
 
 [b31abc95eb730d566891e134ba14af852645f772]
+mc = "hardware"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"

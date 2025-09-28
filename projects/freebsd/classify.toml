@@ -17,6 +17,7 @@
 # If we attempt to classify via filenames and the initial attempt fails,
 # omit any names in this list and try again.
 _filenames_try_omit = [
+    '.*\.[1-9]',
     'UPDATING',
     'tests/.*',
 ]

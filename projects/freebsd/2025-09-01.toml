@@ -395,14 +395,14 @@ ac_section = "05-summary-prefix"
 ac_pattern = "^pseudofs:"
 
 [9404c479946c00b6ac94253d2037c47251dc606c]
-ac = "admin"
-ac_section = "05-summary-prefix"
-ac_pattern = "^pci_user:"
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
 
 [4f6f4aacaf97f301e5c5646649a1217ca8099349]
-ac = "admin"
-ac_section = "05-summary-prefix"
-ac_pattern = "^pci_user:"
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
 
 [e7a04a110724183c72e25c5c8461f89f50b4d08a]
 ac = "doc"
@@ -410,9 +410,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [1c23d8f9f39870951c1d0dfbb112fc4e53237737]
-ac = "network"
-ac_section = "05-summary-prefix"
-ac_pattern = "^vtnet:"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
 g = "vtnet: improve checksum offloading-00"
 
 [e21c3dae676776518b2abf69ef960084c13a21c1]
@@ -427,8 +427,8 @@ ac_pattern = "tests/"
 
 [39d4094173f9a49ff52f5f4408e4dbd5d6ef0409]
 ac = "network"
-ac_section = "05-summary-prefix"
-ac_pattern = "^epair:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
 
 [d3462294c1f02ca20cc1869d618bde57559f5914]
 ac = "reverts"
@@ -580,8 +580,8 @@ ac_pattern = "sys/dev/"
 
 [3aa0a0aaa23b95dbf0ef58b16b313637f515b460]
 ac = "network"
-ac_section = "05-summary-prefix"
-ac_pattern = "^tcp:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
 
 [8b4e4c2737305df8807abc6cd054a32586085c93]
 mc = "internal"
@@ -667,9 +667,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/x86/"
 
 [1167a7d065f8a6265cc8e28025944a2f848e3a7e]
-ac = "hardware"
-ac_section = "05-summary-prefix"
-ac_pattern = "^GEOM:"
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
 
 [656f7f43f204ad1e6956f8257f66b50e032a6c61]
 ac = "kernel"
@@ -866,8 +866,6 @@ ac_pattern = "sys/dev/"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
-fc = "network"
-fc_reason = "Need to be grouped with 1c23d8f9f39870951c1d0dfbb112fc4e53237737"
 g = "vtnet: improve checksum offloading-00"
 
 [0737e2a961cd712fff5b548bb6b823e48a8b527d]
