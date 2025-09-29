@@ -30,7 +30,13 @@ end_including = "52c4b76d1dd385fbe33b78172e39a10749b83d13"
 date_start = "2025-09-22"
 date_end = "2025-09-28"
 start_after = "52c4b76d1dd385fbe33b78172e39a10749b83d13"
-end_including = "7cd3854f827faaad1ecf414d20bdf6802cfa60f8"
+end_including = "008d04b297c700ed386a4e846c1834ade7255043"
+
+[2025-09-29]
+date_start = "2025-09-29"
+date_end = "2025-10-05"
+start_after = "008d04b297c700ed386a4e846c1834ade7255043"
+end_including = "ebc32e74b6f98a6f2b9ed7cba0078cd64d48701f"
 ongoing = true
 
 [2025-09-highlighted]
