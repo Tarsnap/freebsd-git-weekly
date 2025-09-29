@@ -156,6 +156,7 @@ internal = [
     '.git-blame-ignore-revs',
     'ObsoleteFiles.inc',
     'share/misc/bsd-family-tree',
+    'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
 ]
 

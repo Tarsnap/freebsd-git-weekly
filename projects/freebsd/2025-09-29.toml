@@ -12,3 +12,256 @@ ac_pattern = "stand/"
 ac = "admin"
 ac_section = "03-filenames_plain1"
 ac_pattern = "stand/"
+
+[8d485a8490fe1cd60e7b6a00d3c8a8cc116a56fb]
+mc = "contrib"
+
+[69ede18b950e32317d7741410cde7543fa0fce3c]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[d28e4ce6cb61916b4f6bedcf4205a4da1ae121e1]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[cf76bfbb235116702ea1689bf984f200a72d2790]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+
+[c856f327fa6ccf1c5b9e4f531581fa2a0d83c3e0]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[499ff78fb11a5868dfaeaa3fa86ca782b8f06f27]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[6d29d22a9e0c33d1e3e70b8c458982c59b76eb29]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c7b2e390de43bb2b1a5918a23310ec5464ee3787]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1ba1c783296bc651e1af3174a1643dff39edf05a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[87d3ee5d14ba2e912010531e5bb601180bd5803d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[f487e4778bb7154bec5057f5a6f9ca2a0230d4ae]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[6fa85bf1222672681f6f6bd1502cba752d7c5d5f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[fc7f27c31eee81c46f20991343799f017aa79948]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[d4fb12583adc0690ae102c47d08598b3dbb06384]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[c392b5a9e44b9c8a0173a4e2c1fb87ee88f4aa3f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[cfcf1394efb90ff05cd8acce7805145ff93ecac5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[a16423b7a48c61370d4eeb542e3ca6c1b4c9579a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[3d76a4feeead2bbda7792a3c4ca534fd4c159721]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[c231e86ce388a0d0fb64e0fd2ff736c990ec97bb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[721033a7d96f24e80ec18ec9cc17712be55a52b7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[77098268dc397ea86f157f6e66540cd6618e0a05]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
+
+[bc48ca42d0d40b0b88df9cc1d8aec49533529690]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[e5ce2d39368f702cc910e3baf103df0a6e1f9266]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[3203b1a110c890e7b407a83fa3d65b4ba711e59d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a02f38ccedc2c648d57fb6e575723b0b31b67ea0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[6cb542e31bef5fe6e3867b4cfb608f4caeef076d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[c341048373ac6d4bad6dccc63880ff3f326ba15f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[35b883ccf36521a46ba1cd959c144328cce223c5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[19d9a9b15178ed7cfe3f463f43e28cce13fc4f94]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[8bc9d3089314635572accfe31a4a56afcc299bab]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[4f272a5ef3d8073940e7719401d1e8de2de6100a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[6154961e2e4c7e1d998f4c9e22c5370d17edb160]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5b9dc22c91068e206fb6cc18ee0cef27067223df]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[1e9849415ff9ed958d63bc7e5128c39e991933d2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe TOE TLS-00"
+
+[7de77bea2a6136af55fdf9cc49fb5b6e7cb9615e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe TOE TLS-00"
+
+[e2fae07e093bf4953ad7359b2aa9ca62b0d76adf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe TOE TLS-00"
+
+[96054b97b418d1ff2b781e9e23cc86a79d91909a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[96469647bce10132408db9b436dae8941356453b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[9e269eafebfca6c876be76a78e4bda621a921e45]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0532cd2d771372d3266b97aebf4043d5b31b64bd]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[307929b211e07f91260105211b57678e906327af]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[1060684b04b0ee1e07c6c91f7c52978835ff676a]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[e02003bce726333872d65b7b9a1557d97b6d91a0]
+
+[d4cbdd9ad04ab1d68046b62541b2a487e6df077e]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-ports.dot"
+
+[59fc2b0166f71c791113379d16b8cef7039f289d]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[c5a813c9f486da49551c3be2e7700ca0cb0a489a]
+mc = "filesystems"
+
+[9f269a0a771aff4f0a735211907a52c52fc0661b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "MAC/do: Check executable path from the current jail's root-00"
+
+[05e5de00b9ea048f868522ff0bdae4e388685ddf]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "kernel"
+fc_reason = "Need to be grouped with 9f269a0a771aff4f0a735211907a52c52fc0661b"
+g = "MAC/do: Check executable path from the current jail's root-00"
