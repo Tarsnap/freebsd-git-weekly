@@ -174,3 +174,32 @@ RELEASE_DEBUG = '''
   %s
 </p>
 '''
+
+# This isn't an HTML template, but oh well.
+text_announcement = """
+Subject: FreeBSD Git Weekly %s to %s
+
+Hi all,
+
+I'm happy to announce FreeBSD git weekly for %s -- %s:
+https://freebsd-git-weekly.tarsnap.net/%s.html
+
+It's a list of the %s commits in that week, split into categories.
+%s
+
+
+To see all reports:
+https://freebsd-git-weekly.tarsnap.net/
+
+This work is funded by cperciva@ and Tarsnap Backup Inc.
+
+Cheers,
+- Graham Percival
+"""
+
+text_highlighted = """
+"Highlighted" commits are selected automatically if a commit modifies
+UPDATING, or if the commit message contains a "Relnotes:" line.  If you
+think that another commit should be highlighted, let me know and I'm
+happy to make it so.
+"""

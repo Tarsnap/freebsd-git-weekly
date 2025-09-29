@@ -4,6 +4,7 @@ import argparse
 import os
 import sys
 
+import commits_periodical.announcement
 import commits_periodical.classify
 import commits_periodical.generate
 import commits_periodical.project_data
@@ -42,6 +43,7 @@ def parse_args():
     subparsers.add_parser("update-commits", help="Update the commits only")
     subparsers.add_parser("annotate", help="Annotate a week's git commits")
     subparsers.add_parser("generate", help="Generate html for a week")
+    subparsers.add_parser("email", help="Make the email announcement")
     args = parser.parse_args()
     return args
 
@@ -134,6 +136,8 @@ def main():
                 args.reproducible,
                 index_entry_name,
             )
+        case "email":
+            commits_periodical.announcement.announcement(repo, doc, index_entry)
         case _:
             print(f"Command not recognized: {args.command}")
 
