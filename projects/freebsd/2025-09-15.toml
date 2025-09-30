@@ -209,7 +209,7 @@ g = "libc++-00"
 [b050bfa88d4ee2acedb590777603e5c3656cdaca]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = ".*Makefile"
 
 [8c9a919abaa3f6f16a17586ca72bab939788bf69]
 ac = "style"
@@ -550,9 +550,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [1066515eb5219904c76f6f142e65ccf57eee6c53]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netpfil/"]
 
 [9d9bc7f462bd152d87ab8f1767cad19bab09bf8b]
 ac = "admin"
@@ -630,7 +630,7 @@ g = "packages-00"
 [728ec0c094ce473ae17ebd1adb05f0959bf3a68e]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = [".*Makefile", "release/.*"]
 
 [cddb9806b50b49722140d7b30c09643376feeaed]
 ac = "admin"
@@ -639,6 +639,9 @@ ac_pattern = "usr.sbin/"
 
 [6b5adf33873a309523dc4e585ff08d70bb6c6f2f]
 mc = "build"
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
 g = "Include a pkg package in the pkgbase repo-00"
 
 [ea1652bc01c4093eb4a8c6971c69a410883df189]
@@ -661,13 +664,13 @@ g = "release-01"
 [35b81af1eee699509bae2bbe12fdc770d9cee40a]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = [".*Makefile", "release/.*"]
 g = "release-01"
 
 [7c0bc6c703eeaea737d0dbc21996764967e4dc97]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = ".*Makefile"
 g = "release-01"
 
 [9065390ddc7b1ce2613777f6a947200950a5ac71]
@@ -835,11 +838,13 @@ ac_pattern = "release/.*"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
+g = "arm64-00"
 
 [055229eda697445880edd0050d0230a3f1bc85b3]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/"]
+g = "arm64-00"
 
 [5e0e2565288f3d1f1b4223d8bb53c7d70e0aa92c]
 ac = "hardware"
@@ -1015,9 +1020,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [5c55b2f3ba6f48575496bde2d4d86272d10a8197]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/amd64/", "sys/i386/"]
 
 [6ef1bf8f34605c1ffce1e5643e95213a9943c7df]
 ac = "tests"
@@ -1035,9 +1040,9 @@ ac_section = "05-summary-prefix"
 ac_pattern = "^moused\\(8\\):"
 
 [66e7f048f0c8e9e726738fadd9dc819bfda3cbfe]
-ac = "hardware"
-ac_section = "05-summary-prefix"
-ac_pattern = "^moused\\(8\\):"
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["libexec/", "sbin/"]
 
 [2b8bfdcad1f46076eaf40938634538fbcb13cb1c]
 ac = "reverts"

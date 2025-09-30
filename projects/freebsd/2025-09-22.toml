@@ -257,11 +257,14 @@ ac_pattern = "sys/"
 
 [f259daa708f507d3ff450d2eb8c05065674339ec]
 mc = "build"
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
 
 [8654315ae8d368ce47232bde1f2593e256224e56]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = ".*Makefile"
 
 [5bb96dab061af5f44e6090831f1b2724196828b8]
 ac = "build"
@@ -271,7 +274,7 @@ ac_pattern = "release/.*"
 [aba986215fc99d09655d4dcfc5e37f8b1ac83edf]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = ".*Makefile"
 
 [3f5385beeacf49d0edb563ccc712841bcfd6b158]
 ac = "build"
@@ -312,7 +315,7 @@ ac_pattern = "[tT]ypo"
 [86114bae092bd023165e5b9df244fc0849172429]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = ".*Makefile"
 
 [50ee990e1874d6d40b8e3dc359c37e2ef2ebf477]
 ac = "hardware"
@@ -397,7 +400,7 @@ ac_pattern = "sys/"
 [f4f0308440d2321fa9172dab1029f16a70289e4e]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = [".*Makefile", "release/.*"]
 
 [af922319e8136a818bc6c38440d98a574c5df7a9]
 ac = "network"
@@ -483,7 +486,7 @@ ac_pattern = "^pf:"
 [4227d51b6e09ceaaae0f5832c85ec700d80ef18f]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = [".*Makefile", "release/.*"]
 
 [904ac13eed05fa6153393d692f8ecd45b5dabe11]
 ac = "doc"
@@ -581,9 +584,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
 
 [97d152698f4831db5a94d55c15233330c188feda]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/dev/", "sys/x86/"]
 
 [9e1e29bd5ec61bba1bb3366ff4c069b0c8f75954]
 ac = "hardware"
@@ -623,7 +626,7 @@ ac_pattern = "sys/"
 [523fece9d11e5d084c1d20d10d05971f5354d343]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = [".*Makefile", "release/.*"]
 
 [ba364342aeef152f3dc486ff3d2ebd4d5a8dd677]
 ac = "kernel"
@@ -636,9 +639,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "tools/build/"
 
 [d9f03a43f2fec917c31d48b05d751e547c8775c7]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/dev/", "sys/x86/"]
 
 [6b164f18118d0e8dbf9826d7117e0e757f7eb727]
 ac = "doc"

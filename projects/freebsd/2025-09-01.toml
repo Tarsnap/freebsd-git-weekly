@@ -29,9 +29,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "tests/"
 
 [9764aa1ccad08a7ec53ed9b80741b9553f3fa4e6]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netinet/", "sys/netinet6/"]
 
 [c8a5df48de6f2c5fada622af043f3c3fca88fca1]
 ac = "network"
@@ -189,9 +189,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sbin/"
 
 [ddd39152743abc3cff05e7475c0ce48aa303956a]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netpfil/"]
 
 [5af7499b6d81e0514dc79d74a10e2b2a0e3fe08b]
 ac = "network"
@@ -207,16 +207,19 @@ ac_pattern = "sys/netpfil/"
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netpfil/"
+g = "pf-00"
 
 [44cc3b2731914f94851c0e468a5fa07c5f6ca006]
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netpfil/"
+g = "pf-00"
 
 [275ff85b254c1f160f965dd9dbb5801f66022eab]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netpfil/"]
+g = "pf-00"
 
 [5a308afeaf3d12562c6a61e06f112f730f4d7270]
 ac = "kernel"
@@ -359,9 +362,9 @@ fc_reason = "Need to be grouped with e921d2842ee8ca9e3dae8952e1cf2645cee785aa"
 g = "umb: Fix setting the input routine-00"
 
 [b5c46895fdddcdb7dd1994598925d6989ea7c8f2]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netinet/", "sys/netinet6/"]
 
 [1c52d525f06411726d7755081f904de64749eb9b]
 ac = "filesystems"
@@ -462,45 +465,45 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/contrib"
 
 [b3605a7bb6f8c58d939e642671ce70b0ce39b95e]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/"]
 g = "arm64-00"
 
 [9204a315a71c5aa9a9b8c11f2dcefb155dd5fc34]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/"]
 g = "arm64-00"
 
 [4bc68fa98f68211ee7943d77cfc91f60ccb5880d]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/"]
 g = "arm64-00"
 
 [c76b0247a95ed090cc0d83b2698228d2937af3e6]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-01"
+g = "arm64-00"
 
 [1ae3694edb8bb5f4d4831a18878677eb491861fb]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-01"
+g = "arm64-00"
 
 [efb1c4bac122e7acb6aa4e180db66e14cfd19810]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-01"
+g = "arm64-00"
 
 [7156a5f1af9e55cb0fcd409fd4555d1ca5cf34ab]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netinet/", "sys/netinet6/"]
 
 [93a734f07a22464952b35ad0888c6fdb6e099921]
 ac = "network"
@@ -511,25 +514,25 @@ ac_pattern = "sys/net/"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-02"
+g = "arm64-01"
 
 [8df4dc90952be7afee36e3cc80c1a76e2c66fbac]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-02"
+g = "arm64-01"
 
 [fa23bfb425d53a87064d86ec9ae0ae5e31aa5d5b]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-02"
+g = "arm64-01"
 
 [a884f699e4bfc1be4e721d3ec4fa93915be18a86]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/arm64/"
-g = "arm64-02"
+g = "arm64-01"
 
 [65688fcb79eee1711fa2a83bee4bd2cd0b851d19]
 ac = "build"
