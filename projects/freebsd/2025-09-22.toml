@@ -169,8 +169,8 @@ ac_pattern = "usr.sbin/"
 
 [5efd371bba1508ed94faed2afbd11936f5fe4dac]
 ac = "build"
-ac_section = "05-summary-prefix"
-ac_pattern = "^packages:"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
 ah = 1
 
 [2e45f207652842f03101d250d6e542e5e89b6e4a]
@@ -189,15 +189,15 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [67c3c3a274468d09925af3cf64da3f9cf878cc80]
-ac = "libs"
-ac_section = "05-summary-prefix"
-ac_pattern = "^lib.*:"
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
 ah = 1
 
 [61ca69110f2676b7dd3c7ff8dea899615d341e1e]
 ac = "build"
-ac_section = "05-summary-prefix"
-ac_pattern = "^packages:"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
 ah = 1
 
 [f6d1cdabdd6fe5b26bda58348647d891ad138471]
@@ -766,16 +766,19 @@ ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netpfil/"
+g = "pf-00"
 
 [6353f5d9a5c6f194bb014b8785a57f5314e8c652]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netpfil/"]
+g = "pf-00"
 
 [7cd3854f827faaad1ecf414d20bdf6802cfa60f8]
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netpfil/"
+g = "pf-00"
 
 [008d04b297c700ed386a4e846c1834ade7255043]
 mc = "internal"

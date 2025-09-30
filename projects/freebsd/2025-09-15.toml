@@ -297,7 +297,7 @@ ac_pattern = "sys/"
 [5eb917426e0aab1e82c7b0e7239724d18bae206a]
 ac = "build"
 ac_section = "02-filenames_wildcards"
-ac_pattern = "release/.*"
+ac_pattern = [".*Makefile", "release/.*"]
 
 [87a78d9618ab5430b12dd5c54ec61fcaeb8f0655]
 ac = "build"
