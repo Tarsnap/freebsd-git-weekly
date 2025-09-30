@@ -60,7 +60,7 @@ ac_pattern = ".*\\.[1-9]"
 [c00aca9a714ee3cdb867d4014898ec4e345465a5]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^pf:"
+ac_pattern = "pf:"
 
 [5e89648ee68e44d01d00d41d53b6934c604f8c50]
 ac = "tests"
@@ -90,7 +90,7 @@ ac_pattern = "tests/"
 [dafd960a3d65cdaccb1f8b9395fad14092ec9eb2]
 ac = "libs"
 ac_section = "05-summary-prefix"
-ac_pattern = "^lib.*:"
+ac_pattern = "lib.*:"
 
 [680f9acc3657efcea07d8ac0954645b6eaf8dac8]
 ac = "network"
@@ -138,7 +138,7 @@ ac_pattern = "sys/"
 [cd02a8a9f8be2085d5242606a79668dc3720e7b0]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^ip6:"
+ac_pattern = "ip6:"
 
 [246d7e9fc23928be22db38220f5439f5cdee5264]
 ac = "reverts"
@@ -372,7 +372,7 @@ ac_pattern = "lib/"
 [e4cc7f9930573daeb7f1056d008e424aa4c3fd33]
 ac = "contrib"
 ac_section = "05-summary-prefix"
-ac_pattern = "^dtrace:"
+ac_pattern = "dtrace:"
 
 [11cbb7d122ac0219c214ad52c4d6f7cbb9d60ac1]
 ac = "libs"
@@ -676,13 +676,13 @@ g = "release-01"
 [9065390ddc7b1ce2613777f6a947200950a5ac71]
 ac = "build"
 ac_section = "05-summary-prefix"
-ac_pattern = "^packages:"
+ac_pattern = "packages:"
 ah = 1
 
 [ea5e50c2985bea029e7b30ecee773a59fe22cd68]
 ac = "build"
 ac_section = "05-summary-prefix"
-ac_pattern = "^packages:"
+ac_pattern = "packages:"
 ah = 1
 
 [25cddb1dfec6cfd874961ed08dcc9c76ec533df1]
@@ -724,7 +724,7 @@ ac_pattern = "sys/dev/"
 [83804499b72405475027e670690d4cdbada46090]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^cpucontrol:"
+ac_pattern = "cpucontrol:"
 
 [8f7a4d7949d83c13a7451cba7626950d182dfc5d]
 ac = "internal"
@@ -742,12 +742,12 @@ ac_pattern = "[tT]ypo"
 [c99bb5747f5e88527e7414fd543c903f367001c4]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^nanobsd:"
+ac_pattern = "nanobsd:"
 
 [d5984d5f29a7c717b88ccd17a85a747792403cdf]
 ac = "contrib"
 ac_section = "05-summary-prefix"
-ac_pattern = "^OpenSSL:"
+ac_pattern = "OpenSSL:"
 
 [2c06b824436df6177545cc0f1603e5c3bfbf3365]
 ac = "build"
@@ -995,7 +995,7 @@ ac_pattern = "sys/dev/"
 [31ec8b6407fdd5a87d70265762457c67ce618283]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^sys/netinet6:"
+ac_pattern = "sys/netinet6:"
 ah = 1
 
 [b31abc95eb730d566891e134ba14af852645f772]
@@ -1037,7 +1037,7 @@ ac_pattern = "tools/test/"
 [1335bf5ce1c9f0bf15c1fbed502f49e5a4950e32]
 ac = "hardware"
 ac_section = "05-summary-prefix"
-ac_pattern = "^moused\\(8\\):"
+ac_pattern = "moused\\(8\\):"
 
 [66e7f048f0c8e9e726738fadd9dc819bfda3cbfe]
 ac = "admin"

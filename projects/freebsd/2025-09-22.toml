@@ -57,7 +57,7 @@ ac_pattern = "sys/netpfil/"
 [99475087d63b4602a0213645bc17d82c3946e2fd]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^pf:"
+ac_pattern = "pf:"
 
 [5953e7c98427e038500221e885dffa181dcc064b]
 ac = "admin"
@@ -279,7 +279,7 @@ ac_pattern = ".*Makefile"
 [3f5385beeacf49d0edb563ccc712841bcfd6b158]
 ac = "build"
 ac_section = "05-summary-prefix"
-ac_pattern = "^release:"
+ac_pattern = "release:"
 
 [4422265c67b8a4e19da08fdf5504a7b5e278f815]
 ac = "admin"
@@ -340,7 +340,7 @@ ac_pattern = "sys/netgraph/"
 [2352b89d2f732e3fa33fbd494267f0d4cb917e51]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^nanobsd:"
+ac_pattern = "nanobsd:"
 
 [014647a30ff4c76a99962ee6b079db0d9cdf5949]
 ac = "build"
@@ -430,7 +430,7 @@ ac_pattern = "sbin/"
 [b9d652bb75ffa0945a3bebf68d6d82de26efd269]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^pf:"
+ac_pattern = "pf:"
 
 [59f3838b0a942b44397063ffb63a4e4d569129f1]
 ac = "admin"
@@ -481,7 +481,7 @@ ac_pattern = "sbin/"
 [b84666f798e872efd356c5743640e3683ab82f9d]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^pf:"
+ac_pattern = "pf:"
 
 [4227d51b6e09ceaaae0f5832c85ec700d80ef18f]
 ac = "build"
@@ -616,7 +616,7 @@ ac_pattern = "sys/"
 [7e4c451c12aeb26cc1179221b8230c491b17cf00]
 ac = "filesystems"
 ac_section = "05-summary-prefix"
-ac_pattern = "^vfs:"
+ac_pattern = "vfs:"
 
 [5e395c34402dc3fd5c786168442290a63ff54596]
 ac = "kernel"
@@ -704,7 +704,7 @@ ac_pattern = ".*\\.[1-9]"
 [9cab9fde5edad9b409dd2317a2aec7815e6d6bed]
 ac = "hardware"
 ac_section = "05-summary-prefix"
-ac_pattern = "^virtual_oss:"
+ac_pattern = "virtual_oss:"
 g = "virtual_oss: Port to base-00"
 
 [c457acb4ee821cf015930a94f52c3870786468a7]

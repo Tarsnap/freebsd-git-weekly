@@ -176,7 +176,7 @@ g = "revert-pair-epair-00"
 [932ec59d9996af2dda50287d56186708d8388539]
 ac = "network"
 ac_section = "05-summary-prefix"
-ac_pattern = "^pf:"
+ac_pattern = "pf:"
 
 [67082c75f740ac63d068f154ca0f88e71a3ca960]
 ac = "network"
@@ -239,7 +239,7 @@ ac_pattern = "libexec/"
 [4b4cf0d52c43e33c32983df60a8ea16b3d9e2f20]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^tty:"
+ac_pattern = "tty:"
 
 [bd481f1bc6b38904049039ccbce998a19bfd0fdd]
 ac = "doc"
@@ -395,7 +395,7 @@ g = "revert-pair-pseudofs-00"
 [a2f08d0ddc29e4da15f614bdb6a5072b3fd6332c]
 ac = "filesystems"
 ac_section = "05-summary-prefix"
-ac_pattern = "^pseudofs:"
+ac_pattern = "pseudofs:"
 
 [9404c479946c00b6ac94253d2037c47251dc606c]
 ac = "kernel"
@@ -563,7 +563,7 @@ ac_pattern = "sys/dev/"
 [851dc7f859c23cab09a348bca03ab655534fb7e0]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^jail:"
+ac_pattern = "jail:"
 ah = 1
 
 [d4bfebf917bcecf23892bb5069ee91bec75bef71]
@@ -574,7 +574,7 @@ ac_pattern = "sys/"
 [aef807876c305587c60f73e2cd914115d22a53fd]
 ac = "hardware"
 ac_section = "05-summary-prefix"
-ac_pattern = "^moused\\(8\\):"
+ac_pattern = "moused\\(8\\):"
 
 [641f525a87c9a32635ce51a102ebb5c0aa9ff921]
 ac = "hardware"

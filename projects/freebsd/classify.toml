@@ -205,63 +205,63 @@ userland = [
 ]
 
 doc = [
-    '^.*\.[1-9]:',
-    '^UPDATING',
-    '^man .*',
+    '.*\.[1-9]:',
+    'UPDATING',
+    'man .*',
 ]
 
 hardware = [
-    '^GEOM:',
-    '^moused\(8\):',
-    '^udbc:',
-    '^virtual_oss:',
+    'GEOM:',
+    'moused\(8\):',
+    'udbc:',
+    'virtual_oss:',
 ]
 
 network = [
-    '^epair:',
-    '^ip6:',
-    '^pf:',
-    '^sys/netinet6:',
-    '^tcp:',
-    '^vtnet:',
+    'epair:',
+    'ip6:',
+    'pf:',
+    'sys/netinet6:',
+    'tcp:',
+    'vtnet:',
 ]
 
 admin = [
-    '^cpucontrol:',
-    '^jail:',
-    '^jaildesc:',
-    '^nanobsd:',
-    '^pci_user:',
-    '^tty:',
+    'cpucontrol:',
+    'jail:',
+    'jaildesc:',
+    'nanobsd:',
+    'pci_user:',
+    'tty:',
 ]
 
 libs = [
-    '^lib.*:',
+    'lib.*:',
 ]
 
 filesystems = [
-    '^fusefs:',
-    '^pseudofs:',
-    '^vfs:',
-    '^zfs:',
-    '^zfsd:',
+    'fusefs:',
+    'pseudofs:',
+    'vfs:',
+    'zfs:',
+    'zfsd:',
 ]
 
 kernel = [
-    '^vmm:',
+    'vmm:',
 ]
 
 build = [
-    '^bsd\..*\.mk:',
-    '^packages:',
-    '^release:',
-    '^src\..*\.mk:',
+    'bsd\..*\.mk:',
+    'packages:',
+    'release:',
+    'src\..*\.mk:',
 ]
 
 internal = [
 ]
 
 contrib = [
-    '^OpenSSL:',
-    '^dtrace:',
+    'OpenSSL:',
+    'dtrace:',
 ]

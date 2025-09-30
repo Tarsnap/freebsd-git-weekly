@@ -327,12 +327,12 @@ ac_pattern = "usr.sbin/"
 [0833a3fe5b33f0ef4cdbd4e9b3af0fcd223d366a]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^nanobsd:"
+ac_pattern = "nanobsd:"
 
 [90593b1bdb80a41b499b47437b4f545c24666b2d]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^nanobsd:"
+ac_pattern = "nanobsd:"
 g = "nanobsd: Expose do_image_prep on command line-00"
 
 [685e60e860d61f6e1bcf981f5c30647e0c025702]
@@ -393,7 +393,7 @@ ac_pattern = "sys/contrib"
 [3877025f52ee205fe99ad4ff68229933d57e4bcb]
 ac = "contrib"
 ac_section = "05-summary-prefix"
-ac_pattern = "^dtrace:"
+ac_pattern = "dtrace:"
 
 [b653a281f5a977ba73b3d405874f8af8e8b6b50d]
 ac = "hardware"
@@ -403,7 +403,7 @@ ac_pattern = "sys/dev/"
 [3d39856d4dfeab5b5a5e6bbdb6ce965db5bc4dc1]
 ac = "kernel"
 ac_section = "05-summary-prefix"
-ac_pattern = "^vmm:"
+ac_pattern = "vmm:"
 
 [c1532f74e4684f4b4227e873bae05b16ccc0a17c]
 ac = "hardware"
@@ -419,7 +419,7 @@ g = "revert-pair-libc-00"
 [dd8c666d8b78f6b9ddb691f0505837fa885ff3b4]
 ac = "build"
 ac_section = "05-summary-prefix"
-ac_pattern = "^src\\..*\\.mk:"
+ac_pattern = "src\\..*\\.mk:"
 g = "src.sys.mk: Support src.conf in SRCTOP-00"
 
 [a8a18eeb5e1711ad27c3ee20eb342b73d3badffa]
@@ -694,7 +694,7 @@ ac_pattern = "[sS]tyle"
 [ab2fea3f9a5a58f0ba90499ad3a8614e3dca0c5f]
 ac = "doc"
 ac_section = "05-summary-prefix"
-ac_pattern = "^UPDATING"
+ac_pattern = "UPDATING"
 fc = "build"
 fc_reason = "Need to be grouped with dd8c666d8b78f6b9ddb691f0505837fa885ff3b4"
 g = "src.sys.mk: Support src.conf in SRCTOP-00"
@@ -747,7 +747,7 @@ g = "release.sh: Pass PKGCONF through to make release-00"
 [d0362607b23043717baadfa33a308b0b4ae77d7c]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^nanobsd:"
+ac_pattern = "nanobsd:"
 g = "nanobsd: Expose do_image_prep on command line-00"
 
 [3eed21505fa15ea8ba837307fc766774fe510e5c]
@@ -807,7 +807,7 @@ g = "getgrouplist(3): Remove superfluous headers, bogus comment and whitespace-0
 [e75dda31c1eead9ad40580bd8fec17f2bbf55a21]
 ac = "admin"
 ac_section = "05-summary-prefix"
-ac_pattern = "^jaildesc:"
+ac_pattern = "jaildesc:"
 
 [340e68fd7c0d62cac1f0876b6475a89df5065db5]
 ac = "build"
