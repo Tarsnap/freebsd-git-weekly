@@ -165,15 +165,24 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
         # Handle filenames differently
         if examine_part == "filenames":
             for cat, patterns in classifier.items():
+                keep_patterns = set()
+                matches_cat = list(examine)
                 for pattern in patterns:
-                    if not all(
-                        re_func(pattern, f, 0, classifier) for f in examine
-                    ):
-                        continue
-                    entry.set_auto_cat(cat, classifier_name, pattern)
-                    num_changed += 1
-                if entry.has_auto_cat():
+                    for f in list(matches_cat):
+                        if re_func(pattern, f, 0, classifier):
+                            matches_cat.remove(f)
+                            keep_patterns.add(pattern)
+                # If there's any files left, it isn't a complete match
+                if matches_cat:
                     continue
+                if len(keep_patterns) == 1:
+                    print_patterns = keep_patterns.pop()
+                else:
+                    print_patterns = sorted(keep_patterns)
+                entry.set_auto_cat(cat, classifier_name, print_patterns)
+                num_changed += 1
+            if entry.has_auto_cat():
+                continue
 
             # Try omitting the specified files
             new_examine = [
@@ -192,9 +201,10 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
 
             for cat, patterns in classifier.items():
                 for pattern in patterns:
-                    if not all(
+                    voting = {
                         re_func(pattern, f, 0, classifier) for f in examine
-                    ):
+                    }
+                    if None in voting:
                         continue
                     entry.set_auto_cat(cat, classifier_name, pattern)
                     num_changed += 1
