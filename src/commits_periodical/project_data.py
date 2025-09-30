@@ -6,28 +6,13 @@ import commits_periodical.utils
 class Classifier:
     def __init__(self, orig):
         self.metadata = {k: v for k, v in orig.items() if k.startswith("_")}
-        to_invert = {k: v for k, v in orig.items() if not k.startswith("_")}
-        self.rules = _invert_dict(to_invert)
+        self.rules = {k: v for k, v in orig.items() if not k.startswith("_")}
 
     def get_metadata(self, key, default=None):
         return self.metadata.get(key, default)
 
     def items(self):
         return self.rules.items()
-
-
-def _invert_dict(orig: dict):
-    inverted = {}
-    for key, value in orig.items():
-        # Don't invert underscore keys
-        assert not key.startswith("_")
-
-        for item in value:
-            # Quick sanity check
-            assert item not in inverted
-
-            inverted[item] = key
-    return inverted
 
 
 def sanity_check(categories, orig_classifiers):

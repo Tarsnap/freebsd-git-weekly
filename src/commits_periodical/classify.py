@@ -52,38 +52,39 @@ def find_highlighted(repo, doc):
 
 def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
     num_changed = 0
-    for pattern, cat in classifier.items():
+    for cat, patterns in classifier.items():
         assert cat == "reverts"
-        match = re_func(pattern, examine, 0, classifier)
-        if not match:
-            continue
+        for pattern in patterns:
+            match = re_func(pattern, examine, 0, classifier)
+            if not match:
+                continue
 
-        prevhash = match.group(1)
-        prevcommit = repo.get_commit(prevhash)
-        if prevcommit:
-            prefix = commits_periodical.utils.get_summary_prefix(prevcommit)
-            name = f"revert-pair-{prefix}"
-            hashes = [prevhash, githash]
-            for thishash in hashes:
-                entry = doc.entries[thishash]
+            prevhash = match.group(1)
+            prevcommit = repo.get_commit(prevhash)
+            if prevcommit:
+                prefix = commits_periodical.utils.get_summary_prefix(prevcommit)
+                name = f"revert-pair-{prefix}"
+                hashes = [prevhash, githash]
+                for thishash in hashes:
+                    entry = doc.entries[thishash]
+                    if not entry.is_revert():
+                        entry.set_auto_cat("reverts", classifier_name, pattern)
+                        num_changed += 1
+                    if entry.is_highlighted():
+                        entry.remove_highlighted()
+            else:
+                entry = doc.entries[githash]
+                hashes = None
+                name = None
                 if not entry.is_revert():
                     entry.set_auto_cat("reverts", classifier_name, pattern)
                     num_changed += 1
                 if entry.is_highlighted():
                     entry.remove_highlighted()
-        else:
-            entry = doc.entries[githash]
-            hashes = None
-            name = None
-            if not entry.is_revert():
-                entry.set_auto_cat("reverts", classifier_name, pattern)
-                num_changed += 1
-            if entry.is_highlighted():
-                entry.remove_highlighted()
-        if hashes:
-            for thishash in hashes:
-                if not doc.entries[thishash].has_group():
-                    doc.set_group(hashes, name)
+            if hashes:
+                for thishash in hashes:
+                    if not doc.entries[thishash].has_group():
+                        doc.set_group(hashes, name)
 
     return num_changed
 
@@ -163,13 +164,16 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
 
         # Handle filenames differently
         if examine_part == "filenames":
-            for pattern, cat in classifier.items():
-                if not all(re_func(pattern, f, 0, classifier) for f in examine):
+            for cat, patterns in classifier.items():
+                for pattern in patterns:
+                    if not all(
+                        re_func(pattern, f, 0, classifier) for f in examine
+                    ):
+                        continue
+                    entry.set_auto_cat(cat, classifier_name, pattern)
+                    num_changed += 1
+                if entry.has_auto_cat():
                     continue
-                entry.set_auto_cat(cat, classifier_name, pattern)
-                num_changed += 1
-            if entry.has_auto_cat():
-                continue
 
             # Try omitting the specified files
             new_examine = [
@@ -186,22 +190,26 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
                 continue
             examine = new_examine
 
-            for pattern, cat in classifier.items():
-                if not all(re_func(pattern, f, 0, classifier) for f in examine):
-                    continue
-                entry.set_auto_cat(cat, classifier_name, pattern)
-                num_changed += 1
+            for cat, patterns in classifier.items():
+                for pattern in patterns:
+                    if not all(
+                        re_func(pattern, f, 0, classifier) for f in examine
+                    ):
+                        continue
+                    entry.set_auto_cat(cat, classifier_name, pattern)
+                    num_changed += 1
 
             continue
 
         # Handle texts (summary or message)
-        for pattern, cat in classifier.items():
-            match = re_func(pattern, examine, 0, classifier)
-            if not match:
-                continue
+        for cat, patterns in classifier.items():
+            for pattern in patterns:
+                match = re_func(pattern, examine, 0, classifier)
+                if not match:
+                    continue
 
-            entry.set_auto_cat(cat, classifier_name, pattern)
-            num_changed += 1
+                entry.set_auto_cat(cat, classifier_name, pattern)
+                num_changed += 1
 
     if num_changed > 0:
         print(f"Classified {num_changed} commits due to {classifier_name}")
