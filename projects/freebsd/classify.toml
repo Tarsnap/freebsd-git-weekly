@@ -20,6 +20,7 @@ _filenames_try_omit = [
     '.*/tests/.*',
     '.*\.[1-9]',
     'UPDATING',
+    'sys/modules',
     'tests/.*',
 ]
 

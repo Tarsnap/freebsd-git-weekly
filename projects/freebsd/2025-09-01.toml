@@ -567,9 +567,9 @@ ac_pattern = "jail:"
 ah = 1
 
 [d4bfebf917bcecf23892bb5069ee91bec75bef71]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
 
 [aef807876c305587c60f73e2cd914115d22a53fd]
 ac = "hardware"

@@ -131,9 +131,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [d566b6a70bcbc329e8c690464043401fa8bdd49f]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
 
 [cd02a8a9f8be2085d5242606a79668dc3720e7b0]
 ac = "network"

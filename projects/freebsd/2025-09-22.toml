@@ -363,9 +363,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [113e60742ef6ba5c069aa737ee57ba3c2f88b248]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
 
 [56e01d0d7e0f7c2129c05467ca99d5f5538f52bc]
 ac = "build"
@@ -662,9 +662,9 @@ fc_reason = "Need to be grouped with a5f14e4f9069a8ffed66d923bb0ecf20d8a0e6af"
 g = "tzcode: Use -00 only for invalid time zones-00"
 
 [2ed9833791f28e14843ac813f90cb030e45948dc]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
 
 [68691160f41bf6ce9ab70ddeeb7eeec2a7bff245]
 ac = "admin"

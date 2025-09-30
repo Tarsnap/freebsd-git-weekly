@@ -376,9 +376,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [70999532eea52da609e90c003b583ee0bfa5246b]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
 
 [187ee62c71f2be62870f26ae98de865e330121be]
 ac = "admin"
@@ -792,9 +792,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "lib/libc/tests/"
 
 [dd32d6b29d49838c99d38ba30846ade210b2e6f7]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
 
 [91ea7e2ce2b5b2ff4702c3092cfe944862d58172]
 ac = "libs"
