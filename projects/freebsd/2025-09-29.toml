@@ -40,16 +40,19 @@ ac_pattern = ".*\\.[1-9]"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
 
 [6d29d22a9e0c33d1e3e70b8c458982c59b76eb29]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
 
 [c7b2e390de43bb2b1a5918a23310ec5464ee3787]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe(4)-00"
 
 [1ba1c783296bc651e1af3174a1643dff39edf05a]
 ac = "hardware"
@@ -158,16 +161,19 @@ ac_pattern = "sys/net/"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "cxgbe-00"
 
 [35b883ccf36521a46ba1cd959c144328cce223c5]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "cxgbe-00"
 
 [19d9a9b15178ed7cfe3f463f43e28cce13fc4f94]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe-00"
 
 [8bc9d3089314635572accfe31a4a56afcc299bab]
 ac = "hardware"
@@ -175,19 +181,22 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
 
 [4f272a5ef3d8073940e7719401d1e8de2de6100a]
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "cxgbe-01"
 
 [6154961e2e4c7e1d998f4c9e22c5370d17edb160]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "cxgbe-01"
 
 [5b9dc22c91068e206fb6cc18ee0cef27067223df]
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+g = "cxgbe-01"
 
 [1e9849415ff9ed958d63bc7e5128c39e991933d2]
 ac = "hardware"
@@ -238,6 +247,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "libexec/"
 
 [e02003bce726333872d65b7b9a1557d97b6d91a0]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "openssh:"
 
 [d4cbdd9ad04ab1d68046b62541b2a487e6df077e]
 ac = "internal"
@@ -265,3 +277,240 @@ ac_pattern = ".*Makefile"
 fc = "kernel"
 fc_reason = "Need to be grouped with 9f269a0a771aff4f0a735211907a52c52fc0661b"
 g = "MAC/do: Check executable path from the current jail's root-00"
+
+[3ca1e69028acdee30739c0e0856692395a36fd21]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+ah = 1
+
+[c87a9f51a0debf707cb4fc9a5e3b4425b08d154d]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "kernel"
+fc_reason = "Need to be grouped with 05e5de00b9ea048f868522ff0bdae4e388685ddf"
+g = "MAC/do: Check executable path from the current jail's root-00"
+
+[17be686a39a07958f61e42c4b5c797bb1d1e9895]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[4e7a375804e5ad4b244ce9a035fa971cbf2f0944]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[614c8750ce116865953916b8b5bab2467ee94187]
+mc = "network"
+ah = 1
+
+[eaecc9551ae4d342fee921fb4c0a1eeb6bf68b86]
+ac = "build"
+ac_section = "05-summary-prefix"
+ac_pattern = "packages:"
+g = "packages: Add an \"optional\" set-00"
+
+[2c2a2b8281be2f4270fd98eda743a3a8c2f36949]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[123c2dc6e15a62ceba3469caf0f1a6801214a7d3]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[4179e6b78297369f0cf0eae1076e01e5151c5cbe]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[52ce810302f70cc7b995651eb1b19adfa014b351]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+ah = 1
+
+[494de51bc0074472d1b01604f085daea0844f240]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[89eee8ee2ce57b7884defb8f9af016cd28ef1562]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "wlanstat\\(8\\):"
+
+[6952bb321c5cc14168a4f2638a0ce2483cc5149c]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "wlanstat\\(8\\):"
+
+[f1a372ed88b11c1e096523c0b6cf62902c1db37c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/", "sys/dev/"]
+
+[a087b4aec38c37d47b888aa8411948250cdd4bc0]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "packages: Add an \"optional\" set-00"
+
+[d31e342bcc8e22d7eb25c21a711cd4b8a54db6c0]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "sh: Remove /.profile-00"
+ah = 1
+
+[2507698b630db3d88b0aab12c348873f827255a2]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[bb0955ee4db8870bb013cf7d208ad9b2fc27b619]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "sh: Remove /.profile-00"
+
+[b0f25a38d7217b04dcdf7f2272ecf5f2f314d314]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[11709058bf680f5738c6656597f2ff9e662c9400]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[9124ace751eb9c856c50c3698cf93ede45a9897d]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[41ee4321cc528b1f72d6a674fafdd5337be83f95]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[a053f948ade60e8a63ebdaa676bf95c5ce38af07]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[4c8bbf5897b7e8e580f8ecb1d9d93f5d6d6c7f24]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[25d551b5fb1d28ed485d56d9d637993eb2d223b1]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[24e4dcf4ba5e9dedcf89efd358ea3e1fe5867020]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[3cbd1f81688855a91f826ee4e04618ceace101ca]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[2ffaca551eaf32c17f701762ecf29a961cf19aa4]
+mc = "hardware"
+
+[fa26e445544eb88f05779258e2ab9c96384fe74d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "gpioc-00"
+
+[d000adfe41e6f2fe8f3dbe92d8fc2d34ae882086]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "gpioc-00"
+
+[2679636b4412927242e46d3806fbb58e2702eddb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "gpioc-00"
+
+[06afa0a55e0acc00823f08fe17305df13502f235]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+g = "pkgbase: move ncurses into its own package-00"
+
+[5e4e12ae64b3e0377984d22610a6b3d6ccd6cee6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[2213e158886f72f45f288c94069a9a40c4f334ed]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[a57f6ce4792f12bebdbe3e46d6d9d39da10055db]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[be8830612314d9afb64b5c040db689de44eb4b85]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[8af6aee96ed609456900c6dd92dafabac5e89c0a]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[aa1afb69dcedfc68859815987c46997500f834c3]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "crypto/openssl/"
+
+[2bdc89535a8837347bb3b523715bba021dea4418]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[f040ee6e407832fc9f08d85cd792d1cfb8104976]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[6e4b811009d63f33c59d51f28fd4a030ca90843e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f45608124286a7e0616d1d23b9506709f10c12fc]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[fb77d8e546e1894300843600409c48596644b3b6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[df74ea7f41090f38d9fa1c739029b135cd199a45]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "pkgbase: move ncurses into its own package-00"
+
+[c2900b6e8255ba4f54dbd897cf42427db577ed3d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"

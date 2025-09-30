@@ -20,6 +20,7 @@ _filenames_try_omit = [
     '.*/tests/.*',
     '.*\.[1-9]',
     'UPDATING',
+    'sys/conf/files',
     'sys/modules',
     'tests/.*',
 ]
@@ -221,10 +222,12 @@ hardware = [
 network = [
     'epair:',
     'ip6:',
+    'openssh:',
     'pf:',
     'sys/netinet6:',
     'tcp:',
     'vtnet:',
+    'wlanstat\(8\):',
 ]
 
 admin = [
