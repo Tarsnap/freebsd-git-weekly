@@ -356,10 +356,19 @@ def generate_period(
 
     # Load extra data (if applicable)
     if "include_spans" in index_entry:
-        for span in index_entry["include_spans"]:
+        num = len(index_entry["include_spans"])
+        for i, span in enumerate(index_entry["include_spans"]):
             span_filename = os.path.join(project_dirname, f"{span}.toml")
             cache_filename = span_filename.replace(".toml", ".gitcache")
-            doc.load(span_filename)
+            if i == 0:
+                start_after = index_entry["start_after"]
+            else:
+                start_after = False
+            if i == num - 1:
+                end_including = index_entry["end_including"]
+            else:
+                end_including = False
+            doc.load(span_filename, start_after, end_including)
             repo.add_cache(cache_filename)
 
     # Split into categories

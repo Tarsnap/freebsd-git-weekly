@@ -237,16 +237,26 @@ class Report:
         else:
             self._update_data()
 
-    def load(self, filename):
+    def load(self, filename, start_after=None, end_including=None):
         with open(filename, encoding="utf8") as fp:
             if self.read_only:
                 doc = toml.load(fp)
             else:
                 doc = tomlkit.load(fp)
 
-        for key, value in doc.items():
+        # Trim based on start_after and end_including, if relevant
+        keys = list(doc.keys())
+        if start_after and start_after in doc:
+            index = keys.index(start_after)
+            keys = keys[index + 1 :]
+        if end_including and end_including in doc:
+            index = keys.index(end_including)
+            keys = keys[: index + 1]
+
+        for key in keys:
             if key in self.doc:
                 raise ValueError(f"{key} in multiple documents!")
+            value = doc[key]
             self.doc[key] = value
         self._update_data()
 
