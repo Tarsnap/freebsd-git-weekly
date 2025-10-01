@@ -368,8 +368,8 @@ def generate_period(
 
     # Add preamble
     sections = []
-    date_start = index_entry["date_start"]
-    date_end = index_entry["date_end"]
+    date_start = index_entry["display_date_start"]
+    date_end = index_entry["display_date_end"]
     intro = templates.INTRO_SECTION % (date_start, date_end)
     if debug:
         intro += templates.INTRO_DEBUG_MESSAGE

@@ -19,10 +19,10 @@ def announcement(repo, doc, index_entry):
         highlighted_text = "No highlighted commits this week."
 
     text = templates.text_announcement % (
-        index_entry["date_start"],
-        index_entry["date_end"],
-        index_entry["date_start"],
-        index_entry["date_end"],
+        index_entry["display_date_start"],
+        index_entry["display_date_end"],
+        index_entry["display_date_start"],
+        index_entry["display_date_end"],
         index_entry.get_display_name(),
         len(doc.entries),
         highlighted_text,

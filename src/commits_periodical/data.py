@@ -26,7 +26,7 @@ class IndexEntry:
         if "display_name" in self.table:
             return self.table["display_name"]
         else:
-            return self.table["date_start"]
+            return self.table["display_date_start"]
 
     def set_end_including(self, githash):
         """Change the 'end_including' key to the given git hash."""
