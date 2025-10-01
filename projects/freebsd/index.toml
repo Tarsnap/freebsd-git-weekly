@@ -9,32 +9,32 @@
 # system does, it's fine.
 
 [2025-09-01]
-date_start = "2025-09-01"
-date_end = "2025-09-07"
+display_date_start = "2025-09-01"
+display_date_end = "2025-09-07"
 start_after = "004ce88ad1efd42a1d7d5692849b4aa6906178fc"
 end_including = "14b61b2e931741281d0bfef426e9809f16006504"
 
 [2025-09-08]
-date_start = "2025-09-08"
-date_end = "2025-09-14"
+display_date_start = "2025-09-08"
+display_date_end = "2025-09-14"
 start_after = "14b61b2e931741281d0bfef426e9809f16006504"
 end_including = "e779891327b1d9b9ab10ba482e59f498790505a7"
 
 [2025-09-15]
-date_start = "2025-09-15"
-date_end = "2025-09-21"
+display_date_start = "2025-09-15"
+display_date_end = "2025-09-21"
 start_after = "e779891327b1d9b9ab10ba482e59f498790505a7"
 end_including = "52c4b76d1dd385fbe33b78172e39a10749b83d13"
 
 [2025-09-22]
-date_start = "2025-09-22"
-date_end = "2025-09-28"
+display_date_start = "2025-09-22"
+display_date_end = "2025-09-28"
 start_after = "52c4b76d1dd385fbe33b78172e39a10749b83d13"
 end_including = "008d04b297c700ed386a4e846c1834ade7255043"
 
 [2025-09-29]
-date_start = "2025-09-29"
-date_end = "2025-10-05"
+display_date_start = "2025-09-29"
+display_date_end = "2025-10-05"
 start_after = "008d04b297c700ed386a4e846c1834ade7255043"
 end_including = "c2900b6e8255ba4f54dbd897cf42427db577ed3d"
 ongoing = true
@@ -42,8 +42,8 @@ ongoing = true
 [2025-09-highlighted]
 derived = true
 display_name = "2025-09, only \"highlighted\" commits"
-date_start = "2025-09-01"
-date_end = "2025-09-30"
+display_date_start = "2025-09-01"
+display_date_end = "2025-09-30"
 include_spans = [2025-09-01, 2025-09-08, 2025-09-15, 2025-09-22]
 only_show = ["highlight"]
 ongoing = true
