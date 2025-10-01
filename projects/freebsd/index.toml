@@ -36,7 +36,7 @@ end_including = "008d04b297c700ed386a4e846c1834ade7255043"
 display_date_start = "2025-09-29"
 display_date_end = "2025-10-05"
 start_after = "008d04b297c700ed386a4e846c1834ade7255043"
-end_including = "c2900b6e8255ba4f54dbd897cf42427db577ed3d"
+end_including = "d0c8a0b3e6fc5372428eb4fddcd4f8c65b5b0ee0"
 ongoing = true
 
 [2025-09-highlighted]

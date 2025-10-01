@@ -298,9 +298,10 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [4e7a375804e5ad4b244ce9a035fa971cbf2f0944]
-ac = "network"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sys/net/"
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-IfAPI-00"
 
 [614c8750ce116865953916b8b5bab2467ee94187]
 mc = "network"
@@ -424,6 +425,7 @@ ac_pattern = "release/.*"
 
 [2ffaca551eaf32c17f701762ecf29a961cf19aa4]
 mc = "hardware"
+g = "snd_hda: Implement automatic redirection between associations-00"
 
 [fa26e445544eb88f05779258e2ab9c96384fe74d]
 ac = "hardware"
@@ -488,6 +490,7 @@ ac_pattern = "sys/amd64/"
 ac = "build"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
+g = "virtual_oss: Do not build if WITHOUT_CUSE is set-00"
 
 [6e4b811009d63f33c59d51f28fd4a030ca90843e]
 ac = "hardware"
@@ -514,3 +517,103 @@ g = "pkgbase: move ncurses into its own package-00"
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netinet/"
+
+[f7aad20db59210a4411559d07976a48809b3b0a7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5d8fde850768d31f722de6177204ec7cab199bd1]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[4e0997d1d492eb955bb20a970a7fce189269498c]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[5b63afc09a86318fa8bf09a786a1b084e000cc51]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5cc36854ee63dc695d90a841d9db587bec67ba24]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "hardware"
+fc_reason = "Need to be grouped with 2ffaca551eaf32c17f701762ecf29a961cf19aa4"
+g = "snd_hda: Implement automatic redirection between associations-00"
+
+[7bc6ec1a255da6678a72330d65a1f320de538727]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[b5e2bd5ef38181ce4a445ec19f1fa5cb6c8ea692]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[bce8cdaf4cb184db577a5633e82bdabe24239af1]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "virtual_oss: Do not build if WITHOUT_CUSE is set-00"
+
+[1bbc898dbf72638ac0dfbc666f62d39dbd68258a]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[cf583997282f962d9e8bf478667d5087f7c1f2da]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".github/workflows/"
+
+[bdb205c53ed769ad9f5e8da1ec6d05c48992dbf8]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[e7258c42520c18c034f644b97377d8d2a0ad8b7c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[ebb60d47a5350e5d752b97cba8b3b0c3be8aa1eb]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-IfAPI-00"
+
+[300aa267efaa08564337797e89590737a7cc6af0]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[76157a63a0c63dd7363f6c8ae60edc814b3c138a]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/ufs/"
+
+[3034fa3d4321fdc487428c9050711de9ce234567]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[e91fc88bca02a74ea972ebf7f66aef3a3298ad54]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[36f2eda251713d4d38f41cf269876b069e3897ff]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "ObsoleteFiles.inc"
+
+[d0c8a0b3e6fc5372428eb4fddcd4f8c65b5b0ee0]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
