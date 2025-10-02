@@ -148,6 +148,7 @@ filesystems = [
 ]
 
 build = [
+    '.cirrus.yml',
     '.github/workflows/',
     'Makefile',
     'share/mk/',
@@ -160,6 +161,7 @@ internal = [
     'share/misc/bsd-family-tree',
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
+    'tools/tools/git/mfc-candidates.lua',
 ]
 
 tests = [

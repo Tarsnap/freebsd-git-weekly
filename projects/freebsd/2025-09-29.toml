@@ -617,3 +617,178 @@ ac_pattern = "ObsoleteFiles.inc"
 ac = "tests"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tests/"
+g = "tests/netinet: extend IPv4 multicast testing framework-00"
+
+[213170eb956fa7eec93c2ab4159d6ed68e8e1b1d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[09cd3decf0fae4b769b04c1e900ed5935c40957e]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[63ce00f5d0b5dc34d57fb8d3969b875732c93eb2]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[ed6716207debca81c37a1399ecf1d799be0e688d]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[1b806e607f52285f973fb1106491668fd28da6a4]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+ah = 1
+
+[7841b44f8491d69c75207d0f3a1eb34501d99edd]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[e98d3416916cdb6285d4d1807582baf6faa3ddcc]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[97d395d91025b5b652f2998c90716c253600dcd1]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[90d2aedbb964bb39ecc23e736dc26ff45603562f]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[wW]hitespace"
+
+[0a551f8a7d68ca42d60824682123f12bba76c477]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[f7b6ea699b23b3af81866ef3aafb398c2c0d45af]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[5ead817c3b7af6d6b5fea222ab144db2c3167b22]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[244a5188e7681bf8d98a49c78439df61e6816c93]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[3b9d89e1c90fd3b2667c07d5a0bfd300bf635bb3]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[a733ea831a00d4c0ee4b67824c9ac4e5ba82be08]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+g = "tests/netinet: extend IPv4 multicast testing framework-00"
+
+[f9fc93690aef7a56f62a051de6231fe2af699728]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[c23b64fba9fb9715397a9e6ecbae670ee791dce9]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[b7118461f9099876cb2c2923948f8fb647defd57]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[2f7a796b590e67c5d123f2b00b3aaf7ba7a32a13]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "thunderbolt.4: Initial manual for HW Relnotes-00"
+
+[0c1c81c479bef8d3e67f93ea00fc5d34ccf5af33]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[5bba547a678beb280bf4080375f45b04ceb44fc5]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".cirrus.yml"
+
+[e2796f0359afad522113c25d720fa30677a044ab]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".cirrus.yml"
+
+[e4e412e45a17d2f63f6693d41b274379d108c82f]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+fc = "build"
+fc_reason = "Need to be grouped with 2f7a796b590e67c5d123f2b00b3aaf7ba7a32a13"
+g = "thunderbolt.4: Initial manual for HW Relnotes-00"
+
+[7b18bf2a225af348c2d56ad345862fe0f1055839]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[c1723bbe2aa7f6c8b23d3aa97379d89e883b0a93]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/vmm-00"
+
+[35d0c9efb17a9a7fea57c3a4a056141b21dad18f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/vmm-00"
+
+[4954ec00c4200d8bfd29875fc13f541942209824]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/vmm-00"
+
+[d552556b7e6d226887ebb6da30e4f1dcff3cb407]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[4aa762f3cb97402f0345ce5112c47a303dd4107d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[c67ea2707d2b5e6deb5986710f520ff69e4f78a3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[54b24b9da8be70192b7baaeae8fc26fda6581222]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tests/"
+
+[e57d72a7f35c3fc80dc9ac744056b2354b1be741]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/mfc-candidates.lua"
+
+[44f3e9f7f6c9afed33d2967c1ed48361bb6b404b]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
