@@ -77,6 +77,7 @@ tests = [
     'bin/.*/test/.*', # special case for ed
     'bin/.*/tests/.*',
     'sbin/.*/tests/.*',
+    'tests\/.*',
     'usr.bin/.*/test/.*', # special case for ctags
     'usr.bin/.*/tests/.*',
     'usr.sbin/.*/tests/.*',
@@ -166,7 +167,6 @@ internal = [
 
 tests = [
     'lib/libc/tests/',
-    'tests/',
     'tools/regression/',
     'tools/test/',
 ]

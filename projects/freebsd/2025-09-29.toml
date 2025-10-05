@@ -458,13 +458,13 @@ ac_pattern = ".*Makefile"
 
 [2213e158886f72f45f288c94069a9a40c4f334ed]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [a57f6ce4792f12bebdbe3e46d6d9d39da10055db]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [be8830612314d9afb64b5c040db689de44eb4b85]
 ac = "build"
@@ -615,8 +615,8 @@ ac_pattern = "ObsoleteFiles.inc"
 
 [d0c8a0b3e6fc5372428eb4fddcd4f8c65b5b0ee0]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 g = "tests/netinet: extend IPv4 multicast testing framework-00"
 
 [213170eb956fa7eec93c2ab4159d6ed68e8e1b1d]
@@ -692,8 +692,8 @@ ac_pattern = ".*Makefile"
 
 [a733ea831a00d4c0ee4b67824c9ac4e5ba82be08]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 g = "tests/netinet: extend IPv4 multicast testing framework-00"
 
 [f9fc93690aef7a56f62a051de6231fe2af699728]
@@ -703,8 +703,8 @@ ac_pattern = "sys/netinet6/"
 
 [c23b64fba9fb9715397a9e6ecbae670ee791dce9]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [b7118461f9099876cb2c2923948f8fb647defd57]
 ac = "network"
@@ -780,8 +780,8 @@ ac_pattern = "sys/arm64/"
 
 [54b24b9da8be70192b7baaeae8fc26fda6581222]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [e57d72a7f35c3fc80dc9ac744056b2354b1be741]
 ac = "internal"

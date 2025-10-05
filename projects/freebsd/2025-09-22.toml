@@ -460,13 +460,13 @@ ac_pattern = "sbin/"
 
 [c913959e9e03ccc979caacda520568c084714f48]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [2c53e251601c1fcd558f42a16f6030ba75b7e8df]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [64bfb82f17417660f3d1a2d10b381b293b780b21]
 ac = "admin"
@@ -731,8 +731,8 @@ ac_pattern = ".*\\.[1-9]"
 
 [aab45f2aeec803d37514b574010cb5e7cfba8249]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [81df9522c8b720016db671c9476fa449bd94e6da]
 ac = "admin"

@@ -1,7 +1,7 @@
 [d1eaa52d10f9b85e5f6358e1a280899b9d55dd07]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [2918cf3582915bd8853784f53c88e2c34055df1f]
 mc = "style"
@@ -64,8 +64,8 @@ ac_pattern = "pf:"
 
 [5e89648ee68e44d01d00d41d53b6934c604f8c50]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [2c42aecee69696aba85f1ad4c45033dd2db86b02]
 ac = "admin"
@@ -84,8 +84,8 @@ ac_pattern = "sbin/"
 
 [d0ea3de0fe71fe67537f84df59da69770784fa9a]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [dafd960a3d65cdaccb1f8b9395fad14092ec9eb2]
 ac = "libs"
@@ -361,8 +361,8 @@ g = "crypto/openssl: apply polish to new vendor import process-00"
 
 [dea1dd66905462e3b65688928dc4016eeae4ce80]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [580d2d429598e6eb3549f9ea7490d10e19904f7c]
 ac = "libs"
@@ -541,8 +541,8 @@ ac_pattern = "sbin/"
 
 [26c373aa367c71394f0734af368974cafcf878d0]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [05e99f5d175117fb095ee62352903d5157cb1796]
 ac = "doc"
@@ -561,8 +561,8 @@ ac_pattern = "sbin/"
 
 [7eb30b26aa12cf1b80b6a784ccbd0b6f648f4529]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [fc63421de9f69ed67aad7bae29712fca2f570693]
 ac = "network"
@@ -703,8 +703,8 @@ ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
 
 [df997faca8411bdf8008c25de5db3ed719019d21]
 ac = "tests"
-ac_section = "03-filenames_plain1"
-ac_pattern = "tests/"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [380e4a8233c8e17877b0bcdfb8003b3e9638071b]
 ac = "internal"
