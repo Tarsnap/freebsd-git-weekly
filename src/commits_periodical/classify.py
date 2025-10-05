@@ -275,9 +275,13 @@ def group_commits(repo, doc):
         prefix = commits_periodical.utils.get_summary_prefix(gitcommit)
         cat = entry.cat
         author = str(gitcommit.author).replace(" ", "_")
+        if entry.has_group():
+            groupname = entry.groupname()
+        else:
+            groupname = None
 
         # Combine info
-        combo = (author, cat, prefix)
+        combo = (author, cat, prefix, groupname)
         prev = adjacents[-1]
         if prev[0] == combo:
             prev[1] += 1
