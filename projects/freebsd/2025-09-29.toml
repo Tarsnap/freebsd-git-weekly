@@ -679,6 +679,7 @@ ac_pattern = ".*\\.[1-9]"
 ac = "admin"
 ac_section = "03-filenames_plain1"
 ac_pattern = "libexec/"
+g = "rc: Teach netwait to wait for DAD-00"
 
 [244a5188e7681bf8d98a49c78439df61e6816c93]
 ac = "network"
@@ -792,3 +793,495 @@ ac_pattern = "tools/tools/git/mfc-candidates.lua"
 ac = "doc"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
+
+[70993c2fbe1acb68f45bea5fc5fa086650876e23]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "umass.4: Add HISTORY, HARDWARE, and SPDX-00"
+
+[34a2b5b09afe2a2fa3672f448d522b4665db9272]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "umass.4: Add HISTORY, HARDWARE, and SPDX-00"
+
+[2ed9abe1d873465d375b47ece0a379e1dbd99719]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[94758e72fdbd6b218e79884e22347eb357a7e51d]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[f3ff6abb9d816a68e65af5ed55552d152a58b5e4]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[2f30b43fa269bc63086b0428f45c79e982abb02f]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[eee36ffa0d874f1c8aca912f7c2a8eba34509927]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[dd2fc08d85431e10ad60e01e97b98e9dc23322bd]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[5d210f396e3f00698caa45077330dea8ffe979b5]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[ad38f6a0b466bf05a0d40ce1daa8c7bce0936271]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[b93394a38bc41f8afceaf0c03ed5d8b8b5a9aefb]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[da25573ee07f7f36bd0bd90820f1c5e359cd9d5a]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/calendar/calendars/calendar.freebsd"
+
+[5c5c0571c2984669024dca5356f973ffc18a3e02]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+
+[86221f965c06efa1cd5b2da640ae23edded7c8b9]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[a22f8bd45701ce1535147ddd71291fd1de769ecf]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[dfc9da6248491072e31f924f5ae6b6238603089a]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[e7e958d83d8503c3b8714f68418d4509b8288ed9]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f32ffd11b54792d7bdd37b6dfc0f904a561b879c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[08b497dc6c4da23be83f7cd51edff07f09d63fd6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "vmimage.subr: Support NO_ROOT pkgbase-00"
+
+[716acd9367df49d44f29eeb783706025f3a04c65]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/netinet/", "sys/netinet6/"]
+
+[0c94dc9da7c238603e43c55ca6da64c417fc2204]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[01d5a6f30ce8f5006bd9d5528a487ef4d79c48c3]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = ["sbin/.*/tests/.*", "tests\\/.*"]
+
+[65e2ce55b662447fb4e87246262c07bf5a25efe9]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+fc = "build"
+fc_reason = "Need to be grouped with 08b497dc6c4da23be83f7cd51edff07f09d63fd6"
+g = "vmimage.subr: Support NO_ROOT pkgbase-00"
+
+[ac1408bd1d2d3f2bb2d8c77e91420fe9e66926ca]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[0952943a680dca12fe8f65f8813a9dca0783ce88]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/netstat/"
+
+[07747afd516e710814fdc65afb0e5000d046f28f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ea675a43f09ba569adf1dd17b4f1ced970e48de4]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[bc433a0b7b046b0412777e0f3cc8f18a233af8ff]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[f19aea89abd8964bf96d134c2bd6e127464c79f6]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[ae5914c0e4478fd35ef9db3f32665b60e04d5a6f]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".cirrus.yml"
+
+[5f1f7d8457d4fc28c6cff7e26a629a2d6ee3fc61]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[5c331f449e9ca549d03ae1a3f50ac0e5306b488e]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[dfd7d1610aeb654aafcaa8cf77b75fc5c7d60250]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a8d774d9708c100a52f231065d9d5f1b4c3aceb7]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[7233893e949689d378d38c11651e68321deed12c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[969c1191957a9ad689546ddb4e8c4df2217c5052]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[42664610795bc0a728851ba6223fcf9b93801167]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[acd546f01e58354af049455472980c6c4a52e18b]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[1953a12ee2cde1afacb3e3f7612d89695c96e04f]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-flua-02"
+
+[80ada959004c4386880e47b11618f8abfc2d80e1]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-flua-01"
+
+[94aae0513896de398a1feda6cd97f7efa2a5dc2e]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+g = "nullfs-00"
+
+[72347d73464ccdd361c4d286486b9b4ea8d7c945]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+g = "nullfs-00"
+
+[249ec85352b5b69d70f71e3a329d16334ca71f59]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+g = "nullfs-00"
+
+[641a58239520de9fc5a9077e9a709481cfc75dc0]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+g = "nullfs-00"
+
+[31320402472394af57eb3a36bee7f944117ca0ed]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-flua-00"
+
+[aa9e4fe3c9021d623743e26aef879a0036f87c0f]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[8d0a90512ee35064697fbeffd0886eba4c82eb8d]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[daf4da4d09718980d96fa41a8f420cc0e0bf1bd8]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[4b8b4c7dbf0fd4f946195dd7e8e4ddf10505beea]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "release-00"
+
+[e64eb9ea0f4c88a9fa32ae3ae517cbe15a193a08]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "release-00"
+
+[d0ff67db2908a56b2f146963bb79f1a8e6283131]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "release-00"
+
+[981cf36d64c48ebfa22d44ac83b6d448c2974f23]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-flua-00"
+
+[d4c973fa148544a0b949ceb1efb6c68096f02baf]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-flua-01"
+
+[bbef1c72b4873b657fdb0466b48b15d1d4f0a731]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-flua-02"
+
+[151bd3516b541823b16793460d73916e63d2b9c1]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "flua:"
+
+[b11a5709ec2b61fefb03bfdd38e2f06d2c1107c1]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["libexec/", "stand/"]
+g = "flua: kick out the remaining builtin modules-00"
+
+[6cc493c79d9b9f8318c87d3d6bfd225924cc933b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f53137556059764f5c028880d09d3c234877d37f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwx-00"
+
+[262172de955ff09f5029039f0d823996a63ff3d1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwx-00"
+
+[88f467bd1a113b65cebcb6eca145dbd3bea72adc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwx-00"
+
+[4a5a884c4a77e800bb37e1c12db72c724a2220bc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwx-00"
+
+[046c625e9382e17da953767b881aaa782fa73af8]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "crypto/openssl/"
+
+[257a750c60f14f83dff7bf5d2189089b1e74870b]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[c16f53782c8b8fc8f1452f797b96743386079f1f]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[d518f64cef6db1d301377e78742b94ca96a881e3]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[02dfca2458081587d8224c5ebf8bde99fa360f94]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[9c7db0931d486ce800aa71d9f41abfad9f7f691f]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "flua: kick out the remaining builtin modules-00"
+
+[bb4167463ac44b47ded4e0223a0abd8381ca6cd8]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "flua: kick out the remaining builtin modules-00"
+
+[d505ef08ffbe3b7383fbc6ed30121de9256ac18e]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "flua: kick out the remaining builtin modules-00"
+
+[cca9295dd6adc4245fbeeefbe05c13c52d089bd7]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".cirrus.yml"
+
+[026707768f673518c2fe9bcd9020d53a0d02fc7e]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[b09dd586518aaa0ac24b70ca522f4054165c8031]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[4c0e53aced2251eb5ac7eca44e13a6b947be8582]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[64f8416afd4cd042b34e3e975f84fb3493397828]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[01b0690c495e1043a72cae9ee945f9f2c2adc216]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[9dd865a59edda38e6a379c5081e9483a87abc1eb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[85531add28443e4202632fedcb3ae6038d4acb0c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[81d9e08a4df42079d5e163b5991d5d6f3a28d4f0]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[6720975ba0c5b821ea0e889457737a3e2692125a]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[0242d4c3aea4b56ba76da440d1948d9e3d19ae87]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[36c970ed985ff3dd5443db4bf2aa58799028512c]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[28b858f5059c8b25fa08be494699997000fce58c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[106951f09fe39dc693fd7130ab4bc751e1438631]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[d0a35ec01c31b498bd9996b50641a8629757b65f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ccb600906f152df310794f146eac54372e6b2665]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5000d023a446b81f6d45ed59aa379607ec814f01]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "heimdal-kadmin:"
+g = "heimdal-kadmin: Add support for the -f dump option-00"
+
+[ec6ad605ecea5c4a76d2e744df0265cc3f3a01b9]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "rc: Teach netwait to wait for DAD-00"
+
+[9e6cea12abdadb9f81dc13c2d3eb4ff8f0a19e99]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[03da141d59ae1da4e66974c466e2cb26f296e6df]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+fc = "admin"
+fc_reason = "Need to be grouped with 5000d023a446b81f6d45ed59aa379607ec814f01"
+g = "heimdal-kadmin: Add support for the -f dump option-00"
+
+[f16178e0bba81c32b1f4fba310c7d0f2756aca85]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b1de02c415de5df2d24d8021827634fc095b7a26]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[4dc4a512e0659c9155db7412d2821bef409b48af]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"

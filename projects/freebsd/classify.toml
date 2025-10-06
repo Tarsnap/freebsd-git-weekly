@@ -163,6 +163,7 @@ internal = [
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
     'tools/tools/git/mfc-candidates.lua',
+    'usr.bin/calendar/calendars/calendar.freebsd',
 ]
 
 tests = [
@@ -234,6 +235,8 @@ network = [
 
 admin = [
     'cpucontrol:',
+    'flua:',
+    'heimdal-kadmin:',
     'jail:',
     'jaildesc:',
     'nanobsd:',
