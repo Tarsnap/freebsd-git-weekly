@@ -195,7 +195,10 @@ def make_table_classification(cats, total_commits):
     #    print("%s\t%i\t%i" % (s, reason_totals[s], disputed_totals[s]))
 
     def table_row(num, total_commits, text, disputed=None):
-        perc = f"{100 * num / total_commits:.1f}%"
+        if total_commits == 0:
+            perc = 0
+        else:
+            perc = f"{100 * num / total_commits:.1f}%"
         out = f"<tr><td>{num}</td><td>{perc}</td>"
         if disputed is not None:
             out += f"<td>{disputed}</td>"
@@ -278,7 +281,10 @@ def make_preamble(project, cats, debug, only_show):
 
         relevant = cats[cat]
         num = len(relevant)
-        perc = f"{100 * num / total_commits:.1f}%"
+        if total_commits == 0:
+            perc = 0
+        else:
+            perc = f"{100 * num / total_commits:.1f}%"
         # Hack to show a difference between "highlight" and the rest
         if cat == "userland":
             section += f'<tr class="top-line"><td>{num}</td><td>{perc}</td>'
