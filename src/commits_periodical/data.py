@@ -1,5 +1,6 @@
 import collections
 import os.path
+import pathlib
 
 import toml
 import tomlkit
@@ -238,6 +239,12 @@ class Report:
             self._update_data()
 
     def load(self, filename, start_after=None, end_including=None):
+        # Create the file if it doesn't exist
+        if not self.read_only:
+            if not os.path.exists(filename):
+                pathlib.Path(filename).touch()
+
+        # Read the file
         with open(filename, encoding="utf8") as fp:
             if self.read_only:
                 doc = toml.load(fp)
