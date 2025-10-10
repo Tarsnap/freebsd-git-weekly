@@ -46,6 +46,7 @@ _acts_on = "summary"
 _re_func = "search"
 
 style = [
+    '[rR]emove stray',
     '[sS]tyle',
     '[tT]ypo',
     '[wW]hitespace',
