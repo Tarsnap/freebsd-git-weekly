@@ -171,6 +171,7 @@ tests = [
     'lib/libc/tests/',
     'tools/regression/',
     'tools/test/',
+    'tools/tools/crypto/cryptocheck.c',
 ]
 
 contrib = [
@@ -273,5 +274,8 @@ internal = [
 
 contrib = [
     'OpenSSL:',
+    'crypto/openssl:',
     'dtrace:',
+    'local-unbound-setup:',
+    'unbound:',
 ]

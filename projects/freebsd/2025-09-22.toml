@@ -43,6 +43,9 @@ ac_pattern = "crypto/openssl/"
 
 [d9cc3d558d00ee7f62dbef2032f099033c91d2a1]
 mc = "contrib"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "crypto/openssl:"
 
 [f586fc0cf8ff54393a3db565437788a12bdc6e99]
 ac = "admin"

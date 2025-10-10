@@ -903,6 +903,9 @@ ac_pattern = "contrib/"
 
 [5a0119491adbea0876d9d6dc0ef3e71f3d64a20b]
 mc = "contrib"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "unbound:"
 
 [14b61b2e931741281d0bfef426e9809f16006504]
 ac = "doc"

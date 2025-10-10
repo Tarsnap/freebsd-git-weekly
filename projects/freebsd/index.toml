@@ -42,7 +42,7 @@ end_including = "4dc4a512e0659c9155db7412d2821bef409b48af"
 display_date_start = "2025-10-06"
 display_date_end = "2025-10-12"
 start_after = "4dc4a512e0659c9155db7412d2821bef409b48af"
-end_including = "4dc4a512e0659c9155db7412d2821bef409b48af"
+end_including = "53825afc5dd13f3d16c3db6727260d7184bcd581"
 ongoing = true
 
 [2025-09-highlighted]
