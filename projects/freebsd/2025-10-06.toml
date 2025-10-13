@@ -234,6 +234,7 @@ ac_pattern = "tests\\/.*"
 ac = "admin"
 ac_section = "03-filenames_plain1"
 ac_pattern = "etc/"
+g = "krb5: create the KDC database directory-00"
 
 [2e09ec72417c6c2927185f4d63faea9ac7926c2b]
 ac = "tests"
@@ -567,3 +568,217 @@ ac_pattern = ".*Makefile"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+
+[586319793368cbc664b48187bda60d27e171753a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[6235ee2848df583d600a7b5d7cc284a5b32c7be7]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+g = "krb5: create the KDC database directory-00"
+
+[2170400142b99c0eb604403b74ebd88c05dd7ed4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b202176dc76d862f886778439b96dd1243d8b999]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[188ddc15e5460b3abfb2ad5492557911465bedc1]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[756fa1c09673ba555f603574af5943f455daff90]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm64/", "sys/riscv/"]
+g = "vmm-00"
+
+[e9182981f7feeb97ee440bb9c1db9a1bc5309b92]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/amd64/", "sys/arm64/", "sys/riscv/"]
+g = "vmm-00"
+
+[059b0b7046639121f3dca48f5de051e019f9d57c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/amd64/", "sys/arm64/", "sys/dev/", "sys/riscv/"]
+g = "vmm-00"
+
+[642c763a9ad14cbe70596cabc16f73b9ca99de57]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm64/", "sys/riscv/"]
+g = "vmm-00"
+
+[13d866b314f87df901c0a1cbbbc56d56ee0d7b7c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ffca0c44ffe84352f6fdd24862c070d348d783d4]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f66bb825f5895eed98c959cd2b612453b4d1aa6c]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[a5b19a0cb9c4321ef45f920a6fc0394449e64779]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[c363dcbe75b2c7171611815daec82d263607ee37]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[a29cf898b09c4d4906f92fd2982410c9f5935f6c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[9934558460e4e73e5b55648c4b13a702f4f019d7]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[7a289fe3cd5c6de7ddbe394b7700b20b0bafdb3e]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[6081365c27e68707ad25c98159e364ee90fcf5db]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[2b0ffc0ee48cf6c70506dc479e0fd2166f9de1ab]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "EC2: metalog_add missing files from packages-00"
+
+[474ae083b1e19588c1bc2974082d2810ef9dc7f9]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[25cca51ed294890d20a3c0290814cd26875db686]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2d9fd2c573c318754e3f36d2549e0e57ce199d60]
+mc = "build"
+
+[98c1bf371c5dd613646f53fdc4796c366104f844]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pf tests-00"
+
+[c700393934285ea84696a17bd951b20e439edfc3]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pf tests-00"
+
+[8217075f9ecb12fa9a4cf746541b9d3e1dc57e79]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pf tests-00"
+
+[02923dd9b0de050b989b5a4103e402055cb7f61a]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[8a6bfa0455bfd4b77cb71d229b9dfca031b6703f]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[1735d66a9c5b08b59a0323d3825d2e7dacd13064]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[21716b6c3ed6e28fe5cc14ee3ffe93f44c458b09]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[abd9424590ba37ac10e92723ad6428f0448024c1]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[8a7ac88aa3991e8c2c19007ac0c36a92fc94bc2d]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "EC2: metalog_add missing files from packages-00"
+
+[9504e956c50875b2325f62c2d658509fa10d489d]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[1129bf441e99b9ced3fe448e19cbb15b64b9b3f1]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[426891e0f8f1cfae0263ba81ea55f46c547d7762]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[419dcdc2c981306b0ded44580977d2e053719b14]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[039eba16f969a3ebc6c169fa61880a33d2a95090]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[48e64ca13d4f36795ac718911b805e3e9a726f1b]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[4d56eb007b18881becb2107f87bd2a7edca3e6bf]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[7238317403b95a8e35cf0bc7cd66fbd78ecbe521]
+mc = "contrib"
+ah = 1
+
+[2347ca21d657121670e6e7246c6ac32efc996cac]
+mc = "contrib"
+
+[0cc81b375ea43c7e853b109d00c72c8c3b3df993]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"

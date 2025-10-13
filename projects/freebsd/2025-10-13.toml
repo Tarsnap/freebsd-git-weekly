@@ -1,0 +1,4 @@
+[c6240045536548c22ce40d9ef36c1dc52abcfc9c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
