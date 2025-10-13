@@ -95,6 +95,7 @@ userland = [
 
 doc = [
     'RELNOTES',
+    'UPDATING',
     'tools/kerneldoc/',
     'usr.bin/man/',
     'usr.bin/mandoc/',

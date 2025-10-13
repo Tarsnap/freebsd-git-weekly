@@ -693,7 +693,7 @@ ac_pattern = "[sS]tyle"
 
 [ab2fea3f9a5a58f0ba90499ad3a8614e3dca0c5f]
 ac = "doc"
-ac_section = "05-summary-prefix"
+ac_section = "03-filenames_plain1"
 ac_pattern = "UPDATING"
 fc = "build"
 fc_reason = "Need to be grouped with dd8c666d8b78f6b9ddb691f0505837fa885ff3b4"
