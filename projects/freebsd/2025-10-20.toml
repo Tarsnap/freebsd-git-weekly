@@ -1,0 +1,94 @@
+[2f461ddd784b4abdb7f88701d20fc45f658c42f5]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[790c27317ec1a997a4e5c2bdee9e4acc610c8e3c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[8350f46d9808e6183d5f6bd4aa73d4d4e563b574]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[db1844a0e1bcafeb974215033ed682e7fa18cac8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ff29e5bc53e6fafc49d1caceed88cbc9e9223189]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[cb0116af7ac794238b0fa569f2722607924fcad6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d12ce84b0d338958b26f6eec86b4967fca8d3bd6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0a2fb63b4954c540686d387254b65cc6878bd19e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[81d807a90611a4980cae843b404d99c27edc1893]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[6e6cde8f2bdb235b741061e3c6ee664752f25c18]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[b0c64ce0ea51dc9774ddb972d28a5cfaeb34465d]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[4c667615372f927864734d725f51d14c441216a6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a2838e818cfe5b150725776cc9ab45bb8f65c390]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[4ee0ddae1dab05dd8e3f273d861043c3e2919f23]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/sockstat/"
+
+[78f70d4ff9dd4af2318b25023a7f55be7402ec60]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a8e4399fc6a27b4f8ab828231ede75743ba28a58]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[e1aeb58cbbc3839db93ec38ce491b7b9383d5649]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+
+[aa358ce3ca8e1fcfb305025fd00beb2a119c7c77]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+
+[b596b4496568c21e1e8f9c21be913cfc5b71bd9b]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"

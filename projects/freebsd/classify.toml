@@ -138,10 +138,12 @@ admin = [
     'etc/',
     'libexec/',
     'sbin/',
+    'share/examples/bhyve/',
     'stand/',
 ]
 
 libs = [
+    'include/',
     'secure/lib/',
 ]
 
@@ -160,6 +162,7 @@ build = [
 
 internal = [
     '.git-blame-ignore-revs',
+    '.mailmap',
     'ObsoleteFiles.inc',
     'share/misc/bsd-family-tree',
     'share/misc/committers-ports.dot',
@@ -220,6 +223,7 @@ doc = [
 
 hardware = [
     'GEOM:',
+    'bluetooth:',
     'moused\(8\):',
     'udbc:',
     'virtual_oss:',
