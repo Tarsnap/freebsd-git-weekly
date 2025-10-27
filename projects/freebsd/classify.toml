@@ -163,6 +163,7 @@ build = [
 internal = [
     '.git-blame-ignore-revs',
     '.mailmap',
+    'MAINTAINERS',
     'ObsoleteFiles.inc',
     'share/misc/bsd-family-tree',
     'share/misc/committers-ports.dot',
@@ -230,6 +231,7 @@ hardware = [
 ]
 
 network = [
+    'blocklistd-helper:',
     'epair:',
     'ip6:',
     'openssh:',
@@ -264,6 +266,9 @@ filesystems = [
 ]
 
 kernel = [
+    'sys/crypto:',
+    'sys:',
+    'sysent:',
     'vmm:',
 ]
 
