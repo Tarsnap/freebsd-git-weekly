@@ -266,6 +266,7 @@ filesystems = [
 ]
 
 kernel = [
+    'random:',
     'sys/crypto:',
     'sys:',
     'sysent:',
@@ -280,6 +281,7 @@ build = [
 ]
 
 internal = [
+    'git-arc:',
 ]
 
 contrib = [
