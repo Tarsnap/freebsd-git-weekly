@@ -416,6 +416,7 @@ ac_pattern = "sys/fs/"
 ac = "userland"
 ac_section = "04-filenames_plain2"
 ac_pattern = "usr.bin/"
+g = "id: Clean up-00"
 
 [f41b1eb637f576634be0df9d657f46aa57afea59]
 ac = "userland"
@@ -597,3 +598,512 @@ ac_pattern = "sys/dev/"
 ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
+
+[51e8e8b0f36933814b1be08913857727876aece5]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Merge commit e24f90190c77 from llvm git (by Brad Smith)-00"
+
+[561571d480679933287a6d21c6929c39a7963857]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f17856896d329204b446e6e918e87f949a70806b]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[75aa13c64aba71f6f26d05e8fcf96e3862d44cde]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[03b214a35db1ebdc7575cad8d695c65daf2817bf]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[8d5a88ac95b23b0a8c4943be0aef1f93e3902bfb]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[df764dd133ecba8eade6a44e9baf1f0e9cf0d2f3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[8b43286fc3badc646ff5a828bae226c8fca90268]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[319a1dbcf46f4afd2d32234d6936bb9e9e006a74]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[8fb17896120d8e7c499a13f4459f9894c20c6131]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "intr/powerpc: create openpic_class kobj-00"
+
+[5e941ac54da32a7eff2ff96a1744843e6e030518]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "intr/powerpc: create openpic_class kobj-00"
+
+[237cc7b408dd8d0c6eb4af6ab796b8d4b750c9ba]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[1da3c0ca5b1decaa9cf55859cd134bdcd1218116]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[faacc0d968816cf8714c974b6d8df6191cfb0e0d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[9b9c726df1e214afa122873395a3ac32dd80ae6b]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[7b32f4f0a7fe9b1b2f5a3905ca15f656713255ad]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8b2f4e6b3a478faaa4b0b23efc9c65f5db913df4]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netipsec/"
+
+[7eb213614b90cde31707a53c4b8ae6acacf2aa0f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[205af037e302fbd50dabc485a89e2222cd063b9e]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[05d48584607221922539bb6917c9c118236d78d5]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[646798b6783184fb194a2d97667e05895e00c358]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[ee1f417a8609b8742332950521800502759dd185]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netpfil/"]
+
+[a797702be077c4671e3d437d6b9ffd37f2e86277]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[832cd05905980d0f6547bf02745b054c1f4af1eb]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[91f66f9b377e09f59f481e653d8f64120a183806]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[6c86379b0d0deb2750a662579f63d71ffa519e81]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[28345f093783ec78163660dd1168838fe0ff1f12]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[b485322d6b5846fe4fb5aff6c4a07221b09946fc]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[0837b2ebd570ea092353aa3c46e374f7a1533a1d]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[99651c30b15afd085eca921a42e6ce2e67093609]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[48b63e821dec5533dab165d4e95e876bdbd0a37e]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[df21a004be237a1dccd03c7b47254625eea62fa9]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[63ff982b17ee398c7808be323d8fd37819a5863c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[563efdd3bd5d5f94e356444bb64fd66e13dda5e1]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[d2c23f5953a823e01f0c6418b0f98c119f145e20]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[40a958d5850ddda6d863558c8b31572f700d53ca]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[164156058e723c0d9b2bb68054543963f40f1159]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e09c1583eddd345bdb79f3db8a91166f6f139207]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[07b1d5a37741f5d4de69117a03ef757edff29032]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[25fdd86a4c92b5bdab82db289f3bcd57756778e7]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[c80dfcb37261e5e8575d41801e64a39b7db6f4f8]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[5a52f0704435b089199201be0029e0d7c9ef2fce]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[474a80d3ff8516df5c379fa7f8e563cecb032060]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[08af0bbc9c7d71bbaadb31ad31f8492f40537c5c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[39fef5b9fa943f301776e0b0bf406cedd7c29af2]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[b5dbf3de561189140c73f915bd50c28ea69a1e19]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[d6870bb941fe235e0031f8bfb53fbd120ff859f9]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[d59e924d2969ce2c8bec0fc4500989865fbece75]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[44ad7d4844b7b5387cfad603a28501ac5c70e37d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[5baa83cfcbd87109dc8a61fbb2e183998cc2d5c5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[56d5ec30e8e135f716e10b5bf2c0cc1ba18933f9]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[08ed87a4a2769cf6294efdd908b0ed4d29ab49b4]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "pf:"
+
+[6de1c50e78a826abc08660e4c3ac10f1ddba9ba2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[bd27bd1f51d049538cc7a0053be9d99110a53ae1]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Merge commit e24f90190c77 from llvm git (by Brad Smith)-00"
+
+[db25448ab9ffa8bfe52d852674cc466494b849d1]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[b9f848ecbafce4e56ba9c8b7993b85347e83484a]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[00ebecd4a09db84fb6c5002b082400d8f8a97407]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[6968897a8048aee2c72efdfbe23a7b64bdebcdbc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d787ce1927bc7662b869cf2bc5e280c3c524dff5]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[ce03706ab26c5770150f1ef96aca36b69baa535f]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "openssh:"
+
+[fee2e6b9fae277d383b129573df2528ce0407efa]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[8bd9a9e9e4cb3e293c1639319692ce201eb8fc53]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[3adaacad117b23abaf93a5332d538037420e1daa]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[wW]hitespace"
+
+[9aa5a79e2af9a6a8930bbe8a7a024df2cf44e433]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "ddb: optionally print inp when printing tcpcb-00"
+
+[85d6c86f4b53e6ac2a9b163c553b48466638f394]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[542f5985a8c2e7cccc9beb9801ec166082bb7e68]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[74a44a0bc8ab965d28d1ce804d3f0aead035faf0]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[3eaa2a852b475c7f063bbf677fa536e76514d309]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[404af374b10ca56c6f82510a5bb23232a9f25c34]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[081aa26778f3facdd836c28b2e3fed5de2f8b7b4]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[84d75bb018e1800d610760191ff64c3eebcb46d7]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[defe77554d134964d7c197a2f3ca552778e8b41a]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[a25172844edaaa7e18c1dcecb6df8b8832456334]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[7b11940d4a66589069c21534dd0b969f79ae79df]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[259b69ad3dd6f077c99be8a7795775dd5b87b0b5]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "ddb: optionally print inp when printing tcpcb-00"
+
+[c6e02892bbca1237546e3943c0971768822e1745]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/bsd-family-tree"
+
+[e4f2a350955406ffd58dd3f0bb7610df0f36d647]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+
+[a1806e6ff37a606277ab9657b951e918164e9f63]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[0726d6e87ad508f9e6a78685d3d9067edf255588]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[c0382512bfce872102d213b9bc2550de0bc30b67]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[b473bb274cef37d45940cad4624b5d3b7fc96e01]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[c3a3af1346684eedf836fb62f874092ce602697e]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[92a533ed1d3c81a772815f90cc9aff9237a4429c]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+g = "id: Clean up-00"
+
+[a38c2f99f81c2fc35c8ca209931c1c46e3e81023]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[2deeed061b1473a4230211c6562a533b76ce846c]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/sockstat/"
+
+[5568fba657c260286b9f1f1e837ab83ef6ce572d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[dcb6706ba494f34e2a2ce97e5c5f2867b9e1f5ef]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[9530c6f082ada9e6d0323f36697ce53997ab2326]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f4315ff8b3fee71eb0098864a84618f2f8ba85d5]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[2be5127c4a31bacac9b4158395bfa844f6033626]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[af99c4c1d03c742faf8bd4c62fbbb664c5f7fc18]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e8c50058e8d03af17b7458bb560ddee29062082f]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[8e8956f7f99759b21bc07e884ad89d1927c39e8d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[e5aa60d0695803c83dc0af08c057b82c463da3f2]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[25aed6401b35834856440ffb32a61597c8019697]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[f26382dd72dfc710a8cc7159364a8166e22a4254]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[269b1c238806c7fb8835a0510b224c466ca3efa0]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[a6a9d97708ec18bf307b01141d84aabd01289159]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b3de3c2dea576b626a8a107d96b0fd6562500c1e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[088ced14a69ba2dce083c031b60c0d04ba218488]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "UPDATING"
+ah = 1
