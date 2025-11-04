@@ -1,0 +1,54 @@
+[40d21618382108fefa84f8576b14302f65452718]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[239464e99321ede07664782426ec4e54cd8a618d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[5f43b0cb7c3cb7c3209598f8c0818cb47cd9de96]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[b9efaeb87a8f9cfc0cd87076a8b314785d6e04d9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2020e76450e2705d33d673a3d183c8f0a3910e28]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[cd7f3e4d9e8305f866cf15e91b2ad01eb7685ba2]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e8449c0e0fcb8a3eb5872cbee5c3dde4b05a5f50]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[f2d966f6c13d93cccceb8e594a69d1a50471d314]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "contrib/bsddialog:"
+
+[6a13aeac3c1f98db7cf156f24a4d6bc8d3c321f6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[c174f518c9c8cf3a567c5f60414508ac951a2ae4]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[16f37d97b9500a4fe2d0719161025515d477a5cd]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"

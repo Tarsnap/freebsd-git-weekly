@@ -286,6 +286,7 @@ internal = [
 
 contrib = [
     'OpenSSL:',
+    'contrib/bsddialog:',
     'crypto/openssl:',
     'dtrace:',
     'local-unbound-setup:',
