@@ -1,0 +1,106 @@
+[80ca573fc4e65db6f17cb476b6e857fe06b2e3d8]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[dbb34d496708a37763d3d8bf6782991dee10d17e]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[d5cb458b4b58b0f0b3c058a32439f232fd5455ca]
+mc = "contrib"
+
+[9cf02c38e492dd16b70bfd8203b3f1bc6436e574]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[560af6b43e2a86e591e94bea99777630cd5f84fd]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+ah = 1
+
+[978aaa72f3196f5489630052762cac5a7863e774]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[836b3cd9d7910aff5225e9e58189067ca03fae30]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[4c50ac68166caf7e08c5a9984d63fa91490fa50d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[01dd6a83b5ffce7a99ab8a7c2c9dcb82088357cd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "nvmf-00"
+
+[62caae230859423ae045b5d754f30d193ca628c0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "nvmf-00"
+
+[c1b3c5f5f3fab895df3d2e75ac3edee4e9aa6432]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "nvmf-00"
+
+[8ced50767933f3e2949456367d4d9a64797daec3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[adaa1470777b7b392960661e317577bf23fe029a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a4cd88b604def2b59b0871e612bd6ad04b22520e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fd3581e4ddde4166d6ba6ce264a63833ded35483]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[71d82199a111af67cba73e32a27a900d74c1a1cc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fca740e2d21008faec0d81426259470b452704e6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ec0cd287f55f7ea93ff4ccfa4de0f70eca5fef75]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[59d7865d3c20e86b3c42096f4a8c06a5e2eebd29]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b568711f8ef1afd7c86ea2d8bd2f94f399f54dc1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[abd53b16c03f77c12bb8b77d9e2e4cf392745361]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"

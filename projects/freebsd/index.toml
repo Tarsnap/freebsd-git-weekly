@@ -66,7 +66,13 @@ end_including = "088ced14a69ba2dce083c031b60c0d04ba218488"
 display_date_start = "2025-11-03"
 display_date_end = "2025-11-09"
 start_after = "088ced14a69ba2dce083c031b60c0d04ba218488"
-end_including = "088ced14a69ba2dce083c031b60c0d04ba218488"
+end_including = "c3d2b68c6933d0610bc3e09e9b94f963b4dc85aa"
+
+[2025-11-10]
+display_date_start = "2025-11-10"
+display_date_end = "2025-11-16"
+start_after = "c3d2b68c6933d0610bc3e09e9b94f963b4dc85aa"
+end_including = "abd53b16c03f77c12bb8b77d9e2e4cf392745361"
 ongoing = true
 
 [2025-09-highlighted]

@@ -234,6 +234,7 @@ network = [
     'blocklistd-helper:',
     'epair:',
     'ip6:',
+    'ipfilter:',
     'openssh:',
     'pf:',
     'sys/netinet6:',
@@ -250,6 +251,7 @@ admin = [
     'jaildesc:',
     'nanobsd:',
     'pci_user:',
+    'stand:',
     'tty:',
 ]
 
@@ -286,6 +288,7 @@ internal = [
 
 contrib = [
     'OpenSSL:',
+    'contrib/bsddialog:',
     'crypto/openssl:',
     'dtrace:',
     'local-unbound-setup:',
