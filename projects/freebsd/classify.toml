@@ -214,6 +214,7 @@ kernel = [
 _acts_on = "summary"
 
 userland = [
+    'lam',
 ]
 
 doc = [
@@ -224,8 +225,12 @@ doc = [
 
 hardware = [
     'GEOM:',
+    'apm\(8\):',
     'bluetooth:',
+    'cxgbe\(4\):',
+    'efi:',
     'moused\(8\):',
+    'sound examples:',
     'udbc:',
     'virtual_oss:',
 ]
