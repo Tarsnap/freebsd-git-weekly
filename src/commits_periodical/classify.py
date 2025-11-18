@@ -105,6 +105,9 @@ def find_fixes(repo, doc):
         prevhashes = []
         for prevhash in found:
             prevcommit = repo.get_commit(prevhash, allow_partial=True)
+            # Hack for a missing git repo commit
+            if prevcommit:
+                prevcommit_keep = prevcommit
             if prevcommit:
                 prevhashes.append(prevcommit.githash)
                 num_changed += 1
@@ -123,7 +126,7 @@ def find_fixes(repo, doc):
                     preventry.cat, f"Need to be grouped with {prevhash}"
                 )
 
-        name = prevcommit.summary
+        name = prevcommit_keep.summary
         hashes = prevhashes + [githash]
         for githash in hashes:
             if not doc.entries[githash].has_group():
