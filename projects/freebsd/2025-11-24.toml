@@ -1,0 +1,111 @@
+[fe5c8baf25a5b40285c3ef85b69391d591e4a76c]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[961b934407f09d4241cfad76a9c8833baa2650e1]
+mc = "admin"
+g = "pam_krb5: Fix manual page in MIT case-00"
+
+[5995c036df4871b10e3afb0810cdf73da670a745]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+fc = "admin"
+fc_reason = "Need to be grouped with 961b934407f09d4241cfad76a9c8833baa2650e1"
+g = "pam_krb5: Fix manual page in MIT case-00"
+
+[a067eb525e10acc9d7e1f3b1a8a6dfeca42b4424]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[120f8a4c2ae8a011827d83b098ecf70c791f794b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[8f8b8e4af91d4e158caf6ba4b728482311bfc7c3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0628c252bd161ccdd1228a3b8aefeb471044ca04]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[673924122470463dfb9089e12b1b4496783a77b8]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[bac572b2b1c9aec0ebfd3ae1fd02b314984cb716]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[b0c7eaf83d21bbc333e247ab9e136965b3ca54ed]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[2fe37927d41990abe8d1c336e75fd75873285e90]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[8f94088bc5d3ee586b36f8f7b269223b420ac957]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7980cf5d6f71adef3ca38825f4aa8aa38a59e43c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "share/mk/src.sys.mk"]
+
+[e928afc531e68b7a142ee49d8f7e5c8426d54033]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[134d00bd2c910cc7cc21c11fba093ff82bbb9344]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[6292eecfd95c78abc1ab14f20ceaa507ab9c636a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f7ab908244e50c8c8edf314424c860e34ea3d7e9]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[828df4d36d9d5a6ca0dcc294d65572b4a0474142]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netlink/"
+
+[8a766c9e81c3d9638fd0a1c3c2aa51cee2379539]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[72a447d0bc768c7fe8a9c972f710c75afebd581b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d78231ed04d333f64a73c891a45a94981baad251]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7b6644e160ed63b633e7c68a3cacf2c71d216cd5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"

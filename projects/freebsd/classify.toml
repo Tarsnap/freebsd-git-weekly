@@ -65,6 +65,7 @@ build = [
     '.*BSDmakefile',
     '.*Makefile',
     'release/.*',
+    'share/mk/src.sys.mk',
 ]
 
 
@@ -136,6 +137,7 @@ network = [
 
 admin = [
     'etc/',
+    'lib/libpam/modules/pam_krb5/',
     'libexec/',
     'sbin/',
     'share/examples/bhyve/',
@@ -165,6 +167,7 @@ internal = [
     '.mailmap',
     'MAINTAINERS',
     'ObsoleteFiles.inc',
+    'share/keys/',
     'share/misc/bsd-family-tree',
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
