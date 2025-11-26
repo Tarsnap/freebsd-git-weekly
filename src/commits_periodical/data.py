@@ -64,6 +64,7 @@ class Index:
         ]
         sorted_names = sorted(main_index_entry_names)
         self.latest_name = sorted_names[-1]
+        self.prev_name = sorted_names[-2]
 
     def get_filename(self, name):
         filename = os.path.join(self.project_dirname, f"{name}.toml")
@@ -71,6 +72,9 @@ class Index:
 
     def get_latest_name(self):
         return self.latest_name
+
+    def get_prev_name(self):
+        return self.prev_name
 
     def get_index_entry(self, report_name):
         return self.index_entries[report_name]

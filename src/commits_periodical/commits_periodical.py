@@ -84,6 +84,10 @@ def main():
         # Default setting: use the most recent time period
         index_entry_name = index.get_latest_name()
         entries_filename = index.get_filename(index_entry_name)
+    elif args.report == "prev":
+        # Work on the previous time period
+        index_entry_name = index.get_prev_name()
+        entries_filename = index.get_filename(index_entry_name)
     else:
         index_entry_name = args.report
         entries_filename = os.path.join(
