@@ -62,13 +62,12 @@ class Index:
         main_index_entry_names = [
             k for k, v in self.index_entries.items() if not v.is_derived()
         ]
-        self.latest_name = max(main_index_entry_names)
+        sorted_names = sorted(main_index_entry_names)
+        self.latest_name = sorted_names[-1]
 
-    def get_latest_filename(self):
-        latest_filename = os.path.join(
-            self.project_dirname, f"{self.latest_name}.toml"
-        )
-        return latest_filename
+    def get_filename(self, name):
+        filename = os.path.join(self.project_dirname, f"{name}.toml")
+        return filename
 
     def get_latest_name(self):
         return self.latest_name

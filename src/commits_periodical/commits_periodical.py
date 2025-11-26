@@ -83,7 +83,7 @@ def main():
     if not args.report:
         # Default setting: use the most recent time period
         index_entry_name = index.get_latest_name()
-        entries_filename = index.get_latest_filename()
+        entries_filename = index.get_filename(index_entry_name)
     else:
         index_entry_name = args.report
         entries_filename = os.path.join(
