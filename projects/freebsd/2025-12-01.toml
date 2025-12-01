@@ -1,0 +1,69 @@
+[3e3d7e590566c7e1a55bfb0f084c9f64c6c46898]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ba963776199f84775388a03d072121bf93707020]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5e0d065b5b90d4f4264d8248f39f199f1a2576dc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8c35de4982d855950a900483513f341643f6158f]
+ac = "hardware"
+ac_section = "05-summary-prefix"
+ac_pattern = "cam/scsi:"
+
+[31407551c3d4d29905f77abddac3fd9b649e166b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c1e033c33e8b290cd40f4069249c879efcbae6a6]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[5f529f9e292a30c065c316ed5fd0d23e07b26e5c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[72b114169bd56ec157d746a2df87b3a4617065b3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d667cc77ba20082c16457ef4ae7f3060d9ab70b1]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "dtrace:"
+
+[dfd35cd244c081dad9bc0fa602ee230e4ea1d5c2]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[d11ff7f93386f36a385ea01498fd9ff9ff3862ce]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "opensolaris:"
+
+[507cfc42799f38d6960cd3a14eb66294c5fda4ff]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[17fd7780fbbb59932b72b5dac6bda93f67743b83]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "dtrace tests:"
+
+[882821b78faecaffdecac8fdcd943ee2e1053ee7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"

@@ -97,6 +97,7 @@ userland = [
 doc = [
     'RELNOTES',
     'UPDATING',
+    'share/doc/',
     'tools/kerneldoc/',
     'usr.bin/man/',
     'usr.bin/mandoc/',
@@ -230,6 +231,8 @@ hardware = [
     'GEOM:',
     'apm\(8\):',
     'bluetooth:',
+    'bus:',
+    'cam/scsi:',
     'cxgbe\(4\):',
     'efi:',
     'moused\(8\):',
@@ -265,6 +268,8 @@ admin = [
 
 libs = [
     'lib.*:',
+    'stddef.h:',
+    'uchar.h:',
 ]
 
 filesystems = [
@@ -298,7 +303,9 @@ contrib = [
     'OpenSSL:',
     'contrib/bsddialog:',
     'crypto/openssl:',
+    'dtrace tests:',
     'dtrace:',
     'local-unbound-setup:',
+    'opensolaris:',
     'unbound:',
 ]
