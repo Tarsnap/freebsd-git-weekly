@@ -31,13 +31,18 @@ def check_section(order, section, section_name):
 
 def check(project):
     order = {key: i for i, key in enumerate(project.categories)}
+    order["_acts_on"] = -2
+    order["_re_func"] = -1
 
     for section in project.classifiers:
         if section == "Meta":
             continue
 
         if "filenames_plain" in section:
-            sanity_check_files_categories(project.classifiers[section].keys())
+            patterns = []
+            for _, pats in project.classifiers[section].rules.items():
+                patterns.extend(pats)
+            sanity_check_files_categories(patterns)
 
         if not check_section(order, project.orig_classifiers[section], section):
             print("Problem found")
