@@ -111,3 +111,18 @@ display_date_end = "2025-09-30"
 include_spans = [2025-09-01, 2025-09-08, 2025-09-15, 2025-09-22, 2025-09-29]
 start_after = "004ce88ad1efd42a1d7d5692849b4aa6906178fc"
 end_including = "c2900b6e8255ba4f54dbd897cf42427db577ed3d"
+
+[2025-Q4]
+derived = true
+display_name = "2025 Q4, all"
+display_date_start = "2025-10-01"
+display_date_end = "2025-12-31"
+include_spans = [
+    2025-09-29,
+    2025-10-06, 2025-10-13, 2025-10-20, 2025-10-27,
+    2025-11-03, 2025-11-10, 2025-11-17, 2025-11-24,
+    2025-12-01
+]
+start_after = "c2900b6e8255ba4f54dbd897cf42427db577ed3d"
+end_including = "112a6912e1c99439a7e2a75f3961e18f3b800c6e"
+ongoing = true
