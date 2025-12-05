@@ -104,6 +104,7 @@ doc = [
 ]
 
 hardware = [
+    "lib/libpmc/",
     "share/misc/pci_vendors",
     "share/misc/usb_vendors",
     "sys/amd64/",
@@ -113,6 +114,7 @@ hardware = [
     "sys/i386/",
     "sys/powerpc/",
     "sys/riscv/",
+    "sys/sys/pmc.h",
     "sys/x86/",
 ]
 
@@ -172,6 +174,7 @@ internal = [
     'share/misc/bsd-family-tree',
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
+    'share/misc/organization.dot',
     'tools/tools/git/mfc-candidates.lua',
     'usr.bin/calendar/calendars/calendar.freebsd',
 ]
@@ -184,6 +187,7 @@ tests = [
 ]
 
 contrib = [
+    'cddl/contrib/',
     'contrib/',
     'crypto/openssl/',
     'sys/contrib',
