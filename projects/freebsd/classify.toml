@@ -197,14 +197,14 @@ userland = [
     'usr.bin/',
 ]
 
-# Must be 2nd pass due to 'lib/libc/tests'
-libs = [
-    'lib/',
-]
-
 # Must be 2nd pass due to 'usr.sbin/ctld/'
 admin = [
     'usr.sbin/',
+]
+
+# Must be 2nd pass due to 'lib/libc/tests'
+libs = [
+    'lib/',
 ]
 
 # Must be 2nd pass due to 'sys/fs/'
