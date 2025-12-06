@@ -5,6 +5,8 @@ import pathlib
 import toml
 import tomlkit
 
+RESERVED_REPORT_NAMES = ["prev"]
+
 
 class IndexEntry:
     """This is metadata about a single report."""
@@ -55,6 +57,14 @@ class Index:
                 self.doc = toml.load(fp)
             else:
                 self.doc = tomlkit.load(fp)
+
+        # Check for reserved report names
+        for reserved in RESERVED_REPORT_NAMES:
+            if reserved in self.doc.keys():
+                print(
+                    f"Cannot have a report called '{reserved}'; reserved name"
+                )
+                exit(1)
 
         self.index_entries = {
             k: IndexEntry(v, self.read_only) for k, v in self.doc.items()
