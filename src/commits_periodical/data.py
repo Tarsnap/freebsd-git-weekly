@@ -5,7 +5,7 @@ import pathlib
 import toml
 import tomlkit
 
-RESERVED_REPORT_NAMES = ["prev"]
+RESERVED_REPORT_NAMES = ["prev", "all"]
 
 
 class IndexEntry:
@@ -72,9 +72,9 @@ class Index:
         main_index_entry_names = [
             k for k, v in self.index_entries.items() if not v.is_derived()
         ]
-        sorted_names = sorted(main_index_entry_names)
-        self.latest_name = sorted_names[-1]
-        self.prev_name = sorted_names[-2]
+        self.sorted_main_names = sorted(main_index_entry_names)
+        self.latest_name = self.sorted_main_names[-1]
+        self.prev_name = self.sorted_main_names[-2]
 
     def get_filename(self, name):
         filename = os.path.join(self.project_dirname, f"{name}.toml")
@@ -86,7 +86,26 @@ class Index:
     def get_prev_name(self):
         return self.prev_name
 
+    def _make_all_entry(self):
+        first = self.index_entries[self.sorted_main_names[0]]
+        last = self.index_entries[self.sorted_main_names[-1]]
+        ie = IndexEntry(
+            {
+                "derived": True,
+                "display_name": "all",
+                "display_date_start": first["display_date_start"],
+                "display_date_end": last["display_date_end"],
+                "include_spans": self.sorted_main_names,
+                "start_after": first["start_after"],
+                "end_including": last["end_including"],
+            }
+        )
+        return ie
+
     def get_index_entry(self, report_name):
+        # Special-case for "all" report
+        if report_name == "all":
+            return self._make_all_entry()
         return self.index_entries[report_name]
 
     def get_names(self):
