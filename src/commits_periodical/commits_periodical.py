@@ -7,6 +7,7 @@ import sys
 import commits_periodical.announcement
 import commits_periodical.classify
 import commits_periodical.generate
+import commits_periodical.investigate
 import commits_periodical.project_data
 import commits_periodical.sanity_check
 import commits_periodical.update
@@ -39,6 +40,9 @@ def parse_args():
 
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("sanity", help="Sanity check")
+    subparsers.add_parser(
+        "investigate", help="Investigate some stats and aspects of the commits"
+    )
     subparsers.add_parser("update", help="Update the final ref and commits")
     subparsers.add_parser("update-commits", help="Update the commits only")
     subparsers.add_parser("annotate", help="Annotate a week's git commits")
@@ -129,6 +133,8 @@ def main():
     match args.command:
         case "sanity":
             commits_periodical.sanity_check.check(project)
+        case "investigate":
+            commits_periodical.investigate.investigate(repo, doc)
         case "update":
             if index_entry.get("ongoing"):
                 commits_periodical.update.update_ref(repo, index, index_entry)
