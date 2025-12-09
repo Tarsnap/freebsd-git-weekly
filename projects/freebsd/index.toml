@@ -90,7 +90,13 @@ end_including = "5bfdb66ad985774b123ecd0cadee65c071b7ded0"
 display_date_start = "2025-12-01"
 display_date_end = "2025-12-07"
 start_after = "5bfdb66ad985774b123ecd0cadee65c071b7ded0"
-end_including = "112a6912e1c99439a7e2a75f3961e18f3b800c6e"
+end_including = "8b78d412aec7f9171ecc2e1cd8aea07b19b4f600"
+
+[2025-12-08]
+display_date_start = "2025-12-08"
+display_date_end = "2025-12-14"
+start_after = "8b78d412aec7f9171ecc2e1cd8aea07b19b4f600"
+end_including = "70edd3c126a591dec129958d3e103521de84746d"
 ongoing = true
 
 [2025-09-highlighted]
@@ -121,7 +127,7 @@ include_spans = [
     2025-09-29,
     2025-10-06, 2025-10-13, 2025-10-20, 2025-10-27,
     2025-11-03, 2025-11-10, 2025-11-17, 2025-11-24,
-    2025-12-01
+    2025-12-01, 2025-12-08,
 ]
 start_after = "c2900b6e8255ba4f54dbd897cf42427db577ed3d"
 end_including = "112a6912e1c99439a7e2a75f3961e18f3b800c6e"

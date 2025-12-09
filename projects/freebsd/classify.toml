@@ -23,6 +23,7 @@ _filenames_try_omit = [
     'sys/conf/files',
     'sys/modules',
     'tests/.*',
+    'tools/build/mk/OptionalObsoleteFiles.inc',
 ]
 
 
@@ -49,6 +50,7 @@ style = [
     '[rR]emove stray',
     '[sS]tyle',
     '[tT]ypo',
+    '[wW]hite space',
     '[wW]hitespace',
 ]
 
@@ -175,7 +177,10 @@ internal = [
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
     'share/misc/organization.dot',
+    'share/monetdef/',
+    'share/monetdef_unicode/',
     'tools/tools/git/mfc-candidates.lua',
+    'tools/tools/locale/',
     'usr.bin/calendar/calendars/calendar.freebsd',
 ]
 

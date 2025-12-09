@@ -375,6 +375,7 @@ ac_pattern = "sys/dev/"
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/netinet/"
+g = "tcp: store flowid info in syncache-00"
 
 [ee18f8be21655c2d98c1c1bd4e081c366fa91c9a]
 ac = "network"
@@ -469,6 +470,7 @@ ac_pattern = ["sys/net/", "sys/netinet/", "sys/netinet6/"]
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
+g = "net: remove dom_ifmtu-00"
 
 [97939604f447de0d06e6cc2c15f19c6f7be30cd2]
 ac = "internal"
@@ -598,3 +600,147 @@ ac_pattern = "tests\\/.*"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
+
+[c6212b7da110d82b1d0086ec525deb216993021e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f5b812331db52783292e89192a04195031132c23]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[10efa7c3020909391255819bb38bd87478aa2b19]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[90eda629964cbe4c2472aa3f1b8a427e60e78834]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[ced74610217ff0be071e4614c64a4ff66c40bc6b]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[8b4477f6b8e1b82acfef558a11facbb2797cb690]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[28125d24c92a45883b3ab105625ec5b3ba37e320]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[9954217599ce02fbf1772388e24e0b89663f4425]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[fe7b6fc32455389d1b8452c67e1ddcfbc4e5f5cc]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c95ea407b322379bcb3c013a2dca9a18072c1df8]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[9c2f321630894b40c1ec51ece881c7c765d6d749]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[c68126ec2594a80ac095e5ce9e6138709db75519]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[09701dc19cf0d6f1a41abcae89c00122546498fb]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[wW]hite space"
+
+[faf33e05013fb3fc79cc035c1ff7b52f3fa1af1b]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/locale/"
+
+[30aa5507f349f761770c5cf49989d6cf7eb3498d]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/locale/"
+
+[9df8243a2e0ab1ef027cbfbcb4105f5f0ce108e1]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["share/monetdef/", "share/monetdef_unicode/"]
+
+[95f37aa3e51ce46821059b2c9dbb02fef5c4bec5]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/locale/"
+
+[36cfa8093d25f8a5b598bd8ae74d7cbaafdc1879]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[934364da7fc8cd3ba4d030d0478163b41dda1b37]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/locale/"
+
+[13ae4904ad7d4677a8d894c91362f2d2479965b6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[d20da5c9736c3d93fc96e5e1c4dc40bed47bc419]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[643a606fa2742b94f6eca620119b7d2686ca9cd3]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[a83191c928cde55f45f2ed4b55e80c07c0e84105]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+fc = "kernel"
+fc_reason = "Need to be grouped with fd131b47f20dbeb515f5e3e6ea87948f2638eda9"
+g = "net: remove dom_ifmtu-00"
+
+[6f4debc004c31a2bd846757859e67855ab3d4c8d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "tcp: store flowid info in syncache-00"
+
+[3f10e5985044001a68761995474f1100aca648e1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c51876a107310984ba3a31b088caebcfd86a9844]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[66e85755595a451db490d2fe24267d85db4b09c2]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[8b78d412aec7f9171ecc2e1cd8aea07b19b4f600]
+ac = "filesystems"
+ac_section = "05-summary-prefix"
+ac_pattern = "zfs:"

@@ -603,7 +603,7 @@ ac_pattern = "sbin/"
 [0050289464fa56ec79e060b8d8378b9ff7145a0e]
 ac = "style"
 ac_section = "01-style"
-ac_pattern = "[sS]tyle"
+ac_pattern = "[wW]hite space"
 
 [3b9b64457676561b8de2bec7c94c561bbd807b0c]
 ac = "kernel"
