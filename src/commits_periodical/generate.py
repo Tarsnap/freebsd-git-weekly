@@ -19,6 +19,10 @@ def linkify(text):
     words = split_into_words.split(text)
     for i, word in enumerate(words):
         if word.startswith("https://"):
+            # Special-case for an "example" URL: we can't have <> in a link
+            # (even if it's escaped), so tidy5 would complain about this.
+            if any(s in word for s in ("&lt;", "&gt;")):
+                continue
             words[i] = f'<a href="{word}">{word}</a>'
     text = "".join(words)
     return text
