@@ -9,14 +9,21 @@ index = '''
   <body>
     <h1>FreeBSD git weekly</h1>
     <p>
-      Our goal is to make it easier for developers and users to keep
-      track of changes in FreeBSD that are relevant to them, without
-      needing to subscribe to the dev-commits-src-main mailing list and
-      look at every single commit which lands in their mailbox.
-    </p>
-    <p>
       This is a weekly report about commits to the
       <a href="https://cgit.freebsd.org/src/">FreeBSD source tree</a>.
+    </p>
+    <p>
+      Our goal is to make it easier for developers and users to keep
+      track of changes in FreeBSD that are relevant to them, without
+      needing to subscribe to the <code>dev-commits-src-main</code>
+      mailing list and look at every single commit which lands in their
+      mailbox.
+    </p>
+    <p>
+      An email announcing each report is sent to the
+      <a href="https://www.tarsnap.com/lists.html">
+        freebsd-git-weekly@tarsnap.com</a>
+      list.
     </p>
     %s
     <p>
@@ -46,11 +53,6 @@ INTRO_SECTION = '''
     This is a display of mostly-automatically-classified git commits from
     %s to %s.
   </p>
-  <p>
-    In the future, these reports might include summaries or additional
-    information, but for now our focus is figuring out what type of
-    classification would be most useful.
-  </p>
 </section>
 '''
 
@@ -59,12 +61,6 @@ INTRO_DEBUG_MESSAGE = '''
   <p>
     DEBUG: This version of the report is primarily for checking the
     classifiers, and therefore contains extra information (in this colour).
-  </p>
-  <p>
-    DEBUG: In addition, debug pages for the latest week are often produced
-    by a daily or hourly cronjob, and thus might not have any human review.
-    Don't worry if you see commits in the wrong section; I'll check and fix
-    them.
   </p>
 </div>
 '''
@@ -79,8 +75,9 @@ TECHNICAL_NOTES_SECTION = '''
   <li>
     The dates are "approximate" because git has no record of exactly when
     each commit was added.  The "author date" and "commit date" are text
-    fields controlled by each committer, not the actual dates.  Git accurately
-    records the <em>order</em> of commits, but not their dates.
+    fields controlled by each committer, not the actual date the commit
+    reaches <code>cgit.freebsd.org/src</code>.  Git accurately records the
+    <em>order</em> of commits, but not their dates.
   </li>
 </ul>
 <p>
