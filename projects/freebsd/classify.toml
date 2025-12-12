@@ -154,8 +154,11 @@ admin = [
 libs = [
     'include/',
     'secure/lib/',
+    'share/colldef_unicode/',
+    'share/ctypedef/',
     'share/monetdef/',
     'share/monetdef_unicode/',
+    'share/numericdef_unicode/',
     'tools/tools/locale/',
 ]
 
@@ -271,6 +274,7 @@ admin = [
     'heimdal-kadmin:',
     'jail:',
     'jaildesc:',
+    'kboot:',
     'nanobsd:',
     'pci_user:',
     'stand:',
