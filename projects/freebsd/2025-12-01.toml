@@ -667,22 +667,22 @@ ac_section = "01-style"
 ac_pattern = "[wW]hite space"
 
 [faf33e05013fb3fc79cc035c1ff7b52f3fa1af1b]
-ac = "internal"
+ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tools/tools/locale/"
 
 [30aa5507f349f761770c5cf49989d6cf7eb3498d]
-ac = "internal"
+ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tools/tools/locale/"
 
 [9df8243a2e0ab1ef027cbfbcb4105f5f0ce108e1]
-ac = "internal"
+ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = ["share/monetdef/", "share/monetdef_unicode/"]
 
 [95f37aa3e51ce46821059b2c9dbb02fef5c4bec5]
-ac = "internal"
+ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tools/tools/locale/"
 
@@ -692,7 +692,7 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [934364da7fc8cd3ba4d030d0478163b41dda1b37]
-ac = "internal"
+ac = "libs"
 ac_section = "03-filenames_plain1"
 ac_pattern = "tools/tools/locale/"
 

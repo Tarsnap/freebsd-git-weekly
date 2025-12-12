@@ -154,6 +154,9 @@ admin = [
 libs = [
     'include/',
     'secure/lib/',
+    'share/monetdef/',
+    'share/monetdef_unicode/',
+    'tools/tools/locale/',
 ]
 
 filesystems = [
@@ -179,10 +182,7 @@ internal = [
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
     'share/misc/organization.dot',
-    'share/monetdef/',
-    'share/monetdef_unicode/',
     'tools/tools/git/',
-    'tools/tools/locale/',
     'usr.bin/calendar/calendars/calendar.freebsd',
 ]
 
