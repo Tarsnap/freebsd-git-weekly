@@ -4,10 +4,9 @@ ac_section = "02b-filenames_wildcards2"
 ac_pattern = "tests\\/.*"
 
 [2918cf3582915bd8853784f53c88e2c34055df1f]
-mc = "style"
-ac = "filesystems"
-ac_section = "03-filenames_plain1"
-ac_pattern = "sys/fs/"
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "spaces to tabs"
 
 [5e0a4859f28ad4869f7a73faf42debc355a370bf]
 ac = "build"

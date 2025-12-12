@@ -787,7 +787,7 @@ ac_pattern = "tests\\/.*"
 [e57d72a7f35c3fc80dc9ac744056b2354b1be741]
 ac = "internal"
 ac_section = "03-filenames_plain1"
-ac_pattern = "tools/tools/git/mfc-candidates.lua"
+ac_pattern = "tools/tools/git/"
 
 [44f3e9f7f6c9afed33d2967c1ed48361bb6b404b]
 ac = "doc"

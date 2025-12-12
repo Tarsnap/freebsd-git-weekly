@@ -27,7 +27,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [97a24b350c4b9400749e5b199d563e2ed3dfbe6d]
-mc = "tests"
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
 
 [0795e9b53cf5be68955b49dce87f4800fdfd4a89]
 ac = "network"

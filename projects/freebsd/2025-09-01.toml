@@ -247,16 +247,14 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [491986942dd2b3be8a6f232c487b3bb7c1ea412b]
-mc = "style"
 ac = "style"
 ac_section = "01-style"
 ac_pattern = "[rR]emove stray"
 
 [245f2abf94889d3fd69360c4f49532074ff25fbf]
-mc = "style"
-ac = "tests"
-ac_section = "02b-filenames_wildcards2"
-ac_pattern = "bin/.*/tests/.*"
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "license header"
 
 [512d3c3a2c6391cee61ff41e3fe6304973346857]
 ac = "tests"

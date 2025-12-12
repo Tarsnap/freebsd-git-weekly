@@ -474,8 +474,8 @@ g = "net: remove dom_ifmtu-00"
 
 [97939604f447de0d06e6cc2c15f19c6f7be30cd2]
 ac = "internal"
-ac_section = "05-summary-prefix"
-ac_pattern = "git-arc:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
 
 [431b3b224db2a69d09c359ce1cfb37ba3da4705c]
 ac = "kernel"

@@ -52,6 +52,8 @@ style = [
     '[tT]ypo',
     '[wW]hite space',
     '[wW]hitespace',
+    'license header',
+    'spaces to tabs',
 ]
 
 
@@ -179,7 +181,7 @@ internal = [
     'share/misc/organization.dot',
     'share/monetdef/',
     'share/monetdef_unicode/',
-    'tools/tools/git/mfc-candidates.lua',
+    'tools/tools/git/',
     'tools/tools/locale/',
     'usr.bin/calendar/calendars/calendar.freebsd',
 ]

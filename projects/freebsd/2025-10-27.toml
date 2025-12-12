@@ -581,8 +581,8 @@ ac_pattern = "lib/"
 
 [be27c64b3a0150534252a66263703283a79c39a0]
 ac = "internal"
-ac_section = "05-summary-prefix"
-ac_pattern = "git-arc:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
 
 [2acdec9e4d915ec61d0ca45b408f9beb7aa4b772]
 ac = "kernel"

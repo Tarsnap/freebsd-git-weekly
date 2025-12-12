@@ -546,14 +546,14 @@ ac_pattern = "sys/"
 
 [b3e53f9fff11e2e6289f5c69ad08f5acd727abd6]
 ac = "internal"
-ac_section = "05-summary-prefix"
-ac_pattern = "git-arc:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
 g = "git-arc: Don't require devel/arcanist-00"
 
 [257da67d2808b7abf6c53569532ccf26db3008b0]
 ac = "internal"
-ac_section = "05-summary-prefix"
-ac_pattern = "git-arc:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
 g = "git-arc: Don't require devel/arcanist-00"
 
 [e60861eb41ca9d141a0d967db3ecbe2b2909c300]
@@ -573,8 +573,8 @@ ac_pattern = "usr.sbin/"
 
 [6049f1bc210653b126974961b29d6eb71a6c6709]
 ac = "internal"
-ac_section = "05-summary-prefix"
-ac_pattern = "git-arc:"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
 g = "git-arc: Don't require devel/arcanist-00"
 
 [6901376f59b870ddbb0d922e3455a388333cd460]
