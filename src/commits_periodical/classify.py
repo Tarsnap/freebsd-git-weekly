@@ -188,12 +188,16 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
                 continue
 
             # Try omitting the specified files
+            possible_omit = meta["_filenames_try_omit"]
+            # Override global setting, if applicable
+            if "_filenames_try_omit" in classifier.metadata:
+                possible_omit = classifier.metadata["_filenames_try_omit"]
             new_examine = [
                 f
                 for f in examine
                 if not any(
                     re_func(omit_pattern, f, 0, classifier)
-                    for omit_pattern in meta["_filenames_try_omit"]
+                    for omit_pattern in possible_omit
                 )
             ]
             if len(new_examine) == 0:
