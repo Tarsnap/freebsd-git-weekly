@@ -40,7 +40,7 @@ def parse_args():
 
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("sanity", help="Sanity check")
-    subparsers.add_parser(
+    investigate = subparsers.add_parser(
         "investigate", help="Investigate some stats and aspects of the commits"
     )
     subparsers.add_parser("update", help="Update the final ref and commits")
@@ -48,6 +48,10 @@ def parse_args():
     subparsers.add_parser("annotate", help="Annotate a week's git commits")
     subparsers.add_parser("generate", help="Generate html for a week")
     subparsers.add_parser("email", help="Make the email announcement")
+
+    investigate.add_argument(
+        "funcs", nargs=argparse.REMAINDER, help="Functions to run"
+    )
     args = parser.parse_args()
     return args
 
@@ -134,7 +138,7 @@ def main():
         case "sanity":
             commits_periodical.sanity_check.check(project)
         case "investigate":
-            commits_periodical.investigate.investigate(repo, doc)
+            commits_periodical.investigate.investigate(repo, doc, args.funcs)
         case "update":
             if index_entry.get("ongoing"):
                 commits_periodical.update.update_ref(repo, index, index_entry)
