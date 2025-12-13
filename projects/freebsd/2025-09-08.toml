@@ -362,8 +362,8 @@ ac_pattern = "sys/"
 
 [f48b1a34ef859ca17de0cc9149cc22e07364ef85]
 ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/libkern/"
 
 [3c152a3de42a7d077e8d19159b679c3fb7572820]
 ac = "kernel"

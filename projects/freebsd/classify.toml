@@ -172,6 +172,10 @@ filesystems = [
     'sys/ufs/',
 ]
 
+kernel = [
+    'sys/libkern/',
+]
+
 build = [
     '.cirrus.yml',
     '.github/workflows/',

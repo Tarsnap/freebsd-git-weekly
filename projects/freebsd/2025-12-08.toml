@@ -43,8 +43,8 @@ ac_pattern = "usr.sbin/"
 
 [73586fcea630c2c4fb83e966920c039aee8a5fc9]
 ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/libkern/"
 
 [0f0662c6b4cc611d6e400f823656f908ffce5c04]
 ac = "network"
@@ -482,4 +482,67 @@ ac_pattern = "sys/"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
+g = "cam: Reduce overly long timeout values for initial device probing-00"
 ah = 1
+
+[478ac7dc2afde987e2f2087e5a13fa98a7cae4f9]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "cam: Reduce overly long timeout values for initial device probing-00"
+
+[38d60d453caad0f7377946d69d05d9421323f23f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5c025978fc3649730329994eecc56ada119e6717]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0247b4018de2c341ac59a585362c10044cea86ad]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[9d2981f20d64b727cedd47ceeecd3b5c123ab5f2]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[f2cb6206e10a6d82c5cbb5bc372382efe50a7b3e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[3b8e13c4696e9b3dab284842902b9f7b18073c8d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/pci_vendors"
+
+[c52253232a78dc2553d6ea7c9ab3e92301b36c01]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ef2d586d7efb908bf39e7d5eb5d4305193d0ca6e]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+
+[929338d1e92ada4ff4ee2061c625fa45a1a34caf]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[a16fdef54c10d887381ab9e56bc09f6dd42d6fea]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[c42bce238abd9dc36113457372e62bf14690af52]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"

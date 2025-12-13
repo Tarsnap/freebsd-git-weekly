@@ -82,8 +82,8 @@ ac_pattern = "sys/"
 
 [850a88e8db761c55b9aa56c2cf4da258dc61dec5]
 ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/libkern/"
 
 [6f8259eae61981d7e5d049be7eed9235f0e8172e]
 ac = "network"
