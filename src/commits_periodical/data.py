@@ -128,6 +128,11 @@ class ReportEntry:
         # Short for "annotation"
         self.ann = ref[1]
 
+    def __str__(self):
+        out = self.githash + "\n"
+        out += "\n".join(f"  {k}: {v}" for k, v in self.ann.items())
+        return out
+
     @property
     def cat(self):
         """Category of this entry."""
