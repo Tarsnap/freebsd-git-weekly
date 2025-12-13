@@ -609,9 +609,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
 
 [36f2eda251713d4d38f41cf269876b069e3897ff]
-ac = "internal"
-ac_section = "03-filenames_plain1"
-ac_pattern = "ObsoleteFiles.inc"
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
 
 [d0c8a0b3e6fc5372428eb4fddcd4f8c65b5b0ee0]
 ac = "tests"

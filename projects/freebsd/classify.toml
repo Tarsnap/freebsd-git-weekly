@@ -79,6 +79,11 @@ build = [
 
 _acts_on = "filenames"
 
+# Override the global settings
+_filenames_try_omit = [
+    'ObsoleteFiles.inc',
+]
+
 tests = [
     'bin/.*/test/.*', # special case for ed
     'bin/.*/tests/.*',

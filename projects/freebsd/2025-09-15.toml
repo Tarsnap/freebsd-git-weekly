@@ -256,10 +256,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "usr.bin/"
 
 [9b8224b950fb74c8674d257a5a4795baa759c35b]
-mc = "tests"
-ac = "internal"
-ac_section = "03-filenames_plain1"
-ac_pattern = "ObsoleteFiles.inc"
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "bin/.*/tests/.*"
 
 [1c3ca0c733a4e4ba550cedfa8019260fb0cf5707]
 ac = "reverts"
