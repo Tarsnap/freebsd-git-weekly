@@ -22,6 +22,7 @@ _filenames_try_omit = [
     'UPDATING',
     'sys/conf/files',
     'sys/modules',
+    'sys/sys/_atomic_subword.h',
     'tests/.*',
     'tools/build/mk/OptionalObsoleteFiles.inc',
 ]

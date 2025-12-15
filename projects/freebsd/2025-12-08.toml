@@ -546,3 +546,143 @@ ah = 1
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/net/"
+
+[611bbb190ff593e0e424e311575d7e978e623659]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[148111d3775eb159d71a36e3a8b4c5c1bf53392c]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[bcc735cb710fb74d1fb5f7be3d37701343c58ccd]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[3b6f9481a85600cf1f23a819c3afee30fcd4122f]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[a3950d70a499e120c67da884865486e8599229bd]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[1df4d82bd17ebd7449a6b58c32b65a12269ca068]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[756712d745db207085f1fe87dc8258434ec2147d]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[9d9974457ce8c6cf9023884ab457d4712dcc237f]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[49b6dda4d71175ad615718401573be5fd024822b]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[dab5daf54cc26aaf2679a2eda5f378461f279ec5]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[2f29d0f3e6d25599c188c94bf1e395d9cbeb2a4d]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[1dee2336ab44e604f4871c46e7ccb2f7f1e33054]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[d4f25d0c7957f0f1960028eec82625c2d6405537]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[026d962ef14dafe19fa73361bea6dcc95f141dfa]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9734ca05b9b481ae4f812ee39338782e7c2c1dda]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[9dda51f13cd85791c0f18782461219f5a88e2d67]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[a0d607957533c7fbefaac5cd81d34c037cc27344]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c694122f3cfb7d52b882fa79086d49f45a2c7fd2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[796abca7e281f0d4b7f72f48da4f941e1c8b139c]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netpfil/"]
+
+[123c086200491819595abc271d360e605288fd18]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+g = "libc/tests/string: improve stpncpy() \"bounds\" unit test-00"
+
+[66eb78377bf109af1d9e25626bf254b4369436ec]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[5917f9571dabddf28f95d15c17b65dc163628d44]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[8be8642826099368208efb2c1222f2a102cc5b08]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+fc = "tests"
+fc_reason = "Need to be grouped with 123c086200491819595abc271d360e605288fd18"
+g = "libc/tests/string: improve stpncpy() \"bounds\" unit test-00"
+
+[fa259d156d43966db95fe0f5cc15a0e6af206ff7]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[f943454bfbd98ce49516c6ede8626b5f2602edc1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[80726c2257e9d6d79341aac65ba22987f53619bc]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[edd982b95372bee56de4bfe3a61873a8fed254ae]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"

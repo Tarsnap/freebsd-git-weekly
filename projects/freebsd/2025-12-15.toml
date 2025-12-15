@@ -1,0 +1,57 @@
+[4bf8ce037dc8fa699be87350bb6467f1b74cb96d]
+mc = "hardware"
+
+[c112ad75605ccdfcb8bbce2f57b0e7a077f057f8]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[b9b1262a8ef95857101e538145703894e3b880b7]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[cae9ae66ad1b01e84597d03c436bc0579bd07fd4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[43b07bdbc5d24febc7a904d16f05f921c478eaa7]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[f1809eab82a796845f126b703c01d4a31ccf2193]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[cdbc9b76ff4901816b5ebdca5d0b7e9947a015cb]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[ac6a7f62166878038b9f8bd38a3fb1ff99ee8918]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[1291523fde5f953f1c12b7ab4e15bc8b4cd4c3d2]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[7ff3b13f12d97b7f67f09ecb9141e6dbaa1ad007]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[2059040493fb3f76cd1f06350fd4534a71a1f83c]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-src.dot"
+
+[9d56f84df5a60e012c79e694284de7d58ad0b029]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"

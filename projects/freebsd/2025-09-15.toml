@@ -997,10 +997,9 @@ ac_pattern = "sys/netinet6:"
 ah = 1
 
 [b31abc95eb730d566891e134ba14af852645f772]
-mc = "hardware"
-ac = "kernel"
-ac_section = "04-filenames_plain2"
-ac_pattern = "sys/"
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/powerpc/", "sys/riscv/"]
 
 [1c0465a3d32e59cd260067e87469abd013571470]
 ac = "hardware"
