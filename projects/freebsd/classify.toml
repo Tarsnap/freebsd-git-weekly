@@ -114,18 +114,18 @@ doc = [
 ]
 
 hardware = [
-    "lib/libpmc/",
-    "share/misc/pci_vendors",
-    "share/misc/usb_vendors",
-    "sys/amd64/",
-    "sys/arm/",
-    "sys/arm64/",
-    "sys/dev/",
-    "sys/i386/",
-    "sys/powerpc/",
-    "sys/riscv/",
-    "sys/sys/pmc.h",
-    "sys/x86/",
+    'lib/libpmc/',
+    'share/misc/pci_vendors',
+    'share/misc/usb_vendors',
+    'sys/amd64/',
+    'sys/arm/',
+    'sys/arm64/',
+    'sys/dev/',
+    'sys/i386/',
+    'sys/powerpc/',
+    'sys/riscv/',
+    'sys/sys/pmc.h',
+    'sys/x86/',
 ]
 
 network = [
