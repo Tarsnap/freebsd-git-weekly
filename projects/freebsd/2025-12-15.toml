@@ -55,3 +55,175 @@ ac_pattern = "share/misc/committers-src.dot"
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
+
+[8774a990ee4094f16d596d4b78e0f3239e5d0c88]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/net80211/"]
+
+[c10447a9256b561bf2edf26b5abf5f28071a15c7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[94b76ea9d136723d6f05c42f450c802fb4a91600]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[ddf4f9eda9c295082f17e7f26963666b72c97bb9]
+mc = "network"
+
+[1c5021f5251b231b614ad9cd175bcb4250495c12]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[3daae1ac1d82ecdcd855101bab5206e914b12350]
+mc = "network"
+
+[1615eff94cda8619561b73186ec8098cc8b14c5c]
+mc = "hardware"
+
+[efc8353481e3b65daa201b7a20faad3dcc4b7f7a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.sbin/usbdump/"
+
+[5bd839792b6a6afacb50f782b6013100b5ff9110]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[03603db0136815146c2886c793506acb8bb508b0]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[715cc257137099e022c7eecea4cd6995bb7604a3]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[52395203f9ac40d321ed55d93e9887300261d3bf]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[094626d3a5009a56bf1b763dbdfc681ce371dc99]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[9b943425fd90858f9e21cf47009275943a3548a3]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[27554189e5122d780dd295b1a1a81f15f459accb]
+ac = "kernel"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/examples/kld/"
+
+[9c844b6110b3768a4fc3ce47cd9d1b30915213ec]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[1fbdb149aa486961c5d9d6403065e90123b3f5fe]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+
+[00352ef6d2a013650f0ab2a4c9b016c22552ed25]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+
+[012f1e4ae350015ddb896e3d482485ce8258c0ef]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e93e57d3da2ea54598b5db01cc12a3acd656faba]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[7a83fedc116d827cc9c6d8e049b785f1d7b68dcd]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[cce603cfca773c61f3e17ea38575f4ba0557792d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2619d439fa860db734dbbf4b153c5ac9b15c7e49]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[a34c50fbd2a52bb63acde82e5aec4cb57880e39b]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "ipfilter:"
+
+[a6ea80bc917510b5e056cc5a29b62dfd7b39d068]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[681e9d3e391f30a512c523514f69a63c9782a901]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[2cd31bd8fa687922d2a571ae53456ecd2e9ba095]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.sbin/.*/tests/.*"
+
+[2c75ac14d7e9d1d57d70bbf26716868607f0d1fe]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[6e297e1cdff3568da19760e7e7c615ee4e8383ef]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+g = "libpcap: don't try to create usbusX interfaces-00"
+
+[8b780f75f7ef9ef56935800220e65c47171b74c4]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+g = "libpcap: don't try to create usbusX interfaces-00"
+
+[ce9557d4ee174267504a63b2c8f6009be27368c9]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[802c6d5d61d15494a54a386dc2ffbcfefc68c8ab]
+mc = "libs"
+
+[4cfc7de13f110563463c15be99690c6fe7b8676a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[79f578531f21aa57307cbffd858a8a89e562aa5c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[86f325711c07b723b85c031d581d0a5c1a0964f3]
+mc = "libs"
+
+[2ed21f90906b230476d3f12ff9dce0e2c4642af2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"

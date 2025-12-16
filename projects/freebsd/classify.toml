@@ -126,6 +126,7 @@ hardware = [
     'sys/riscv/',
     'sys/sys/pmc.h',
     'sys/x86/',
+    'usr.sbin/usbdump/',
 ]
 
 network = [
@@ -174,6 +175,7 @@ filesystems = [
 ]
 
 kernel = [
+    'share/examples/kld/',
     'sys/libkern/',
 ]
 
