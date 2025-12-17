@@ -19,6 +19,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="FreeBSD git weekly classification"
     )
+    # Add arguments
     parser.add_argument(
         "--debug",
         action="store_true",
@@ -38,6 +39,7 @@ def parse_args():
         help="Don't include the current time in the footer",
     )
 
+    # Add commands
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("sanity", help="Sanity check")
     investigate = subparsers.add_parser(
@@ -48,10 +50,17 @@ def parse_args():
     subparsers.add_parser("annotate", help="Annotate a week's git commits")
     subparsers.add_parser("generate", help="Generate html for a week")
     subparsers.add_parser("email", help="Make the email announcement")
+    new_report = subparsers.add_parser(
+        "new-report", help="End one report and begin another"
+    )
 
+    # Add command-specific arguments
     investigate.add_argument(
         "funcs", nargs=argparse.REMAINDER, help="Functions to run"
     )
+    new_report.add_argument("githash", nargs=1, help="Git hash for start_after")
+
+    # Do the actual parsing
     args = parser.parse_args()
     return args
 
@@ -82,7 +91,7 @@ def main():
 
     config = get_config()
     project_dirname = os.path.expanduser(config["project_dir"])
-    if args.command == "update":
+    if args.command in ["update", "new-report"]:
         index = commits_periodical.data.Index(project_dirname, read_only=False)
     else:
         index = commits_periodical.data.Index(project_dirname)
@@ -139,6 +148,10 @@ def main():
             commits_periodical.sanity_check.check(project)
         case "investigate":
             commits_periodical.investigate.investigate(repo, doc, args.funcs)
+        case "new-report":
+            commits_periodical.update.new_report(
+                index, index_entry, args.githash
+            )
         case "update":
             if index_entry.get("ongoing"):
                 commits_periodical.update.update_ref(repo, index, index_entry)
