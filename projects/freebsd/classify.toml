@@ -245,6 +245,7 @@ _acts_on = "summary"
 
 userland = [
     'lam',
+    'usr.bin:',
 ]
 
 doc = [
@@ -271,6 +272,7 @@ network = [
     'blocklistd-helper:',
     'epair:',
     'ip6:',
+    'ipf:',
     'ipfilter:',
     'openssh:',
     'pf:',
@@ -300,14 +302,17 @@ libs = [
 ]
 
 filesystems = [
+    'bectl:',
     'fusefs:',
     'pseudofs:',
+    'unionfs:',
     'vfs:',
     'zfs:',
     'zfsd:',
 ]
 
 kernel = [
+    'kern:',
     'random:',
     'sys/crypto:',
     'sys:',
