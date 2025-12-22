@@ -496,6 +496,7 @@ ac_pattern = ["sys/net/", "sys/netlink/"]
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
+g = "net: attach IPv4 and IPv6 stacks to an interface with EVENTHANDLER(9)-00"
 
 [93811883500b99f9f1fb4ffd6e764226d37dcfd0]
 ac = "hardware"
@@ -601,3 +602,87 @@ ac = "userland"
 ac_section = "05-summary-prefix"
 ac_pattern = "usr.bin:"
 ah = 1
+
+[fe53a8a82c8185e332deb8e1926f0e137aeb2548]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+g = "bpf: modularize ifnet(9) part of bpf-00"
+
+[f8cee1f2c2dfba6223385fd711cce9faeca76451]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[546d3d08e5993cbe2d6141b256e8c2ebad5aa102]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[27aa23cee81088b0ffa974eec9f03c654c36438e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[34892a8e30055000352d9612ad985be550c82bea]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a8c594d27779b95f33c856521ec1039fa552d869]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[7f39d05b67aec8b87fbad8d5b6381084f99120ec]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[dd5a48f957868ce1809d06cebe03ad92a07af75a]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[27cb2610ef0ba6871f2649658778fb83179c0b2e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[117306dc606bf331795636b165b25be66e40d6a0]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+fc = "kernel"
+fc_reason = "Need to be grouped with 0d469d23715d690b863787ebfa51529e1f6a9092"
+g = "net: attach IPv4 and IPv6 stacks to an interface with EVENTHANDLER(9)-00"
+
+[43d7ee540efe0df1def80ce24255b32f9f9396ba]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[4d692068f6850282dabde9e35b3098a4ebec9592]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[622d7fa18d33cd8c4e1195888068fe1fe7c631a1]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[823ebd7c4f897b1c620b6f21a68221da1cef7449]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[95788a851deb33242c18beb47f8a79eec320dfa5]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a35bbd5d9f5f887a6f3de15cfe61fcc73fe22dc8]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"

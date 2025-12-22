@@ -1,0 +1,49 @@
+[8e3fd450cc53d37fcf4e7f460f559d03c22c0d84]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[949cff4dceffdbee70fa7741c1d61cf6c5255aeb]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[0e724de9ed6f2d2914cb79686a4ceee7f6dd31a1]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[77939d64f23da4b0b599fad6edd967ffd1d17217]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[e3d6cf8c3f6c9203fbb60a16fde18cc751a80de1]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[349fcf079ca32d5c93e45366d2b27638747affeb]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0bd0c3295ac09f759f2816b73cbd2d950e3bef7e]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netgraph/"]
+
+[b275907fa338b1ed6e9b5b5dd1b5069c36605285]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[129e15d4994311958db59a1718d4ff42d440ce2b]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[88b04633c29e3a8fd2ac88febd1aedf409ce6925]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
