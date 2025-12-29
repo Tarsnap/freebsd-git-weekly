@@ -296,6 +296,7 @@ admin = [
 ]
 
 libs = [
+    'exterr:',
     'lib.*:',
     'stddef.h:',
     'uchar.h:',
@@ -313,6 +314,7 @@ filesystems = [
 
 kernel = [
     'kern:',
+    'kernel:',
     'random:',
     'sys/crypto:',
     'sys:',

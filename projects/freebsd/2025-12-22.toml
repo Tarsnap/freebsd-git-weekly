@@ -47,3 +47,379 @@ ac_pattern = "sys/netpfil/"
 ac = "contrib"
 ac_section = "03-filenames_plain1"
 ac_pattern = "contrib/"
+
+[cf1eaaf41cefe7e3aef45f6dab862191a3939ed8]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "Reduce number of external symbols in libllvm, libclang and liblldb-00"
+
+[3b1126208f44a90c7dc04a87207e54b22d45893c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "libs"
+fc_reason = "Need to be grouped with cf1eaaf41cefe7e3aef45f6dab862191a3939ed8"
+g = "Reduce number of external symbols in libllvm, libclang and liblldb-00"
+
+[183513d15f2290a42b542753aaffe9de2152575b]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netipsec/"]
+
+[15178d8ed2904d5c4fa31a1531e60dcb1e0f9209]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[da8ab13249420e85935b89794f333f0755e56385]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[3a4275a5f1f5dccd6918c4eff3b84488e322ad5d]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[4f35a84b32412f5cf54e08cd97cd6eee407fb30e]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[f51e9d0e0988df58c94db586ab5c8b5fd091c004]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[1b1fb628a1aff05b661ebb063f1795aa24ab54c6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "Quirk Realtek RTL8153 to config#1 so if_cdce claims it.  Works much better.-00"
+
+[9f49f436a9ec9441dacae8117280a83ddea7b9c6]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[e35191ccf3b3bdf02905f7e11dc0dd4796593c07]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[60eb371c2b9aab8cfe3196dc960cc5db1f0ec584]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "UPDATING"
+ah = 1
+
+[b94e4c7037b0face3206cf313fd8966d6aa1eaae]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[44f656641c238cb3db31026f3e3bef36cd5231a8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d0a2bd2765b365c4be9b17c29306f848953e55a5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ae12432049e7873ab3912643ae5d08297b8cbc49]
+mc = "contrib"
+
+[745c6c0431d01b4fc3247f4eac08a2181d71e008]
+mc = "userland"
+
+[fbc321b9cdceecd3c97742868da5d500423cf484]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[03752041e41b57af622f3649929789575a48258e]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[f7245a27e86c4c0012c8fb32c11bc4fdfbe64b62]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+fc = "hardware"
+fc_reason = "Need to be grouped with 1b1fb628a1aff05b661ebb063f1795aa24ab54c6"
+g = "Quirk Realtek RTL8153 to config#1 so if_cdce claims it.  Works much better.-00"
+
+[97fa62708f67ce189bde22c98d9102da026b448c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "udl.4: Consolidate HARDWARE and add HISTORY-00"
+
+[3c83b5d340f641259ea24e8af623e340eb8a21cc]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "udl.4: Consolidate HARDWARE and add HISTORY-00"
+
+[a7e0f6a3dc5f3c4d11066a4b6529bc8cb868694a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[1aea5b0ba76a30cc9753fbc860c0f35a980b756b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1e8c2cb328bbb2d685acbcd269db32ad3ec45f26]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5819f8b285fc55a75e5dea56ffe73b376525150c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[8d5a11cd0137d3ad70f6b06e063ea91a776d510a]
+mc = "build"
+
+[160077a4d75186a979f28f0778259c66d8cac8be]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+fc = "libs"
+fc_reason = "Need to be grouped with cf1eaaf41cefe7e3aef45f6dab862191a3939ed8"
+g = "Reduce number of external symbols in libllvm, libclang and liblldb-00"
+
+[4f184fd35d81bbd85284d47d2a65aeece67e87d4]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[5629b5cf79934e0b94ddbbd93b7756f74fe4050a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[98c3d868fb5a7da7356c58e8c51423975bbd078b]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[ecb58f931d45d6fe4e8b60a172415cc387657a6b]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[ba0a11512237681fc621670023d56195cb8c82ad]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[a3394b6a23fb66ccb7e588129d2465ef8ea26d30]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[2e7699355f08258365fb5f65d11ac297e20f78de]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[eaa424e3bde88f005c91f87a799c1905f1a5ebf5]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[3054e22e4524df24908d7e9379681c1ccf829b93]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[cd880010c49a5d4ec529f4204d4e88cd27727255]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[e2c93ed09f259ed049923bdaa9b697b3586e2f1a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "sys/font.h: avoid warnings about too-long initializer strings-00"
+
+[66604463e737f4754ae6268171031ceefc226837]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[1c9ff80f06350fa44b7e50ce09ad665ab0082abb]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "kernel"
+fc_reason = "Need to be grouped with e2c93ed09f259ed049923bdaa9b697b3586e2f1a"
+g = "sys/font.h: avoid warnings about too-long initializer strings-00"
+
+[6b2e4da4430029b16591c64aaef78bcd1644cedc]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[5b39245ab6f37450fd025127b4fc76b5e5ba135e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[88f8e3c5ab97025587d7df761c8ae72e2db6c1d3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[4eb560faa725771e536a850a9467fbb592ab3c1b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "acpi-00"
+
+[425b41f81634fd5a8f7d038191560040d1d4d32c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "acpi-00"
+
+[11757b1487e3e8ca0479dff5da0815b42aea3fe0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "acpi-00"
+
+[fe74d52de5dca506fe07693ffd6a35140bb55abd]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[bd8296bd81d55563f7ccafca77b7b74fb219df9e]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[02376be32d6bcccc0c722c08779bd71e70516599]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[e1bfd541c7cdee1e184cacb2ea3bbebb3a500dfb]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[0d31189cbce4de142a43b65037beb7bf8c09cf26]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[350f319731897f741b516db99636e7ced071dfa4]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[939ac0c8fde22a4ad9cb9bfb5d94f29cad6ea040]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[086bedb11a853801e82234b8a1a64f0df52d9e52]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "kernel"
+fc_reason = "Need to be grouped with 1c9ff80f06350fa44b7e50ce09ad665ab0082abb"
+g = "sys/font.h: avoid warnings about too-long initializer strings-00"
+
+[e6546807f4c1a8a6a6fa53fceab7b8c80e3ed802]
+ac = "userland"
+ac_section = "03-filenames_plain1"
+ac_pattern = "bin/"
+
+[f22cffe43343d9d48c731952d94976c5deb9659e]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[424089a0fc82ee9db8659b8c1099bbbde8999473]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[8e8d7d489f7ba169b78b21fb84f8b4666fa871b8]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[faeaa25f562493370a5da84b429ab0a117c3213a]
+ac = "kernel"
+ac_section = "05-summary-prefix"
+ac_pattern = "kernel:"
+
+[c910c7a3d224764adf53581cc097cefb6f963502]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[176075e661fc657845d788ab3451e690c4e9bac6]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[a7b8a5d37bcb0009297962137bfb6c6570e5af12]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[9fdf49e8a501047b61a615ab1b4b133159ad76e1]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[b67a7c062b65f29448ad5e9e001b03c99869c192]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[e51047118cb1d15abe8077a5b47b8063fa364ad9]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[63d1c3c43690ff3c3e76e1fb03c8640fe30a2663]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+
+[ae31c10537edc1ed77a852e60bf3bd31fc38cba2]
+ac = "build"
+ac_section = "05-summary-prefix"
+ac_pattern = "bsd\\..*\\.mk:"
+
+[3c0ea1b629764c49611e3e3adfa0c44f9afa3558]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[4cd7be3e81863bd22aacccc34fc2e8b2cfcb14d9]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[541a98d7e28a8e4697ac2fa78dd4c4203c2c3a9c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
