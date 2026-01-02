@@ -330,6 +330,7 @@ build = [
 ]
 
 internal = [
+    'copyright:',
     'git-arc:',
 ]
 
