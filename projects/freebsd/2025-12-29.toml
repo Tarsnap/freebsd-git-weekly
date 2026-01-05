@@ -445,3 +445,115 @@ g = "sound-01"
 ac = "doc"
 ac_section = "02-filenames_wildcards"
 ac_pattern = ".*\\.[1-9]"
+
+[a6afa194f382e4f81277fdc7e81e229d3c8caf5f]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[62a7fdc13ab45b48977424ef77bbc0f11f601e39]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+
+[3e6e4e4a0d42fa24f3b2a1c087e9ad25f9594081]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+g = "hwpstate: add CPPC support for pstate driver on AMD-00"
+
+[2e92aeede85c8986bd6f4dde65d2ac2449eccf51]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[3642ba2a9840734d83dd77ca4c1aa0ecb3bfe879]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+g = "hwpstate: add CPPC support for pstate driver on AMD-00"
+
+[f86148d2777d4d7985ed8f4ae957c41c44bd2484]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[27894e20f140ee2729c14b589035870c8185b87d]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libgeom-00"
+
+[fad6707e2589d8557ceb6b6bf11f22323b265f01]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libgeom-00"
+
+[4b0d5d1d6a7c9773e38882feb4747a76b37a645c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libgeom-00"
+
+[8ac77ea6a3c6ce99d39e1dd4e19adb444b2b4d5a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[2a7c4685b7693bfa15e2bd4d5e82905a368b0030]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[17355cf50fcbd0d8ddb638e1f2fd5861b526edbe]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libgeom-00"
+
+[8df2e542146801fd01675e56724eaa567d04c209]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+ah = 1
+
+[08cdcff58acb2aec881e42c7f097d6492d864898]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "crypto/openssl/"
+
+[38d757b6c29c990de72dc51ac123922d3f095f53]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[wW]hitespace"
+
+[43b5a264c6f665ac451102d828a8f51307efe626]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b1bef9f7e0e182a9eee222639ffc8af4883ec0fa]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5d85dde27b4769604fc108b89328607e70e767ed]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[9595055ae7494997bb07b4aaed544f88ac4c5e7f]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[2f83319214d9adb8ab7a77e35d1014658b3f9cae]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[9c923575606bbd29dcf0ec3384150d2d67136cbb]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"

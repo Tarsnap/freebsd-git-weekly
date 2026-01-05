@@ -1,0 +1,87 @@
+[ef2d7cc11d04728f2b97d2b0188d77be77d5c252]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ece6e062ae4b419736c8bb65874ece6be28c2100]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[eb1c0d74cbb99f329767b3d565ae57a3ec032bee]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[4a1b69ade6b5e8665dfb4d0cb683854705192a68]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[684c762485d31d769b9e1ebeaababa31f684d2de]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[1c8dafe618878c563c3740061f83a85b0be10720]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[58a14d9596bd9a72683cbd725e817fdabe926139]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[138e74ceadb237cdd42fcda11ddef18b509f571d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[3949c2b8c4691a6dff8be7b38805d56faab91187]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[96156003ec0c70de88a448d48d8e9bd37913589f]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[wW]hitespace"
+
+[7359df79d3affeccf17f12f16c23ba3d4c5e0346]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+
+[89c017d068704c2bc3da9cb22f43da17a9ce8c24]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[e4e30d5a81367b96dc8255252b527d6a65bb43b3]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+g = "ipfw-00"
+
+[bc9c45df1c29370e7bffd813987c08b2f6444b5d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+g = "ipfw-00"
+
+[161db3a910a41dfae0eea93f49b08eb7e6253617]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+g = "ipfw-00"
+
+[1ecac45cfc5f0886907c34ec0da2c1b32618665d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ac1cd655f647cfd8e8d8c08da00f41abfce212a1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
