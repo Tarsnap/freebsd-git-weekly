@@ -144,6 +144,7 @@ network = [
     'sys/nfs/',
     'sys/nfsclient/',
     'sys/nfsserver/',
+    'tools/cam/',
     'usr.bin/netstat/',
     'usr.bin/sockstat/',
     'usr.sbin/ctld/',
@@ -189,6 +190,7 @@ build = [
 
 internal = [
     '.git-blame-ignore-revs',
+    '.github/',
     '.mailmap',
     'MAINTAINERS',
     'ObsoleteFiles.inc',
@@ -262,7 +264,9 @@ hardware = [
     'cam/scsi:',
     'cxgbe\(4\):',
     'efi:',
+    'mips:',
     'moused\(8\):',
+    'powerpc:',
     'sound examples:',
     'udbc:',
     'virtual_oss:',

@@ -120,7 +120,13 @@ end_including = "9c923575606bbd29dcf0ec3384150d2d67136cbb"
 display_date_start = "2026-01-05"
 display_date_end = "2026-01-11"
 start_after = "9c923575606bbd29dcf0ec3384150d2d67136cbb"
-end_including = "ac1cd655f647cfd8e8d8c08da00f41abfce212a1"
+end_including = "e3bfcf6b594e8388c4a2e1835519a8026e90cf71"
+
+[2026-01-12]
+display_date_start = "2026-01-12"
+display_date_end = "2026-01-18"
+start_after = "e3bfcf6b594e8388c4a2e1835519a8026e90cf71"
+end_including = "c1376acb8a9df03e5e47a78dbac5347d036116ff"
 ongoing = true
 
 [2025-09]

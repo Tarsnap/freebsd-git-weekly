@@ -1,0 +1,255 @@
+[0b908de1d01aa32daf71e8d691d79e490178097c]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".github/"
+
+[c2a55efd74cccb3d4e7b9037b240ad062c203bb8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0672e0e38a08c580f723a02bb183344d8c7cee65]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2c029cff5ba3716757646a2d2c89db49987c1e98]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[60ae4e52f33e3c67720b68a29e35f6c114a3386c]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[7f8b4db9e001d94974a081e5fd58c4f3994429cb]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".github/"
+
+[c5dc38bcc2916018566b3b6eb46bcbbc68adf01f]
+mc = "hardware"
+
+[6b69d6726a7d3455fb295abfcf9aedd48c580d4a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[9c25620e57f01d8227f0d53c6b2134ab37a49fdf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/amd64/", "sys/i386/", "sys/x86/"]
+
+[8342d9f7b5f13d0623861cb8b88caf10a15571f6]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[aa58af04dc88aabf9d2fade2c7d126031cb66f42]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[eccd366b0a8ba7d902fcf0b1bec447926a75c36c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f74f891581bc4df20431607de9b761107f6a0aa7]
+mc = "build"
+g = "src.opts: Introduce MK_SOUND-00"
+
+[2fb7c416c866436cc335baf80c1fc0466ffc7d22]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = [".github/", "MAINTAINERS"]
+
+[7ff1d2be5dc2384562bb755f9c0e4c0e37ee1e73]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = [".github/", "MAINTAINERS"]
+
+[fb08f80eaf90eb7ace202d8604634fc181be8980]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[74999aac5effb9b32d12f413ef51e87b15c8a0d8]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[045112f148fa092c92ec53204708f638b226ff8f]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.bin/.*/tests/.*"
+
+[32ec9d87ce9e6328408036af921369b7bf30f00c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[668423f75b4d9006f16847b415c861defb8267d7]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[cf34eb8264954a8fd1e92081bcf67719bddbc2aa]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "src.opts: Introduce MK_SOUND-00"
+
+[a3f28d70969cdc429c8c277d47e89ae0818cf75e]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[2b60e628d3b1e98d211f9c4f7cef8cbd641eda5d]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[b0c2236f0390ac4a04da2c4b9cd5ecd6bd80d53c]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.sbin/.*/tests/.*"
+
+[1971c31c537fd638f3a27eb4c3aca5183a970559]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[a551b0524953cbfa4f1035c6d968623e64f4436a]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[dac74b20c706b1f73986fb40dac27ed85c1d2850]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[3f2f3c52e6f192df435bdb5861018402ec1167d0]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[babc4d8f70de9dcca3262ca94a777fa3bb6116ff]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[ced7f29dece3d27785c5037b8aa36e5d48d34b3d]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[4cb65fde79a2412558d10fdbf3427fc0e4536d80]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[17046bc48207733f5add478dd7713878f9d30923]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = [".mailmap", "share/misc/committers-src.dot", "usr.bin/calendar/calendars/calendar.freebsd"]
+
+[742d93da842afa34c5268e96c6a3f95ad44ae770]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-src.dot"
+
+[c1d7c957895e3cd3ffa6669352bb809a8fc5f78e]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".github/"
+
+[7361727d4584b5e303183c836497ae2754ce0e53]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[de770681234d001a1f4cdb8121179331dc3a2def]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d160447129fe060b28bcd6ba429d17afdf494ff2]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "vm_object: remove the charge member-00"
+
+[457b940bfb6a228af1281f357b627ecf1e26fea5]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[113dc9ed98874d15f4f43287dcb6d0f59633b19b]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[0685fc435c2b6750762d50985bc6876dede5fbe2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[591c7a08bf8addce4b047ef9c8033c33099e4688]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[449339bdba2470eded4d55c41b084cfc8f5ef73a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[a652357fb59f03bee85d61814002f9c60ea52340]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[5eec3531204bd93426642a9c45b0c292a01447e4]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[41ccf82b29f3b16fcd1ccb4987569c851222ef8d]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[27083693955d563f836fd1b6b1bc4e1a249d3b6b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[bdaa120b30006d7ef841a966414795416ce93eea]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[acb71820d68bd0dd98964240727e251bc62c92de]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "vm_object: remove the charge member-00"
+
+[66eedcb0224df03e56513f3caf1df93a52b6a919]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c1376acb8a9df03e5e47a78dbac5347d036116ff]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
