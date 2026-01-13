@@ -149,8 +149,10 @@ def main():
         case "investigate":
             commits_periodical.investigate.investigate(repo, doc, args.funcs)
         case "new-report":
+            assert len(args.githash) == 1
+            githash = args.githash[0]
             commits_periodical.update.new_report(
-                index, index_entry, args.githash
+                index, index_entry, githash
             )
         case "update":
             if index_entry.get("ongoing"):
