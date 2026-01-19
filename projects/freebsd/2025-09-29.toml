@@ -568,9 +568,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/contrib"
 
 [cf583997282f962d9e8bf478667d5087f7c1f2da]
-ac = "build"
+ac = "internal"
 ac_section = "03-filenames_plain1"
-ac_pattern = ".github/workflows/"
+ac_pattern = ".github/"
 
 [bdb205c53ed769ad9f5e8da1ec6d05c48992dbf8]
 ac = "libs"

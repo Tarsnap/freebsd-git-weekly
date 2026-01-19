@@ -934,7 +934,7 @@ ac_pattern = "usr.bin/"
 [9b54998d1bdd5098d5538052024f88edcd625b4f]
 ac = "internal"
 ac_section = "03-filenames_plain1"
-ac_pattern = [".github/CODEOWNERS", "MAINTAINERS"]
+ac_pattern = [".github/", "MAINTAINERS"]
 
 [b558c92fd0005d311edbcd02953c17d4a34fb909]
 ac = "build"

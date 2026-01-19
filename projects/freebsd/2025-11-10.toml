@@ -752,9 +752,9 @@ ac_pattern = "sys/"
 g = "unix/stream: fix a race with MSG_PEEK on SOCK_SEQPACKET with MSG_EOR-00"
 
 [73a4459f6fc76482ea55c5aacb66136c49fb0892]
-ac = "build"
+ac = "internal"
 ac_section = "03-filenames_plain1"
-ac_pattern = ".github/workflows/"
+ac_pattern = ".github/"
 
 [e96359d111aaffa6bf0ea72a6f183eb3b91e6c72]
 ac = "doc"
