@@ -1,0 +1,69 @@
+[a2c87d4f88e1bfe3b7007fa7148ebc7d37fc54cc]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[99afbc5cc7ae8ba7b112fbafbf24ea2575a65ba4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d91ae61f8fc2dd4ab3c208f25570b91a0725e2e4]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[3a6289e1e53ffe11b91b754d3b8241001b2cbfb8]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".github/"
+
+[83d98828867591b5d842573ed6edcec7392f82df]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ad5e3cb950344f9822dbbd90f5ac7c256f97fa4c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[709a53c8b20b5770f7e2f117d4799b5617479976]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[4b534b814aa03b44660ede6d5f1a62cb33c24115]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[002c50ea23b99b415b1b392d3dd5ea6223c3a74c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[ce16be73707eedc798b26e0741dcd70d1168ac10]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[afa70a8496e90fa751418be8d1b55e3d559a281a]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[7f026a58691db1763203ab8c7c8f34f738bfd9d5]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[902e3057cd5c7a076b78dd559b7b264610af59aa]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[c0898bdc8661842c51fecfe467a1c921a2d81774]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
