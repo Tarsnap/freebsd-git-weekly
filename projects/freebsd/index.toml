@@ -132,7 +132,13 @@ end_including = "8ac6427b1bb95470f6c755202d1c0391ed8eefbd"
 display_date_start = "2026-01-19"
 display_date_end = "2026-01-25"
 start_after = "8ac6427b1bb95470f6c755202d1c0391ed8eefbd"
-end_including = "c0898bdc8661842c51fecfe467a1c921a2d81774"
+end_including = "4efe75af0869dd71a26685c432e5284d71bf4dc8"
+
+[2026-01-26]
+display_date_start = "2026-01-26"
+display_date_end = "2026-02-01"
+start_after = "4efe75af0869dd71a26685c432e5284d71bf4dc8"
+end_including = "8934c3dc780d6631cb23e4d98c7b988da9a5b703"
 ongoing = true
 
 [2025-09]
@@ -164,7 +170,7 @@ display_name = "2026-Q1, all"
 display_date_start = "2026-01-01"
 display_date_end = "2026-03-31"
 include_spans = [
-    2025-12-29, 2026-01-05,
+    2025-12-29, 2026-01-05, 2026-01-19, 2026-01-26,
 ]
 start_after = "aa611fa7e835ae77a623cc6d05020f5ee76dc881"
 end_including = "9c923575606bbd29dcf0ec3384150d2d67136cbb"

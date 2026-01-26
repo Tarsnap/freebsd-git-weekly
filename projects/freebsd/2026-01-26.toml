@@ -1,0 +1,102 @@
+[8ef8c6abfadfc9eb0465ce57c6b09ca310415bdd]
+ac = "hardware"
+ac_section = "05-summary-prefix"
+ac_pattern = "cam/scsi:"
+
+[6ecaa8dfb64b796085afdf597ec3a79878bde12f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c29e05113c000dc04552f8d21a92fd00c60d0a98]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a11d132f6c62f32abe44b19f7527d97ddc239058]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "devstat: Provide 32-bit compatibility-00"
+
+[c5daa5a4c32c9b1ecb506ddf1a80579c93c3ea6d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "acpi_spmc: Add system power management controller driver-00"
+
+[e35df41f68916cc23893a29e0284f386ec727462]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[d1e6057fa47e842c63461b64b29ac5d3e9fdad76]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[277539ae7f2f07a8dd29d4deb318d66414f8ae2a]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[27595bea69400ae71fa778cf1dcb52a793911ad4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[38e5564ecef53064c984d086a040c01100023f40]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[48eee744b540ef0413fa1cb543dde6e49e7f2ac4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "sym(4)-00"
+
+[c8e9479c74a2af0f6c665e930091c163bf760fd5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "sym(4)-00"
+
+[518c01b31e96bbe8353a551885a61e7da6aed5f6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "sym(4)-00"
+
+[e769bc77184312b6137a9b180c97b87c0760b849]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "sym(4)-00"
+
+[972c488bf4117d9eb29e5753c6c5a2250154df3d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[0eb2c9d39b5f5cfb68b404bca358aa5fb11ac60c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "devstat: Provide 32-bit compatibility-00"
+
+[49ec19f1e101a079bc3749e25c4c927098f2f67a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "acpi_spmc: Add system power management controller driver-00"
+
+[39878d24a690feb4da3fc223649c6a5fd166d09d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[8934c3dc780d6631cb23e4d98c7b988da9a5b703]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
