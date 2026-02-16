@@ -1,0 +1,117 @@
+[e4bcfe4ebf03e321a5f8317491cdeea49e4f6357]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[be522176951d8b542de9354f4ec9ac7603745b71]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[38c18332642500fdfe075a82f88e033f6673a53f]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[7c2fc4419db43a8a7d1886b0b8e08aa97bfa31e4]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[4ccca2100887943b11187787004bc8efc2a149c6]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[281282e9357b95b679d36ca6d8561e96c1263937]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "pf:"
+
+[5bcccc702b29a0e173a5916b001771dd7b280c7c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "open.2: stop making impression that fd must be directory-00"
+
+[c71354030a26900e564f0c80a8abdff7e77b3c9e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[7ab5e3f29a50bc9294a139cc0e8e661a7c036ba3]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[f1f142c01db43c7dc8d0d172fc1726da2ee01972]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "open.2: stop making impression that fd must be directory-00"
+
+[931d4f0ae4f2dcd088bb92459ff19c8b6aafc2cc]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e5213ca4a3ca742fd8d3b8db413a561b28fa6989]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[f412a5c565dedf5b6ea7cf3e43b57766ec0da63c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[995090202cae47567cc5b0d92301692d49c1c035]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[b05be03ceea0a95f7783ddc890885f34bb4023d4]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[db80ea9b88628168d2bb7f17a60b73568a8ea102]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[68ba270f4fc7799929a3d59d710f44e5e9087def]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pdrfork(2) tests-00"
+
+[d6bf2d14a941a88e27a82a3f91790353e134b8f6]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pdrfork(2) tests-00"
+
+[44843695bc4e36abd15835d627da7d38c06f2219]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pdrfork(2) tests-00"
+
+[94e4de77dec809fa5a6975e3495a41d1924c25ad]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pdrfork(2) tests-00"
+
+[f90ee665d035a5e4aea0bcaa18793e683ea253ed]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pdrfork(2) tests-00"
+
+[793e891f4ad1ef450f562a241fb0bd3b21d72251]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "pdrfork(2) tests-00"

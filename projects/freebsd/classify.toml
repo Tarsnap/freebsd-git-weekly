@@ -196,6 +196,7 @@ internal = [
     'ObsoleteFiles.inc',
     'share/keys/',
     'share/misc/bsd-family-tree',
+    'share/misc/committers-doc.dot',
     'share/misc/committers-ports.dot',
     'share/misc/committers-src.dot',
     'share/misc/organization.dot',
