@@ -1,0 +1,27 @@
+[fe5341287c6c9bacc18879b25ed72ceb42e1c811]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[fae551b76785d2357b09e2c022a92f410d871b9b]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+g = "style.mdoc-00"
+
+[47326cb470278e891975354286481b5ba876929a]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+g = "style.mdoc-00"
+
+[06ac71cffba4a0f86334844453d0a6fb3c46aa12]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+g = "style.mdoc-00"
+
+[b55bffeaaf9bae5dc7aa21eae441d89c999ebab8]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
