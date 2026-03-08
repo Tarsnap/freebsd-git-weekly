@@ -167,6 +167,8 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
 
         # Handle filenames differently
         if examine_part == "filenames":
+            if len(examine) == 0:
+                continue
             for cat, patterns in classifier.items():
                 keep_patterns = set()
                 matches_cat = list(examine)
