@@ -271,6 +271,7 @@ hardware = [
     'moused\(8\):',
     'powerpc:',
     'sound examples:',
+    'sound:',
     'udbc:',
     'virtual_oss:',
 ]
@@ -336,6 +337,7 @@ kernel = [
 
 build = [
     'bsd\..*\.mk:',
+    'build:',
     'packages:',
     'release:',
     'src\..*\.mk:',

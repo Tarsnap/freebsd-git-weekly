@@ -1,0 +1,44 @@
+[8f72d933cd18664c73b92f282503017bc6c87cf9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f87ba4522ec9e7b2227b8f20f3a4d7c6a129da1c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[105869a2c78d21f310a8f271eaa510acea045805]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5583b64f230fe0ea4e3d4bf4566205b521190fbb]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[2c5cd07828ad76c332e3bedc29fc641809e85396]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[02fd9fa2952705ea0ed142061dd86aad7e01f8db]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[b4daeded66b5e950ed8e618d66915b863c2414b1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e2ed7ee02f6bda705a7c8df3c512c6a43db56830]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+
+[87c6ec16857939693ee4d5bef9e8aa8b04bad5dc]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
