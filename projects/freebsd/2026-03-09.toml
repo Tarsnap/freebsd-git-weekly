@@ -42,3 +42,501 @@ ac_pattern = "share/mk/"
 ac = "admin"
 ac_section = "04-filenames_plain2"
 ac_pattern = "usr.sbin/"
+
+[6560ee97e8f51d5147521319dfd9d1e7afe74d34]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[6ccfa67ac422a307c3e9624fb080d9616b0c6b05]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[f37fbe30f559acfb269f67d3efe59569878a3ee1]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+g = "ndp: implement delayed anycast and proxy NA-00"
+
+[72f0bc868bf00586cba1e50057d8f1998b4abe80]
+mc = "style"
+
+[48368f702423742b2a7dff7ad3191625e8bf26f0]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+g = "system(3): Address test robustness issue-00"
+
+[863b5c137a98d29dc6964cba0e0c4fe2a8bebab8]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+g = "system(3): Address test robustness issue-00"
+
+[bc531a96c9b28b1cabcd5deb0c9f8f6d815cfebc]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[e6d579be42550f366cc85188b15c6eb0cad27367]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[d1180d47c9653335c75f6ec9e18eff19109f0119]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/bsd-family-tree"
+
+[df5b2cf2b31bf66e3b21c772b39f6cc6406dcb7b]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[cf74b63d61b49db848ecc20b87e7ee5f16671320]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+g = "yes: Completely overengineer-00"
+
+[a2b601343bf9261c4ada51e4d4c30c5b9320bb2b]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[92d7808d88f0de979d76446c76c7324731c41302]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[2b256f00aaee4713b8e6f0e3c0f3493065f710c4]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[c2012c7faf74c9e7b4e3de2472e10b58ed096996]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[9eb035ff8439195f565b9e3180b727333a4e7170]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[c8fb16542a52ca889c1adf56b2ce13b4ad4cf887]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[c3ac5f14c8b330c036149d1d24cd3369d1418de2]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[7e7a1b61531a29b4a0a5cdac66b96f420e6c66e4]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9a1394957c3054c24995d684e8bc26878702dc6b]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[98a0d2283701e08353ce670c8023803c58a4994c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[14b8a27883c15d3add3114f855eff7c6bda1b015]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[ba7439f0a9604b15bfef8084816f34d55eb6bdf2]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+g = "yes: Completely overengineer-00"
+
+[d99e725c26a7745aa349eab01ae56ca630b6d0f5]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-virtio-00"
+
+[522012c8bd079879b82aaa403e4da3c1ab9fc8a9]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-virtio-00"
+
+[1a92fc9c1210f9c99a19fda5a86682a78d39872f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2667a8454cff5896c7b467c78cd4ace5ad40f5eb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[97e84c587d6f86aa883720296449b380adcf6915]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[96c5eaf0ac6b98d0832e1037d672064de43a7e00]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[35b976c6ce6145678ab378b21fdeab687a0a76d5]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[ded881f9056d2ecb224490e56e95877af54164c4]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[bfb2fd5f66183454cfe8771595df09c0f23c7efb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libpmc/"
+
+[96294c22f7e54a48df44c86a4ee5848e71ac4470]
+ac = "build"
+ac_section = "05-summary-prefix"
+ac_pattern = "build:"
+
+[67728a18b9c18e55cc60e063380825b80f25b1b9]
+mc = "tests"
+
+[ff2c98b30b57b9763e2a6575f729bab676e6c025]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[e71bfbe2f58ffff8f16a9da075d98fff41671bac]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[9da4a804f0916b24519b8baa7ed460a7ba23d8c8]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[738aea3387d831c95024fd28076dadde132ceaec]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[a8b15315b250b067f16d629664caf6358d468bff]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[5f0ab9d9e965225c4af0c6ed481e01eee0ffab8f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[a2b2ce2c15bb73d9f87d5072cf65f1f027e066fb]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[25cc459286a02b646751541ccde5a33319471c73]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ce9aff829e02c9a21c04eae77a45f2193d1ed5a1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7e68af7ce2c1b892954df415774fe59fd2f1b62f]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+g = "fusefs: redo vnode attribute locking-00"
+
+[72472e52e310ec348949a3a67d3fa17e33fb8e50]
+mc = "network"
+
+[985ac741384ec65463669edee5e1d90dee4c895a]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[a68e3a8ae8401fe3ba6c0a85bbd3de87bd2e36f2]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c0462c2deafdcfe885e8d6f91b529d8cbddc6014]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "tcp: make sack_filter.c compilable without _WANT_TCPCB-00"
+
+[815ef05284d184d83613adcf60def403607be6a0]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[ac5ff2813027c385f9037b47b2b164d4c1bebd09]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0f1aa4543fbb7a49c077b69fbb60945ce0c14367]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[041e9eb1ae094a81e55fbcaba37eb2ac194658cc]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "inpcb: overhaul in_pcb.h-00"
+
+[4c72e5cde0177f19fd10f8bbd6005882075a7830]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/calendar/calendars/calendar.freebsd"
+
+[097cb4e9f0432c543c704cec712ce1cd3302335c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9a9f93bcf1aa0059d759b2f3ea6faeb2760a11bd]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b5f564fc5cdb56d6a24e31ca077c5f1f088a597d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[75f1665f33463e9ee0aaa63af0a875e6c46f8755]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+g = "ndp: implement delayed anycast and proxy NA-00"
+
+[13ee84c591f8df7553fc8e3dac7e92409046f4d2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5b7aa6c7bc9db19e8bd34a5b7892fb5df2a3068b]
+mc = "contrib"
+
+[4da237aee328f368cd85b659854c4556a39f15ef]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e9f3af5b28446ffcf55d8a8f7d59eb89ac3a3b4b]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[a1fa1478f665ceb85e4b58e4ed8234edef833d97]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[fa341366b1de86ed97e909bfd10241d590212fe2]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-ports.dot"
+
+[703901bce15bdd746cb20ab3fc88f5859924cf76]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c70f382a8b3907069589954433fe091687f15373]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[rR]emove stray"
+
+[78c4f821f43d530ba1f2a6308a64a8483208ebe3]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[77e0c9c3414cbe30eb7f376bf9c8531ca0f097ff]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[512e189a96415c3471399581239c243d1032e07a]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[4a8055914d6a60714f27379cbff8b2e9198157f6]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[277830b4d3ae9999c80bf915b5491850e91c6516]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "EC2: Don't use unicode in boot loader-00"
+
+[914a53570750ce5a104a5870403d7669656fddc3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+g = "amd64: move efirt trap checks into the helper-00"
+
+[d92ebde76430e99f78156fb1d865a18916380aed]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[eb0a78f6cef0c2924b565d7c297cb08bb4de7cb0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[7aa1dba6b00ccfb7d66627badc8a7aaa06b02946]
+mc = "contrib"
+ah = 1
+
+[a47c870930a728b5d890e8243cc363c788ebddc7]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "inpcb: overhaul in_pcb.h-00"
+
+[4f59a7eb878f8f084e86baa58e882bc55f460a40]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "tcp: make sack_filter.c compilable without _WANT_TCPCB-00"
+
+[728ae49a6b81edb3eec5ab70a63bb83db8f5dce5]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9d26b82826d9962d5085bc5d9df7f8a762c57602]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[f91464171d615b7e7720ac9ed67e2e86392d1b41]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8a62a2a5659d1839d8799b4274c04469d7f17c78]
+ac = "filesystems"
+ac_section = "05-summary-prefix"
+ac_pattern = "zfs:"
+g = "zfs: merge openzfs/zfs@f8e5af53e-00"
+
+[4efe7fa072d5ec47b673a3c82393c7db9a3568c0]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-ports.dot"
+
+[736d8852e190f69dc93206ed3fb2d1f712dc3ad1]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+fc = "filesystems"
+fc_reason = "Need to be grouped with 7e68af7ce2c1b892954df415774fe59fd2f1b62f"
+g = "fusefs: redo vnode attribute locking-00"
+
+[922d73540d2d9897e5e8160c445cefa13581564e]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[251907ca480eff7f6177f52959b71a6cfce45579]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+g = "EC2: Don't use unicode in boot loader-00"
+
+[e6f4e4ab8a51f5bec178f5d937e541e227efb561]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[16cef5f7a65588def71db4fdfa961f959847e3b6]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[a0b3ef1952603ebf0307ca723b03e5a71598dd5a]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[8365f877b1e4b6d4c30df72e0826ca60a412ce7d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+g = "amd64: move efirt trap checks into the helper-00"
+
+[462a1f6197fa3de63e0eca2835b1d5b0bc6a3bbb]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[356415aaaa8caa18a76ea74eed5c7de6e4d3b5fd]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+fc = "filesystems"
+fc_reason = "Need to be grouped with 8a62a2a5659d1839d8799b4274c04469d7f17c78"
+g = "zfs: merge openzfs/zfs@f8e5af53e-00"
+
+[0bebad8d072bb7abef1cea0d8c8d04d500913adf]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-bsd.own.mk-00"
+
+[2e9366982798144764159f9c0faced5f0e208b85]
+mc = "hardware"
+
+[424d3ca81f4e748afd90332fd6c37c944eb3b3cf]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[73f37a69f65ef4a6243a1b80bd763271560fa677]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-bsd.own.mk-00"
+
+[9976cff55e8897f74d970567e61512103216cf58]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[5f659f2b8533fd6063880080618e940b3a9ee370]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "filesystems"
+fc_reason = "Need to be grouped with 8a62a2a5659d1839d8799b4274c04469d7f17c78"
+g = "zfs: merge openzfs/zfs@f8e5af53e-00"
