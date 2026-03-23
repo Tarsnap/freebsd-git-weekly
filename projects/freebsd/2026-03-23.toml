@@ -1,0 +1,46 @@
+[f0d5f46a1e42b801d96447e544cc3820612748b1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e23f0deceac4fb77c14066d4a76074548ee75fc4]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[8d99314a044cfb58183087894592c3ec5be99be6]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+
+[4f8a1b4dffa8a6fa5fbe7fce05278792afd83a82]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/test/"
+
+[20b99e3a147963c6ef715112bd38e349c7a5a459]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-capsicum-test-00"
+
+[09c5bb35425bc70573c007e7f7e82be286677a87]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fce6921464b5b21836a304d0460c69db4a6f3942]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-capsicum-test-00"
+
+[b5b9517bfe394e55088f5a05882eabae7e9b7b29]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[47402c9422ec6c9ba76d96414f5a08bd35a9e1fd]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"

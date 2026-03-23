@@ -25,3 +25,497 @@ ac_pattern = "sys/net/"
 ac = "network"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/net/"
+
+[4e3beef84628ce6dfea7f053cddf3289fddf7794]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[889d10d5b12050b4b3923917b5edeac85e8ca706]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[aa15df4597053c0e95a15b2a7036296999cd562a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[83d7a4966f08f34a699da649bd4f714b450df39b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f0e0c4c52971f58d41a89690d402520500d286bd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libpmc/"
+
+[44a983d249d05d932b6cff333f130baf70febc22]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["lib/libpmc/", "sys/dev/", "sys/sys/pmc.h"]
+
+[209d9fbe50c181701bafb16a16dca8c959bbe8ae]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[e39d3a6b32331437da6c13a4aeb67e5bcca67625]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/sys/pmc.h"
+
+[6580d040861dfbf6c630a93cbf41f2a2c7e7b327]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[a8b9a05d3cad3bdcb9008232c9172a1aeffbe9fd]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[7b9bb32d1cc6779139780baed983129b53a7f36e]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[1d13d938fe6c7639d2bb4cb5248a1f81275b6891]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c181c8f5ca707962359e636ca5aa536e60147eee]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[58d74d7b0ca9bdf3aacfbe014bd00387f87b9be0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[14e97448fcebbe4b038eaf5628933abe5f9e690d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[2cf15144daf7ec44cdcd9bf3ef007939b79c361e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[2353fa1aca553883141a7b5d0aa54312a4610412]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c1481c9f4a425db7295332be87f837bfb7d127df]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "tests/netinet: provide test for raw_ip.c:rip_input()-00"
+
+[cc6672235c3bbd12fd6006934ba328c5a85f2c3c]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "tests/netinet: provide test for raw_ip.c:rip_input()-00"
+
+[ad0e698e642e46ba6f1f25d9a151e8e975ec6356]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[85cf26c6ee09f0210999881ac3306d333aaea5a3]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[63171222540e10a58f3acacf65a412f44043f511]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8f41ee95f9e05b3848d793deaacd591ee2387f0e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[51446d33c6fbc27ce21f54ebb4c27caace48c3be]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[dad6e6fc1ea4b737e9f1661ebd30da5d551e3d4a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[99d295e471bc362a7927047c89472e1ee2d0da6b]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[1aecb32021ce46d812db36b9037cdc6f423575f9]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[32a462ba9cdc8a927c1aba5d9bff9d16d367d7da]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/netinet/", "sys/netinet6/"]
+
+[ba4298b055642969d30389c5c92dd4d61a124fb6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "ecn.9: Add ecn(9) manual-00"
+
+[d478715a72892537d37a70efcb82ee572ac5741a]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[15ebee7c2ed34d2dad8457d6595010ea4ed7e1f2]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[68f5e5b1244d1285f0ec5ea3f88ff63f2c9554dd]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "nanobsd:"
+
+[5de9a54c76cf4ce423685531f3d9ec256a31b1b6]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "nanobsd:"
+
+[21970f278028464f053fa15d45321cfa727c488a]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[rR]emove stray"
+
+[60f8d36f7eedf397a8ec21ce58cb33a26f1aa4fc]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "nanobsd:"
+g = "nanobsd-00"
+
+[5902c1834d82737137152eeaf8b60f1cd6652fad]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "nanobsd:"
+g = "nanobsd-00"
+
+[894992e7860596ce27961771fc00e52812da91f1]
+ac = "admin"
+ac_section = "05-summary-prefix"
+ac_pattern = "nanobsd:"
+g = "nanobsd-00"
+
+[1c1b494264fad5718e39b9cfaafe4f9626ee885b]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+fc = "build"
+fc_reason = "Need to be grouped with ba4298b055642969d30389c5c92dd4d61a124fb6"
+g = "ecn.9: Add ecn(9) manual-00"
+
+[17920f8335106487968d7928d01b34300756ea00]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[56dddebc55494fdf75eeb914cc9e345d0d762f8c]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[80aae8a3f8aa70712930664572be9e6885dc0be7]
+ac = "filesystems"
+ac_section = "05-summary-prefix"
+ac_pattern = "zfs:"
+
+[187d8a3ce55a4e2d41fbe61465d5ff4ac0fc6bd5]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[09cacabd8ca0cc89c8d46b2f4c1dcdd6bb1e1cab]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[a96550206e4bde15bf615ff2127b80404a7ec41f]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+g = "ath12k: update Atheros/QCA's ath12k driver-00"
+
+[03ba27c194ca5937478502cb52a0eda8146f9be1]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[3c4eef5d838b906e8dc30e29ca98b2c4025e2bb2]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[f9795615415074b23faf8e5d937c2ef31045d3d0]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "contrib"
+fc_reason = "Need to be grouped with a96550206e4bde15bf615ff2127b80404a7ec41f"
+g = "ath12k: update Atheros/QCA's ath12k driver-00"
+
+[14b9955e57cc28b61e785165b9effcbe620edb46]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libcrypto-00"
+
+[2eb0a888917593220c27c688b026767c20fa68ab]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[834c1ba793d900b791e19ff449b1e0b96fb494a0]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[85c0f1a87da1fd1eb3e646e86f70e630c48da91a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[e3799530b3ba38567f8052b9e107884609fc71ea]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0e8f351be7935729bf67dc1b7aa4d178cf154931]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "timerfd-00"
+
+[b11fba41265ae132acfb05587a6dbf60334d3279]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "timerfd-00"
+
+[33345b8834859cf1ad7f1256f3a34b4a7c83e8e8]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "timerfd-00"
+
+[a0170dbd4e1abba2b1975ebb37f6051a936c7f9a]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[b42e852e89cb04cceb6e0226d6a08cab13fb6e90]
+mc = "build"
+
+[dc2687bf719a04c81746050bcc1b3c5645efb6cb]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[17494c6e6b7d5e2be34d2469566a59bbd9dceb8a]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["Makefile", "share/mk/", "tools/build/"]
+
+[0661997cea165e951e4e215e6aed41596d8b1d52]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[8475cd93fb6db65a02afe435f16306bc18e96ec9]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[3d218b6289cf4675abdeef17a4489e71f8e1935e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0798ad802350d449641fb91409860f5c12045581]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[03b7b779a80557fe769bc00e1b06f4d116df958a]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[632ddb864ee89c275ff5f8f9079522dec33c0d3c]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[1fd43ee968c497223254038483685d9f9c68791b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e296211fd59b6e4e0df38281a6d587b7d025f011]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[67b918e03475e780854a43fe4eb7c8e95f4deb29]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libcrypto-00"
+
+[e18449fbe2731399862e82e61fffaadd6739642c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[8892176c86db18bd175cc00a2d52dff080babec1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[e90950627327de9226b052851b36f341bc72b746]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/amd64/", "sys/x86/"]
+
+[6275cd73aca7f31cbb3b9da2d031f6664814d58c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[acce5fa3dbe87ea953fb5060a03859e424398db8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[23dc4850fbc9e7abfc54f0ce11f343e4677fd0fb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[8cc1c0f35ec8d5a3edb4ee1ede962a3c1f6baef0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[66447abae8bb5d2e7b09a72bdea95033d9b1867a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2547f972022197012cb3170ab4d6dcd8cd0ee257]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[a87bde85232e60771691649fd5718a6de5453e59]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[092687a031064dc08ac198648c6393cc50b06cee]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[e30fcdaae2e68458da83d5420e6034c5f384e5f2]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[b1f72dd2a9a5e69a310b9e76b55f16cff433b8da]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[cfe0b7d37e552d78762c029f5b15e0f36d9d0d38]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[4b29bf721ef09c399f3e4a4ab5ca9f549c5b1550]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[118699732de1ec99b06d5d73ee61b1b74842c1de]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[2ce06d25431a6c96ef5719165cb73e138a0ed89c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1d18872c2519d7ca726ddc49735180ab1d8916e0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1ba29614c4ce5e261ade0bd7def94079b7b9647a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[3797fe720a37ff9fb5b20546494ef1c4a6c01541]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "reverts"
+fc_reason = "Need to be grouped with 14b9955e57cc28b61e785165b9effcbe620edb46"
+g = "revert-pair-libcrypto-00"
+
+[191f47bcd65097599a962b46ae293e5ebe4e5b67]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[c25976f0a9a3a102ce47b45c19b2c93e8069433b]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+
+[b24fc79095c640620a643a11fa2f4f833326bfed]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[60baee1fa4848ac969522e03d2c6f273f334edb7]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[0b0d34fd2f40e06e4600441b15b26b1cc1941c9f]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[343ace42f82a629374af4dc3a72da5f46f2c3feb]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[434e1c3d84135d1c3a6e578fdfa4b508f0914494]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "sbin/.*/tests/.*"
