@@ -1,0 +1,132 @@
+[e8166d7f378bb449315aff535909c153f3e71daf]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[e6eba5076929d0b193c9c94b2658c7e8f5da0669]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[4deb934c1a1051d7ef41e9309d066742722ce180]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[e220af9cee74082841db9e80cbb73f570f3a570f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[cc2715cf1f864345ab175db691d4e152d5fb84af]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[0a6dbf51d8ea112a1d164be260004ec795b4368d]
+mc = "tests"
+
+[40e8afadc393a102f4199228ae2047d3e6c71251]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+
+[0efd33382504d3172734fa21325fcabef9c7f063]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0f147784de1037a662b0bd0aaa5f7f7bd7876e37]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ee9456ce37539da5b651945eea18502f290eb133]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[d50d0c002b982f193e36ede9fa2669d5dcf8467b]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[a223d6c489c7ea9a384f3d2bbda1b05b00d4502d]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[81dbacbb7d71a53eef99ce73f7e589a165c3e1d6]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[97a4bc9a0da7cd63c660ce59a9dd7c87efe1f218]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/netinet/", "sys/netinet6/"]
+
+[4c486fe402673c49443293cfb70ad4da61d39916]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[0bb9c2b665d90934ae16eee152b6b4f4f4be0dd5]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[d4339cebbe8e0b26f92a74eb5d4d9a20403c2ad1]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[09e702ad40af0067017613070b42d72cbc2bec3a]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[82272cbf56aa5646611c6f1049501cc345fcf6ec]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[a1c042a9641c9df08010e87d0928703849ff9853]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[7cfffe25da3fbc2db4bcf073ff2d240f84233973]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[5bc64b7d417dd1f105755e093f8e807bcdc2a666]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[3a01e1e1a50cb9a9594aac2148dc920a6b295428]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[6b89f5360f8441ffd1a3e8db7375ed3ccdba7d2a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[e4505a58a77f6f4f2df60d26ea99710af6c6b3cf]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[70674434e2424d61262322702d0415e54d8cc1a2]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[d15733065c4221dcd5bb3622d225760f271f6fc9]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
