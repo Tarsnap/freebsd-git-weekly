@@ -349,8 +349,9 @@ internal = [
 ]
 
 contrib = [
+    'MFV:',
     'OpenSSL:',
-    'contrib/bsddialog:',
+    'contrib/', # no colon here
     'crypto/openssl:',
     'dtrace tests:',
     'dtrace:',

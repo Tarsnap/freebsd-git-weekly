@@ -1,0 +1,12 @@
+[e6db4dd9d7216067388ae91ac73c3917a93f9420]
+mc = "filesystems"
+
+[7764e9ca28a9702aed4ba7391e055ec2fcf35c41]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[63d0e3e3aa2483420f828686336d6615616363d5]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
