@@ -1,0 +1,101 @@
+[8085c5a5c1e50eb478fb7b59fae201d9ab4207f0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f1fae67afbb13a41d488d0e0ec66b1805925019c]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[38bd7ef62f318f791e232e217855307a9d75efa0]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[e9fc0c538264355bd3fd9120c650078281c2a290]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netlink/"]
+
+[26740e8f80da17c78bee6fa322e6bb1f2669be5c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[eb5165bb491138f60d9004bc4c781490016d9288]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[e44d2e941e8ebd74e6a1b1fdbed83fe86671cbc6]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+ah = 1
+
+[688e289ee904fe625d92f93680a71753d03ba2ee]
+mc = "network"
+g = "ifconfig: Add support for geneve (netlink)-00"
+
+[aa9f669d09a7a193d470477398815f45a42c0270]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[adecd4c4cd05b404ff81dbfce88b772e2b754a7f]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[b0ef03f0c4bc2a7715e4b8ea4ead8dd73dffdd95]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[c208439cdb588d91aead9403cec3d4acf4a8bebf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[5809584275363d6b2f44981d8561a126a1344360]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[7e718b9a8eec6b5ed86b3b5509fb09dd590a3b60]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[aa555b6004d605ff0fd48832340b0c32f14d51d4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[58de79153622145cb6fc57bc92c4de678876992f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64-00"
+
+[3b108068121ba30fb3dbed569d6757da2ab529a4]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = [".*Makefile", "release/.*"]
+ah = 1
+
+[bc793ad78734acc4833f8f38bfb505e810c52963]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+fc = "network"
+fc_reason = "Need to be grouped with 688e289ee904fe625d92f93680a71753d03ba2ee"
+g = "ifconfig: Add support for geneve (netlink)-00"
+
+[e272f4a61e78037ec8477ba9e9afcbe3ae2cd8e3]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
