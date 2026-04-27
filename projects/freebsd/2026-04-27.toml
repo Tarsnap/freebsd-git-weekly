@@ -1,0 +1,118 @@
+[f7bf9fd6199c99284dbc899928d8ad62861da414]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[24d887436dcd5b6c18a7505e477c79cae3002c3a]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[d7338bb4914d120e5719d3216b23a509c49ed3be]
+ac = "userland"
+ac_section = "03-filenames_plain1"
+ac_pattern = "bin/"
+
+[a268af3447ebaa9712174ba2d226ffdc66f68e98]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9e6ae89d831a4ddce0925ac3682d602a71f1b26d]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e378d97eeb2b8961f312cc04d4751579a7b70741]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[912f9dfca451e359dda7cdf45539b7c19764f54d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[bd8edba0792b71be3f8ed5dea9c22287e95c986a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[221b1d4156a2bfe71a473e5abf6a739c063e60d8]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[c73cd9ca3ff875a65b6969b7183eb7fcdb23857c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[ce33d6396aadb0613f1e74661bdbec571f836a60]
+mc = "admin"
+
+[07b52233e8b74c5ac884b9c9a894f57fad8dbd00]
+mc = "admin"
+
+[4c6d8aa069f2ac22f801fa69add61085631b3356]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e3935639d8d8b6556cad18e1c90e419a65f26b40]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "contrib/"
+
+[c16c95192f01237a876eb7bc336e3bbda9310171]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b5bad6df467cc95bea641afe674c55cd5b9f1510]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e63eee84cad59f63338a539e73bed07917932088]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[4bdbb6f7f7c6913d6296279a856a0bb229ecb83f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[04e4268f60e432097427e3d757aac6bc0ae24044]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[fdea83a5f63b881ade91c6cc9dfbf173137512c5]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[551d47c5677a5eaf0a1ed2ea3b2b1406b192764d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[20baee6bfed2f39008955dce1f0ce31eb10805f3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/", "sys/dev/"]
+g = "qcom_tlmm-00"
+
+[fedc032e110aea98cc976f71ef934c564fc0a8ad]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "qcom_tlmm-00"
+
+[f65a4854bf82f60002e268928614e379da852005]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "qcom_tlmm-00"
