@@ -1247,6 +1247,7 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "contrib/"
 
 [8f95b8b19088bd8d73f6d14dab7afe848dfc0c35]
+mh = 1
 ac = "kernel"
 ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
