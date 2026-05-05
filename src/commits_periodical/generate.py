@@ -121,7 +121,7 @@ def commit_group_text(templates, repo, report, item, debug):
 
         if debug:
             inner += commit_debug_info(entry)
-    out = templates.HTML_DETAILS_OUTER % (summary, inner)
+    out = templates.HTML_DETAILS_OUTER % (html.escape(summary), inner)
 
     if debug and entry.has_fixed_cat():
         fc = entry.get_fixed_cat()
