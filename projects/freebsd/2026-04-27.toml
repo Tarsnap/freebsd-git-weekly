@@ -116,3 +116,953 @@ ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
 g = "qcom_tlmm-00"
+
+[a28bb575c89c8de62684419ece1ff5e070e4ce24]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+g = "mixer(8): Deprecate some unintuitive control values-00"
+
+[80c73c89dc6a156a119350d7c28c6db1f3b741df]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[f4be16983dea4904f85ac20e921ad2a8c18a0f79]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[0988abd52352ae0977cd3e5c10316b7d94e1cac8]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[afa4648b6a30603faab56b649605a3393eac9986]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[ea27ec183d0ff26e1273202841a02041b6d93955]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[4846afc9104a1b4aeec31dc7c324f69ad5ffab1b]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[e3f4a63af63bea70bc86b6c790b14aa5ee99fcd0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[af7911d3b732b8e0d4254c5d0bf60d74ced89157]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0068c706f8ce872c735ddcc383c5cd5ab85acc88]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[d455c4bb69eca975854262207687db50a5edc434]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[b866d05ea2860f9ccc27c75ff0501372896b5bf2]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[036ff38ebd5a52f26fc2f20238a492a9d0c5f2e6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[e6d112bbbbf0b09f0f18a85a0a3c6d5a49aff653]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[54922e4ec8909829a7ca8d2158c2a514a06df094]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.sbin/.*/tests/.*"
+fc = "admin"
+fc_reason = "Need to be grouped with a28bb575c89c8de62684419ece1ff5e070e4ce24"
+g = "mixer(8): Deprecate some unintuitive control values-00"
+
+[f2f831b2c151a9d989a94fc7c894118c802ef348]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[a5bedb41e5d6b3680981f109c3e89fb5ffd8eee1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[fcf100da9b381ad9d81f94499fdadea15ae2b431]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[ea4ab7e36ed9cf153c374782be446254a7d11822]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[8743209350cb4b7db6d367df99da0a7ae3bc5d39]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[c972c5acbac472a5dc797856f39f478862b6c6ea]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[7c450d1127c7f08361f848c0ac57189910da8d3b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "bnxt_en-00"
+
+[bea1c2fcd7839fd90a8ce96d6dc6a033779bc3c2]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[e09104dfb76a36b65a64bd315bd1520941c4beed]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+ah = 1
+
+[0f91468c040eb2129618e5ac251afc2529edb462]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[448ec129bcef6bf147b76956ec588e357a21d310]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[c21c63fb565f1bc7f9564dbf12068c864f8891d8]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+fc = "hardware"
+fc_reason = "Need to be grouped with f2f831b2c151a9d989a94fc7c894118c802ef348"
+g = "bnxt_en-00"
+
+[ddabf7f3ea4f0497dc5a5ffcbbb1d852ea77a4cd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[ab98fd3234304ea10db3dee70205828d372c443a]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[5ed26c21e4ff1d478d4611abbf3dc14cc1b77244]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[68e5b71517e947b4e3f349c970af362b47b45f27]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Vendor import of smart at 1.0.2-00"
+
+[41c5a4a2f888765b513efb13befe32fa084ad7cb]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[c1650792b8dd354c964b55999a712f5ae2ad6c0b]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[d5db883af2cc46bf884ba3fd067cec68f44fc66d]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[a9a562a08e77ac024066a6ca7ab77e7e25e007dc]
+mc = "libs"
+
+[39f48829a045e22c39e7099fa39c1a8b7d3fa7f4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[146b30bad9f65a098e6c09ae93bb1da2ff59616d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e139a49b5d8e9385b4d42ea1ec3850bc80d7f989]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Vendor import of smart at 1.0.2-00"
+
+[cb0e3a5fba5fe48607db8c1042bfe6a1164e0db7]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[c4b244af42a1f20937939a824b753a92c9c0a46f]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[7970815be40b1fa604a6554f5ee0f95f834454b5]
+mc = "build"
+
+[d1c176fedfc99d61c1dc8037ab549bec48c17bea]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[4429630d1ca9d90c886bae1eaa0d8ee32d0fee12]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[fe9d81d7c6602e9b18cde2aaf8cbd5f65b87c091]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[d9c0594191f5c45d7f3c737350321ee59bfce9bf]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.sbin/ctld/"
+
+[48363f39f1417df3e39da53f219596f8501c9452]
+mc = "libs"
+
+[76de40889eed130442b67e14249f96e2e8f88f48]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[454322c08b8aa181939c8d920472f03cfd591032]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2c2ec6bbc9cc7762a250ffe903bda6c2e44d25ff]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[91bfba010bcda665cc24a76af631cc85fcb0c688]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[01ff0fa77d33dde6b6f6a0ff83b0028f76243796]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[2783fb7e7321911b4159d7f41d1c80cae40a7552]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[6c09b7608905af2eaff4b5dfa6cbbd42ce286db6]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[8e8ddb05d07142e95cf84e32bf93b9ecb3f90283]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[8008e4b88daf37015d16c4ac709b91804b586575]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+g = "dhclient: Check for unexpected characters in some DHCP server options-00"
+
+[5d8e32aad2a8316b0aab8a93a677a63e4c3df422]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[6f9ddb329b07099e392c78b6e4fef1c6252de0dc]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[f5ea3dce2cbe1ee2068c5e5c11bb066f5789685b]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[e2219bbd634f673f774ddf118dfe19e531e08a45]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[4c99836ac72abb3ec64ee801ac5758ae70cf9a9b]
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/kerneldoc/"
+
+[67a63eae7b2d10d29983c9698894f1bfff4ffc6e]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[9b8eb70ca974c2c700f228adaceb9a6b9e918d00]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/netinet/", "sys/netinet6/"]
+
+[6883b120c53735ff1681ef96d257f376731f56b3]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[70fde0ed6bbbb1f84c440190ba1e5435f8c90e13]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[c5a92616c41f9132d585c533e66dee88e98c73f2]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[0216ea8598af7d4170a8660f48981fb12b7b1d67]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[72e2ae505c4a081d4b4759f51e25bf6e17c99442]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[40bcad56f1b8b3a0eed9af68de5535a784c004d9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc/pic: Add a PIC_AP_INIT() to set up AP PIC info-00"
+
+[605f53705d6dc57ed391353cecf3ce84a4283740]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[787b5e136735e979398bca2057310d0fd594a3bc]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0a705587e4720cdb0317efb80e9452d236c5cfcf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[59a844b9cea7bbe92b3899805acd1699c5006ed7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[e7f4269dbfad02119934c35d523cb33ff8c93493]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b683fd0b3206b35214f7f87805246e5c74552942]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "preload: add \"show preload\" DDB command-00"
+
+[783d018cf954f99032a0a4f655af8916024598a8]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[796fff59a5d32bc3be14feaeb228fc15ef43eb32]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[713b4ce8ef46d7df4ffe50ab6733bb128dbe3cbd]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[75909086a45da3c5aeaff8152728111cf798c6bc]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[226b37dc3ad5641c18f8542c18baea3ea641c5af]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[6d65c91b9a4743bbffc3508bf754e68b65bbd494]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[65dc0e9071a5ea206d6fbf070c974ebcfdea3680]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[eebb643bb3799ae90dd248f0b5047ec481b26f68]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[16dd592982887fb3bc27460c50215cd54157ac5f]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+fc = "kernel"
+fc_reason = "Need to be grouped with b683fd0b3206b35214f7f87805246e5c74552942"
+g = "preload: add \"show preload\" DDB command-00"
+
+[0ed292531e0457f271b838dd9dc99a86534d3a99]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[549e740619873716b796a841a10f56fae3c3ad49]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[82525a8ead6b778f4eb0f7a6a2dbe327fa69fcfe]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+g = "fix typo-00"
+
+[713332b4eb79be2ca6de36c47853eef099214913]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+g = "fix typo-00"
+
+[e1841a50d6a570517c2f3c9b94b9496cb5b60a9e]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+g = "fix typo-00"
+
+[0e235f77360c5c72dac28af105e6c9ed3cb66c09]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+g = "fix typo-00"
+
+[a8cb5cb40005e698c7c4e21d1eb761822ad8c82c]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+g = "fix typo-00"
+
+[092528b05d1fb0776fecb345ce99b1b68e8122b1]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+g = "fix typo-00"
+
+[deb17abdeffef072a0c45eb92c798d1f7b3ce7c5]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[0e680203d59aac1a0e77f0d297d3ccb9777be749]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[873a195ba63575e46686cfd6ea9670a0ca340fa0]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+g = "dhclient: Check for unexpected characters in some DHCP server options-00"
+
+[1569e2334ab5b2ee1e2b7893cb05c17a27d3eca8]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a7233085558db6d2ee0251891a85a7e74dddcb7e]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[5e9f2a6aefabec01c587a169fd5efe3a2720a8e5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ea1764e5fcf0fc11680dc104e663ae3d1d0fd7be]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[cf678e30ca015c93edc8a43aeff58cce3249c3af]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[71ac1ec5c9d990e7881e75f04140eb0bfe473a21]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[dd945c6ba4ff8d444c4cb90a911d96c66b6fc4aa]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[84bb3648d2151576ebd707b592942a1fd77aa2c4]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netlink/"
+
+[8a64738f5a93ea878425ee3f51e1b9efbd3f5d6e]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[23b8d16c6641362833a8decdcb98b643006c3f5c]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[39b19ce77bc0f1b9a6a685fff22f52932dcb7cf3]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[6a0610cb50181d1797d1a8c5d60ad76c666a625e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc/pic: Add a PIC_AP_INIT() to set up AP PIC info-00"
+
+[736e411a737b9f57c1303e6d15c5afd4f63af0d3]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "krb5:"
+g = "krb5: import MIT 1.22.2-00"
+
+[c9dd7bffa58c50b2f7ed9e66ace39197c468d8e6]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "krb5:"
+
+[8f46ba065143d9d89968a20b23844287d54c04a2]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+fc = "network"
+fc_reason = "Need to be grouped with 736e411a737b9f57c1303e6d15c5afd4f63af0d3"
+g = "krb5: import MIT 1.22.2-00"
+
+[839d3266d8c6f6471cb92a3c0ae32eb16d117427]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c46a0b590716144d772eeba83ca88d96ee12c2f1]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-build-00"
+
+[d98f4f0698ef0c5178882c544b4c38542d4780f0]
+ac = "libs"
+ac_section = "03-filenames_plain1"
+ac_pattern = "include/"
+
+[910f78a5143af32dfcb237a463397aa0c31c07df]
+ac = "libs"
+ac_section = "03-filenames_plain1"
+ac_pattern = "include/"
+
+[4d4acdbfc22c84081037f31cff4fb03d18373036]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+g = "stat: fix use of devname(3)-00"
+
+[9c18d55a768a3e60ecaba1325e9a3e00a25dee26]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[9c77fb6aaa366cbabc80ee1b834bcfe4df135491]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f4ae41b7ea5efb8381a5df234b3f5e1f7569f9b0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[8583bcb5b400c4e4d18a563cd749ee9b23750e0a]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-build-00"
+
+[c64ee36e5d09ecee4ce4951047014c8461734fb5]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "krb5/"
+g = "krb5: import MIT 1.22.2-00"
+
+[50bd6ee0cce9d3959828b0267b06ea0403781f41]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[daeab702f9adbbb718ecf48e17de8dd619cfe7b8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/powerpc/", "sys/riscv/", "sys/x86/"]
+
+[966fb94cb3575ccd39da211165d0858fd0eb0ef2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm/", "sys/arm64/", "sys/powerpc/", "sys/riscv/", "sys/x86/"]
+
+[19ff93c921a9d31770bcfc194c078e7a42a5f14f]
+mc = "reverts"
+
+[459ac3044b516af698d7342431bdbcf784fdf7a4]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[3bcb7c2a33206d52cecb349b77b2a631728bc7d1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[330e4f6acbdc360c0dc466f4d54bc63e663d307a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[df3bd7201efc88b0518c9fe7997f3dbf656eccd5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[00ec88d2aa8d8267b1e80991d5e632bb9f012b07]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[7c57d2499ceee81aa386430d4d9e6d9080d50f94]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[c7040d3eaa03a9dd27fde69ccf585a76dfbb2c6c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[0de6295af231aa5c13e1da2f40b29106962b6363]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+g = "powerpc-00"
+
+[c4f08d46c7f717cc8c66bf702c006765a5b6b1a9]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "llvm-*: Move all LLVM_BINUTILS symlinks to toolchain package-00"
+
+[069681afd58a711eb7407be4a9c9a05f787d250f]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+g = "ping: use CLOCK_REALTIME for ICMP Originate Timestamp-00"
+
+[f9590540c524607d22fa7e718c758725c4365375]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[f62d826a6f5b9022b0cedfe22a698998ad9cb7f4]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[7c20e15592a07ea457cacb0d6706948815c8420e]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[9f98195ff615417f7af875b65cdaf220239206db]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[3e845b1090565912375c5578cf0399d27b7fa70c]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "sbin/.*/tests/.*"
+
+[6f8312bdff236ad64d1c15c239051359d8245a68]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[72b1aae09bf0bcc01c76df757699e27ad7cf7ecc]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.bin/.*/tests/.*"
+fc = "userland"
+fc_reason = "Need to be grouped with 4d4acdbfc22c84081037f31cff4fb03d18373036"
+g = "stat: fix use of devname(3)-00"
+
+[a6e527f893df2cbbd941839a93e50ae39ac0db55]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[050b3ff753e04ce142ac751a0d76b5ee3beda9c5]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[821976facf746ef241e1524b44bb1de0af98fdc0]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[01674e15dedb15f8ce498af0680c50bb075c5482]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+g = "bsd.endian.mk: Optimize the handling of big/little endian determination.-00"
+
+[5a6d9479ae2271a97dd23ceee8ad284770302874]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[9137c66c2ea6cc09e3a6f8a042ecdc5a62e0f39e]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[9b0d9401e6a46456a84500375c36008cfcfcc508]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+g = "llvm-*: Move all LLVM_BINUTILS symlinks to toolchain package-00"
+
+[bc83f414583ccaf337ef3b7c019df7727d6a3aae]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0095c1425633cb6a40fd86fc870ac5945363df2f]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[d90513ea85693da0ca5955173609f4e81e38ae16]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[0733afdb4dad58cfe7ad7f5994e26bf148d78199]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.bin/.*/tests/.*"
+
+[28deec9b7e2b08b00160eb39de84ade6f27eb125]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+ah = 1
+
+[33fbfceeb4d9daf1145089a10ce7b25110d8840f]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[809504f331fd3588e36b54255196379bdb59890a]
+mc = "doc"
+
+[dd97c3d83f9a92bbeb9740ceff4c1c74c451293e]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[96840278032f856669597129e9d16c818e40dc15]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[d22051b18e9b7512c5cf033d7b6eee2df03c985b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fd8d34ce272ba40f3e0218198ba542a29c390a4a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/dev/", "sys/powerpc/"]
+g = "dpaa-00"
+
+[6464974c5a56a9f899f8a673385711253f9fcbd0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "dpaa-00"
+
+[9d423705db8b4188ed7c02d31b93393f0f8e680e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "dpaa-00"
+
+[b89155be25a7f501980a165e225b28abd886c1e5]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+g = "bsd.endian.mk: Optimize the handling of big/little endian determination.-00"
+
+[fbecfc4aa028964f972a0457809aa041d415f61b]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[2213820b6f4cd22bbfdc0f45741c3e7d17ae82c0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ae6a13deb8e33a52188643e09171207e1d7171e8]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[f9458655e78f6532e962a13d28d6a6086b4156de]
+mc = "libs"
+
+[067cfac2e7bd9dc857fb6cc504c01b0249bcd1b7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a770638ecf16515d8922111c3fdd417aba6c045e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d990e8f0e9478194569ba28c366b0c0c0f414e7b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a61a696e78a967b149a6e39b1f98ada26217a6bb]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[7fe74a02764e5899b10cdc45ab34182b961d5d19]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[48bf024f2ef5afeba3500bd92a04283370479edf]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f193f5a749b696e6c05fa2c47c24522b1624b1a7]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-sys/vnode.h-00"
+
+[9ca9a79ea67e8569c31ecc328e001b35908f491c]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-sys/vnode.h-00"
+
+[d8d9e1cf5e055433565a7e686bc096a8494d2bb8]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[476805133f5736c2c8638e41d2b5d8dd2c597f3a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[001cfc7b8aa38122c4e0fe8ae48fae3556a1f2b6]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[47ae0135d461854b72b905ac77bf3e1f5b2868bc]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[667dd9eafa4d5352efdfcdc1a9e228c23fbc60f5]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "sbin/.*/tests/.*"
+fc = "admin"
+fc_reason = "Need to be grouped with 069681afd58a711eb7407be4a9c9a05f787d250f"
+g = "ping: use CLOCK_REALTIME for ICMP Originate Timestamp-00"
+
+[457c621add0a531273ee27798c924c6aaeacc4c1]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"

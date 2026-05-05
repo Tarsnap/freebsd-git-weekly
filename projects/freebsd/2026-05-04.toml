@@ -1,0 +1,54 @@
+[7a40b8a89e7da2a7e8d8e132bc37885b22e9bfb1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7b5a23b12451a71a8377c7ef674b716a54751e92]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8acc4c16c6635c3cd8871d0ee1221b62d48d71b9]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[045a9ef829fa30c2ba7af47ab34d3b2443024207]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[36b399f55e3fa16063188b6f8ad8eaaf8c2215ab]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d5728351a58b87764f3302eb8c4ca9f35e99e8b6]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[eca4dd133883c9e9aaeca68e0119a638ba0aaca7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[41b03932e59068decf03b7975889841f71c73ec4]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[c295f026376035fee1a9e44efa2af30d46b7884a]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[658bb99db9c7872f92ccb86ed2674c72636436d2]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[03e9e83f358678bab5e4c1ddf9c9d8faa7183cbb]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
