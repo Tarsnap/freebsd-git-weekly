@@ -1,0 +1,14 @@
+[bac7bd5038e09d12dfdbf79a87b25443e02d0ba9]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[92f623e4a98876c897669be0f1220887c996918e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[95b4436e989df29f6368f13832cb13d7cbc52eac]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"

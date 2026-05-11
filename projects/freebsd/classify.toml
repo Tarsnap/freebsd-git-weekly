@@ -194,6 +194,7 @@ internal = [
     'CONTRIBUTING.md',
     'MAINTAINERS',
     'ObsoleteFiles.inc',
+    'README.md',
     'share/keys/',
     'share/misc/bsd-family-tree',
     'share/misc/committers-doc.dot',
