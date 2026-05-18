@@ -1,0 +1,65 @@
+[30f500e97b57d36ebb8483cb8b8921507350cd0f]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[0b0e5daf4333a0faf93133f7d2c7b3743eead9d8]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "openssh:"
+
+[f5993872faf5dbd5c142857e9633b11e330f8c38]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "openssh:"
+
+[3abc07947c14f5c30e5328d56a2da8dbf8412ebf]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-asmc-00"
+
+[2af70d7a384934cee497fb6d75678e04f1416287]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+g = "tcp: Make RFC 6191 support configurable-00"
+
+[876a17321c896427d70de94101df4d888a19189b]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[78074011acee4c3e859ffd37009abb56cc6c8c56]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+fc = "network"
+fc_reason = "Need to be grouped with 2af70d7a384934cee497fb6d75678e04f1416287"
+g = "tcp: Make RFC 6191 support configurable-00"
+
+[d705a519525f2acae3c1efba11436ec6ee8aea0a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2509ddee9bdb2240ba2f622e3a55a98ebc2aa4ae]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[af5cdcd8b18c9a24cc317f1886dd3c32b253ef27]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-asmc-00"
+
+[22c054c4cce719662d503685138433eb27d40001]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[32f854663d76ea06529ca8990ec0d116c8acb32b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"

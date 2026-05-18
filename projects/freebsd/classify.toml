@@ -352,6 +352,7 @@ internal = [
 contrib = [
     'MFV:',
     'Merge ',
+    'OpenSSH:',
     'OpenSSL:',
     'contrib/', # no colon here
     'crypto/openssl:',
