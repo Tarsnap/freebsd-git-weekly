@@ -1,0 +1,22 @@
+[e3b4dbb80577fcecb74566d2c1a219dac146f541]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0c37c9928c68ca50b3d5a1282d0c756e71c2ef35]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net80211/"
+g = "net80211-00"
+
+[1ccaef9867461c42251922e3fc4d4f85cec682b5]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net80211/"
+g = "net80211-00"
+
+[490c53e9353feb129fe0acb8d9ba8fa52db24e2c]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net80211/", "tools/kerneldoc/subsys/Doxyfile-net80211"]
+g = "net80211-00"

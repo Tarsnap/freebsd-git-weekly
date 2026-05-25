@@ -145,6 +145,7 @@ network = [
     'sys/nfsclient/',
     'sys/nfsserver/',
     'tools/cam/',
+    'tools/kerneldoc/subsys/Doxyfile-net80211',
     'usr.bin/netstat/',
     'usr.bin/sockstat/',
     'usr.sbin/ctld/',
