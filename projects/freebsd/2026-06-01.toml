@@ -1,0 +1,120 @@
+[a1d78374b5c426d43a287b9523660bce36cb55c8]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[39e297bf54a57a17d8b44c20e502d6f2c6db08f6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ig4iic: Add PantherLake IDs-00"
+
+[f983cb362de77773efba8975eb0f4b247ce5e6f9]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+ah = 1
+
+[1876f629b97608679f1bd71b9aa88a57b55c4574]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[4ccbceefeb0f2898e2e4bb951862125d0bc5ce34]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ig4iic: Add PantherLake IDs-00"
+
+[dfd2273d27627313f944650840381e878077e825]
+ac = "userland"
+ac_section = "03-filenames_plain1"
+ac_pattern = "bin/"
+
+[84dd0acd1c8c93b8e5074f895a30dc49bc00c8d3]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[79d0dbc9c6d6a1627c9f3eeab0633c232a6a0a34]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[72e34b3e3907d5fd63abf7b2246cae80641769b3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[606d3cb1be5fd594c1f51addd063e7c13e16bdbc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[16f21c5af35002b8361ffb2e83ff3c92cd899a3a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[86326398b73b81f84831fb5fc4c12d9219bc0f57]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[49d90d9ddfc1ecda9ad9b6cb5565e5fbdcc14964]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[68004e56fdc22c11b4ec680e83309b4ea2bfe13a]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[f77d37cffdf3951b7f28b97005467241aa27c183]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[553ef188f7ecc23a384bd7ef1f3d5015fb8661da]
+mc = "filesystems"
+
+[7b26353a59d66dc1bc611fd042a49b9e3bd13699]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[b84d31ee74535a0026ff83f2a34c07b7557f9785]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[c515e6040614434a9262ee8b5ac54b81476ec7ff]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1cef7e9eb0822c606fc34f975efd14b6daeff756]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "ObsoleteFiles.inc"
+
+[ea4888e63f6ac89c38982ffee693f89a5927e9c9]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[5dbbd764c8e116b04c75b79b1eedc0edcbb90435]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[eb5aa5c337c8d52fc1a7e867f526ca770bbe6612]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[4f7092eeb22d3882f54d67a35149533fef8376ca]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
