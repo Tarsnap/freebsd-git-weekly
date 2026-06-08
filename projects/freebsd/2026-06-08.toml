@@ -1,0 +1,57 @@
+[5f84c6db7aa16447632c4e6e8959bf28d1bbd8aa]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[035e87247f845500b4672e10efb8f47fd2c0f2a2]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[37e9d3641ba0e0da0d2bbaa26a59ee56a8cf3ee6]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[efb5c07f91c5c11fb9bd32227ac74c2d08adf3cf]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "krb5:"
+
+[fce16f60de9718be6b789f00e86141a84cd920d3]
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "krb5:"
+
+[a9519f7821c066c393690603eab33043f3804a0c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[256fa87c9fc31d67c3da27dd1aac0c42db3dcf41]
+mc = "network"
+
+[0b269737f9ca057826a6c9376c2474b1ae5bc91c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[888d9236e2249cb1bda686aca8729fdcc69a10ac]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netlink/"
+
+[9f378397ee89044a4faec522916b50f0a164d62e]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[a2cfe535771ded3ca8526bae405a5b61f71f1f33]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b16c731b0191d6c47de46a3c6057b0c5ec0dd420]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
