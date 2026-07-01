@@ -35,6 +35,14 @@ def commit_text_display(text, nostrip=False):
                 r"\d+", lambda x: LINK_PROBLEM_REPORT % (int(x.group())), line
             )
         if line.startswith("Fixes:"):
+            # Fix a lack of space between the hash and a parenthesis.
+            # Do this before linkifying it.
+            line = re.sub(
+                r"^(Fixes:\s+[0-9a-fA-F]{6,})\(",
+                r"\1 (",
+                line,
+            )
+            # Linkify the git hash.
             line = re.sub(
                 r"\b[0-9a-fA-F]{6,}\b",
                 lambda x: LINK_COMMIT % (x.group()),
