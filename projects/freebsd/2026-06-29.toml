@@ -2,3 +2,759 @@
 ac = "style"
 ac_section = "01-style"
 ac_pattern = "[tT]ypo"
+
+[65251c43415aa0993b7d43962cbb71d772870c83]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[bbc2d15857b8c44cf8558bf00663b508d421c94c]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[b517edb8deed23b8c616f0ad4453e4dee7b0ac0f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a1c52e05f571607db361f49993b36b0288f1d8f3]
+mc = "kernel"
+g = "CHERI: declare fueptr and suptr-00"
+
+[066bef580b21bed9100c727045e1dbfdeb9bf1a9]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-resolver(5)-00"
+
+[b27e21f304f260d539288756c5bb85421a549d44]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-06"
+
+[40e10af6c6dc46d9c0835db3dc95368ce7d69b55]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-05"
+
+[9fd22951233219b5e9985575c1b3aaf3532961fd]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-04"
+
+[507ab02d751b4aaa7f35f30882299e9908448e53]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-03"
+
+[61697e9cd5cccc367a38f9851efebad4d7c2bb65]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-02"
+
+[95978326cb326c69592c75323914bdc52ada0346]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-resolv.h-00"
+
+[5028a8489f54fcf0a96399059c14e28c6a69d159]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-01"
+
+[298f37a71ae6d9f2cb0c2abd4ff2887e81e0942c]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-04"
+
+[afb60498e0c9836a6e3a7efda8a51710e208a608]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-03"
+
+[d53af4112273f7b234a1cdd6694b3a7ca0aae0eb]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-02"
+
+[c83e9ee0ef3e6af982e6fd35afe420d460fa84b3]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-01"
+
+[23380f3e6ac9334e85489f92f7f20b700ede3368]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-fetch-00"
+
+[672cb7320a2754788bddf5cd026721b6f70a0d30]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-00"
+
+[702c24ccc0c208e9bc697e775abe47ff723e3012]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-00"
+
+[e6467516f584505ac29fd370966abd530a7b5454]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-pkgbasify-00"
+
+[5b2bdadeb6c25c10dac9722fd66a668e14d3b384]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Retire dialog-00"
+
+[9cc87ca23d9ccae814bea514aa4bdc791f2d6e46]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Retire the GNU subtree-00"
+
+[7aa0fb6181b8f520c0dde548eb7f0e03cdf3ae13]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Retire the GNU subtree-00"
+
+[2b9f38236151f1bb0f26ec14a72e553b8420da8b]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-Retire dialog-00"
+
+[b3a970fc9202cc7c9e80e1bcb83d7d860a3475c5]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-pkgbasify-00"
+
+[f52803e475d50f6d1996aa97c14be043e288185c]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-00"
+
+[d40b35f8eb1dbab430d595193ddb1c950766bcac]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-00"
+
+[1b5f832e268f1f1092d0ebfc3bab4a7228aae20b]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-fetch-00"
+
+[15ee1fc07457b5fb7e1b027d18afc4ffc9aa56b2]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-01"
+
+[667ef98c29f94c34d06f5ff1d5d32c99a04f6082]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-02"
+
+[fde60e3a4e922e7931c39f10105e3fbe33f54534]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-03"
+
+[da4d1ced75f3be17f8b089a364f642a04eb0d466]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libfetch-04"
+
+[4fd9dffb2514b1d62ce9618c87a9700606f12db3]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-01"
+
+[55227ef42de5fbcd2d765b150689e4a5c0d5e352]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-resolv.h-00"
+
+[955963148a99cc2c45756db76811ef61c75fb5a8]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-02"
+
+[8538c69d84ff2ee4462d09ac21a69e8c907116f1]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-03"
+
+[d9b907be0048558c512ebd0d872542df7548ec0c]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-04"
+
+[550dacea138e5df66780a152ab1ba91c466d7395]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-05"
+
+[208c43d6f57b036cfd207a54de54c4dd7b8123da]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-libc/resolv-06"
+
+[51a4a96f63dabc786abe4dd2dac74b2872165ceb]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-resolver(5)-00"
+
+[82c38777319f601c9b88e6d7dd3aec499c5085bf]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".git-blame-ignore-revs"
+
+[2407abc9fb3b45d6d734d564706c76aa793b102a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[acf6518a2d6f33fb56c861861cbad0c0cb56817e]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[bcf4e3c001f5ec9cc206b0d81f0954559d1424d8]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[f9a0147ee56e002fe31f155dcb2a7042f5b20a7e]
+mc = "network"
+
+[bdd0c4d0a7fe6db4c2c8f66fa260abe9d3049118]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/net/", "sys/netinet6/"]
+
+[559f45638dfa50195c591bb0f7f3d3d8f3bb8dc0]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "rtld-00"
+
+[1e370f038778e16c4b31f8992dda339d429e5cb8]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "rtld-00"
+
+[70fb92cd56bfe88a12d2a253542320bad7198321]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "rtld-00"
+
+[b516c234d0e4ccd69ca1f3d3a8bb80eed3f0a87c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2767a1f3686e5b1657ff4c3d57737c7f21598125]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[7ac9995a062ff9f78b634fe403e6a313f5637945]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[f7f916d755fe5b48a2a68a937beea770b7bafa95]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "sbin/.*/tests/.*"
+
+[3de9dc5bf4b438e0d98222dc028982380d5a25d2]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+
+[32cf24b725fdf899fb642c47004b69fcfae9b9db]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[b8c6f5811b2a948a265a4bd90d33a18efb2a6f1e]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[d5332d3a904242cb82e7dbf35e4aeec7c2df4402]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[cb8bda40695f5d402f334f48795b1ab27b72dce5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[97a064125e8a0326159dcc35e9c522c049eb3b95]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[271b8f0f090836393d835219c37ae7e41ac39357]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[5c7a97aaf1ca4b8bc078bc18f73e04499d48598f]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[8b24b19d08f9dc10e6af9a1695b9b0d62fb80cc2]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[eec9084656bcd7dd52f8f564c96dc6aced5be554]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[713747f87c85e9b961e460cb9a496c094a6aa375]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "posixshm-00"
+
+[1491dec424e72a2f429d84d11b0d248abc6c6cda]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "posixshm-00"
+
+[1bad1d8c14cdff127d97accd49b0e6da22501b99]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "posixshm-00"
+
+[bcbbee810fc9733da27b31b23baeaa2e1af53232]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ba4c8cc6e810fc64e53d6ca539649932016ed1f7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a9d3259c4e50da8aac100da23aa37c43055f8be2]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2ee2274244e7f09a7bd04d1aaf9b04dfa678921a]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[8bc3abb7d71eebe6819af1e61640067733e596dc]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[150df709c28ca10a7ccec02482441257ec9c13da]
+mc = "contrib"
+
+[1756d1cab3ce28085eec94a45c557e1af265ccd0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[eca26803d880060555393ab89b44b967cd467a0e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[76aa776b5f47ecd0d45336e22795fef98af57d2f]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "stand/"
+
+[8a62a5f77b10ddfa593c4a3d7751cf9bac3bb1b3]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[1361901baac43997daafd6ed41d3cdec6c119110]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[9ea13242985dc145b2471cc8f651be87c6a74bfe]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[bb1e071be47fa03accadace587784c85654de91e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "asmc-00"
+
+[6a1bd5212f290933d1429a6d4787394ee53e3181]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "asmc-00"
+
+[126f82a3eb613976f477aa8326a208459f60465d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "asmc-00"
+
+[a2d087b67e14ea2a2496d6424df8d9668e271177]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net80211/"
+
+[592efe252472a3385acf36b1f49ecf710a7f3d9c]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[43b1ade21e22c0b758f8d83e4707df3024413833]
+mc = "build"
+
+[9cee48180d7a3d612110b4433f82bade288f326b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[08cda4bcd43cfcb2c0b1abd29bc7cd30896727bc]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+ah = 1
+
+[2b5d1d8e298b2f5aff68fd5106d9b09d59fda907]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a8566c71ce4640d1339a64384f0089cffb249b2c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[17f02f732dfdc29154fa3b6b664e6da1a577a839]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[21ae6119bbd03eb3ac4cf87df4e26f8ae0ffb78e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[a88932b42c36b179656fd71ce6ce9907447da6af]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[4f293e32e4529617dd05bd64fd3c22a57a56a355]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[6b75f8ff5e1b0d7ac7d576c1723d734681247fbf]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[57cc01057bb21fec37fa4fb7416b4a1f29a211c0]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[0bc0b0c3f73812fdcdb89865879c7478bcbc7323]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[51eb574064802d7697a55b502cc169eeb43fba58]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[07db0309378cd85ba72992e838675ba57abdca75]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[c9991e01149b5cd5a6710d70921b203ef7f16fc2]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2c905456312b2e5986afe3402a9c87d49eb9cf86]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxulator: Fix O_PATH file descriptors errno for f*xattr(2)-00"
+
+[2fc95fe26e725439209217f53dd76437a52be76b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[29b07ef31379575fff4344ec331b90c96d899cc7]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[402a6574886a90b8025777b3b2c960c88677462d]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[7f55dbe6ae89c356db1bc4fb2c42d9d007ae5da1]
+mc = "kernel"
+g = "CHERI-00"
+
+[f14bdfefa41c7d81dd1317e61b98de22dc03016c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "CHERI-00"
+
+[17602eb3eae95a53c973a5ceb4fc3134a770e8d6]
+ac = "kernel"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/libkern/"
+g = "CHERI-00"
+
+[524fb0444f3ad0f52b6f706267181564e33f9771]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+fc = "kernel"
+fc_reason = "Need to be grouped with a1c52e05f571607db361f49993b36b0288f1d8f3"
+g = "CHERI: declare fueptr and suptr-00"
+
+[2a4b8fd1dc070e71fbaab6f12c1c9e4452652aa7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[de6872045c07b7eeffe66cba40e7feed23eefc9e]
+ac = "filesystems"
+ac_section = "05-summary-prefix"
+ac_pattern = "zfs:"
+
+[6d9bc46cd7fc48ece597162d3ca413fc9d67b5f0]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[cf851111b02fae7425f9642460762d644983fdca]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[c146f5ae308ee47f2832fb3df1e14f864be70015]
+mc = "contrib"
+
+[fbc039e512c3bb1635ad20cc8f70ad608ea818b7]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[8ad097de02263d92df3368a2f5035faa365e7956]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxulator: Fix O_PATH file descriptors errno for f*xattr(2)-00"
+
+[e1a0592ccd8141c609b45dfbe2fba13929ee4d51]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[43da0c93ff9da32fda89d58727cd9bbe7beea4c9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a2545f68f64b4cfcc13ca2d372c8b9fef1c6331e]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/build/"
+
+[cd61eb4f6681b13d98b6a7be252500ad30f05f74]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-zfs-00"
+
+[d4e0f4dab2d7f4de46bb79db1ca7e6e8a2e34746]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d1b62492f97f5044b498fa4624e3a007a43efa6f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c041b82c59e885d106f45454302bad3d9dcc58a7]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/ufs/"
+
+[c9d98c0134864d8bc69006b92d34a3b22c940870]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netlink/"
+
+[465a3b7adc008c068741594f6c922ede98924f39]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[c3c8f4d9e66287b24af2b3881c528236b836f2f1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[74e43f631b51089e040e40b9887e94c1585203f9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[7e0df6af8dd0f7d1ab77ecc0c41cb543e015eeb1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/x86/"
+
+[ee1c3d38a26aa63fca8e9f86c0d456800d5e2576]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[e89a398c108ff4db2b7985ad591e62b9e1ea7222]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-ports.dot"
+
+[2de20c5c77cf8d5b2059054cff0e0c1fc124739d]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[81cf9a0ca765b48a430da61c221be17c4d0f753a]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[0dbd497fff17416728c9c98f27a0612c89c7143c]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[830f690eb676ab1223bfc887a8d70691a355a656]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[bcb471cfb499f61d98abdc7bfd48bee0e229b02b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b77f6ae68941c0a1f624fe351becd3726bac1cee]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-zfs-00"
+
+[fe6677e7f440d1aa52de036639efc55047ab9a2b]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[4efbcf36a0d49ab142023a767871532f515f1381]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[8a1576dc26b90706948061e5ed33f07a03a5899c]
+mc = "network"
+
+[80586e853674c6d63888379274accea5c82407f2]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[c268c80fc3d5eaeec2d01205b338dbaa7661502a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[fa50691ecf87c2d0ec35480222557173c11a5baa]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[5dfe1956df4b37af4892aaff3fafe70c0d6d7466]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "Merge "
+
+[22ddc9eb1d7a4fffe78b0692bdc4ec03e1d04ac4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[759ce9a2b38e1de70c14c81dee7e245bf0bc6b94]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
