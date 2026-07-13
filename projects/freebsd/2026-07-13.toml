@@ -1,0 +1,141 @@
+[c3f6c655dd155f4c84ce743c86e07d9f0b6b348a]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[88711f144170df4e8a4f3359c9e6089dad836951]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[f6ee1d20d36813e9906916f48cf06f44a2fd668d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[2a5e58c59694bc719d7ab82abb1c65ee2045329d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[4cd67a0eea4eba63cf50a45a4665d8700df8d188]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[0f1718e0d588375d6ab6be52f5253fe143c5c75f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9fc14dbe4897c4541113b9ba98236fbd7eb75380]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[32c341bd1c8b1154128f62fafa6988ed29db564a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libfetch-00"
+
+[a1978277379cf65f1339ab062f335c6f1fa6239f]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libfetch-00"
+
+[848f360c8f9ae8d1d97c61f5d63fc624926d5dcd]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libfetch-00"
+
+[27b411734c75a7a5abe641d7fbb99dfc622e9aba]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[3dddfe29248c47d1a80dc96a76a308ae910b2a24]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[d4e0e1fbc237f0765b9f32b291c087348031c921]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[60382b4a04fa39e9bf65b964b1b7b4bed6eaa56a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[920518cf2e75012135104886d92814c048baa2fb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f2f50c80ae27a97a66b8d4a1b5dd6ee9d63ff18f]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/sockstat/"
+
+[fcaf15e54162fe14483fdf4ac28c67c51e424441]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[141b6645204966a0e1ae10dd059c670e2a58e6e1]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[67f1c082b5ec37e2060b74e6f1f952ed38761468]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[97de8330e1683e41883887d19ea489bda90e5c61]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[058ce52660fb52ada41462d339fb1ce6aca48cf3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "LinuxKPI-00"
+
+[f9a37065b6948831f62a33fd0c68c96985b01a41]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "LinuxKPI-00"
+
+[66b25ddf9125b2f3707e0f22b01b47bdff463fa7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "LinuxKPI-00"
+
+[c6e70c68d2ce5cfbcace251ef6ed2f1eae912a74]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "LinuxKPI-00"
+
+[ec17c2454bf03f954e460bfe3c95e35f638ba71e]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[237c69a9906e21b9992585ec8477d8d1cd616b7a]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[d94e034d504682be56fc2e9d20ac2c0fe15b70ec]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
