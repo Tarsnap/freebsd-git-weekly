@@ -1,0 +1,9 @@
+[b328975b9d7c475cd99107ca407df04366cc38af]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a6587ae0f46dba4e47fa92c831f55288ec181734]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
