@@ -1,0 +1,173 @@
+[e3e56236bcae96a44dc47be5e3a7ffac3322b49f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5c1461a2b0fdf845292681aa46b56c620da57e25]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[407b7bcc93862fe0c026e254bac8ec0e8318e7e6]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2bacbbecb165dd761ea7ec2fc35630db61508cdf]
+mc = "kernel"
+
+[c8f5e6819d4d81906c4a1641b5c9f02d8730481c]
+ac = "userland"
+ac_section = "03-filenames_plain1"
+ac_pattern = "bin/"
+g = "rc.subr: Fix premature return from wait_for_pids-00"
+
+[eddd8aa99ca84c85faea5761af800b5b089d6ba1]
+ac = "userland"
+ac_section = "03-filenames_plain1"
+ac_pattern = "bin/"
+g = "rc.subr: Fix premature return from wait_for_pids-00"
+
+[e115066370dcfec410d914362756d09c268a5b4e]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "bin/.*/tests/.*"
+g = "pwait: Test the new -r option-00"
+
+[356d0b79cf6fc693ed1a5564232e240ce15ccb8a]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "rc.subr: Fix premature return from wait_for_pids-00"
+ah = 1
+
+[9d852922f6687ce9a699efe5e09e3634923b2b60]
+mh = 0
+fc = "admin"
+fc_reason = "Need to be grouped with 356d0b79cf6fc693ed1a5564232e240ce15ccb8a"
+g = "rc.subr: Fix premature return from wait_for_pids-00"
+ah = 1
+
+[7925256edc74a8c60435dce1c2c2a8f3dd1ef1a3]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[b1f3726f7a677ae230135d19491ce97f2866e7c2]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[cf3eeeb75ceb7428c351218e6bd755e11613a633]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[6901cbbd5a2c00d378a7f87426b36d6ee6ce0aa2]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[a46c92aad16bf6c9d6c3967c8af3e8b3bdb59cda]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2a2705a637cd67d0add7fe795fef9b7a722d76bd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[3c6f63902b037e36648fae435d4d5f56f9dc389b]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[4090d103b0c31b44b269e0ccf758be5cfba3f60c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[d738f66fab9208ee3bccea5fed293d8ce3ee5ca3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[f4a05f37936e422b1e8f4f127253562d3f58f50c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[196cc005b197ab8bf5044c3fc457697986a14b39]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[149d3e5fcb76bff86d4343b7378258e9a6d3e25b]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[sS]tyle"
+
+[e1136fbcab184b8fb87456ca0d115d502bab6643]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[6d3db07a2e2f4288b7e54af8e8371f9a022e751f]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[e7015a3834abe0956e9a8ec6ec4b8e75ea7d71ab]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[10ea2300bf29cdcaf12182e8b722f6becb0da1fb]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[bcbcd7303009344dc1051e4601284620bca29be8]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[b68f2fe1932cbc9809245e2c5a2db2bc0944cc5d]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "Merge "
+
+[801c0f383c0a719165c21ff5c29f231fb7b920c4]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[09da0899551a63ce3eb841e4ce4385b6e48dd4ec]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9bf1bcf7491de99e4b0a8dd2ba8c61d5603ab407]
+mc = "kernel"
+
+[c13a9982b56f873c7aa3374a69f6aa296a2d1968]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[34ca5a9e7362b0c820fe339daa2b8d06c58b6fea]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[51c0cdb04919f776516a7fac8529e7279ea5efad]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "bin/.*/tests/.*"
+g = "pwait: Test the new -r option-00"
+
+[698402f4f97ce3bbe8130382c0bb16d48a87ff63]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"

@@ -288,7 +288,13 @@ end_including = "3f88f6b89942a7f3aa6bb682b02b7307d060b52f"
 display_date_start = "2026-07-20"
 display_date_end = "2026-07-26"
 start_after = "3f88f6b89942a7f3aa6bb682b02b7307d060b52f"
-end_including = "a6587ae0f46dba4e47fa92c831f55288ec181734"
+end_including = "95439b803fce86958e1db1927a8405bf939edda4"
+
+[2026-07-27]
+display_date_start = "2026-07-27"
+display_date_end = "2026-08-02"
+start_after = "95439b803fce86958e1db1927a8405bf939edda4"
+end_including = "698402f4f97ce3bbe8130382c0bb16d48a87ff63"
 ongoing = true
 
 [2025-09]
