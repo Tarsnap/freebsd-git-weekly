@@ -228,3 +228,1301 @@ ac = "hardware"
 ac_section = "03-filenames_plain1"
 ac_pattern = "sys/dev/"
 g = "ixl-00"
+
+[1d926be8824a8cbf620dc12a5f9fe5623930bfd0]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[91aa9bf0ae169fafe4c5ec8578d28733d2fab85c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[11bc53984b1ffd298978b5c48188a010fb34572b]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[15c0c9df3a4af27176d8bbefcd21b68e2a952835]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[2ef4baaffce0ab71491085e68fefc92eff8e715c]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[0f2e98c1515d2bfc05701d5e19aac16a985ae5f4]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libsysdecode-00"
+
+[9b9b3b157a89d159108bcd2f5a817392ab915587]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[4d2f90f5a694b89240c494c01a5c07e24131f6f0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[99360212c7392f2b0b3932b40f005c71e943b65f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[dd532ad13371dcabc07d05052a7a256fc83c6ead]
+mc = "filesystems"
+
+[877f0ee40c2af801c5ca758a37b3ebddc560dad2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-00"
+
+[660099c985e8bfc931b01398715441c90cf0d4db]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-00"
+
+[be3e1068ea8699fb719691453899ca20a601fe1d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-00"
+
+[c410551b9feadf9b65f920fd25714fcda8299a56]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-00"
+
+[a884921abbaf52ff862a32ff6806bf071974faa6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ff86fd4f36618dacf1628180034c312c70294276]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[4220b52453c9701922955dcc1c1e1554d6a9f3ae]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[f9ce33b0d8ef233063bd6c27bdba2580f97d9094]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+ah = 1
+
+[8b668bc7e7c8b0a1bcb018360a4aafa445ff554f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[6dfd710963da7fe6086bcfb705b32b6a3646848f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-00"
+
+[e27d36e038bf0d681d19a07d3512e0dc5adb20c7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-00"
+
+[3b93d3597cc336d5637e12ade8642d589cb0bc8a]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-00"
+
+[ba47678b30a50fd44234f8ed7fbef68a56479b37]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[7977edb7656082d90a539b85bd2a750b383602da]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[44e99b67283517207d4e482feee63bc15f4f710e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[26147c51546ecc98791db66fa4d948348bf4ec7b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[2c01d10f67b343254fd4e747f822a8cdcc326f9d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[9b27a22ac69632d50e3561fd15ca710c022f3e70]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[6563dcb6b1f57e51db63854f3774b52e672232ed]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[e181e2342d111fa76e01024012b8b4bd726c99b6]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[ce3750b5995c3c3e0376ae62a7c55d9a6e547bbc]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[46dc4af526f624816dfd99855b436d6c01ac4956]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[4f87828402912a7e451fdbe53161c68faa489128]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[392f0af6685a06e89fecdc38cc2e910d2b84d738]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[435cde959c8823ff38c699d1bc8655918fda57dd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0053a4b9cca784886999c6a33d9013752a60991f]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[c8f38634eda390b8709a6051c031ab7ee2c4503f]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[a6847ba19592c0ac60326e6e1b421cf6e344016b]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[8f6d8a901671164360dee8fe40414006c8e9eaef]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "tests/netinet/socket_afinet-00"
+
+[e70e25761fca7607dfee8b8cfbd902cb1c9806cd]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "tests/netinet/socket_afinet-00"
+
+[618dc484b5817b7a7560632410c9ca5c32c85a84]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+g = "tests/netinet/socket_afinet-00"
+
+[1dda8ba77a20d983774a3bf0e94c51c93f1d8758]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/netinet/", "sys/netinet6/"]
+
+[413346fddb518562480ed607367f0f295274afbb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d1eeae750662d3bf2c43027cd7461d41db48ba68]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[a6999a1c947f3dc8b7491c903231efc2d78538d5]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[207d96dabfec14d7b3699747abb539ab3c1118ab]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "contrib/"
+
+[135df778543123a7dea08553c78da1b51a6b3098]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[71e72c9e91c4b8007a4292e09669e8b549c29e97]
+mc = "network"
+
+[6ca41d484d5405f4fa1ebbfc74b9a684842aae3d]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-src.dot"
+
+[56ce613f21f2c61f6b6ab380db66908506f2853e]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".mailmap"
+
+[9720746c2b5165d4bfdce31d52126d26c0c0421e]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "usr.bin/calendar/calendars/calendar.freebsd"
+
+[8ec108914247502dff049059dc60df17920731c8]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "nuageinit-00"
+
+[8d4d5f2e8e56e7b24b50706acbdc0c8c750c6fed]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "nuageinit-00"
+
+[cd06bf52053d463f4a3f6c0b9cb5c9f1d578e439]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "nuageinit-00"
+
+[8f378c83c6b8b052433834ca0b53677459dc0e85]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "nuageinit-00"
+
+[6a8558cf9f0190cb166042f97d2c883d822e66b2]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[12857d8f4269af7df85605b48ae5e7b2fd810fde]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[80d82fca1f0d741173006021dafb259590f1d1d9]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[2d985d577d79605bde7f7b77c97da0ad59acf629]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+g = "bhyve: namescope virtio_msix to virtio.msix-00"
+ah = 1
+
+[662497d5a7415f8779b7be03e39f66eb8419174d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "SYSINIT-00"
+
+[4f2465260f035fa0095e73b34a74851ef2efaa83]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "SYSINIT-00"
+
+[87b21f30d3fe114de3a110c277d516927ec7756d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "SYSINIT-00"
+
+[8194c32827e9c3867d4b295edca9842b71608526]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[698c3b0ce1e788415173639366ae89ae7b7903ca]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0979b0430c2d728e595841ecba30b63972794fe9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e85ae6f6a6c0574fdad92b986e37f04f20d5135f]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+g = "bhyve: namescope virtio_msix to virtio.msix-00"
+
+[66118c3f1011d7852bce8b659899179a83781897]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[af3929c5152b47278c0b6ea66efbb782b9637495]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b7b73d0fc1f0969e7e53d1a967d4ecc8aef2d35d]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[b9db5a5b16477863654f92ec653e8464528ef981]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/netinet/", "sys/netinet6/"]
+
+[34718e01869b9ce0baf9c859fafe9d54f785464f]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[afe56ee24679d6584acf02dd17f6ed52c052abe7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[15a0db2101cd67eccd0be2ddf1ad18be1ea5afd0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[146ae81c6a5c72779bee81f1d5d5913491ae4eef]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b3bdffd7a428e43934772850966a3f80638c666f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[0fc30789dff08d62c5c830e9aa8c5a0ca9080ad9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8e8755e011955d12abab7c2be324429cccf0b975]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ccb8ad1f645eb77d393eb81ff1b86b213b74bc87]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[26251926892585e0746c2b65227e56cf9b2fed58]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ea2e8b056b455e92830bd1bae56b4d72a42018c3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[df34ccfc913d6635e957c685d7452a05911eab89]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-00"
+
+[17d90d5b9350239a87e66a3612cb9b084b2d75e9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-00"
+
+[6058dfa40238e2cd6ac6f2377986fdff99d14686]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-00"
+
+[e49cb7f757f6db8976b0d247e6a897eab5867634]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-00"
+
+[c276a80a4e52c065ed631e498ed2c3d284b45c75]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-00"
+
+[c80aface0f4662c7dc46eed3fbb27b64ab931500]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[d1c20195c0fae27b6b1d526c03d8844f200e5c86]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[eff55e5e098b85855335d8df151787b6b034973f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a753ca9c3f0644611e7dfb453af61896fed6c897]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[53e4711616041a668ab61f2ce86c9fa139ab67a9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[e7ffea395ee8add21b2cce0806285131e12cc454]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a09034d561cbb3792ecc0146b41d4794ab3bda37]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[a86d65b2c99bab3fe46389b3b51ad27956dccfe9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[bb8d0944b5d53863f00492b69b7bf13d2618fc95]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[505e6bb93f80fa3a7799cd88b0d0cafcaa468491]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b1da641d23a95c4e7f61b7a546938ec8fceb47e7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[275ca86f6abffc4ee6e52a6daab06f5e5c21aa05]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8704d29c6cc86f0780dff3d3d17d744106776ad3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[5587cb18b168f57a4d68c7e58ec660ab2a5ce4da]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[cba56bc3427db0bb4efc3d0117cda4bdc7717f98]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[3fc1786aa2a3f590453abb6ea2351a12e19f6b45]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[1121aaa0758baf04bed6f16d4157116b49c25000]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[baa6e3af8525244e65a404fa13306fbca7feae9c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-01"
+
+[bbdd3c4692e2869817f77c359b4a2719e716921d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-01"
+
+[bf6feffef6c16559333048859b24547acea3dba5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-01"
+
+[392fbdcf2232f12cb973d00ae931740c72d970c6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f7427f890c7f34d0842a35eb9df814adad11a95a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[13d78e4b9d0a27128319a1241f00f7ab9aa864bb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[13a7470096567480676e24545b3c1d6404f3f2ec]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f5fd839fe688181e57171850ce51e4dec71e62fd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f4bf1da7bac80cbe3ec862f395c22a3c5d176312]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[3e67b90c55b44579c2f73c2fbdeac54087c7495f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[889d08f6b61da4724a6f718be7ec8d47824bc602]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.sbin/.*/tests/.*"
+
+[59d6422d6f21fd5cf4709ce9fcada54d3925a4f6]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[952994751911d5d059d53e73eb874e00ee98b9ed]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[6591a7f6919295f2ec2b463d1ae9554a8bbf6104]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[fc0e6adb9d26f94616db5357afcbb585e4176c6d]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[19f75b38199b9d30e85fab83e61ff36b0b9ed015]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[28f96cc3748fc46408cc6ab6172f09bc2182cad7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7dd826171b69a01c234ba6e9117917398ba2705e]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[423927d6c3dc87628fc2a19f25b5b5c07b3b73e2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fb7e249ce4fd03fe53e4407efe661f9e94852bb6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[8b2e75970c0328e7397290417cc06e9d9c763d2a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c28f2c551daf07345ac78b74459efe1014c49464]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-02"
+
+[43aa553ef45a4345bdfabadae40d811730151144]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-02"
+
+[3aac283613bd3fd0228a06d6c854ca0bf190ecfb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "ixgbe-02"
+
+[7d576f1d657fc21f97cedc28cc971621ee2490a7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[527a82474cb3dfbaa241e45fc0c16e57732cae94]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+g = "libusb: versioning symbols-00"
+
+[fb3564b44fa7b469b1ef29d3d2866364b89431eb]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "video-00"
+
+[a8c126b6903e83a10a726019d3d347b20bfc86e3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "video-00"
+
+[f77fa28422ee455580d44498a4f36c6418e96dd0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "video-00"
+ah = 1
+
+[e15d22609c7d91201cd32b3418c70dc176b95245]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[bbf93227fe9ee1f38b7db5477398c3564e5c84bc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[9f7633b932954162792e2caef4f6f0cd87e82f43]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2519e19f05e0c3e5925bf81b729b4c28f2ad1af6]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[529177b332dc4ba29d261ab7d2eec796d274b345]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "thunderbolt-00"
+
+[efdb82413963bea5f4bf2ae52006cceeb6944a3b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "thunderbolt-00"
+
+[7858a57baa2f2efc4cfbd61303efb7e72ec43194]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "thunderbolt-00"
+
+[1f09e354297ce571353210c23e50ef6fc19ce382]
+mc = "libs"
+
+[ca1c1eceb38c57ce7439786008f7c6f37c9a62d3]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[b54dcb897a5fa66ff1013d0ea403ed8894e34b8a]
+ac = "tests"
+ac_section = "03-filenames_plain1"
+ac_pattern = "lib/libc/tests/"
+
+[336b6d11922ac3d080de50f789d40ff95b540cdf]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[3c33729ce2f421e2a583f19f85a181968aa310de]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[2ea905c875b6c89117023e240c3158f2da79bc52]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[fe06e383cc64fce8b604d21f8526b91fa6aecc39]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[79e0b69ce8af7d115496991ef66e525a03e9f4fe]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[17952b65325640e90766495bcfc2c3321a75bc8c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[e2cfbd498af88a211b0b347861cfd989e57cd1fb]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[6747bf7e223e5400af1c434618b14debd8dca0cf]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[98b5640786f874949e441bee7c4ad5740cd6a649]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[1c1bce5bbd4da6a97acb3b2689ce743f67bcf241]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+g = "libusb: versioning symbols-00"
+
+[49749f21284d817b5431255106c8c2da3afa9965]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = "release/.*"
+
+[4a8bf4de7b1e5537dc576f8ad91419d324f151da]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "tests\\/.*"
+
+[d08296c7ab0d7bb259bf7b8cdf9ffb819c1929ab]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[f9dfe9b8deee0054949eda22f5c0aae8ba3d432d]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[ec8985a1003326eff53cb6b594000b7cbb2114c5]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[6c41d1e26614385c7dda03d62a62084d01a1741e]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[7271ee7b4ba7e48324925a47759df85f74ba7a67]
+mc = "docs"
+
+[3baada83bf2deb48c7251f8de3f73e489338d4f1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "unix-01"
+
+[a8347f44282408fb1a4c0aa611ecdf469bc030a8]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[6c41d928bcd763ec60d55bec2886c05b03cf9e6a]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[79a6ad63e6afdfa00d0e625996bddf91e9f217c3]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[84d8d2878a6efbb2c97a591054f1fc42b7d406ab]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[d0f0a3b89b932b776b76278fa6885f19e8b30cbb]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+
+[d9cf2a8671841e4415a22e16005d7700f0eb9b7e]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[fbe9aa7ebfcd6d89b298cc7a23de02d119367221]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netipsec/"
+
+[cba481a7bff2fcf31420ee8b2714660e2666452b]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netipsec/"
+
+[01d4e3c1d3ffa14041d8faa3a7a6e6509e73af84]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netipsec/"
+
+[f6000e9dd934db9fefc31eaa07a7d8fa9277484e]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[1a71d24ecd0dbaf61fd2a44166e9be07c328b198]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[4b17776d9afd0009ac8547126c59c97eda0f3fc9]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[7144a1d58c5cfa1dcfd1a172965d73289616569c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[749318f2ae56127abdffee405f8f4658efa1c807]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[34bb38445b0713f2a5ca5678852de0d4b0bb015a]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+ah = 1
+
+[89d155360810e6d1d7c4a20a72e5734fc9ab58bc]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[8822ef05e61ed0c433dfa8d15dbbd6959fe25fbe]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[5729a0b45cd1a24c8b82d161de4711b4e004498d]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[a257e2dc9c6ecd3db41e1aa27a5297a0f328694a]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[10d5a548596ce7c111ea4a463d3f7d5f0cb1ae4f]
+ac = "libs"
+ac_section = "03-filenames_plain1"
+ac_pattern = "include/"
+
+[cd0727ec709bb54f8f82104f6113284a15dd3464]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[73cceb046cd86187bc3e3bad07dd2422ee102552]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[471e14267bea79e0f7d5768aa241471d34079e93]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "nfsd: Update the rc.d script for RDMA for the nfsd service-00"
+
+[5549785665084a8dbbb5c2302de9ab9f7e6db272]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[7753a59fdf196fcbd8bb5706ad44bfc590bce0a9]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[6fa9c2b1d2824034268646e0744e5e010155ffaf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[2193da1c4457a76e7182e0bfdadb13cae79d33f8]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[57293f4541cdea8e4158f751a4439f69b3ec1711]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fe00ca2f88718c7751b8953cc8ee7fc0dad0bbe1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[ffc9b42f5a388bcf911b0bb5401d11f207f99a80]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[90e7dbe5e2ca47baff4e4c6d9e892a0554eec4db]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[ba353c8950d575f9d15b82c92658e660935fba25]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[ac56d36007a5a1a01fe69df370f272060e852e0b]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[b4208a67edc2eb7898a9ff2a6f3990c6852910e4]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[06aaca43fe05d22cd289af9b6fa751b9bd08b560]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[fa0dc4f0f96a1b77d4be7bcdbf965897cda14521]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "MFV:"
+
+[1f3aeb3ea5a52e16e87439160dc19c53526600c3]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[1100d9eca9cb2860c58633a9176dd11a30850da4]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[521fdb95cc7863871e5404e9a9abd1c4174af1ba]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[087d722624c7293c2cbc5ab2bc1e20b6a68aae96]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[45e00486d6954e6f0781a201b851455395db5e08]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[0fbdaf0c9aacab6bf7115e8cee7ee3a9728f2c9d]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[d77271ce7a65713d00d19a1617d6ccc5783388b7]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[4565eeaccddfd849aaea6079082b4b2979630dd3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[af9c64fd6c54674e4d67ba9125460db16a84b1f0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[d93aa77e0e9ed5c352b99364aad35df0866eddd0]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[f4cfc8a7f72783522dcdfa278be0c4d7e7dfc844]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linuxkpi-00"
+
+[3ce28106a887766383c99e5a607396f66ba2e5c1]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "libexec/"
+g = "nfsd: Update the rc.d script for RDMA for the nfsd service-00"
+
+[5b48968c1a57bd1a7f086d7e09add59afa158340]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[bdb561843e865eaa5bbdc5394ed9d9c91136240c]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linux: implement pkey_alloc, pkey_free and pkey_mprotect-00"
+
+[08c41a679b281505eb7f1fd0cb528f3c1fe87fed]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[40367d1f3b8ff694ffc3e4bf3278ec2a762648d2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[df02513fd44bcede0aa8833ae5c2af826f63ce10]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+ah = 1
+
+[cb85c4397bb3f57e60ab20c239b9339c4b752412]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[87406f8351664aa444851499cda83b00fdc07662]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f177ff939a91a3d710752438b13aff53d5afc725]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[1391e272de36f7aae2c800d96cc06762553d5027]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[5e6c894510fc66c18d69164d591184a2d23b16e5]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[8cfe06ee4415795cc77934fb5c17bdf2c2fd3816]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+g = "bsdconfig: add datetime module for live system clock-00"
+
+[f1cfcfb2e51ae5afa8941342ad10f650db8279c5]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[39762c840a15e1b32b2e1acaca18d98c030f7c17]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[d7be8a3e229174bea06228b461da3b1825c6cc54]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[8d2d6284bb8ca168f6173c8836a40711b5f34e13]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[0ea53a7123ffc1ea11daa748e7148ac8413fd2de]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[28bbe1d28d6f1e68e2ee3b34686ccb6114c42ca7]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[8367882d531313eea68966b07ddf917e39690b77]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[4c2dda4c70e210be4efb4527fc32fbb79f23d452]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[17042fd31571c7ceb955570ef43c9921d4a80f21]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[24917c22a330e8da350e8ef1a251a70abf0baf83]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[7accd803e28cf6051cac69e614eec6f24d5c77cc]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "e1000-01"
+
+[6248e7de9d6c0f14294afc5792170a68de6a3b53]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[41a0f7a0a447ef2092faadb35f6d4c3f80c088bf]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c82a015ede8d49aabc8bb253b7597b8db0f42524]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[81d5356799a1db1701cb3f91146131c34dede413]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[aab7bd4d9903b9da0a7474aab47c003c904ef3dd]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "etc/"
+g = "bsdconfig: add datetime module for live system clock-00"
+
+[1a78f5ae3917b770bd958010dae86574b15d97ff]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[6dbf809bafe1421fbf3cdd952748b15437b7c72a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[28f3123ec720fd368efc7f7d2010163c468047ac]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[dcb10e3add17259715352885dfc55ca92061d2ed]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/dev/", "sys/riscv/"]
+
+[9b3415e9ec55ef8248b05750932eb0a247739413]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[550db3d6f502946f6cf01eeb34f53e70395ddc6f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/dev/", "sys/riscv/"]
+
+[f343f036c780cfd8e7f243b7708d96b006a257d7]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[95a4412e3a4d41b430f298ea2c2a51f8aa119c2c]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[c1ff9c93b107ef54b332bab114191e0a90ca84b7]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[cce53d108a9eb3c36a7e51fdc5b6c0362e3fde31]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+g = "linux: implement pkey_alloc, pkey_free and pkey_mprotect-00"
+
+[374799f2b7c3ea1f2df8afd1eff880c2334c16c5]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["sys/arm64/", "sys/i386/"]

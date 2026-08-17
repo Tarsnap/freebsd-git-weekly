@@ -1,0 +1,79 @@
+[37826269b41b46c72264191d35b09baf24e055b9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[14e3daa72db7d6410877481a4ed2791603e2b99f]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[cd4aae2fa9d35015248c445752e23800e75e8517]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[27c70deb3d260b48bee8f3c4c975fd2de64264fb]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[88293bdd1eefb4bf518e1764d370b4a2321afdd1]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[709bd45a1b3a5ca21e05995c0c01f0ee8e7e8c38]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[c47b430c6ea3aa8d133af0af426d018bae3b7018]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[8362aecdeb2548813942a7e604543c71f5a10271]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[251e6ef40203a6f911d7f4daacf3075de7f870c0]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[8e968c5ff4112387c87f7afdf79d873a6f475b21]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[tT]ypo"
+
+[62d5d119ee7d935ac05966f1c7c4333c33c4f3a9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[ba9aaed01a484778f1c1f2fb5d7e30dbb1a8f5ad]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+
+[ba120b8d38f3f0bc78efa5200807eb9904fbb1f9]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "tools/tools/git/"
+
+[f370d9e4d5844daa06d77e57236e03bd7c5f4ba1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[557ba0c2a5138ce026c0ea9cb02f374f97378b7c]
+ac = "userland"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.bin/"
+
+[d383c870f7fe20b67278184df54953a49189fca3]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
