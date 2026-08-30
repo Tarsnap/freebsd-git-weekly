@@ -33,7 +33,6 @@ class CachedRepo:
         self.cache_filename = cache_filename
         self.repo: git.Repo | None = None
         self.gitcommits: dict[str, CachedCommit] | None = None
-        self.trust_cache = False
 
     def add_cache(self, filename: str) -> None:
         if self.cache_filename is not None:
@@ -47,7 +46,6 @@ class CachedRepo:
             # Assume that this is a file we wrote ourselves
             cache_gitcommits = pickle.load(fp)
             self.gitcommits.update(cache_gitcommits)
-        self.trust_cache = True
 
     def _setup_gitcommits(self) -> None:
         if self.cache_filename is None:
@@ -60,13 +58,8 @@ class CachedRepo:
             with open(self.cache_filename, "rb") as fp:
                 # Assume that this is a file we wrote ourselves
                 self.gitcommits = pickle.load(fp)
-            self.trust_cache = True
         else:
-            # We can't trust a cache that doesn't exist
-            self.trust_cache = False
             self.gitcommits = {}
-
-        if not self.trust_cache:
             self._load_actual_repo()
 
     def _load_actual_repo(self) -> None:
