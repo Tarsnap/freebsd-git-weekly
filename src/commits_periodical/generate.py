@@ -2,6 +2,7 @@ import collections
 import datetime
 import html
 import os.path
+import pathlib
 import re
 import sys
 
@@ -362,6 +363,10 @@ def generate_period(
     )
     if debug:
         filename_out = filename_out.replace(".html", "-debug.html")
+
+    # Create dir(s), if necessary
+    pathlib.Path(filename_out).parent.mkdir(parents=True, exist_ok=True)
+
     print(f"Generating HTML for {doc.filename} in {filename_out}")
 
     # Split into categories
@@ -452,6 +457,10 @@ def generate_index(project_dirname, index):
     filename_out = os.path.join(
         project_dirname.replace("projects", "out"), "index.html"
     )
+
+    # Create dir(s), if necessary
+    pathlib.Path(filename_out).parent.mkdir(parents=True, exist_ok=True)
+
     print(f"Generating index in {filename_out}")
 
     templates = commits_periodical.html_templates.HtmlTemplates()
