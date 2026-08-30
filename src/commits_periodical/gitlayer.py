@@ -28,14 +28,19 @@ class CachedCommit:
 
 
 class CachedRepo:
-    def __init__(self, git_dirname: str, cache_filename: str) -> None:
+    def __init__(self, git_dirname: str, cache_filename: str | None) -> None:
         self.git_dirname = git_dirname
         self.cache_filename = cache_filename
         self.repo: git.Repo | None = None
         self.gitcommits: dict[str, CachedCommit] | None = None
         self.trust_cache = False
 
-    def add_cache(self, filename) -> None:
+    def add_cache(self, filename: str) -> None:
+        if self.cache_filename is not None:
+            raise RuntimeError(
+                "add_cache() is only valid without a cache_filename"
+            )
+
         if self.gitcommits is None:
             self.gitcommits = {}
         with open(filename, "rb") as fp:
@@ -45,6 +50,12 @@ class CachedRepo:
         self.trust_cache = True
 
     def _setup_gitcommits(self) -> None:
+        if self.cache_filename is None:
+            raise RuntimeError(
+                "API error: _setup_gitcommits() "
+                "shouldn't be reachable without a cache_filename"
+            )
+
         if os.path.exists(self.cache_filename):
             with open(self.cache_filename, "rb") as fp:
                 # Assume that this is a file we wrote ourselves
@@ -65,6 +76,8 @@ class CachedRepo:
             raise RuntimeError("Repo is dirty; resolve")
 
     def save(self) -> None:
+        if self.cache_filename is None:
+            raise RuntimeError("save() is not valid without a cache_filename")
         with open(self.cache_filename, "wb") as fp:
             pickle.dump(self.gitcommits, fp)
 
@@ -79,6 +92,10 @@ class CachedRepo:
         return self.gitcommits.keys()
 
     def ensure_cached(self, start_after: str, end_including: str) -> None:
+        if self.cache_filename is None:
+            raise RuntimeError(
+                "ensure_cached() is not valid without a cache_filename"
+            )
         if self.gitcommits is None:
             self._setup_gitcommits()
         # Checking only the start and end doesn't guarantee that the full
