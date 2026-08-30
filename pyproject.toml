@@ -5,12 +5,18 @@ version = "0.20"
 authors = [
   { name="Graham Percival", email="gperciva@tarsnap.com" },
 ]
-license="BSD-2-Clause"
+license = "BSD-2-Clause"
+license-files = ["LICENSE"]
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
   "GitPython",
   "tomlkit",
 ]
+
+[project.urls]
+Homepage = "https://freebsd-git-weekly.tarsnap.net/"
+Repository = "https://github.com/Tarsnap/freebsd-git-weekly/"
 
 [project.scripts]
 freebsd-git-weekly = "commits_periodical.commits_periodical:main"
