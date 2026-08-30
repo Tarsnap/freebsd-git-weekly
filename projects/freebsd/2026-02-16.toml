@@ -887,7 +887,9 @@ ac_section = "02-filenames_wildcards"
 ac_pattern = ".*Makefile"
 
 [d4f6cb75424950ee776833ebc6b57855c094a610]
-mc = "build"
+ac = "build"
+ac_section = "05-summary-prefix"
+ac_pattern = "build:"
 
 [d57dee7ab66f60537b557cb602be194e3eed253d]
 ac = "doc"

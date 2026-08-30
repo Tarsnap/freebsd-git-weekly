@@ -35,6 +35,9 @@ ac_pattern = "sys/"
 
 [3e13aae0d1f1a28352d52e41d6ef8f02efd9150e]
 mc = "tests"
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "krb5:"
 
 [88b8b7f0c4e9948667a2279e78e975a784049cba]
 ac = "contrib"
@@ -784,4 +787,6 @@ ac_pattern = "sys/netpfil/"
 g = "pf-00"
 
 [008d04b297c700ed386a4e846c1834ade7255043]
-mc = "internal"
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ["share/misc/committers-doc.dot", "usr.bin/calendar/calendars/calendar.freebsd"]

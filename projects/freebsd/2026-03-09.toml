@@ -414,7 +414,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sys/x86/"
 
 [7aa1dba6b00ccfb7d66627badc8a7aaa06b02946]
-mc = "contrib"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "MFV:"
 ah = 1
 
 [a47c870930a728b5d890e8243cc363c788ebddc7]

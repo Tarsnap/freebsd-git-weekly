@@ -14,7 +14,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "stand/"
 
 [8d485a8490fe1cd60e7b6a00d3c8a8cc116a56fb]
-mc = "contrib"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "MFV:"
 
 [69ede18b950e32317d7741410cde7543fa0fce3c]
 ac = "admin"

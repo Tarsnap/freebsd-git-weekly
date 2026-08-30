@@ -73,7 +73,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "contrib/"
 
 [ddf4f9eda9c295082f17e7f26963666b72c97bb9]
-mc = "network"
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "ipfw:"
 
 [1c5021f5251b231b614ad9cd175bcb4250495c12]
 ac = "admin"
@@ -81,7 +83,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sbin/"
 
 [3daae1ac1d82ecdcd855101bab5206e914b12350]
-mc = "network"
+ac = "network"
+ac_section = "05-summary-prefix"
+ac_pattern = "ipfw:"
 
 [1615eff94cda8619561b73186ec8098cc8b14c5c]
 mc = "hardware"

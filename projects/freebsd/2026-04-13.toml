@@ -1003,7 +1003,9 @@ ac_section = "02b-filenames_wildcards2"
 ac_pattern = "usr.bin/.*/tests/.*"
 
 [480ba21efdc7df5d972083e64c88c39357877c0b]
-mc = "doc"
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "README.md"
 
 [41b641cc0537d1288cc05332bb4c5de3dcb12589]
 ac = "contrib"

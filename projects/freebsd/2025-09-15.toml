@@ -825,7 +825,9 @@ ac_section = "04-filenames_plain2"
 ac_pattern = "sys/"
 
 [627b778d9e6b603a44a010d22d823ca7c392b363]
-mc = "contrib"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "MFV:"
 
 [088e21000507510a2c3b1ec22684fe9665f6c8a7]
 ac = "build"

@@ -9,7 +9,9 @@ ac_section = "03-filenames_plain1"
 ac_pattern = "sbin/"
 
 [d5cb458b4b58b0f0b3c058a32439f232fd5455ca]
-mc = "contrib"
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "MFV:"
 
 [9cf02c38e492dd16b70bfd8203b3f1bc6436e574]
 ac = "build"
