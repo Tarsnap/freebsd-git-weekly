@@ -113,10 +113,10 @@ def main():
 
     index_entry = index.get_index_entry(index_entry_name)
     cache_filename = entries_filename.replace(".toml", ".gitcache")
-    repo = commits_periodical.gitlayer.CachedRepo(
-        config["git_dir"], cache_filename
-    )
     if index_entry.is_derived():
+        repo = commits_periodical.gitlayer.CachedRepo(
+            config["git_dir"], None
+        )
         doc = commits_periodical.data.Report(None)
         assert "include_spans" in index_entry
         num = len(index_entry["include_spans"])
@@ -134,6 +134,9 @@ def main():
             doc.load(span_filename, start_after, end_including)
             repo.add_cache(cache_filename)
     else:
+        repo = commits_periodical.gitlayer.CachedRepo(
+            config["git_dir"], cache_filename
+        )
         if args.command in ["update", "annotate"]:
             doc = commits_periodical.data.Report(
                 entries_filename, read_only=False
