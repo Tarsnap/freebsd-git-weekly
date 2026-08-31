@@ -14,11 +14,11 @@ def announcement(repo, doc, index_entry):
         highlighted_text = "Highlighted commits:\n\n"
         highlighted_text += "\n".join(highlighted_lines)
         highlighted_text += "\n\n"
-        highlighted_text += templates.text_highlighted.rstrip()
+        highlighted_text += templates.TEXT_HIGHLIGHTED.rstrip()
     else:
         highlighted_text = "No highlighted commits this week."
 
-    text = templates.text_announcement % (
+    text = templates.TEXT_ANNOUNCEMENT % (
         index_entry["display_date_start"],
         index_entry["display_date_end"],
         index_entry["display_date_start"],

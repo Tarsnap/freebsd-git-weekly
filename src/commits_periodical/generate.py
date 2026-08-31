@@ -405,7 +405,7 @@ def generate_period(
     sections.append(templates.TECHNICAL_NOTES_SECTION)
 
     date_period = f"{date_start} to {date_end}"
-    out = templates.html_begin % (date_period, date_period)
+    out = templates.HTML_BEGIN % (date_period, date_period)
     for section in sections:
         out += section
 
@@ -478,7 +478,7 @@ def generate_index(project_dirname, index):
     regular_reports = index_table(index, regular)
     alternates = index_table(index, alternate)
 
-    out = templates.index % (regular_reports, alternates)
+    out = templates.INDEX % (regular_reports, alternates)
 
     with open(filename_out, "w", encoding="utf8") as fp:
         fp.write(out)

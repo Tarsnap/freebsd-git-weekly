@@ -1,4 +1,4 @@
-index = '''
+INDEX = '''
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,7 +34,7 @@ index = '''
 </html>
 '''
 
-html_begin = '''
+HTML_BEGIN = '''
 <!DOCTYPE html>
 <html>
   <head>
@@ -173,7 +173,7 @@ RELEASE_DEBUG = '''
 '''
 
 # This isn't an HTML template, but oh well.
-text_announcement = """
+TEXT_ANNOUNCEMENT = """
 Subject: FreeBSD Git Weekly %s to %s
 
 Hi all,
@@ -194,7 +194,7 @@ Cheers,
 - Graham Percival
 """
 
-text_highlighted = """
+TEXT_HIGHLIGHTED = """
 "Highlighted" commits are selected automatically if a commit modifies
 UPDATING, or if the commit message contains a "Relnotes:" line.  If you
 think that another commit should be highlighted, let me know and I'm
