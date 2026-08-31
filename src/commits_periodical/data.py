@@ -78,8 +78,13 @@ class Index:
             k for k, v in self.index_entries.items() if not v.is_derived()
         ]
         self.sorted_main_names = sorted(main_index_entry_names)
+        if len(self.sorted_main_names) == 0:
+            raise KeyError("We need at least one non-derived report")
         self.latest_name = self.sorted_main_names[-1]
-        self.prev_name = self.sorted_main_names[-2]
+        if len(self.sorted_main_names) >= 2:
+            self.prev_name = self.sorted_main_names[-2]
+        else:
+            self.prev_name = None
 
     def get_filename(self, name):
         filename = os.path.join(self.project_dirname, f"{name}.toml")
@@ -89,11 +94,14 @@ class Index:
         return self.latest_name
 
     def get_prev_name(self):
+        if self.prev_name is None:
+            raise KeyError("We don't have enough reports to have a 'prev'")
         return self.prev_name
 
     def _make_all_entry(self):
         first = self.index_entries[self.sorted_main_names[0]]
         last = self.index_entries[self.sorted_main_names[-1]]
+        # This is a temporary IndexEntry, not stored in the file
         ie = IndexEntry(
             {
                 "derived": True,
@@ -289,7 +297,7 @@ class ReportEntry:
             self.ann["_ac"] = self.ann["ac"]
 
     def get_backup_auto(self):
-        return self.ann.get("_ac", False)
+        return self.ann.get("_ac", None)
 
     def clear_backup_auto(self):
         if "_ac" in self.ann:
