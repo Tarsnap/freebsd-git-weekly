@@ -1,32 +1,31 @@
-import sys
+class SanityCheckError(Exception):
+    pass
 
 
 def sanity_check_files_categories(texts):
-    """Conflicting filenames in 'plain' filenames section."""
+    """Check for conflicting filenames in 'plain' filenames section."""
     st = sorted(texts)
     for prev, after in zip(st[:-1], st[1:]):
         if after.startswith(prev):
             msg = f"Conflicting filename patterns found:\n  {prev}\n  {after}"
-            raise KeyError(msg)
+            raise SanityCheckError(msg)
 
 
 def check_section(order, section, section_name):
-    """Does this section contain keys in the correct order?"""
+    """Check that this section contains keys in the correct order."""
     section_keys = list(section.keys())
 
     for category in section_keys:
         if category not in order:
-            print(f"Incorrect category: {category}")
-            return False
+            msg = f"Incorrect category: {category}"
+            raise SanityCheckError(msg)
 
     sorted_section_keys = sorted(section_keys, key=order.get)
 
     if section_keys != sorted_section_keys:
-        print(f"Incorrect order in {section_name}:")
-        print(f"{section_keys}\n{sorted_section_keys}")
-        return False
-
-    return True
+        msg = f"Incorrect order in {section_name}: "
+        msg += f"{section_keys}\n{sorted_section_keys}"
+        raise SanityCheckError(msg)
 
 
 def check(project):
@@ -44,6 +43,4 @@ def check(project):
                 patterns.extend(pats)
             sanity_check_files_categories(patterns)
 
-        if not check_section(order, project.orig_classifiers[section], section):
-            print("Problem found")
-            sys.exit(1)
+        check_section(order, project.orig_classifiers[section], section)
