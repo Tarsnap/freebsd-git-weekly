@@ -1,0 +1,56 @@
+[d8d9f39df5431cbb554173da0f473c0e576aa7cb]
+ac = "filesystems"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/fs/"
+
+[9bec8a959bd6206cceb1afd583b47822bc8ccd16]
+mh = 0
+ac = "doc"
+ac_section = "03-filenames_plain1"
+ac_pattern = "RELNOTES"
+ah = 1
+
+[d2cfdf4c12a76db3612c83575403150811f5aa9a]
+ac = "userland"
+ac_section = "03-filenames_plain1"
+ac_pattern = "bin/"
+
+[46cf612d98e99967204185829fe829350cfa51a1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c6ae11c1b0d96fd2ed0b55c655ff58a46b26ddcb]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[52fbff96549904933898908644f3a99e5cd4cdca]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[037d45a0526f452d96f44059e88f735298a9063d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[132f818ddbf457ee67d502cd89b5a18e0a34713d]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[5a223ae08e736d3aabfd43dbb5c89cd86b3e1739]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[523c3992cf9e50dce7948372ef703f0057e22561]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/contrib"
+
+[0211e64ce1e5ba208f4b96453ce6740a49689b91]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
