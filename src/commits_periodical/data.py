@@ -33,8 +33,11 @@ class IndexEntry:
 
     def set_end_including(self, githash):
         """Change the 'end_including' key to the given git hash."""
-        assert self.read_only is False
-        assert "end_including" in self.table
+        if self.read_only:
+            raise ValueError("Cannot modify a read-only IndexEntry")
+        if "end_including" not in self.table:
+            raise ValueError("No 'end_including' in table")
+
         self.table["end_including"] = githash
 
     def remove_ongoing(self):
@@ -65,10 +68,8 @@ class Index:
         # Check for reserved report names
         for reserved in RESERVED_REPORT_NAMES:
             if reserved in self.doc.keys():
-                print(
-                    f"Cannot have a report called '{reserved}'; reserved name"
-                )
-                exit(1)
+                msg = f"Cannot have a report called '{reserved}'; reserved name"
+                raise KeyError(msg)
 
         self.index_entries = {
             k: IndexEntry(v, self.read_only) for k, v in self.doc.items()
@@ -110,6 +111,8 @@ class Index:
         # Special-case for "all" report
         if report_name == "all":
             return self._make_all_entry()
+        elif report_name == "prev":
+            raise KeyError("Index.get_index_entry() does not support 'prev'")
         return self.index_entries[report_name]
 
     def get_names(self):
@@ -141,11 +144,12 @@ class Index:
                 self.doc.body.insert(i + 1, [tomlkit.key(name), new_table])
                 break
         else:
-            print(f"Couldn't find {previous_name} in toml file")
-            exit(1)
+            raise KeyError(f"Couldn't find {previous_name} in toml file")
 
     def save(self):
-        assert self.read_only is False
+        if self.read_only:
+            raise ValueError("Cannot modify a read-only Index")
+
         out = tomlkit.dumps(self.doc)
         with open(self.filename, "w", encoding="utf8") as fp:
             fp.write(out)
@@ -346,7 +350,9 @@ class Report:
 
     def save(self):
         """Save the document to disk."""
-        assert self.read_only is False
+        if self.read_only:
+            raise ValueError("Cannot modify a read-only Report")
+
         out = tomlkit.dumps(self.doc)
         with open(self.filename, "w", encoding="utf8") as fp:
             fp.write(out)
@@ -372,15 +378,10 @@ class Report:
             groupnum += 1
 
             # Panic if we've looped too much
-            assert groupnum < 99
+            if groupnum > 99:
+                raise ValueError(f"Too many groups with basename '{basename}'")
 
         return groupname
-
-    def set_revert_cat(self, githash, newcat):
-        self.entries[githash].set_revert_cat(newcat)
-
-    def set_keyword_cat(self, githash, newcat):
-        self.entries[githash].set_keyword_cat(newcat)
 
     def set_group(self, githashes, basename, groupname=None):
         if not groupname:
@@ -392,6 +393,8 @@ class Report:
 
     def add_commit(self, githash):
         """Add a commit."""
+        if githash in self.entries:
+            raise ValueError(f"{githash} already exists in report")
         commit = tomlkit.table()
         self.doc[githash] = commit
         self.entries[githash] = ReportEntry((githash, commit))
