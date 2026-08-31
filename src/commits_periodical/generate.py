@@ -37,7 +37,11 @@ def get_commit_long(templates, githash, gitcommit, nostrip=False):
 
     text = commits_periodical.utils.commit_text_display(long, nostrip)
 
-    url = templates.HTML_COMMIT_TAGLINE % (githash, githash, author, authordate)
+    url = templates.HTML_COMMIT_TAGLINE.substitute(
+        githash=githash,
+        author=author,
+        authordate=authordate,
+    )
 
     # We don't want to end with a \n
     text = html.escape(text).rstrip()
@@ -77,8 +81,14 @@ def commit_text(templates, repo, report, item, is_high, debug):
     short = gitcommit.summary
 
     url, text = get_commit_long(templates, githash, gitcommit)
-    inner = templates.HTML_DETAILS_INNER % (text, url)
-    out = templates.HTML_DETAILS_OUTER % (html.escape(short), inner)
+    inner = templates.HTML_DETAILS_INNER.substitute(
+        text=text,
+        url=url,
+    )
+    out = templates.HTML_DETAILS_OUTER.substitute(
+        short=html.escape(short),
+        inner=inner,
+    )
 
     if debug:
         text = commit_debug_info(entry)
@@ -118,11 +128,17 @@ def commit_group_text(templates, repo, report, item, debug):
         )
         if i > 0:
             inner += "<hr>"
-        inner += templates.HTML_DETAILS_INNER % (text, url)
+        inner += templates.HTML_DETAILS_INNER.substitute(
+            text=text,
+            url=url,
+        )
 
         if debug:
             inner += commit_debug_info(entry)
-    out = templates.HTML_DETAILS_OUTER % (html.escape(summary), inner)
+    out = templates.HTML_DETAILS_OUTER.substitute(
+        short=html.escape(summary),
+        inner=inner,
+    )
 
     if debug and entry.has_fixed_cat():
         fc = entry.get_fixed_cat()
@@ -329,7 +345,10 @@ def make_section(
         return None
     is_high = cat == "highlight"
     section = f"<section id='{cat}'>"
-    section += templates.HTML_SECTION % (section_title, cat, cat)
+    section += templates.HTML_SECTION.substitute(
+        section_title=section_title,
+        cat=cat,
+    )
     if intro_text:
         section += f"<p>{intro_text}</p>"
     relevant = cats[cat]
@@ -377,9 +396,12 @@ def generate_period(
     sections = []
     date_start = index_entry["display_date_start"]
     date_end = index_entry["display_date_end"]
-    intro = templates.INTRO_SECTION % (date_start, date_end)
+    intro = templates.INTRO_SECTION.substitute(
+        date_start=date_start,
+        date_end=date_end,
+    )
     if debug:
-        intro += templates.INTRO_DEBUG_MESSAGE
+        intro += templates.INTRO_DEBUG_MESSAGE.substitute()
 
     if index_entry.get("ongoing"):
         text = '<p class="debug">This report is still in progress.</p>'
@@ -402,10 +424,12 @@ def generate_period(
             sections.append(section)
 
     # Add technical notes
-    sections.append(templates.TECHNICAL_NOTES_SECTION)
+    sections.append(templates.TECHNICAL_NOTES_SECTION.substitute())
 
     date_period = f"{date_start} to {date_end}"
-    out = templates.HTML_BEGIN % (date_period, date_period)
+    out = templates.HTML_BEGIN.substitute(
+        date_period=date_period,
+    )
     for section in sections:
         out += section
 
@@ -423,9 +447,13 @@ def generate_period(
     now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
     if reproducible:
         now = "(time removed for reproducibility)"
-    out += templates.RELEASE_DEBUG % (version, now, alternate_version)
+    out += templates.RELEASE_DEBUG.substitute(
+        version=version,
+        now=now,
+        alternate_version=alternate_version,
+    )
 
-    out += templates.HTML_END
+    out += templates.HTML_END.substitute()
 
     with open(filename_out, "w", encoding="utf8") as fp:
         fp.write(out)
@@ -478,7 +506,10 @@ def generate_index(project_dirname, index):
     regular_reports = index_table(index, regular)
     alternates = index_table(index, alternate)
 
-    out = templates.INDEX % (regular_reports, alternates)
+    out = templates.INDEX.substitute(
+        regular_reports=regular_reports,
+        alternate_reports=alternates,
+    )
 
     with open(filename_out, "w", encoding="utf8") as fp:
         fp.write(out)

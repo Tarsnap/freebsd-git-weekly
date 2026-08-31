@@ -1,5 +1,6 @@
 import dataclasses
 import importlib.resources
+import string
 import tomllib
 
 
@@ -14,7 +15,7 @@ class HtmlTemplates:
 
         # Promote all those templates to object attributes
         for key, value in self.doc.items():
-            setattr(self, key, value)
+            setattr(self, key, string.Template(value))
 
     # FIXME: this was only added to stop pylint complaining about E1101;
     # there must be a better way of handling it.

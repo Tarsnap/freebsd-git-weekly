@@ -25,11 +25,11 @@ INDEX = '''
         freebsd-git-weekly@tarsnap.com</a>
       list.
     </p>
-    %s
+    ${regular_reports}
     <p>
       Here are some alternate reports.
     </p>
-    %s
+    ${alternate_reports}
   </body>
 </html>
 '''
@@ -39,11 +39,11 @@ HTML_BEGIN = '''
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>FreeBSD git weekly: %s</title>
+    <title>FreeBSD git weekly: ${date_period}</title>
     <link href="freebsd-git-weekly.css" rel="stylesheet"/>
   </head>
   <body>
-    <h1><a href="index.html">FreeBSD git weekly</a>: %s</h1>
+    <h1><a href="index.html">FreeBSD git weekly</a>: ${date_period}</h1>
 '''
 
 INTRO_SECTION = '''
@@ -51,7 +51,7 @@ INTRO_SECTION = '''
 <h2>Introduction</h2>
   <p>
     This is a display of mostly-automatically-classified git commits from
-    %s to %s.
+    ${date_start} to ${date_end}.
   </p>
 </section>
 '''
@@ -121,27 +121,27 @@ TECHNICAL_NOTES_SECTION = '''
 </section>
 '''
 
-HTML_SECTION = '''      <h2>%s
-<button onClick="showDetails('%s', true)">Expand section</button>
-<button onClick="showDetails('%s', false)">Collapse section</button>
+HTML_SECTION = '''      <h2>${section_title}
+<button onClick="showDetails('${cat}', true)">Expand section</button>
+<button onClick="showDetails('${cat}', false)">Collapse section</button>
 </h2>
 '''
 
 HTML_COMMIT_TAGLINE = '''
 <a
-  href="https://cgit.freebsd.org/src/commit/?id=%s"
-  target="_blank">%s</a> %s %s
+  href="https://cgit.freebsd.org/src/commit/?id=${githash}"
+  target="_blank">${githash}</a> ${author} ${authordate}
 '''
 
 HTML_DETAILS_OUTER = '''      <details>
-<summary>%s</summary>
-%s
+<summary>${short}</summary>
+${inner}
 </details>
 '''
 
 HTML_DETAILS_INNER = '''
-<div class="details">%s</div>
-<div class="hash">%s</div>
+<div class="details">${text}</div>
+<div class="hash">${url}</div>
 '''
 
 HTML_END = '''
@@ -162,27 +162,27 @@ function showDetails(sectionId, state) {
 RELEASE_DEBUG = '''
 <hr>
 <p>
-  Generated with commits-periodical %s at %s.
+  Generated with commits-periodical ${version} at ${now}.
 </p>
 <p>
   This work is supported by <a href="https://tarsnap.com">Tarsnap Backup Inc.</a>
 </p>
 <p>
-  %s
+  ${alternate_version}
 </p>
 '''
 
 # This isn't an HTML template, but oh well.
 TEXT_ANNOUNCEMENT = """
-Subject: FreeBSD Git Weekly %s to %s
+Subject: FreeBSD Git Weekly ${date_start} to ${date_end}
 
 Hi all,
 
-I'm happy to announce FreeBSD git weekly for %s -- %s:
-https://freebsd-git-weekly.tarsnap.net/%s.html
+I'm happy to announce FreeBSD git weekly for ${date_start} -- ${date_end}:
+https://freebsd-git-weekly.tarsnap.net/${display_name}.html
 
-It's a list of the %s commits in that week, split into categories.
-%s
+It's a list of the ${num_commits} commits in that week, split into categories.
+${highlighted_text}
 
 
 To see all reports:
