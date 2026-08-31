@@ -1,6 +1,10 @@
 import os.path
+import re
 
 import commits_periodical.utils
+
+VALID_ACTS_ON = {"filenames", "summary", "message"}
+VALID_RE_FUNC = {"search", "match"}
 
 
 class Classifier:
@@ -32,6 +36,44 @@ def sanity_check(categories: dict, orig_classifiers: dict):
             # Check that all classifier-categories are in categories
             if key not in cats:
                 raise ValueError(f"Not a category: {key}")
+
+    # Sanity check for _acts_on
+    for name, section in orig_classifiers.items():
+        if name == "Meta":
+            continue
+        acts_on = section.get("_acts_on")
+        if not acts_on:
+            raise ValueError(f'{name}: missing "_acts_on"')
+        if acts_on not in VALID_ACTS_ON:
+            raise ValueError(
+                f'{name}: "_acts_on" must be one of {VALID_ACTS_ON}'
+            )
+
+    # Sanity check for _re_func
+    for name, section in orig_classifiers.items():
+        if name == "Meta":
+            continue
+        re_func = section.get("_re_func")
+        if not re_func:
+            # re_func is optional
+            continue
+        if re_func not in VALID_RE_FUNC:
+            raise ValueError(
+                f'{name}: "_re_func" must be one of {VALID_RE_FUNC}'
+            )
+
+    # Sanity check for regexes
+    for name, section in orig_classifiers.items():
+        for key, value in section.items():
+            # At the moment, any list in this file contains potential regexes.
+            # If that changes in the future, this check will need to be changed.
+            if isinstance(value, list):
+                for pattern in value:
+                    try:
+                        re.compile(pattern)
+                    except re.error as e:
+                        msg = f"{name} {key}: bad regex: {pattern!r} {e}"
+                        raise ValueError(msg)
 
     # Sanity check for alphabetical order
     for section in orig_classifiers.values():
