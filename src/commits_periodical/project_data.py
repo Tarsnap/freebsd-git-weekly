@@ -4,7 +4,7 @@ import commits_periodical.utils
 
 
 class Classifier:
-    def __init__(self, orig):
+    def __init__(self, orig: dict):
         self.metadata = {k: v for k, v in orig.items() if k.startswith("_")}
         self.rules = {k: v for k, v in orig.items() if not k.startswith("_")}
 
@@ -15,8 +15,12 @@ class Classifier:
         return self.rules.items()
 
 
-def sanity_check(categories, orig_classifiers):
+def sanity_check(categories: dict, orig_classifiers: dict):
     cats = categories.keys()
+
+    # We must have a "Meta" section, even if it's empty
+    if "Meta" not in orig_classifiers:
+        raise KeyError('There must be a "Meta" section')
 
     # Sanity check for non-categories
     for section in orig_classifiers.values():
@@ -41,11 +45,11 @@ def sanity_check(categories, orig_classifiers):
 
 
 class ProjectData:
-    def __init__(self, project_dirname: str):
+    def __init__(self, project_dirname: str) -> None:
         self.dirname = os.path.expanduser(project_dirname)
         self._load()
 
-    def _load(self):
+    def _load(self) -> None:
         self.categories = commits_periodical.utils.read_toml(
             os.path.join(self.dirname, "categories.toml")
         )
@@ -61,7 +65,6 @@ class ProjectData:
                 self.meta = self.orig_classifiers["Meta"]
                 continue
 
-            # Invert the contents of each section, other than those beginning
-            # with an underscore.
+            # Create a Classifier for each section.
             classifier = self.orig_classifiers[section]
             self.classifiers[section] = Classifier(classifier)
