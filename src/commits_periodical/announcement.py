@@ -7,9 +7,14 @@ def announcement(repo, doc, index_entry):
     highlighted_entries = [
         e for _, e in doc.get_entries() if e.is_highlighted()
     ]
-    highlighted_lines = [
-        f"- {repo.get_commit(e.githash).summary}" for e in highlighted_entries
-    ]
+
+    highlighted_lines = []
+    for e in highlighted_entries:
+        commit = repo.get_commit(e.githash)
+        if commit is None:
+            raise ValueError(f"commit {e.githash!r} not found in repo cache")
+        highlighted_lines.append(f"- {commit.summary}")
+
     if highlighted_lines:
         highlighted_text = "Highlighted commits:\n\n"
         highlighted_text += "\n".join(highlighted_lines)

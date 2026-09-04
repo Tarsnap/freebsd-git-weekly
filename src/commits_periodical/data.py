@@ -309,7 +309,7 @@ class Report:
         else:
             self.doc = tomlkit.document()
         if self.filename:
-            self.load(filename)
+            self.load(self.filename)
         else:
             self._update_data()
 
@@ -353,6 +353,8 @@ class Report:
         """Save the document to disk."""
         if self.read_only:
             raise ValueError("Cannot modify a read-only Report")
+        if self.filename is None:
+            raise ValueError("API error; should have a filename")
 
         out = tomlkit.dumps(self.doc)
         with open(self.filename, "w", encoding="utf8") as fp:
@@ -387,7 +389,7 @@ class Report:
     def set_group(self, githashes, basename, groupname=None):
         if not groupname:
             groupname = self._get_groupname(basename)
-        self.groups[groupname] = githashes
+        self.groups[groupname] = [self.entries[h] for h in githashes]
 
         for githash in githashes:
             self.entries[githash].set_group(groupname)

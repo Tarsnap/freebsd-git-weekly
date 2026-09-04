@@ -444,7 +444,9 @@ def generate_period(
         alternate_version = f'Alternate version: <a href="{url}">{text}</a>'
         alternate_version += " (contains info about the classification)"
     version = commits_periodical.__version__
-    now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
+    now = str(
+        datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
+    )
     if reproducible:
         now = "(time removed for reproducibility)"
     out += templates.RELEASE_DEBUG.substitute(

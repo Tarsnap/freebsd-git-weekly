@@ -33,6 +33,8 @@ def find_highlighted(repo, doc):
         if entry.is_highlighted():
             continue
         gitcommit = repo.get_commit(githash)
+        if gitcommit is None:
+            raise KeyError(f"githash not found: {githash}")
         if "UPDATING" in gitcommit.modified_files:
             entry.set_highlighted()
             num_changed += 1
@@ -93,6 +95,8 @@ def find_fixes(repo, doc):
     num_changed = 0
     for githash in doc.get_hashes():
         gitcommit = repo.get_commit(githash)
+        if gitcommit is None:
+            raise KeyError(f"githash not found: {githash}")
 
         found = re.findall(
             r"^Fixes:\s*([a-fA-F0-9]+)", gitcommit.message, re.MULTILINE
@@ -148,25 +152,28 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
             continue
 
         gitcommit = repo.get_commit(githash)
+        if gitcommit is None:
+            raise KeyError(f"githash not found: {githash}")
 
         if examine_part == "message":
-            examine = gitcommit.message
+            examine_text = gitcommit.message
         elif examine_part == "summary":
-            examine = gitcommit.summary
+            examine_text = gitcommit.summary
         elif examine_part == "filenames":
-            examine = gitcommit.modified_files
+            pass
         else:
             raise NotImplementedError
 
         # Special-case
         if classifier_name == "00-reverts":
             num_changed += apply_revert(
-                repo, doc, classifier_name, classifier, githash, examine
+                repo, doc, classifier_name, classifier, githash, examine_text
             )
             continue
 
         # Handle filenames differently
         if examine_part == "filenames":
+            examine = gitcommit.modified_files
             if len(examine) == 0:
                 continue
             for cat, patterns in classifier.items():
@@ -232,7 +239,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
         # Handle texts (summary or message)
         for cat, patterns in classifier.items():
             for pattern in patterns:
-                match = re_func(pattern, examine, 0, classifier)
+                match = re_func(pattern, examine_text, 0, classifier)
                 if not match:
                     continue
 
@@ -251,6 +258,8 @@ def check_auto_changes(repo, doc):
             continue
         if not entry.has_auto_cat():
             gitcommit = repo.get_commit(githash)
+            if gitcommit is None:
+                raise KeyError(f"githash not found: {githash}")
             print("\n------- lost automatic cat ", end="")
             print(f"'{prev}'!")
             print(gitcommit.githash)
@@ -261,6 +270,8 @@ def check_auto_changes(repo, doc):
         auto_cat = entry.get_auto_cat()
         if prev != auto_cat:
             gitcommit = repo.get_commit(githash)
+            if gitcommit is None:
+                raise KeyError(f"githash not found: {githash}")
             print("\n------- automatic changed from ", end="")
             print(f"'{prev}' to '{auto_cat}'")
             print(gitcommit.githash)
@@ -280,6 +291,8 @@ def group_commits(repo, doc):
     adjacents = [[None, 0, None, None]]
     for githash, entry in doc.get_entries():
         gitcommit = repo.get_commit(githash)
+        if gitcommit is None:
+            raise KeyError(f"githash not found: {githash}")
         # Extract relevant info
         prefix = commits_periodical.utils.get_summary_prefix(gitcommit)
         cat = entry.cat

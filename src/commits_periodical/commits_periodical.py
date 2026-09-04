@@ -114,9 +114,7 @@ def main():
     index_entry = index.get_index_entry(index_entry_name)
     cache_filename = entries_filename.replace(".toml", ".gitcache")
     if index_entry.is_derived():
-        repo = commits_periodical.gitlayer.CachedRepo(
-            config["git_dir"], None
-        )
+        repo = commits_periodical.gitlayer.CachedRepo(config["git_dir"], None)
         doc = commits_periodical.data.Report(None)
         assert "include_spans" in index_entry
         num = len(index_entry["include_spans"])
@@ -154,9 +152,7 @@ def main():
         case "new-report":
             assert len(args.githash) == 1
             githash = args.githash[0]
-            commits_periodical.update.new_report(
-                index, index_entry, githash
-            )
+            commits_periodical.update.new_report(index, index_entry, githash)
         case "update":
             if index_entry.get("ongoing"):
                 commits_periodical.update.update_ref(repo, index, index_entry)
