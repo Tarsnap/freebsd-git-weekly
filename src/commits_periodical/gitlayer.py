@@ -32,7 +32,7 @@ class CachedRepo:
         self.git_dirname = git_dirname
         self.cache_filename = cache_filename
         self._repo: git.Repo | None = None
-        self.gitcommits: dict[str, CachedCommit] | None = None
+        self._gitcommits: dict[str, CachedCommit] | None = None
 
     @property
     def repo(self) -> git.Repo:
@@ -42,34 +42,37 @@ class CachedRepo:
                 raise RuntimeError("Repo is dirty; resolve")
         return self._repo
 
+    @property
+    def gitcommits(self) -> dict[str, CachedCommit]:
+        if self._gitcommits is None:
+            if self.cache_filename is None:
+                raise RuntimeError(
+                    "API error: gitcommits shouldn't be reachable without "
+                    "a cache_filename or a prior add_cache() call"
+                )
+
+            if os.path.exists(self.cache_filename):
+                with open(self.cache_filename, "rb") as fp:
+                    # Assume that this is a file we wrote ourselves
+                    self._gitcommits = pickle.load(fp)
+            else:
+                self._gitcommits = {}
+                # Load the repository
+                _ = self.repo
+        return self._gitcommits
+
     def add_cache(self, filename: str) -> None:
         if self.cache_filename is not None:
             raise RuntimeError(
                 "add_cache() is only valid without a cache_filename"
             )
+        if self._gitcommits is None:
+            self._gitcommits = {}
 
-        if self.gitcommits is None:
-            self.gitcommits = {}
         with open(filename, "rb") as fp:
             # Assume that this is a file we wrote ourselves
             cache_gitcommits = pickle.load(fp)
             self.gitcommits.update(cache_gitcommits)
-
-    def _setup_gitcommits(self) -> None:
-        if self.cache_filename is None:
-            raise RuntimeError(
-                "API error: _setup_gitcommits() "
-                "shouldn't be reachable without a cache_filename"
-            )
-
-        if os.path.exists(self.cache_filename):
-            with open(self.cache_filename, "rb") as fp:
-                # Assume that this is a file we wrote ourselves
-                self.gitcommits = pickle.load(fp)
-        else:
-            self.gitcommits = {}
-            # Load the actual repository
-            _ = self.repo
 
     def save(self) -> None:
         if self.cache_filename is None:
@@ -81,8 +84,6 @@ class CachedRepo:
         return self.repo.head.commit.hexsha
 
     def get_githashes(self) -> collections.abc.KeysView[str]:
-        if self.gitcommits is None:
-            self._setup_gitcommits()
         return self.gitcommits.keys()
 
     def ensure_cached(self, start_after: str, end_including: str) -> None:
@@ -90,8 +91,6 @@ class CachedRepo:
             raise RuntimeError(
                 "ensure_cached() is not valid without a cache_filename"
             )
-        if self.gitcommits is None:
-            self._setup_gitcommits()
         # Checking only the start and end doesn't guarantee that the full
         # range is available, but this is good enough for now.
         if start_after in self.gitcommits and end_including in self.gitcommits:
@@ -118,9 +117,6 @@ class CachedRepo:
         is True, short forms (i.e. abc123 rather than the full 40-char string)
         can be used.
         """
-        if self.gitcommits is None:
-            self._setup_gitcommits()
-
         length = len(githash)
 
         if length > 40:
