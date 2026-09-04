@@ -160,8 +160,8 @@ def commit_group_text(templates, repo, report, item, debug):
 
 
 # FIXME: hack
-commit_group_text.seen = []
-commit_group_text.num_generic = 0
+commit_group_text.seen = []  # type: ignore
+commit_group_text.num_generic = 0  # type: ignore
 
 
 def split_into_categories(doc, only_show):

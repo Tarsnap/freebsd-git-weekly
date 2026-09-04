@@ -1,5 +1,9 @@
 import os.path
 import re
+import typing
+
+# We normally don't allow "from", but in this case it's worth it.
+from typing import Any
 
 import commits_periodical.utils
 
@@ -12,10 +16,10 @@ class Classifier:
         self.metadata = {k: v for k, v in orig.items() if k.startswith("_")}
         self.rules = {k: v for k, v in orig.items() if not k.startswith("_")}
 
-    def get_metadata(self, key: str, default=None):
+    def get_metadata(self, key: str, default: Any = None) -> Any:
         return self.metadata.get(key, default)
 
-    def items(self):
+    def items(self) -> typing.ItemsView[str, Any]:
         return self.rules.items()
 
 

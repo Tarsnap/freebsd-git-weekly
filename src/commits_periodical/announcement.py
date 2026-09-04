@@ -1,7 +1,13 @@
+import commits_periodical.data
+import commits_periodical.gitlayer
 import commits_periodical.html_templates
 
 
-def announcement(repo, doc, index_entry) -> None:
+def announcement(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc: commits_periodical.data.Report,
+    index_entry: commits_periodical.data.IndexEntry,
+) -> None:
     templates = commits_periodical.html_templates.HtmlTemplates()
 
     highlighted_entries = [

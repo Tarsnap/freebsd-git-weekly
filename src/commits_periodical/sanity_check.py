@@ -1,8 +1,13 @@
+import typing
+
+import commits_periodical.project_data
+
+
 class SanityCheckError(Exception):
     pass
 
 
-def sanity_check_files_categories(texts) -> None:
+def sanity_check_files_categories(texts: list[str]) -> None:
     """Check for conflicting filenames in 'plain' filenames section."""
     st = sorted(texts)
     for prev, after in zip(st[:-1], st[1:]):
@@ -11,7 +16,9 @@ def sanity_check_files_categories(texts) -> None:
             raise SanityCheckError(msg)
 
 
-def check_section(order, section, section_name: str) -> None:
+def check_section(
+    order: dict[str, int], section: dict[str, typing.Any], section_name: str
+) -> None:
     """Check that this section contains keys in the correct order."""
     section_keys = list(section.keys())
 
@@ -20,7 +27,7 @@ def check_section(order, section, section_name: str) -> None:
             msg = f"Incorrect category: {category}"
             raise SanityCheckError(msg)
 
-    sorted_section_keys = sorted(section_keys, key=order.get)
+    sorted_section_keys = sorted(section_keys, key=lambda k: order[k])
 
     if section_keys != sorted_section_keys:
         msg = f"Incorrect order in {section_name}: "
@@ -28,7 +35,7 @@ def check_section(order, section, section_name: str) -> None:
         raise SanityCheckError(msg)
 
 
-def check(project) -> None:
+def check(project: commits_periodical.project_data.ProjectData) -> None:
     order = {key: i for i, key in enumerate(project.categories)}
     order["_acts_on"] = -2
     order["_re_func"] = -1

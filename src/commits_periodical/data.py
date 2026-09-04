@@ -2,6 +2,9 @@ import collections
 import os.path
 import pathlib
 
+# We normally don't allow "from", but in this case it's worth it.
+from typing import Any
+
 import toml
 import tomlkit
 
@@ -20,10 +23,10 @@ class IndexEntry:
     def __contains__(self, key: str) -> bool:
         return key in self.table
 
-    def __getitem__(self, key: str):
+    def __getitem__(self, key: str) -> Any:
         return self.table[key]
 
-    def get(self, key: str, default=None):
+    def get(self, key: str, default: Any = None) -> Any:
         """Just like dict.get()"""
         return self.table.get(key, default)
 
@@ -83,6 +86,8 @@ class Index:
         if len(self.sorted_main_names) == 0:
             raise KeyError("We need at least one non-derived report")
         self.latest_name = self.sorted_main_names[-1]
+
+        self.prev_name: str | None
         if len(self.sorted_main_names) >= 2:
             self.prev_name = self.sorted_main_names[-2]
         else:
@@ -100,7 +105,7 @@ class Index:
             raise KeyError("We don't have enough reports to have a 'prev'")
         return self.prev_name
 
-    def _make_all_entry(self):
+    def _make_all_entry(self) -> IndexEntry:
         first = self.index_entries[self.sorted_main_names[0]]
         last = self.index_entries[self.sorted_main_names[-1]]
         # This is a temporary IndexEntry, not stored in the file
@@ -117,7 +122,7 @@ class Index:
         )
         return ie
 
-    def get_index_entry(self, report_name: str):
+    def get_index_entry(self, report_name: str) -> IndexEntry:
         # Special-case for "all" report
         if report_name == "all":
             return self._make_all_entry()
@@ -125,7 +130,7 @@ class Index:
             raise KeyError("Index.get_index_entry() does not support 'prev'")
         return self.index_entries[report_name]
 
-    def get_names(self):
+    def get_names(self) -> collections.abc.KeysView[str]:
         return self.doc.keys()
 
     def add_index_entry_after(
@@ -134,6 +139,7 @@ class Index:
         # This is more complicated than it should be, but it works with
         # tomlkit 0.15.1.  This function doesn't stick to the public API,
         # and thus might break in the future.
+        assert isinstance(self.doc, tomlkit.TOMLDocument)
 
         # Sanity checks
         if name in self.doc:
@@ -165,7 +171,7 @@ class ReportEntry:
     commits.
     """
 
-    def __init__(self, ref) -> None:
+    def __init__(self, ref: tuple[str, tomlkit.items.Table | dict]) -> None:
         self.githash = ref[0]
         # Short for "annotation"
         self.ann = ref[1]
@@ -304,10 +310,11 @@ class ReportEntry:
 class Report:
     """A document which details all commits within a range."""
 
-    def __init__(self, filename, read_only: bool = True) -> None:
+    def __init__(self, filename: str | None, read_only: bool = True) -> None:
         self.filename = filename
         self.read_only = read_only
 
+        self.doc: tomlkit.items.Table | dict
         if self.read_only:
             self.doc = {}
         else:
@@ -317,7 +324,12 @@ class Report:
         else:
             self._update_data()
 
-    def load(self, filename: str, start_after=None, end_including=None) -> None:
+    def load(
+        self,
+        filename: str,
+        start_after: str | None = None,
+        end_including: str | None = None,
+    ) -> None:
         # Create the file if it doesn't exist
         if not self.read_only:
             if not os.path.exists(filename):
@@ -364,15 +376,15 @@ class Report:
         with open(self.filename, "w", encoding="utf8") as fp:
             fp.write(out)
 
-    def get_entries(self):
+    def get_entries(self) -> collections.abc.Iterator[tuple[str, ReportEntry]]:
         """Generator to return each commit."""
         yield from self.entries.items()
 
-    def get_hashes(self):
+    def get_hashes(self) -> collections.abc.Iterator[str]:
         """Get all hashes."""
         yield from self.entries
 
-    def get_entry(self, githash: str):
+    def get_entry(self, githash: str) -> ReportEntry:
         return self.entries[githash]
 
     def _get_groupname(self, basename: str) -> str:
@@ -390,7 +402,9 @@ class Report:
 
         return groupname
 
-    def set_group(self, githashes, basename: str, groupname=None) -> None:
+    def set_group(
+        self, githashes: list[str], basename: str, groupname: str | None = None
+    ) -> None:
         if not groupname:
             groupname = self._get_groupname(basename)
         self.groups[groupname] = [self.entries[h] for h in githashes]

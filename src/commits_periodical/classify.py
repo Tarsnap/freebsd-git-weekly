@@ -1,15 +1,22 @@
 import collections
 import re
 
-import commits_periodical.utils
+import commits_periodical.data
+import commits_periodical.gitlayer
 import commits_periodical.project_data
+import commits_periodical.utils
 
 GROUP_AT_LEAST = 3
 
 DEFAULT_RE_FUNC = "match"
 
 
-def re_func(pattern: str, string: str, flags: int, selector):
+def re_func(
+    pattern: str,
+    string: str,
+    flags: int,
+    selector: str | commits_periodical.project_data.Classifier,
+) -> re.Match[str] | None:
     # Find out whether we want 'match' or 'search'
     if isinstance(selector, str):
         use_func = selector
@@ -25,7 +32,10 @@ def re_func(pattern: str, string: str, flags: int, selector):
     raise ValueError(f"re_func() does not support {use_func}")
 
 
-def find_highlighted(repo, doc) -> None:
+def find_highlighted(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc: commits_periodical.data.Report,
+) -> None:
     num_changed = 0
     for githash, entry in doc.get_entries():
         if entry.is_revert():
@@ -53,7 +63,12 @@ def find_highlighted(repo, doc) -> None:
 
 
 def apply_revert(
-    repo, doc, classifier_name: str, classifier, githash: str, examine: str
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc,
+    classifier_name: str,
+    classifier: commits_periodical.project_data.Classifier,
+    githash: str,
+    examine: str,
 ) -> int:
     num_changed = 0
     for cat, patterns in classifier.items():
@@ -93,7 +108,10 @@ def apply_revert(
     return num_changed
 
 
-def find_fixes(repo, doc) -> None:
+def find_fixes(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc: commits_periodical.data.Report,
+) -> None:
     num_changed = 0
     for githash in doc.get_hashes():
         gitcommit = repo.get_commit(githash)
@@ -142,7 +160,13 @@ def find_fixes(repo, doc) -> None:
         print(f"Grouped {num_changed} commits as 'fixes' pairs")
 
 
-def apply_classifier(repo, doc, classifier_name: str, classifier, meta) -> None:
+def apply_classifier(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc: commits_periodical.data.Report,
+    classifier_name: str,
+    classifier: commits_periodical.project_data.Classifier,
+    meta: dict[str, str],
+) -> None:
     num_changed = 0
 
     examine_part = classifier.get_metadata("_acts_on")
@@ -252,7 +276,10 @@ def apply_classifier(repo, doc, classifier_name: str, classifier, meta) -> None:
         print(f"Classified {num_changed} commits due to {classifier_name}")
 
 
-def check_auto_changes(repo, doc) -> None:
+def check_auto_changes(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc: commits_periodical.data.Report,
+) -> None:
     for githash in doc.get_hashes():
         entry = doc.get_entry(githash)
         prev = entry.get_backup_auto()
@@ -352,7 +379,12 @@ def group_commits(repo, doc):
             doc.set_group(githashes, prefix)
 
 
-def classify_period(repo, doc, project, debug) -> None:
+def classify_period(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    doc: commits_periodical.data.Report,
+    project: commits_periodical.project_data.ProjectData,
+    debug: bool,
+) -> None:
     print(f"Classifying {doc.filename}")
     doc.backup_auto()
     doc.clear_automatic_annotations()

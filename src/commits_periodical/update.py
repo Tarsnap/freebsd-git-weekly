@@ -1,7 +1,14 @@
 import datetime
 
+import commits_periodical.data
+import commits_periodical.gitlayer
 
-def update_ref(repo, index, index_entry) -> None:
+
+def update_ref(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    index: commits_periodical.data.Index,
+    index_entry: commits_periodical.data.IndexEntry,
+) -> None:
     if index_entry.is_derived():
         return
 
@@ -14,7 +21,11 @@ def update_ref(repo, index, index_entry) -> None:
         index.save()
 
 
-def get_new_hashes(repo, index_entry, doc):
+def get_new_hashes(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    index_entry: commits_periodical.data.IndexEntry,
+    doc: commits_periodical.data.Report,
+) -> list[str]:
     """Get any new hashes in the range specified in index_entry that are not
     already in the summary file.
     """
@@ -28,7 +39,11 @@ def get_new_hashes(repo, index_entry, doc):
     return new_hashes
 
 
-def update_period(repo, index_entry, doc) -> None:
+def update_period(
+    repo: commits_periodical.gitlayer.CachedRepo,
+    index_entry: commits_periodical.data.IndexEntry,
+    doc: commits_periodical.data.Report,
+) -> None:
     """Update the latest report."""
     if index_entry.is_derived():
         return
@@ -57,7 +72,11 @@ def _add_week(date_str: str) -> str:
     return dt.strftime("%Y-%m-%d")
 
 
-def new_report(index, index_entry, githash: str) -> None:
+def new_report(
+    index: commits_periodical.data.Index,
+    index_entry: commits_periodical.data.IndexEntry,
+    githash: str,
+) -> None:
     # Update the ref in the latest index entry
     index_entry.set_end_including(githash)
     index_entry.remove_ongoing()
