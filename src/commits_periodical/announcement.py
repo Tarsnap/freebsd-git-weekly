@@ -1,7 +1,7 @@
 import commits_periodical.html_templates
 
 
-def announcement(repo, doc, index_entry):
+def announcement(repo, doc, index_entry) -> None:
     templates = commits_periodical.html_templates.HtmlTemplates()
 
     highlighted_entries = [

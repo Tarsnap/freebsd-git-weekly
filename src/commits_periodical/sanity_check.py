@@ -2,7 +2,7 @@ class SanityCheckError(Exception):
     pass
 
 
-def sanity_check_files_categories(texts):
+def sanity_check_files_categories(texts) -> None:
     """Check for conflicting filenames in 'plain' filenames section."""
     st = sorted(texts)
     for prev, after in zip(st[:-1], st[1:]):
@@ -11,7 +11,7 @@ def sanity_check_files_categories(texts):
             raise SanityCheckError(msg)
 
 
-def check_section(order, section, section_name):
+def check_section(order, section, section_name: str) -> None:
     """Check that this section contains keys in the correct order."""
     section_keys = list(section.keys())
 
@@ -28,7 +28,7 @@ def check_section(order, section, section_name):
         raise SanityCheckError(msg)
 
 
-def check(project):
+def check(project) -> None:
     order = {key: i for i, key in enumerate(project.categories)}
     order["_acts_on"] = -2
     order["_re_func"] = -1

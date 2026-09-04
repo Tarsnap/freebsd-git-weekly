@@ -2,6 +2,7 @@ import collections.abc
 import dataclasses
 import os.path
 import pickle
+import typing
 
 import git
 
@@ -16,7 +17,7 @@ class CachedCommit:
     modified_files: list[str]
 
     @classmethod
-    def from_gitcommit(cls, commit: git.Commit):
+    def from_gitcommit(cls, commit: git.Commit) -> typing.Self:
         return cls(
             githash=str(commit.hexsha),
             author=str(commit.author),

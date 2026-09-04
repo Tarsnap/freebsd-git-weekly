@@ -11,27 +11,29 @@ RESERVED_REPORT_NAMES = ["prev", "all"]
 class IndexEntry:
     """This is metadata about a single report."""
 
-    def __init__(self, table: tomlkit.items.Table | dict, read_only=True):
+    def __init__(
+        self, table: tomlkit.items.Table | dict, read_only: bool = True
+    ) -> None:
         self.table = table
         self.read_only = read_only
 
-    def __contains__(self, key):
+    def __contains__(self, key: str) -> bool:
         return key in self.table
 
-    def __getitem__(self, key):
+    def __getitem__(self, key: str):
         return self.table[key]
 
-    def get(self, key, default=None):
+    def get(self, key: str, default=None):
         """Just like dict.get()"""
         return self.table.get(key, default)
 
-    def get_display_name(self):
+    def get_display_name(self) -> str:
         if "display_name" in self.table:
             return self.table["display_name"]
         else:
             return self.table["display_date_start"]
 
-    def set_end_including(self, githash):
+    def set_end_including(self, githash: str) -> None:
         """Change the 'end_including' key to the given git hash."""
         if self.read_only:
             raise ValueError("Cannot modify a read-only IndexEntry")
@@ -40,11 +42,11 @@ class IndexEntry:
 
         self.table["end_including"] = githash
 
-    def remove_ongoing(self):
+    def remove_ongoing(self) -> None:
         """Remove the 'ongoing' key."""
         del self.table["ongoing"]
 
-    def is_derived(self):
+    def is_derived(self) -> bool:
         """Is this report 'derived', i.e. generated from data in the other
         reports?
         """
@@ -54,7 +56,7 @@ class IndexEntry:
 class Index:
     """This is metadata about all available reports."""
 
-    def __init__(self, project_dirname, read_only=True):
+    def __init__(self, project_dirname: str, read_only: bool = True) -> None:
         self.project_dirname = project_dirname
         self.read_only = read_only
 
@@ -86,14 +88,14 @@ class Index:
         else:
             self.prev_name = None
 
-    def get_filename(self, name):
+    def get_filename(self, name: str) -> str:
         filename = os.path.join(self.project_dirname, f"{name}.toml")
         return filename
 
-    def get_latest_name(self):
+    def get_latest_name(self) -> str:
         return self.latest_name
 
-    def get_prev_name(self):
+    def get_prev_name(self) -> str:
         if self.prev_name is None:
             raise KeyError("We don't have enough reports to have a 'prev'")
         return self.prev_name
@@ -115,7 +117,7 @@ class Index:
         )
         return ie
 
-    def get_index_entry(self, report_name):
+    def get_index_entry(self, report_name: str):
         # Special-case for "all" report
         if report_name == "all":
             return self._make_all_entry()
@@ -126,7 +128,9 @@ class Index:
     def get_names(self):
         return self.doc.keys()
 
-    def add_index_entry_after(self, name, data, previous_name):
+    def add_index_entry_after(
+        self, name: str, data: dict, previous_name: str
+    ) -> None:
         # This is more complicated than it should be, but it works with
         # tomlkit 0.15.1.  This function doesn't stick to the public API,
         # and thus might break in the future.
@@ -147,7 +151,7 @@ class Index:
         # Insert it
         self.doc._insert_after(previous_name, name, new_table)
 
-    def save(self):
+    def save(self) -> None:
         if self.read_only:
             raise ValueError("Cannot modify a read-only Index")
 
@@ -161,18 +165,18 @@ class ReportEntry:
     commits.
     """
 
-    def __init__(self, ref):
+    def __init__(self, ref) -> None:
         self.githash = ref[0]
         # Short for "annotation"
         self.ann = ref[1]
 
-    def __str__(self):
+    def __str__(self) -> str:
         out = self.githash + "\n"
         out += "\n".join(f"  {k}: {v}" for k, v in self.ann.items())
         return out
 
     @property
-    def cat(self):
+    def cat(self) -> str:
         """Category of this entry."""
         if "mc" in self.ann:
             return self.ann["mc"]
@@ -183,11 +187,11 @@ class ReportEntry:
         return "unknown"
 
     @property
-    def manual_cat(self):
+    def manual_cat(self) -> str:
         return self.ann["mc"]
 
     @property
-    def automatic_cat(self):
+    def automatic_cat(self) -> str:
         """Category of this entry."""
         if "fc" in self.ann:
             return self.ann["fc"]
@@ -195,50 +199,50 @@ class ReportEntry:
             return self.ann["ac"]
         return "unknown"
 
-    def has_manual_cat(self):
+    def has_manual_cat(self) -> bool:
         return "mc" in self.ann
 
-    def has_auto_cat(self):
+    def has_auto_cat(self) -> bool:
         return "ac" in self.ann
 
-    def has_fixed_cat(self):
+    def has_fixed_cat(self) -> bool:
         return "fc" in self.ann
 
-    def get_auto_cat(self):
+    def get_auto_cat(self) -> str:
         return self.ann["ac"]
 
-    def get_auto_reasons(self):
+    def get_auto_reasons(self) -> tuple[str, str]:
         return self.ann["ac_section"], self.ann["ac_pattern"]
 
-    def get_fixed_cat(self):
+    def get_fixed_cat(self) -> str:
         return self.ann["fc"]
 
-    def get_fixed_reason(self):
+    def get_fixed_reason(self) -> str:
         return self.ann["fc_reason"]
 
-    def set_group(self, group):
+    def set_group(self, group: str) -> None:
         self.ann["g"] = group
 
-    def has_group(self):
+    def has_group(self) -> bool:
         return "g" in self.ann
 
-    def groupname(self):
+    def groupname(self) -> str:
         return self.ann["g"]
 
-    def is_cat_disputed(self):
+    def is_cat_disputed(self) -> bool:
         if "mc" not in self.ann:
             return False
         if self.automatic_cat != self.manual_cat:
             return True
         return False
 
-    def remove_highlighted(self):
+    def remove_highlighted(self) -> None:
         del self.ann["ah"]
 
-    def set_highlighted(self):
+    def set_highlighted(self) -> None:
         self.ann["ah"] = 1
 
-    def set_auto_cat(self, cat, section, pattern):
+    def set_auto_cat(self, cat: str, section: str, pattern: str) -> None:
         # Sanity check: we shouldn't be re-setting the cat
         if "ac" in self.ann and self.ann["ac"] != cat:
             raise ValueError(
@@ -251,16 +255,16 @@ class ReportEntry:
         self.ann["ac_section"] = section
         self.ann["ac_pattern"] = pattern
 
-    def set_fixes_cat(self, cat, reason):
+    def set_fixes_cat(self, cat: str, reason: str) -> None:
         self.ann["fc"] = cat
         self.ann["fc_reason"] = reason
 
-    def is_revert(self):
+    def is_revert(self) -> bool:
         if "ac" in self.ann and self.ann["ac"] == "reverts":
             return True
         return False
 
-    def is_highlighted(self):
+    def is_highlighted(self) -> bool:
         """Is this entry highlighted?"""
         # If there's a manual judgement, that takes priority
         if "mh" in self.ann:
@@ -272,7 +276,7 @@ class ReportEntry:
             return True
         return False
 
-    def clear_automatic_annotation(self):
+    def clear_automatic_annotation(self) -> None:
         for key in [
             "ac",
             "ac_pattern",
@@ -285,14 +289,14 @@ class ReportEntry:
             if key in self.ann:
                 del self.ann[key]
 
-    def backup_auto(self):
+    def backup_auto(self) -> None:
         if "ac" in self.ann:
             self.ann["_ac"] = self.ann["ac"]
 
-    def get_backup_auto(self):
+    def get_backup_auto(self) -> str | None:
         return self.ann.get("_ac", None)
 
-    def clear_backup_auto(self):
+    def clear_backup_auto(self) -> None:
         if "_ac" in self.ann:
             del self.ann["_ac"]
 
@@ -300,7 +304,7 @@ class ReportEntry:
 class Report:
     """A document which details all commits within a range."""
 
-    def __init__(self, filename, read_only=True):
+    def __init__(self, filename, read_only: bool = True) -> None:
         self.filename = filename
         self.read_only = read_only
 
@@ -313,7 +317,7 @@ class Report:
         else:
             self._update_data()
 
-    def load(self, filename, start_after=None, end_including=None):
+    def load(self, filename: str, start_after=None, end_including=None) -> None:
         # Create the file if it doesn't exist
         if not self.read_only:
             if not os.path.exists(filename):
@@ -342,14 +346,14 @@ class Report:
             self.doc[key] = value
         self._update_data()
 
-    def _update_data(self):
+    def _update_data(self) -> None:
         self.entries = {item[0]: ReportEntry(item) for item in self.doc.items()}
         self.groups = collections.defaultdict(list)
         for entry in self.entries.values():
             if entry.has_group():
                 self.groups[entry.groupname()].append(entry)
 
-    def save(self):
+    def save(self) -> None:
         """Save the document to disk."""
         if self.read_only:
             raise ValueError("Cannot modify a read-only Report")
@@ -368,10 +372,10 @@ class Report:
         """Get all hashes."""
         yield from self.entries
 
-    def get_entry(self, githash):
+    def get_entry(self, githash: str):
         return self.entries[githash]
 
-    def _get_groupname(self, basename):
+    def _get_groupname(self, basename: str) -> str:
         """Get a name to distinguish a new group of commits."""
         groupnum = 0
         while True:
@@ -386,7 +390,7 @@ class Report:
 
         return groupname
 
-    def set_group(self, githashes, basename, groupname=None):
+    def set_group(self, githashes, basename: str, groupname=None) -> None:
         if not groupname:
             groupname = self._get_groupname(basename)
         self.groups[groupname] = [self.entries[h] for h in githashes]
@@ -394,7 +398,7 @@ class Report:
         for githash in githashes:
             self.entries[githash].set_group(groupname)
 
-    def add_commit(self, githash):
+    def add_commit(self, githash: str) -> None:
         """Add a commit."""
         if githash in self.entries:
             raise ValueError(f"{githash} already exists in report")
@@ -402,15 +406,15 @@ class Report:
         self.doc[githash] = commit
         self.entries[githash] = ReportEntry((githash, commit))
 
-    def clear_automatic_annotations(self):
+    def clear_automatic_annotations(self) -> None:
         for githash in self.get_hashes():
             self.entries[githash].clear_automatic_annotation()
         self.groups.clear()
 
-    def backup_auto(self):
+    def backup_auto(self) -> None:
         for githash in self.get_hashes():
             self.entries[githash].backup_auto()
 
-    def clear_backup_auto(self):
+    def clear_backup_auto(self) -> None:
         for githash in self.get_hashes():
             self.entries[githash].clear_backup_auto()

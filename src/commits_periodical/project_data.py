@@ -8,18 +8,18 @@ VALID_RE_FUNC = {"search", "match"}
 
 
 class Classifier:
-    def __init__(self, orig: dict):
+    def __init__(self, orig: dict) -> None:
         self.metadata = {k: v for k, v in orig.items() if k.startswith("_")}
         self.rules = {k: v for k, v in orig.items() if not k.startswith("_")}
 
-    def get_metadata(self, key, default=None):
+    def get_metadata(self, key: str, default=None):
         return self.metadata.get(key, default)
 
     def items(self):
         return self.rules.items()
 
 
-def sanity_check(categories: dict, orig_classifiers: dict):
+def sanity_check(categories: dict, orig_classifiers: dict) -> None:
     cats = categories.keys()
 
     # We must have a "Meta" section, even if it's empty

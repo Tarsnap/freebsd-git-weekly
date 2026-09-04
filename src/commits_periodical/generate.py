@@ -16,7 +16,7 @@ import commits_periodical.utils
 split_into_words = re.compile(r"(\s+)")
 
 
-def linkify(text):
+def linkify(text: str) -> str:
     words = split_into_words.split(text)
     for i, word in enumerate(words):
         if word.startswith("https://"):
@@ -29,7 +29,9 @@ def linkify(text):
     return text
 
 
-def get_commit_long(templates, githash, gitcommit, nostrip=False):
+def get_commit_long(
+    templates, githash: str, gitcommit, nostrip: bool = False
+) -> tuple[str, str]:
     """Get HTML for a commit."""
     long = gitcommit.message
     author = gitcommit.author
@@ -51,7 +53,7 @@ def get_commit_long(templates, githash, gitcommit, nostrip=False):
     return url, text
 
 
-def commit_debug_info(entry):
+def commit_debug_info(entry) -> str:
     text = ""
     if entry.has_auto_cat():
         section, pattern = entry.get_auto_reasons()
@@ -70,7 +72,9 @@ def commit_debug_info(entry):
     return text
 
 
-def commit_text(templates, repo, report, item, is_high, debug):
+def commit_text(
+    templates, repo, report, item, is_high: bool, debug: bool
+) -> str:
     """Get a commit message, formatted as HTML."""
     name, entry = item
     if entry.has_group() and not is_high:
@@ -336,8 +340,15 @@ def make_preamble(project, cats, debug, only_show):
 
 
 def make_section(
-    templates, repo, report, cats, cat, section_title, intro_text, debug
-):
+    templates,
+    repo,
+    report,
+    cats,
+    cat: str,
+    section_title: str,
+    intro_text: str,
+    debug: bool,
+) -> str | None:
     """Generate HTML for a normal section."""
     if cat == "quit":
         return None
@@ -365,11 +376,11 @@ def generate_period(
     doc,
     project,
     index_entry,
-    debug,
-    project_dirname,
-    reproducible,
-    index_entry_name,
-):
+    debug: bool,
+    project_dirname: str,
+    reproducible: bool,
+    index_entry_name: str,
+) -> None:
     """Generate HTML for the latest report."""
     if index_entry.get("ongoing") and not debug:
         print("Refusing to generate 'release' HTML for ongoing")
@@ -461,7 +472,7 @@ def generate_period(
         fp.write(out)
 
 
-def index_table(index, start_dates):
+def index_table(index, start_dates: str) -> str:
     out = "<table>"
     out += "<tr><th>Report</th>"
     out += "<th>Report with extra info about classification</th></tr>"

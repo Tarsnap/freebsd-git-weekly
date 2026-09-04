@@ -14,7 +14,7 @@ import commits_periodical.update
 import commits_periodical.utils
 
 
-def parse_args():
+def parse_args() -> argparse.Namespace:
     """Parse the command-line arguments."""
     parser = argparse.ArgumentParser(
         description="FreeBSD git weekly classification"
@@ -65,7 +65,7 @@ def parse_args():
     return args
 
 
-def get_config():
+def get_config() -> dict[str, str]:
     # Get the filename
     xdg_config = os.environ.get("XDG_CONFIG_HOME")
     if not xdg_config:
@@ -85,7 +85,7 @@ def get_config():
     return config
 
 
-def main():
+def main() -> None:
     """FreeBSD weekly commit summaries."""
     args = parse_args()
 

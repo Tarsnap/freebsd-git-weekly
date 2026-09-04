@@ -9,7 +9,7 @@ GROUP_AT_LEAST = 3
 DEFAULT_RE_FUNC = "match"
 
 
-def re_func(pattern, string, flags, selector):
+def re_func(pattern: str, string: str, flags: int, selector):
     # Find out whether we want 'match' or 'search'
     if isinstance(selector, str):
         use_func = selector
@@ -25,7 +25,7 @@ def re_func(pattern, string, flags, selector):
     raise ValueError(f"re_func() does not support {use_func}")
 
 
-def find_highlighted(repo, doc):
+def find_highlighted(repo, doc) -> None:
     num_changed = 0
     for githash, entry in doc.get_entries():
         if entry.is_revert():
@@ -52,7 +52,9 @@ def find_highlighted(repo, doc):
         print(f"Copied {num_changed} commits into 'highlighted'")
 
 
-def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
+def apply_revert(
+    repo, doc, classifier_name: str, classifier, githash: str, examine: str
+) -> int:
     num_changed = 0
     for cat, patterns in classifier.items():
         assert cat == "reverts"
@@ -91,7 +93,7 @@ def apply_revert(repo, doc, classifier_name, classifier, githash, examine):
     return num_changed
 
 
-def find_fixes(repo, doc):
+def find_fixes(repo, doc) -> None:
     num_changed = 0
     for githash in doc.get_hashes():
         gitcommit = repo.get_commit(githash)
@@ -140,7 +142,7 @@ def find_fixes(repo, doc):
         print(f"Grouped {num_changed} commits as 'fixes' pairs")
 
 
-def apply_classifier(repo, doc, classifier_name, classifier, meta):
+def apply_classifier(repo, doc, classifier_name: str, classifier, meta) -> None:
     num_changed = 0
 
     examine_part = classifier.get_metadata("_acts_on")
@@ -250,7 +252,7 @@ def apply_classifier(repo, doc, classifier_name, classifier, meta):
         print(f"Classified {num_changed} commits due to {classifier_name}")
 
 
-def check_auto_changes(repo, doc):
+def check_auto_changes(repo, doc) -> None:
     for githash in doc.get_hashes():
         entry = doc.get_entry(githash)
         prev = entry.get_backup_auto()
@@ -350,7 +352,7 @@ def group_commits(repo, doc):
             doc.set_group(githashes, prefix)
 
 
-def classify_period(repo, doc, project, debug):
+def classify_period(repo, doc, project, debug) -> None:
     print(f"Classifying {doc.filename}")
     doc.backup_auto()
     doc.clear_automatic_annotations()

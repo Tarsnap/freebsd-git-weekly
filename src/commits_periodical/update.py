@@ -1,7 +1,7 @@
 import datetime
 
 
-def update_ref(repo, index, index_entry):
+def update_ref(repo, index, index_entry) -> None:
     if index_entry.is_derived():
         return
 
@@ -28,7 +28,7 @@ def get_new_hashes(repo, index_entry, doc):
     return new_hashes
 
 
-def update_period(repo, index_entry, doc):
+def update_period(repo, index_entry, doc) -> None:
     """Update the latest report."""
     if index_entry.is_derived():
         return
@@ -51,13 +51,13 @@ def update_period(repo, index_entry, doc):
     print(f"Added {num_added} commits")
 
 
-def _add_week(date_str):
+def _add_week(date_str: str) -> str:
     dt = datetime.datetime.strptime(date_str, "%Y-%m-%d")
     dt = dt + datetime.timedelta(days=7)
     return dt.strftime("%Y-%m-%d")
 
 
-def new_report(index, index_entry, githash):
+def new_report(index, index_entry, githash: str) -> None:
     # Update the ref in the latest index entry
     index_entry.set_end_including(githash)
     index_entry.remove_ongoing()
