@@ -127,32 +127,25 @@ class Index:
         return self.doc.keys()
 
     def add_index_entry_after(self, name, data, previous_name):
-        # This is more complicated than it should be, but inserting a new
-        # table at an arbitrary point in a toml file is a known missing in
-        # tomlkit 0.13.3.  This function doesn't stick to the public API,
+        # This is more complicated than it should be, but it works with
+        # tomlkit 0.15.1.  This function doesn't stick to the public API,
         # and thus might break in the future.
-        #
-        # Also, it doesn't add a newline after the table, so we need to
-        # do that manually.
-        #
-        # Still, it's less work than doing all of it by hand.
+
+        # Sanity checks
+        if name in self.doc:
+            raise KeyError(f"{name} already exists in toml file")
+        if previous_name not in self.doc:
+            raise KeyError(f"Couldn't find {previous_name} in toml file")
 
         # Create the TOML table item
         new_table = tomlkit.table()
         for k, v in data.items():
             new_table[k] = v
-        new_table.trivia.trail = "\n"
+        # _insert_after() doesn't add a blank line after the new table
+        new_table.add(tomlkit.nl())
 
         # Insert it
-        for i, (_, value) in enumerate(self.doc.body):
-            if (
-                isinstance(value, tomlkit.items.Table)
-                and value.name == previous_name
-            ):
-                self.doc.body.insert(i + 1, [tomlkit.key(name), new_table])
-                break
-        else:
-            raise KeyError(f"Couldn't find {previous_name} in toml file")
+        self.doc._insert_after(previous_name, name, new_table)
 
     def save(self):
         if self.read_only:
