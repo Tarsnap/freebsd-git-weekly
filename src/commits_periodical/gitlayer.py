@@ -31,8 +31,16 @@ class CachedRepo:
     def __init__(self, git_dirname: str, cache_filename: str | None) -> None:
         self.git_dirname = git_dirname
         self.cache_filename = cache_filename
-        self.repo: git.Repo | None = None
+        self._repo: git.Repo | None = None
         self.gitcommits: dict[str, CachedCommit] | None = None
+
+    @property
+    def repo(self) -> git.Repo:
+        if self._repo is None:
+            self._repo = git.Repo(self.git_dirname)
+            if self._repo.is_dirty():
+                raise RuntimeError("Repo is dirty; resolve")
+        return self._repo
 
     def add_cache(self, filename: str) -> None:
         if self.cache_filename is not None:
@@ -60,13 +68,8 @@ class CachedRepo:
                 self.gitcommits = pickle.load(fp)
         else:
             self.gitcommits = {}
-            self._load_actual_repo()
-
-    def _load_actual_repo(self) -> None:
-        # Load the git repo and ensure that it's clean
-        self.repo = git.Repo(self.git_dirname)
-        if self.repo.is_dirty():
-            raise RuntimeError("Repo is dirty; resolve")
+            # Load the actual repository
+            _ = self.repo
 
     def save(self) -> None:
         if self.cache_filename is None:
@@ -75,8 +78,6 @@ class CachedRepo:
             pickle.dump(self.gitcommits, fp)
 
     def get_head_hash(self) -> str:
-        if self.repo is None:
-            self._load_actual_repo()
         return self.repo.head.commit.hexsha
 
     def get_githashes(self) -> collections.abc.KeysView[str]:
@@ -95,9 +96,6 @@ class CachedRepo:
         # range is available, but this is good enough for now.
         if start_after in self.gitcommits and end_including in self.gitcommits:
             return
-
-        if self.repo is None:
-            self._load_actual_repo()
 
         githashes = self.repo.git.rev_list(
             f"{start_after}..{end_including}", reverse=True, first_parent=True
