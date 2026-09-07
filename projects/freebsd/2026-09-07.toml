@@ -1,0 +1,29 @@
+[3dbe1800848ca71f5cc083f1d5c5b4759b601fae]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-contrib/lutok-00"
+
+[ca0e8956c5472266ae2c1a64d23aa4a6f9611ef1]
+ac = "reverts"
+ac_section = "00-reverts"
+ac_pattern = "This reverts commit \\b([0-9a-fA-F]{40})\\b"
+g = "revert-pair-contrib/lutok-00"
+
+[cfe443e1e63dd588fba7eabec553ed5e1c408d1f]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[bba4f80b5c15d84ce05be4cf89db770715eb3873]
+mc = "internal"
+
+[a24eb09825cf4142531189a1e00fcea84d4f9773]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d983dc521b6ecaf054bdbe938bd1bf079030f76d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
