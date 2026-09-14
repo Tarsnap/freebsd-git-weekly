@@ -1,0 +1,79 @@
+[77535f91f623ec5bda9d45de878165cb6b3cdba1]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[7ffc4ec4860d01414b493cdf43738878a9ede538]
+ac = "contrib"
+ac_section = "05-summary-prefix"
+ac_pattern = "MFV:"
+
+[8f478e4ac62c7a4a2313d89dc59310aa74cf3f9b]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[7a039603a49db09fa574b4365ba36c92b7658868]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[bae084550c8caa5e13504fcb5b962256b68c29be]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[9315ab37fdc1ea7ffb0aeb7835ba1de937c047e4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[2f10ffc003be396f3fc23cd2888023896560252b]
+ac = "filesystems"
+ac_section = "05-summary-prefix"
+ac_pattern = "zfs:"
+
+[42c69445ca336b13e27e3e5960ace344c64ae0eb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[eaeb5f29bc6f4ff31026b12bd2329699a066c68b]
+mc = "build"
+ah = 1
+
+[7c375af72ef3f631e89431ae32a855d806e6ec98]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[c4f32e7a354eeebd503714d0e2be8be87562df1c]
+mc = "internal"
+
+[bcd1e7a8caac9129cc08995f8ff81a0eef0529bc]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[9c6e9bfb347428457d2061411cbfc8922dc5f7f2]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "thunderbolt-00"
+
+[808c82daab85c2c5576f37bcf371c3e1a51f71d9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "thunderbolt-00"
+
+[44b73821d1c077bf899298cbebbb2f625598c8e9]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "thunderbolt-00"
+
+[a5dc51aa5f292de732939ef24c757a17dee0ad06]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.bin/.*/tests/.*"
