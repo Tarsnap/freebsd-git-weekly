@@ -1,0 +1,158 @@
+[a6deeaa2fb3b28a61ae56a85f2275f67fcf23262]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[0a3d54a47eb6f71b2309fec79b2dce109bb72240]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[e376d28ce86135a12e3a9b31ca31fe80c59611be]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[fecb9537a83b6746bc731a7cb3bcf6a33df79562]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[e20ed58d265cd6eba9b28efc8e8956324937d4c3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[d95b62db76b9bb4d51bc5e555b26a3aaf8afa44a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[0bcd0616ff86675869d998a491eccc38e413cdad]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/smmu-00"
+
+[6dca6e2aa89d877cf2bc8135c6936008e2a6af72]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/smmu-00"
+
+[54393bf5361a653c530170da20323181e515d7a1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/smmu-00"
+
+[0689a5ea451bdef62f7e81ffb3e5f580c5c99b2b]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/smmu-00"
+
+[50e01b6351b1a4955814cce021852c65a5b5bb9f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+g = "arm64/smmu-00"
+
+[6a34abbe976626019d61d9d08a624f4ed14ddbd0]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[acaab48a73229c54ca1b4ec197508285c3f97970]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[0a81077f432d74dd2d064fb5f2b1b2a546be5347]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[8943d47938216bfe5e162aaf237f27de2e3ce659]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[51234535ddd6ec0afe9dd4e3f34a31b92d5cdd78]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[3330226fd33ae6b747c9edc97315244360ad5e54]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+g = "vmm-00"
+
+[d400b1ca31fd9b12655c83f9a7b3e8cdb68646dd]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+g = "vmm-00"
+
+[ce5b70657f94d2051566664d3ea7167d104803b0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+g = "vmm-00"
+
+[fc44154841fc2ebb1530a10cad719edb58559a88]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+g = "vmm-00"
+
+[6a075798bfdfc5ff50fc635fe8c2acbbee0178f2]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[7d1edc5b36805f8fb80a75583c8e820ab58c9b7f]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[2407b84c683582ad2fb8840df5a13637d0a8f405]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[00d693e47efd305cfc011ffe85972483f4fe12f8]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[b27a221ef79d6d77d6173897f12118e1126453d8]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
+
+[f1a4ac4aca47b2b6ac7ed4a06a6f3b0f253f13f3]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[f4e7e5eced392b90fb265b06f4223c0301d777ff]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[1b9aea382e31f1c72bdfefbe01db51dc7bd60952]
+ac = "tests"
+ac_section = "02b-filenames_wildcards2"
+ac_pattern = "usr.bin/.*/tests/.*"
+
+[64a73d1b6dc93d92daea1e2d0603fda1dddadf4a]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/amd64/"
+
+[46d383af0dbdb3871354f344b9c1ba99da691121]
+ac = "admin"
+ac_section = "04-filenames_plain2"
+ac_pattern = "usr.sbin/"
