@@ -1,0 +1,75 @@
+[aa787077c0f8059beb7a0e246d90795f2b8a3509]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-src.dot"
+
+[3b97a476a93071723260a7d93d99597d174b633a]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/misc/committers-src.dot"
+
+[36d3e711bc625b266267a3ad234cd13b9476a5fe]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = ".mailmap"
+
+[dcb84ddcfe89d358a66cffb45196e6b45b45502c]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[bf8c4eaee6ad85e647c3026116f58332c89e3794]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[188c455f3d7a137aeb9695dd0ba08a68d26c45f3]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[222210c6a82282de78aa863c550da21471630316]
+ac = "libs"
+ac_section = "05-summary-prefix"
+ac_pattern = "lib.*:"
+
+[7b8f3db50cc992a3676e7e5ac207024e073884d4]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[51b1272fca667ad4c57d94ca24600bf68f29ebd2]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[8970a9f2ef781ab4f7d3fa446f7c6ac5eda26cc0]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[8d31b7856f774554ffd5bb382bd2b3f6534817a0]
+mc = "tests"
+
+[61f98a98250da7bd2c80c6d93d0032961d7f2fad]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[4cb357c61c004f4cf27ca12e702b44a81f2752ab]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm/"
+
+[a38a698704b0289db3260617116a455fecdd54f6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[592ede65bd48f16e5c46a016e92b732ed90094d2]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[2f49e40a684a4bffd8e368a6878384ec4f735ea8]
+mc = "build"
