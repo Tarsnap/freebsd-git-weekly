@@ -1,0 +1,64 @@
+[d7e7397c217137c9f2465f60a7faf129c87934ec]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
+
+[b30e67dc130ea8217e92e0b4c462f189e2268eba]
+ac = "admin"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sbin/"
+
+[c109a681456d03fc0737ca83487995e28b759e3b]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet6/"
+
+[80af0a32e48bff6ad97e768b16d2dbc01ac8d1c3]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
+
+[1f1043d550ea2b8282e692019f17a88896212a76]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/powerpc/"
+
+[68386f6b551e64c956c9623b9973be9e462ce1de]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[fdd3f6f78888b02a1bfa69a0572317413dc14a45]
+ac = "build"
+ac_section = "03-filenames_plain1"
+ac_pattern = "share/mk/"
+
+[412c3a0370491c6745e056266f54ce9aa67017e1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[16c787fbabb8077df1af3bd3baaddf3b4c0dd8e8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/arm64/"
+
+[4a0ec469934a5de60b9b540689703a698ac44105]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/net/"
+
+[2165accd3748c0acb6e82756d71a46509b220fd8]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[f0825f75bab8ae7cb8e0ba717f76110b6f1862f3]
+ac = "style"
+ac_section = "01-style"
+ac_pattern = "[wW]hitespace"
+
+[e89c3ac5df58a9eae9d01f325ffc9b34258c4b29]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
