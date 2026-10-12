@@ -191,6 +191,7 @@ build = [
 internal = [
     '.git-blame-ignore-revs',
     '.github/',
+    '.gitignore',
     '.mailmap',
     'CONTRIBUTING.md',
     'MAINTAINERS',

@@ -1,0 +1,78 @@
+[b3ef4013a4fa75063930d0221a0bc50f95af0527]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[1f07bcd91de1d02d1adb8a1215945cd02f469489]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[b00a90df99f72c30bdeec17bb0fb0cd28342415d]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[65373e8d02391054eb867edaeb92348c6f2d4ff4]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[b15ec53784f3be913d6b4711f8eb166584a7d791]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[e6ca3d05b93b5f36dde2873076d7bc29dbcd46d1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[7ce67909fa683b22546b2ec8d635db1582b56bca]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[8f93ad70078a88710d34b371a4076191cfebc4f6]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+g = "iwm-00"
+
+[3ceb5f150bc121f5e6a3e0cc8b289279338405a1]
+mc = "userland"
+
+[92d66a6b474fa6fe42fbe08002803d79a5af6594]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+
+[b42793d4bcdf73475b77a26c9dbacd45f8876621]
+ac = "internal"
+ac_section = "03-filenames_plain1"
+ac_pattern = "ObsoleteFiles.inc"
+
+[25f04bf42786806e2661b7a09c283b83f568380a]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+g = "pf-00"
+
+[ccb19b359aae4b7e7315ad61d33d9a35d85849d1]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+g = "pf-00"
+
+[b4d2c9835c0edfddd1d6742afa86d4873ccfad16]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netpfil/"
+g = "pf-00"
