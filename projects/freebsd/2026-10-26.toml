@@ -1,0 +1,77 @@
+[4560b19ff4bb1c26ac65fb7473b1b6f8af52c1b3]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[afe20e82f9dbfa9016baa2c3d51d2b9f8ae21f0a]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[3208a17f96ef01872ad77e2ab70d182c6f3e39bb]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[f5b6c8f5c25261033fb9e6d0e9f682e3aa97efb5]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[2ba2623414a60fb812fd5cfb075178c852b0db8b]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[fb4f233466d3b662f0dd8220b409a681ea6dacc3]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[029466808f100ba04fa99efebb40b4209cf79e82]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[13d222bd83ac15fec4b142b2a97cf0cb7ad981f7]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+g = "manpages-00"
+
+[ce9de516eef333041d66a87dfb0aa4818cc5044f]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7ea9ac99e171bb2b6e425e4b4af728f4783ab07c]
+ac = "doc"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*\\.[1-9]"
+
+[b86f3d6ae8e2f1c64c2f230e59c582e8553a3062]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[509d65fae512c24fc755d6a8b3b41bb967e6c5e1]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/riscv/"
+
+[9a4bb77040f074f6e842a54f8aedf7a24c0eab42]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[7b8151b0cd1b4f077b382b6be2c02c936d1988fa]
+ac = "network"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/netinet/"
