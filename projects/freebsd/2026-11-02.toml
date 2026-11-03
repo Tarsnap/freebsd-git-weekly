@@ -1,0 +1,29 @@
+[765f30b9f3af67a1db9619ff18862dc74ac72674]
+ac = "contrib"
+ac_section = "03-filenames_plain1"
+ac_pattern = "contrib/"
+
+[a377d25bd25c0739d50c4dfe34ec2066821018d3]
+ac = "libs"
+ac_section = "04-filenames_plain2"
+ac_pattern = "lib/"
+
+[c13dfbcf43b4c7a5ba0204ad0a0c3bf34eb54be3]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[933c4f6e06c276548783247242b75814027159eb]
+ac = "hardware"
+ac_section = "03-filenames_plain1"
+ac_pattern = "sys/dev/"
+
+[b5cd411af6418986fa0da9c12d02b9f26c344a4a]
+ac = "build"
+ac_section = "02-filenames_wildcards"
+ac_pattern = ".*Makefile"
+
+[fbac0abdc5ab1fe867ac85635662ef06b2ee9d10]
+ac = "kernel"
+ac_section = "04-filenames_plain2"
+ac_pattern = "sys/"
