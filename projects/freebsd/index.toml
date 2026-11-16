@@ -384,7 +384,13 @@ end_including = "04a3a6e3a8d9c27847caa4b807e777720bb6bf99"
 display_date_start = "2026-11-09"
 display_date_end = "2026-11-15"
 start_after = "04a3a6e3a8d9c27847caa4b807e777720bb6bf99"
-end_including = "b3860403a7cfbd32e4b21f214c2d3a46ef1a27b9"
+end_including = "3c6fd437b1824caeddb5f0d4570d43cf0c999c14"
+
+[2026-11-16]
+display_date_start = "2026-11-16"
+display_date_end = "2026-11-22"
+start_after = "3c6fd437b1824caeddb5f0d4570d43cf0c999c14"
+end_including = "d546356523f3e4856611fe25e0d9c8cf34ba1941"
 ongoing = true
 
 [2025-09]
@@ -459,7 +465,7 @@ display_date_end = "2026-12-31"
 include_spans = [
     2026-09-28,
     2026-10-05, 2026-10-12, 2026-10-19, 2026-10-26,
-    2026-11-02, 2026-11-09,
+    2026-11-02, 2026-11-09, 2026-11-16,
 ]
 start_after = "6d7f0162bd5d25919cc18119a6e5a371acb2cf78"
 end_including = "4a0ec469934a5de60b9b540689703a698ac44105"
